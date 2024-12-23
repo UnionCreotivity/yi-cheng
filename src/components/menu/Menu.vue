@@ -22,24 +22,24 @@
       <div class="menu-main-close" @click="showClick">
         <img src="@/assets/img/menu/close-button.svg" alt="" />
       </div>
-      <!-- <div class="menu-main-cloud cloud-1">
-        <img src="@/assets/img/cloud/cloud1.png" alt="" />
+      <div class="menu-main-cloud cloud-1">
+        <img src="@/assets/img/cloud/cloud1.webp" alt="" />
       </div>
       <div class="menu-main-cloud cloud-1-reverse">
-        <img src="@/assets/img/cloud/cloud1.png" alt="" />
+        <img src="@/assets/img/cloud/cloud1.webp" alt="" />
       </div>
       <div class="menu-main-cloud cloud-2">
-        <img src="@/assets/img/cloud/cloud2.png" alt="" />
+        <img src="@/assets/img/cloud/cloud2.webp" alt="" />
       </div>
       <div class="menu-main-cloud cloud-2-reverse">
-        <img src="@/assets/img/cloud/cloud2.png" alt="" />
+        <img src="@/assets/img/cloud/cloud2.webp" alt="" />
       </div>
       <div class="menu-main-cloud cloud-3">
-        <img src="@/assets/img/cloud/cloud3.png" alt="" />
+        <img src="@/assets/img/cloud/cloud3.webp" alt="" />
       </div>
       <div class="menu-main-cloud cloud-3-reverse">
-        <img src="@/assets/img/cloud/cloud3.png" alt="" />
-      </div> -->
+        <img src="@/assets/img/cloud/cloud3.webp" alt="" />
+      </div>
     </div>
   </div>
 </template>
