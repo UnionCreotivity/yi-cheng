@@ -8,7 +8,7 @@ import legacy from '@vitejs/plugin-legacy'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/unioncreotivity.github.io',
+  base: '/',
   build: {
     outDir: 'dist',
   },
