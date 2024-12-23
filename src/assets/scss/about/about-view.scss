@@ -1,11 +1,18 @@
 #about-view {
   width: 100%;
   height: 100%;
+  position: relative;
   .about-example {
     width: 100%;
     height: 100%;
     img {
       height: 100%;
     }
+  }
+  .right-bottom-fixed {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 17.35%;
   }
 }

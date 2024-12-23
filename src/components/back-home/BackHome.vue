@@ -1,24 +1,22 @@
 <template>
-  <div class="full-screen" @click.stop="handleClick">
-    <img src="@/assets/img/other/full-screen.svg" alt="" />
+  <div class="back-home" @click.stop="handleClick">
+    <img src="../../assets/img/other/home.svg" alt="" />
   </div>
 </template>
 
 <script setup lang="ts">
-import screenfull from 'screenfull'
+const router = useRouter()
 
 const handleClick = () => {
-  if (screenfull.isEnabled) {
-    screenfull.toggle()
-  }
+  router.push({ name: 'home' })
 }
 </script>
 
 <style lang="scss" scoped>
-.full-screen {
+.back-home {
   position: absolute;
   right: 2%;
-  bottom: 12%;
+  bottom: 5%;
   width: 3vw;
   height: 3vw;
   cursor: pointer;
