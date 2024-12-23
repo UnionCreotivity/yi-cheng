@@ -25,21 +25,21 @@
       <div class="menu-main-cloud cloud-1">
         <img src="@/assets/img/cloud/cloud1.webp" alt="" />
       </div>
-      <div class="menu-main-cloud cloud-1-reverse">
+      <!-- <div class="menu-main-cloud cloud-1-reverse">
         <img src="@/assets/img/cloud/cloud1.webp" alt="" />
-      </div>
+      </div> -->
       <div class="menu-main-cloud cloud-2">
         <img src="@/assets/img/cloud/cloud2.webp" alt="" />
       </div>
-      <div class="menu-main-cloud cloud-2-reverse">
+      <!-- <div class="menu-main-cloud cloud-2-reverse">
         <img src="@/assets/img/cloud/cloud2.webp" alt="" />
-      </div>
+      </div> -->
       <div class="menu-main-cloud cloud-3">
         <img src="@/assets/img/cloud/cloud3.webp" alt="" />
       </div>
-      <div class="menu-main-cloud cloud-3-reverse">
+      <!-- <div class="menu-main-cloud cloud-3-reverse">
         <img src="@/assets/img/cloud/cloud3.webp" alt="" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
