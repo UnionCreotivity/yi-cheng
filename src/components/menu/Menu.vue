@@ -22,7 +22,7 @@
       <div class="menu-main-close" @click="showClick">
         <img src="@/assets/img/menu/close-button.svg" alt="" />
       </div>
-      <div class="menu-main-cloud cloud-1">
+      <!-- <div class="menu-main-cloud cloud-1">
         <img src="@/assets/img/cloud/cloud1.png" alt="" />
       </div>
       <div class="menu-main-cloud cloud-1-reverse">
@@ -39,7 +39,7 @@
       </div>
       <div class="menu-main-cloud cloud-3-reverse">
         <img src="@/assets/img/cloud/cloud3.png" alt="" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
