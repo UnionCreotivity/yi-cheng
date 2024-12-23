@@ -10,7 +10,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './unioncreotivity.github.io',
+  base: '/unioncreotivity.github.io',
   build: {
     outDir: 'dist',
   },
