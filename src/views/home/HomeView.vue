@@ -1,15 +1,15 @@
 <template>
   <PageFixed title="home-view">
     <div class="home-video">
-      <video src="../../assets/video/home/img2024112016013425.mp4" autoplay muted loop></video>
+      <video src="@/assets/video/home/img2024112016013425.mp4" autoplay muted loop></video>
     </div>
     <div class="home-first" :style="isShow ? 'opacity:0' : 'opacity:1'">
       <div class="home-first-icon" @click.stop="showClick">
-        <img src="../../assets/img/home/icon.svg" alt="icon" />
+        <img src="@/assets/img/home/icon.svg" alt="icon" />
       </div>
     </div>
     <div class="home-in" :style="isShow ? 'opacity:1' : 'opacity:0'">
-      <div class="home-icon"><img src="../../assets/img/home/icon.svg" alt="icon" /></div>
+      <div class="home-icon"><img src="@/assets/img/home/icon.svg" alt="icon" /></div>
       <div class="home-title">
         <div class="home-title-in">
           <div class="light"></div>
