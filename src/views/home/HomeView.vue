@@ -81,16 +81,26 @@ const initGsap = () => {
     opacity: 0,
     filter: 'blur(10px)',
     duration: 2,
-  }).from(
-    '.home-menu-li p',
-    {
-      y: '105%',
-      opacity: 0,
-      stagger: 0.1,
-      duration: 1.5,
-    },
-    '<+0.25',
-  )
+  })
+    .from(
+      '.home-menu-li p',
+      {
+        y: '105%',
+        opacity: 0,
+        stagger: 0.1,
+        duration: 1.5,
+      },
+      '<+0.25',
+    )
+    .from(
+      '.home-icon',
+      {
+        y: '105%',
+        opacity: 0,
+        duration: 1.5,
+      },
+      '<+0.5',
+    )
 }
 
 const showClick = () => {

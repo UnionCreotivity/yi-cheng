@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-button" @click="showClick">MENU</div>
+  <div class="menu-button" @click="showClick(true)">MENU</div>
   <div class="menu-main" :style="menuContentWidth">
     <div class="menu-main-container">
       <div class="menu-bg"><img src="@/assets/img/menu/menu-bg@2x.webp" alt="" /></div>
@@ -19,7 +19,7 @@
           </div>
         </li>
       </ul>
-      <div class="menu-main-close" @click="showClick">
+      <div class="menu-main-close" @click="showClick(false)">
         <img src="@/assets/img/menu/close-button.svg" alt="" />
       </div>
       <div class="menu-main-cloud cloud-1">
@@ -51,10 +51,13 @@ import '@/assets/scss/menu/menu.scss'
 
 const is_Show = ref(false)
 
+const is_Start = ref(true)
+
 const menuContentWidth = ref({ clipPath: 'inset(0 0 0 100%)' })
 
-const showClick = () => {
-  is_Show.value = !is_Show.value
+const showClick = (val: boolean) => {
+  if (!is_Start.value) return
+  is_Show.value = val
 }
 
 const navAni = () => {
@@ -65,15 +68,24 @@ const navAni = () => {
     stagger: 0.15,
     y: '20%',
     duration: 1.5,
+    onComplete: () => {
+      is_Start.value = true
+      is_Show.value = true
+    },
   })
 }
 
-watch(is_Show, (new_value) => {
-  if (new_value) {
+watch(is_Show, () => {
+  if (!is_Start.value) return
+  is_Start.value = false
+  if (is_Show.value) {
     menuContentWidth.value.clipPath = 'inset(0 0 0 0)'
     navAni()
-  } else {
+  } else if (!is_Show.value) {
     menuContentWidth.value.clipPath = 'inset(0 0 0 100%)'
+    setTimeout(() => {
+      is_Start.value = true
+    }, 400)
   }
 })
 </script>
