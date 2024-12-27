@@ -1,7 +1,13 @@
 <template>
   <PageFixed title="home-view">
     <div class="home-video">
-      <video src="@/assets/video/home/img2024112016013425.mp4" autoplay muted loop></video>
+      <video
+        src="@/assets/video/home/img2024112016013425.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
     </div>
     <div class="home-first" :style="isShow ? 'opacity:0' : 'opacity:1'">
       <div class="home-first-icon" @click.stop="showClick">
@@ -111,5 +117,8 @@ const showClick = () => {
   initGsap()
 }
 
-onMounted(() => {})
+onMounted(() => {
+  // console.log(document.querySelector('body')?.offsetHeight)
+  // console.log(document.documentElement)
+})
 </script>
