@@ -1,85 +1,249 @@
 export const menuData = [
   {
+    key: 'menu-1',
     zhName: '品牌光譜',
-    enName: 'BRAND',
     linkItem: [
       {
         key: 'link-1',
-        name: '宜誠建設',
+        name: '品牌理念',
         link: 'about',
       },
       {
         key: 'link-2',
-        name: '經典作品',
+        name: '經典之作',
         link: 'about',
       },
       {
         key: 'link-3',
-        name: '建築團隊',
+        name: '品牌影片',
         link: 'about',
       },
     ],
   },
   {
+    key: 'menu-2',
     zhName: '繁華光譜',
-    enName: 'HUB',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-3',
+    zhName: '生活光譜',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-4',
+    zhName: '藝築光譜',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-5',
+    zhName: '精工光譜',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-6',
+    zhName: '智能光譜',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片',
+        link: 'about',
+      },
+    ],
+  },
+]
+
+export const menuSubData = [
+  {
+    key: 'menu-1',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-2',
     linkItem: [
       {
         key: 'link-4',
-        name: '生活機能',
+        name: '品牌理念2',
         link: 'about',
       },
-    ],
-  },
-  {
-    zhName: '精工光譜',
-    enName: 'METHOD',
-    linkItem: [
       {
         key: 'link-5',
-        name: '建築工法',
+        name: '經典之作2',
         link: 'about',
       },
       {
         key: 'link-6',
-        name: '建築精裝',
+        name: '品牌影片2',
         link: 'about',
       },
     ],
   },
   {
-    zhName: '藝築光譜',
-    enName: 'BUILDING',
+    key: 'menu-3',
     linkItem: [
       {
         key: 'link-7',
-        name: '建築透視',
+        name: '品牌理念',
         link: 'about',
       },
-    ],
-  },
-  {
-    zhName: '智能光譜',
-    enName: 'SMART',
-    linkItem: [
       {
         key: 'link-8',
-        name: '社區APP',
+        name: '經典之作',
         link: 'about',
       },
       {
         key: 'link-9',
-        name: '電動車整合',
+        name: '品牌影片',
         link: 'about',
       },
+    ],
+  },
+  {
+    key: 'menu-4',
+    linkItem: [
       {
         key: 'link-10',
-        name: '社區點餐APP',
+        name: '品牌理念',
         link: 'about',
       },
       {
         key: 'link-11',
-        name: '房貸試算',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-12',
+        name: '品牌影片',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-5',
+    linkItem: [
+      {
+        key: 'link-13',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-14',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-15',
+        name: '品牌影片',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-6',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典之作',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片',
         link: 'about',
       },
     ],

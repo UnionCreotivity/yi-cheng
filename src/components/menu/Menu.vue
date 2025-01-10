@@ -1,92 +1,56 @@
 <template>
-  <div class="menu-button" @click="showClick(true)">MENU</div>
-  <div class="menu-main" :style="menuContentWidth">
-    <div class="menu-main-container">
-      <div class="menu-bg"><img src="@/assets/img/menu/menu-bg@2x.webp" alt="" /></div>
-      <ul class="menu-main-nav">
-        <li class="menu-main-nav-item" v-for="item in menuData" :key="item.enName">
-          <div class="menu-main-nav-item-title">
-            <h4>{{ item.zhName }}</h4>
-            <p>{{ item.enName }}</p>
-          </div>
-          <div class="menu-main-nav-item-img">
-            <img src="@/assets/img/menu/menu-line@2x.png" alt="" />
-          </div>
-          <div class="menu-main-nav-item-links">
-            <router-link v-for="link in item.linkItem" :to="{ name: link.link }" :key="link.key">{{
-              link.name
-            }}</router-link>
-          </div>
+  <div id="menu" :style="leftZero">
+    <div class="menu-container" v-show="is_Show">
+      <ul class="menu-main-ul">
+        <li class="menu-icon"><img src="@/assets/img/menu/menu-icon.svg" alt="" /></li>
+        <li
+          v-for="item in menuData"
+          :key="item.key"
+          class="menu-main-li"
+          :class="item.key === tag ? 'menu-main-li-active' : ''"
+          @click.stop="toggleSubMenuClick(item.key)"
+        >
+          <p>{{ item.zhName }}</p>
         </li>
       </ul>
-      <div class="menu-main-close" @click="showClick(false)">
-        <img src="@/assets/img/menu/close-button.svg" alt="" />
-      </div>
-      <div class="menu-main-cloud cloud-1">
-        <img src="@/assets/img/cloud/cloud1.webp" alt="" />
-      </div>
-      <!-- <div class="menu-main-cloud cloud-1-reverse">
-        <img src="@/assets/img/cloud/cloud1.webp" alt="" />
-      </div> -->
-      <div class="menu-main-cloud cloud-2">
-        <img src="@/assets/img/cloud/cloud2.webp" alt="" />
-      </div>
-      <!-- <div class="menu-main-cloud cloud-2-reverse">
-        <img src="@/assets/img/cloud/cloud2.webp" alt="" />
-      </div> -->
-      <div class="menu-main-cloud cloud-3">
-        <img src="@/assets/img/cloud/cloud3.webp" alt="" />
-      </div>
-      <!-- <div class="menu-main-cloud cloud-3-reverse">
-        <img src="@/assets/img/cloud/cloud3.webp" alt="" />
-      </div> -->
+      <ul class="menu-link-items" v-if="subItem">
+        <li class="menu-link-item" v-for="link in subItem.linkItem" :key="link.key">
+          <router-link :to="{ name: link.link }">{{ link.name }}</router-link>
+        </li>
+      </ul>
     </div>
+    <div class="menu-button" @click="showMenuClick">MENU</div>
   </div>
 </template>
 
 <script setup lang="ts">
-import gsap from 'gsap'
-import { menuData } from './menuData'
+import { menuData, menuSubData } from './menuData'
 import '@/assets/scss/menu/menu.scss'
 
 const is_Show = ref(false)
 
-const is_Start = ref(true)
+const tag = ref('menu-1')
 
-const menuContentWidth = ref({ clipPath: 'inset(0 0 0 100%)' })
+const subItem = ref()
 
-const showClick = (val: boolean) => {
-  if (!is_Start.value) return
-  is_Show.value = val
+const showMenuClick = () => {
+  is_Show.value = !is_Show.value
 }
 
-const navAni = () => {
-  let tl = gsap.timeline({ delay: 0.5 })
-
-  tl.from('.menu-main-nav-item', {
-    opacity: 0,
-    stagger: 0.15,
-    y: '20%',
-    duration: 1.5,
-    onComplete: () => {
-      is_Start.value = true
-      is_Show.value = true
-    },
-  })
+const toggleSubMenuClick = (key: string) => {
+  if (!key) return
+  tag.value = key
+  const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
+  subItem.value = findSubData
 }
 
-watch(is_Show, () => {
-  if (!is_Start.value) return
-  is_Start.value = false
-  if (is_Show.value) {
-    menuContentWidth.value.clipPath = 'inset(0 0 0 0)'
-    navAni()
-  } else if (!is_Show.value) {
-    menuContentWidth.value.clipPath = 'inset(0 0 0 100%)'
-    setTimeout(() => {
-      is_Start.value = true
-    }, 400)
-  }
+const leftZero = computed(() => {
+  return is_Show.value === false ? 'left:0%' : 'left:1.25%'
+})
+
+onMounted(() => {
+  const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
+  subItem.value = findSubData
 })
 </script>
 

@@ -1,264 +1,153 @@
 @use '../config' as *;
-.menu-button {
+#menu {
   position: absolute;
-  left: 0;
-  top: 13%;
-  writing-mode: vertical-lr;
-  font-family: var(--cor);
-  font-size: 1.25vw;
-  letter-spacing: 3px;
-  color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 0px 40px 40px 0px;
-  width: 3.5vw;
-  height: 8.75vw;
-  background: linear-gradient(to bottom, #0da9e7 0%, #deb5fb 100%);
-  cursor: pointer;
-  @include laptop {
+  flex-direction: row;
+  left: 1.25%;
+  top: 19%;
+  transition: all 0.5s;
+  .menu-button {
+    position: relative;
+    writing-mode: vertical-lr;
+    font-family: var(--cor);
+    font-size: 1.25vw;
+    letter-spacing: 3px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0px 20px 20px 0px;
-    font-size: 1.5vw;
-    width: 3.75vw;
-    height: 9vw;
-  }
-  @include pad {
-    border-radius: 0px 20px 20px 0px;
-    font-size: 1.5vw;
-    width: 4vw;
-    height: 10vw;
-  }
-}
-.menu-main {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  transition: all linear 0.4s;
-  .menu-main-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    .menu-bg {
-      width: 100%;
-      height: 100%;
-      img {
-        height: 100%;
-      }
+    width: 3vw;
+    height: 8vw;
+    background: linear-gradient(to top, #5e0152 12%, #4a0155 29%);
+    margin-top: 1vw;
+    cursor: pointer;
+    @include laptop {
+      font-size: 1.5vw;
+      width: 3.25vw;
+      height: 8.5vw;
+      margin-top: 1.5vw;
     }
-    .menu-main-close {
-      position: absolute;
-      right: 4%;
-      top: 4%;
-      width: 2vw;
-      z-index: 10;
-      cursor: pointer;
-      @include pad {
-        top: 6%;
-      }
+    @include pad {
+      border-radius: 0px 15px 15px 0px;
+      font-size: 1.5vw;
+      width: 3.5vw;
+      height: 9vw;
+      margin-top: 2vw;
     }
-    .menu-main-nav {
-      position: absolute;
-      left: 7%;
-      top: 18%;
+  }
+  .menu-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .menu-main-ul {
+      position: relative;
       display: flex;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
-      gap: 5vw;
-      z-index: 10;
-      @include laptop {
-        left: 11%;
-        top: 19%;
-      }
+      width: 10.5vw;
+      background: linear-gradient(to top, #5e0152 12%, #4a0155 29%);
+      border-radius: 20px;
+      padding-bottom: 2vw;
       @include pad {
-        left: 11%;
-        top: 22.5%;
+        width: 12.5vw;
+        border-radius: 15px;
+        padding-bottom: 2.5vw;
       }
-
-      .menu-main-nav-item {
+      .menu-icon {
+        width: 6.25vw;
+        margin-block: 1.5vw;
+        @include pad {
+          width: 70%;
+          margin-block: 2.25vw;
+        }
+      }
+      .menu-main-li {
+        position: relative;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        .menu-main-nav-item-title {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          gap: 0.4vw;
-          h4 {
-            font-family: var(--sans);
-            font-weight: 400;
-            font-size: 1.1vw;
-            letter-spacing: 10px;
-            color: white;
-          }
-          p {
-            font-family: var(--cor);
-            font-weight: 500;
-            font-size: 0.8vw;
-            letter-spacing: 2px;
-            color: #38dcff;
-          }
-          @include laptop {
-            h4 {
-              font-size: 1.35vw;
-            }
-            p {
-              font-size: 1vw;
-            }
-          }
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          width: 75%;
+          height: 1px;
+          background-color: white;
+        }
+        p {
+          width: 100%;
+          font-family: var(--sans);
+          font-weight: 400;
+          font-size: 1.1vw;
+          letter-spacing: 5px;
+          padding-block: 0.8vw;
+          text-align: center;
+          color: white;
           @include pad {
-            h4 {
-              font-size: 1.35vw;
-            }
-            p {
-              font-size: 1vw;
-            }
+            padding-block: 1vw;
+            font-size: 1.2vw;
           }
         }
-        .menu-main-nav-item-img {
-          width: 2vw;
+      }
+      .menu-main-li-active {
+        background-color: #e2d3e5;
+        p {
+          color: black;
         }
-        .menu-main-nav-item-links {
-          display: flex;
-          align-items: center;
-          gap: 1vw;
-          margin-left: 1vw;
-          a {
-            font-family: var(--sans);
-            font-weight: 300;
-            font-size: 1vw;
-            letter-spacing: 5px;
-            color: white;
-          }
-          @include laptop {
-            gap: 1.5vw;
-            a {
-              font-size: 1.25vw;
-            }
-          }
+      }
+      .menu-sub-ul {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #e2d3e5;
+      }
+    }
+    .menu-link-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.75vw;
+      border-radius: 0px 20px 20px 0px;
+      padding-left: 2.75vw;
+      padding-right: 1.5vw;
+      margin-left: -1.5vw;
+      background-color: #e2d3e5;
+      @include pad {
+        border-radius: 0px 15px 15px 0px;
+        padding-left: 3vw;
+        padding-right: 1.75vw;
+      }
+      .menu-link-item {
+        position: relative;
+        a {
+          font-family: var(--sans);
+          font-weight: 400;
+          font-size: 1.1vw;
+          letter-spacing: 5px;
+          color: black;
           @include pad {
-            gap: 1.5vw;
-            a {
-              font-size: 1.25vw;
-            }
+            font-size: 1.2vw;
           }
         }
-      }
-    }
-    .menu-main-cloud {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20vw;
-    }
-    .cloud-1 {
-      top: 0%;
-      left: 105%;
-      width: 47vw;
-      animation: cloudAni 45s linear forwards infinite;
-    }
-    .cloud-1-reverse {
-      top: -13%;
-      left: 105%;
-      width: 47vw;
-      animation: cloudAniReverse 45s linear forwards infinite 25000ms;
-    }
-    .cloud-2 {
-      top: 0%;
-      left: 105%;
-      width: 40vw;
-      animation: cloudAni2 40s linear forwards infinite 1500ms;
-    }
-    .cloud-2-reverse {
-      top: 0%;
-      left: 105%;
-      width: 40vw;
-      animation: cloudAni2 40s linear forwards infinite 17500ms;
-    }
-    .cloud-3 {
-      top: 0%;
-      left: 105%;
-      width: 45vw;
-      animation: cloudAni 50s linear forwards infinite 15000ms;
-    }
-    .cloud-3-reverse {
-      top: 0%;
-      left: 105%;
-      width: 45vw;
-      animation: cloudAni3 50s linear forwards infinite 14500ms;
-    }
-    @keyframes cloudAni {
-      0% {
-        opacity: 1;
-        transform: translateX(0%);
-      }
-      70% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateX(-250%);
-      }
-    }
-    @keyframes cloudAniReverse {
-      0% {
-        opacity: 1;
-        transform: translateX(0%) rotateX(176deg);
-      }
-      70% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateX(-250%) rotateX(176deg);
-      }
-    }
-    @keyframes cloudAni2 {
-      0% {
-        opacity: 1;
-        transform: translateX(0%);
-      }
-      100% {
-        opacity: 0;
-        transform: translateX(-300%);
-      }
-    }
-    @keyframes cloudAni2Reverse {
-      0% {
-        opacity: 1;
-        transform: translateX(0%) rotateX(176deg) rotateY(180deg);
-      }
-      100% {
-        opacity: 0;
-        transform: translateX(-300%) rotateX(176deg) rotateY(180deg);
-      }
-    }
-    @keyframes cloudAni3 {
-      0% {
-        opacity: 1;
-        transform: translateX(0%);
-      }
-      70% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 0;
-        transform: translateX(-400%);
-      }
-    }
-    @keyframes cloudAni3Reverse {
-      0% {
-        opacity: 1;
-        transform: translateX(0%) rotateX(176deg) rotateY(180deg);
-      }
-      70% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 0;
-        transform: translateX(-400%) rotateX(176deg) rotateY(180deg);
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -50%;
+          left: 0%;
+          height: 1px;
+          width: 100%;
+          background-color: #808080;
+        }
+        &:last-child {
+          &::after {
+            content: unset;
+          }
+        }
       }
     }
   }

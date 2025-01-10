@@ -9,8 +9,8 @@
         playsinline
       ></video>
     </div>
-    <div class="home-first" :style="isShow ? 'opacity:0' : 'opacity:1'">
-      <div class="home-first-icon" @click.stop="showClick">
+    <div class="home-first" :class="isShow ? 'home-first-none' : ''" @click.stop="showClick">
+      <div class="home-first-icon">
         <img src="@/assets/img/home/icon.svg" alt="icon" />
       </div>
     </div>
