@@ -71,6 +71,9 @@
         }
         .brand-video-next {
           right: 20vw;
+          @media screen and (max-width: 1920px) {
+            right: 18vw;
+          }
           @include laptop {
             right: 15vw;
           }
