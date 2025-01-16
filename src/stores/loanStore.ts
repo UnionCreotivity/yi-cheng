@@ -30,7 +30,6 @@ export const useLoan = defineStore('loan', {
       allowancePeriodCost: '',
       afterAllowancePeriodCost: '',
       salesMan: '',
-      all: '',
       allAllowance: '',
     }
   },
@@ -38,7 +37,7 @@ export const useLoan = defineStore('loan', {
     loanCalc(val: CalFormVal) {
       //月利率
       const monthRatio = Number(val.ratio) / 12 / 100
-
+      console.log(val)
       let loanMonth = 0
       let periodMoney = 0
       let avgMonthRatio = 0
@@ -75,7 +74,7 @@ export const useLoan = defineStore('loan', {
       //16樓底板
       // this.sixteenThFloor = toMoneyStyle(Math.ceil(val.total * 0.01))
       //結構完成
-      this.construction = toMoneyStyle(Math.ceil(val.total * 0.04))
+      this.construction = toMoneyStyle(Math.ceil(val.total * 0.03))
       //交屋款
       this.delivery = toMoneyStyle(Math.ceil(val.total * 0.05))
 
@@ -97,11 +96,6 @@ export const useLoan = defineStore('loan', {
       this.monthlyCost = toMoneyStyle(Math.floor(val.total * 0.8 * avgMonthRatio * 10000))
       //還息金額
       this.interestRepayment = toMoneyStyle((totalMoney - val.total * 0.8 * 10000) / loanMonth)
-      //本利+還息
-      this.all = toMoneyStyle(
-        Math.floor(val.total * 0.8 * avgMonthRatio * 10000) +
-          (totalMoney - val.total * 0.8 * 10000) / loanMonth,
-      )
       //寬限期
       this.allowancePeriodCost = toMoneyStyle(Math.floor(periodMoney))
       // this.allowancePeriodCost = toMoneyStyle(3)
@@ -109,6 +103,21 @@ export const useLoan = defineStore('loan', {
       this.afterAllowancePeriodCost = toMoneyStyle(
         Math.floor(val.total * 0.8 * avgMonthRatio * 10000),
       )
+    },
+    cleanAll() {
+      this.deposit = ''
+      this.sign = ''
+      this.construction = ''
+      this.license = ''
+      this.delivery = ''
+      this.ownMoney = ''
+      this.loanMoney = ''
+      this.monthlyCost = ''
+      this.interestRepayment = ''
+      this.allowancePeriodCost = ''
+      this.afterAllowancePeriodCost = ''
+      this.salesMan = ''
+      this.allAllowance = ''
     },
   },
 })

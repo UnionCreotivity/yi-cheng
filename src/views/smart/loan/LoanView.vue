@@ -1,6 +1,10 @@
 <template>
   <section class="loan">
-    <div class="white-icon"><img src="../../../assets/img/other/white-icon.svg" alt="" /></div>
+    <div class="white-icon">
+      <router-link :to="{ name: 'home' }"
+        ><img src="../../../assets/img/other/white-icon.svg" alt=""
+      /></router-link>
+    </div>
     <div class="loan-container">
       <div class="loan-container-bg"></div>
       <div class="loan-container-top">
@@ -162,6 +166,7 @@ const cleanClick = () => {
     ratio: '',
     allowance: 'none',
   }
+  loanStore.cleanAll()
 }
 
 const submitClick = () => {

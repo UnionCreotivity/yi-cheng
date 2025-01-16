@@ -1,6 +1,10 @@
 <template>
   <nav id="nav">
-    <div class="nav-icon"><img src="@/assets/img/other/inner-icon.svg" alt="" /></div>
+    <div class="nav-icon">
+      <router-link :to="{ name: 'home' }">
+        <img src="@/assets/img/other/inner-icon.svg" alt=""
+      /></router-link>
+    </div>
     <ul class="nav-links">
       <li
         v-for="link in linkItem"

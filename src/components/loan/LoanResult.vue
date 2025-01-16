@@ -79,7 +79,6 @@ const {
   delivery,
   ownMoney,
   monthlyCost,
-  interestRepayment,
   allowancePeriodCost,
   afterAllowancePeriodCost,
 } = storeToRefs(loanStore)
@@ -96,7 +95,11 @@ watch(allowancePeriodCost, () => {
 const all = computed(() => {
   return is_Allowance.value
     ? afterAllowancePeriodCost.value
-    : Number(monthlyCost.value.replace(',', '')) + Number(interestRepayment.value.replace(',', ''))
+    : Number(monthlyCost.value.replace(',', ''))
+})
+
+onMounted(() => {
+  loanStore.cleanAll()
 })
 </script>
 
