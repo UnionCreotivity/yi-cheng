@@ -1,0 +1,293 @@
+@use '../config' as *;
+.loan {
+  background-image: url('../../img/loan/loan-bg@2x.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  .white-icon {
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    width: 9.45vw;
+  }
+  .loan-container {
+    position: relative;
+    width: 92.75%;
+    height: 82.5%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    @include pad {
+      height: 62.5%;
+      justify-content: center;
+    }
+    .loan-container-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+      background-color: #fafafa;
+      z-index: 0;
+    }
+    .loan-container-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5vw;
+      margin-bottom: 3%;
+      margin-top: 6%;
+      z-index: 1;
+      h1 {
+        font-size: 1.75vw;
+        font-family: var(--serif);
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: black;
+      }
+      .loan-title-en {
+        width: 67.5%;
+      }
+      @include pad {
+        margin-top: 0%;
+      }
+    }
+    .loan-container-bottom {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      z-index: 1;
+      .loan-input-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 1vw;
+        margin-right: 4%;
+        .loan-input-item {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 0.5vw;
+          h4 {
+            font-size: 1.25vw;
+            font-family: var(--serif);
+            font-weight: 500;
+            letter-spacing: 2px;
+          }
+          .loan-input {
+            display: flex;
+            align-items: center;
+            gap: 0.75vw;
+            input {
+              background-color: white;
+              border: #3f244b solid 1px;
+              border-radius: 2vw;
+              padding: 0.25vw 0.75vw;
+              width: 14.25vw;
+              font-size: 1vw;
+              font-family: var(--serif);
+            }
+            p {
+              font-size: 1.25vw;
+              font-family: var(--serif);
+              font-weight: 500;
+              letter-spacing: 2px;
+            }
+          }
+        }
+        .loan-select-item {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 0.5vw;
+          h4 {
+            font-size: 1.25vw;
+            font-family: var(--serif);
+            font-weight: 500;
+            letter-spacing: 2px;
+          }
+          .loan-select-main {
+            display: flex;
+            align-items: center;
+            gap: 1.75vw;
+            .loan-select-first,
+            .loan-select-second {
+              font-size: 1.25vw;
+              font-family: var(--serif);
+              font-weight: 500;
+              letter-spacing: 2px;
+              input {
+                margin-right: 0.5vw;
+              }
+              input[type='radio'] {
+                width: 0.75vw;
+                height: 0.75vw;
+              }
+            }
+          }
+        }
+        .loan-click-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5vw;
+          margin-top: 8%;
+          .loan-click-clear {
+            button {
+              color: black;
+              border: 1px solid black;
+              background-color: transparent;
+            }
+          }
+          .loan-click-cal {
+            button {
+              color: white;
+              border: none;
+              background-image: linear-gradient(to right, #55214e 12%, #3f244b 29%);
+            }
+          }
+          button {
+            font-size: 0.9vw;
+            font-family: var(--serif);
+            border-radius: 2vw;
+            padding-block: 0.5vw;
+            padding-inline: 3.25vw;
+            letter-spacing: 2px;
+          }
+        }
+      }
+      .loan-vertical-line {
+        width: 3px;
+        height: 30vw;
+        background-image: linear-gradient(to right, #55214e 12%, #3f244b 29%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 2%;
+        margin-top: -1%;
+      }
+
+      .loan-cal-container {
+        display: grid;
+        width: 25%;
+        height: 84.5%;
+        gap: 0.25vw 1vw;
+        .loan-cal-item {
+          width: 5vw;
+          height: 5vw;
+          background-image: linear-gradient(135deg, #55214e 12%, #3f244b 29%);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          user-select: none;
+          cursor: pointer;
+          transform: scale(1);
+          transition: all 0.1s;
+          img {
+            width: 32%;
+            height: auto;
+          }
+          &:active {
+            transform: scale(0.95);
+            transition: all 0.1s;
+          }
+        }
+        .loan-cal-7 {
+          grid-column: 1 / span 1;
+          grid-row: 1 / span 1;
+        }
+        .loan-cal-8 {
+          grid-column: 2 / span 1;
+          grid-row: 1 / span 1;
+        }
+        .loan-cal-9 {
+          grid-column: 3 / span 1;
+          grid-row: 1 / span 1;
+        }
+        .loan-cal-back {
+          grid-column: 4 / span 1;
+          grid-row: 1 / span 1;
+        }
+        .loan-cal-4 {
+          grid-column: 1 / span 1;
+          grid-row: 2 / span 1;
+          img {
+            width: 36%;
+          }
+        }
+        .loan-cal-5 {
+          grid-column: 2 / span 1;
+          grid-row: 2 / span 1;
+        }
+        .loan-cal-6 {
+          grid-column: 3 / span 1;
+          grid-row: 2 / span 1;
+        }
+        .loan-cal-cancel {
+          grid-column: 4 / span 1;
+          grid-row: 2 / span 1;
+          background-image: linear-gradient(140deg, #d6a14e 18%, #bb8d43 28%);
+          img {
+            width: 70%;
+          }
+        }
+        .loan-cal-1 {
+          grid-column: 1 / span 1;
+          grid-row: 3 / span 1;
+          img {
+            width: 17%;
+          }
+        }
+        .loan-cal-2 {
+          grid-column: 2 / span 1;
+          grid-row: 3 / span 1;
+        }
+        .loan-cal-3 {
+          grid-column: 3 / span 1;
+          grid-row: 3 / span 1;
+        }
+        .loan-cal-0 {
+          grid-column: 1 / span 2;
+          grid-row: 4 / span 1;
+          width: 100%;
+          background-image: linear-gradient(122deg, #55214e 12%, #3f244b 29%);
+          img {
+            width: 11%;
+          }
+        }
+        .loan-cal-dot {
+          grid-column: 3 / span 1;
+          grid-row: 4 / span 1;
+          img {
+            width: 9%;
+          }
+        }
+        .loan-cal-submit {
+          grid-column: 4 / span 1;
+          grid-row: 3 / span 2;
+          height: 93%;
+          background-image: linear-gradient(169deg, #d6a14e 18%, #bb8d43 28%);
+          img {
+            width: 70%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

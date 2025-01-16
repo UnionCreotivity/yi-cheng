@@ -5,8 +5,9 @@
   justify-content: center;
   flex-direction: row;
   left: 1.25%;
-  top: 19%;
+  top: 15%;
   transition: all 0.5s;
+  z-index: 15;
   .menu-button {
     position: relative;
     writing-mode: vertical-lr;
@@ -17,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 30px 30px 0px;
     width: 3vw;
     height: 8vw;
     background: linear-gradient(to top, #5e0152 12%, #4a0155 29%);

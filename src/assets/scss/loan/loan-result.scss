@@ -1,0 +1,65 @@
+.loan-result-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1vw;
+  margin-right: 3%;
+  .loan-result-col {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+    .loan-result-li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .loan-result-text {
+        font-size: 1.25vw;
+        font-family: var(--serif);
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-left: 1.25vw;
+      }
+      .loan-result-number {
+        position: relative;
+        font-size: 1.25vw;
+        font-family: var(--serif);
+        font-weight: 500;
+        letter-spacing: 1px;
+        width: 7.25vw;
+        height: 100%;
+        p {
+          text-align: center;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #1c1d1d;
+        }
+      }
+      h4 {
+        width: 7vw;
+        font-size: 1.25vw;
+        font-family: var(--serif);
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .loan-result-col-second {
+    .loan-result-li {
+      .loan-result-number {
+        width: 6.25vw;
+      }
+      h4 {
+        width: 9.5vw;
+      }
+    }
+  }
+}

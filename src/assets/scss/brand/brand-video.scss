@@ -1,0 +1,157 @@
+@use '../config' as *;
+.brand-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .brand-video-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    .brand-video-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5vw;
+      margin-right: 70%;
+      margin-top: 5.5%;
+      p {
+        font-family: var(--serif);
+        font-size: 1.45vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: black;
+      }
+      span {
+        height: 1px;
+        width: 3.25vw;
+        background-color: black;
+      }
+      @include pad {
+        margin-top: 11.5%;
+      }
+    }
+    .brand-video-swiper {
+      width: 100%;
+      display: flex;
+      overflow: hidden;
+      margin-top: 3%;
+      @include pad {
+        margin-top: 2.5%;
+      }
+      .brand-video-swiper-container {
+        width: 82%;
+        padding-bottom: 14%;
+        margin-right: unset;
+        .brand-swiper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          cursor: pointer;
+          .brand-video-content-title {
+            font-family: var(--serif);
+            font-size: 1.45vw;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 2%;
+            color: black;
+          }
+        }
+        .brand-video-next,
+        .brand-video-prev {
+          max-width: 60px;
+          width: 100%;
+          top: 82.25%;
+          &::after {
+            content: unset;
+          }
+        }
+        .brand-video-next {
+          right: 20vw;
+          @include laptop {
+            right: 15vw;
+          }
+        }
+        .brand-video-prev {
+          left: 55vw;
+        }
+        .brand-video-scollbar {
+          width: 50.75%;
+          bottom: 6.5vw;
+          left: 11vw;
+        }
+        .brand-video-pagination {
+          width: auto;
+          font-family: var(--serif);
+          font-size: 1.45vw;
+          left: 7vw;
+          bottom: 5.75vw;
+          .swiper-pagination-current {
+            color: black;
+          }
+          .swiper-pagination-total {
+            color: #898989;
+          }
+        }
+      }
+    }
+  }
+  .brand-offical {
+    position: absolute;
+    right: 5%;
+    top: 14%;
+    width: 58.25%;
+    @include pad {
+      top: 15.5vw;
+    }
+  }
+  .brand-fixed {
+    position: absolute;
+    left: 2.5%;
+    bottom: 0;
+    width: 15.5%;
+    @include pad {
+      width: 18.5%;
+    }
+  }
+  .brand-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .brand-video-bump {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+  }
+  .brand-video-bump {
+    width: 100%;
+    height: 100%;
+    z-index: 16;
+    .brand-video-bump-close {
+      position: absolute;
+      right: 2vw;
+      top: 5vw;
+      width: 2.75vw;
+      padding: 0.25vw;
+      cursor: pointer;
+      background-color: #55214e;
+      z-index: 17;
+      @include pad {
+        top: 7vw;
+      }
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

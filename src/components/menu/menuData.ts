@@ -6,17 +6,22 @@ export const menuData = [
       {
         key: 'link-1',
         name: '品牌理念',
-        link: 'about',
+        link: 'brand',
       },
       {
         key: 'link-2',
-        name: '經典之作',
-        link: 'about',
+        name: '經典作品',
+        link: 'brand',
       },
       {
         key: 'link-3',
         name: '品牌影片',
-        link: 'about',
+        link: 'brand',
+      },
+      {
+        key: 'link-4',
+        name: '建築團隊',
+        link: 'brand',
       },
     ],
   },
@@ -123,6 +128,11 @@ export const menuData = [
         name: '品牌影片',
         link: 'about',
       },
+      {
+        key: 'link-4',
+        name: '房貸試算',
+        link: 'about',
+      },
     ],
   },
 ]
@@ -130,6 +140,51 @@ export const menuData = [
 export const menuSubData = [
   {
     key: 'menu-1',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典作品',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片',
+        link: 'brand',
+      },
+      {
+        key: 'link-4',
+        name: '建築團隊',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-2',
+    linkItem: [
+      {
+        key: 'link-1',
+        name: '品牌理念2',
+        link: 'about',
+      },
+      {
+        key: 'link-2',
+        name: '經典之作2',
+        link: 'about',
+      },
+      {
+        key: 'link-3',
+        name: '品牌影片2',
+        link: 'about',
+      },
+    ],
+  },
+  {
+    key: 'menu-3',
     linkItem: [
       {
         key: 'link-1',
@@ -149,60 +204,20 @@ export const menuSubData = [
     ],
   },
   {
-    key: 'menu-2',
-    linkItem: [
-      {
-        key: 'link-4',
-        name: '品牌理念2',
-        link: 'about',
-      },
-      {
-        key: 'link-5',
-        name: '經典之作2',
-        link: 'about',
-      },
-      {
-        key: 'link-6',
-        name: '品牌影片2',
-        link: 'about',
-      },
-    ],
-  },
-  {
-    key: 'menu-3',
-    linkItem: [
-      {
-        key: 'link-7',
-        name: '品牌理念',
-        link: 'about',
-      },
-      {
-        key: 'link-8',
-        name: '經典之作',
-        link: 'about',
-      },
-      {
-        key: 'link-9',
-        name: '品牌影片',
-        link: 'about',
-      },
-    ],
-  },
-  {
     key: 'menu-4',
     linkItem: [
       {
-        key: 'link-10',
+        key: 'link-1',
         name: '品牌理念',
         link: 'about',
       },
       {
-        key: 'link-11',
+        key: 'link-2',
         name: '經典之作',
         link: 'about',
       },
       {
-        key: 'link-12',
+        key: 'link-3',
         name: '品牌影片',
         link: 'about',
       },
@@ -212,17 +227,17 @@ export const menuSubData = [
     key: 'menu-5',
     linkItem: [
       {
-        key: 'link-13',
+        key: 'link-1',
         name: '品牌理念',
         link: 'about',
       },
       {
-        key: 'link-14',
+        key: 'link-2',
         name: '經典之作',
         link: 'about',
       },
       {
-        key: 'link-15',
+        key: 'link-3',
         name: '品牌影片',
         link: 'about',
       },
@@ -245,6 +260,11 @@ export const menuSubData = [
         key: 'link-3',
         name: '品牌影片',
         link: 'about',
+      },
+      {
+        key: 'link-4',
+        name: '房貸試算',
+        link: 'loan',
       },
     ],
   },

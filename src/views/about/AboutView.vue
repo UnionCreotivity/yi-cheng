@@ -4,9 +4,6 @@
     <div class="right-bottom-fixed">
       <img src="../../assets/img/other/button-fixed@2x.png" alt="" />
     </div>
-    <Menu />
-    <FullScreen />
-    <BackHome />
   </PageFixed>
 </template>
 

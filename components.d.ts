@@ -10,9 +10,12 @@ declare module 'vue' {
     BackHome: typeof import('./src/components/back-home/BackHome.vue')['default']
     FadeIn: typeof import('./src/components/transition/FadeIn.vue')['default']
     FullScreen: typeof import('./src/components/full-screen/FullScreen.vue')['default']
+    LoanResult: typeof import('./src/components/loan/LoanResult.vue')['default']
     Menu: typeof import('./src/components/menu/Menu.vue')['default']
+    Nav: typeof import('./src/components/nav/Nav.vue')['default']
     PageFixed: typeof import('./src/components/pageFixed/PageFixed.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Test: typeof import('./src/components/menu/Test.vue')['default']
   }
 }
