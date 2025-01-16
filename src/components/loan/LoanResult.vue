@@ -84,7 +84,6 @@ const {
 } = storeToRefs(loanStore)
 
 watch(allowancePeriodCost, () => {
-  // console.log(typeof allowancePeriodCost.value)
   if (Number(allowancePeriodCost.value.replace(',', '')) > 0) {
     is_Allowance.value = true
   } else {
