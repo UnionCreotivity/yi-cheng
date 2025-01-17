@@ -16,6 +16,5 @@ declare module 'vue' {
     PageFixed: typeof import('./src/components/pageFixed/PageFixed.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Test: typeof import('./src/components/menu/Test.vue')['default']
   }
 }
