@@ -68,8 +68,10 @@
       .menu-main-li {
         position: relative;
         display: flex;
+        align-items: center;
         justify-content: center;
         width: 100%;
+        gap: 0.5vw;
         cursor: pointer;
         &::after {
           content: '';
@@ -79,8 +81,11 @@
           height: 1px;
           background-color: white;
         }
+        .menu-link-icon {
+          width: 11%;
+          margin-top: 1%;
+        }
         p {
-          width: 100%;
           font-family: var(--sans);
           font-weight: 400;
           font-size: 1.1vw;

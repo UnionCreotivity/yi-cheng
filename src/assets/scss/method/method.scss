@@ -1,0 +1,27 @@
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  .method-top {
+    width: 100%;
+    .method-top-text-1 {
+      position: absolute;
+      left: 18.75vw;
+      top: 32.5vw;
+      width: 62.5%;
+    }
+    .method-top-text-2 {
+      position: absolute;
+      left: 8.25vw;
+      top: 6.5vw;
+      width: 5%;
+    }
+  }
+  .method-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

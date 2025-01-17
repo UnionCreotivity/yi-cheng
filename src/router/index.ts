@@ -10,6 +10,10 @@ import BrandVideoView from '@/views/brand/video/BrandVideoView.vue'
 import SmartView from '@/views/smart/SmartView.vue'
 import LoanView from '@/views/smart/loan/LoanView.vue'
 
+// <--- 精工光譜 --->
+import ConstructionView from '@/views/construction/ConstructionView.vue'
+import MethodView from '@/views/construction/method/MethodView.vue'
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
@@ -42,6 +46,17 @@ const router = createRouter({
           path: '',
           name: 'loan',
           component: LoanView,
+        },
+      ],
+    },
+    {
+      path: '/construction',
+      component: ConstructionView,
+      children: [
+        {
+          path: '',
+          name: 'method',
+          component: MethodView,
         },
       ],
     },

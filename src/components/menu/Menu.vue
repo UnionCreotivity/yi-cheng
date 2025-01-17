@@ -10,6 +10,9 @@
           :class="item.key === tag ? 'menu-main-li-active' : ''"
           @click.stop="toggleSubMenuClick(item.key)"
         >
+          <div class="menu-link-icon">
+            <img :src="item.key === tag ? item.active : item.inactive" alt="" />
+          </div>
           <p>{{ item.zhName }}</p>
         </li>
       </ul>
