@@ -91,27 +91,18 @@ export const menuData = [
     linkItem: [
       {
         key: 'link-1',
-        name: '建築透視',
+        name: '美學光雕',
+        link: '',
       },
       {
         key: 'link-2',
-        name: '基地平面',
+        name: '美學生活',
+        link: '',
       },
       {
         key: 'link-3',
-        name: '樓層配置',
-      },
-      {
-        key: 'link-4',
-        name: '樓層空拍',
-      },
-      {
-        key: 'link-5',
-        name: '家配規劃',
-      },
-      {
-        key: 'link-6',
-        name: '公設圖 ',
+        name: '平面圖集',
+        link: '',
       },
     ],
   },
