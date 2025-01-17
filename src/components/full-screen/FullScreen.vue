@@ -18,7 +18,7 @@ const handleClick = () => {
 .full-screen {
   position: absolute;
   right: 2%;
-  bottom: 12%;
+  bottom: 5%;
   width: 3vw;
   height: 3vw;
   opacity: 0.5;

@@ -5,12 +5,12 @@ export const navLinks = [
       {
         key: 'brand-1',
         name: '品牌理念',
-        linkName: 'about',
+        linkName: '',
       },
       {
         key: 'brand-2',
         name: '經典作品',
-        linkName: 'about',
+        linkName: '',
       },
       {
         key: 'brand-3',
@@ -20,7 +20,7 @@ export const navLinks = [
       {
         key: 'brand-4',
         name: '建築團隊',
-        linkName: 'about',
+        linkName: '',
       },
     ],
   },

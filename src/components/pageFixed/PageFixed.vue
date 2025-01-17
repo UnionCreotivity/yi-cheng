@@ -4,7 +4,6 @@
     <div v-if="routeName !== 'home'">
       <Menu />
       <FullScreen />
-      <BackHome />
     </div>
   </main>
 </template>
