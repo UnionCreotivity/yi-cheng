@@ -11,7 +11,6 @@
 <script setup lang="ts">
 import Menu from '../menu/Menu.vue'
 import FullScreen from '../full-screen/FullScreen.vue'
-import BackHome from '../back-home/BackHome.vue'
 
 const props = defineProps(['title'])
 
