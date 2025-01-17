@@ -58,19 +58,19 @@ const menuItems = [
     key: 'menu-2',
     zhName: '繁華光譜',
     enName: 'HUB',
-    link: 'about',
+    link: '',
   },
   {
     key: 'menu-3',
     zhName: '精工光譜',
     enName: 'METHOD',
-    link: 'about',
+    link: '',
   },
   {
     key: 'menu-4',
     zhName: '藝築光譜',
     enName: 'BUILDING',
-    link: 'about',
+    link: '',
   },
   {
     key: 'menu-5',

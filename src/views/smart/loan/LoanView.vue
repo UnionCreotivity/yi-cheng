@@ -18,15 +18,7 @@
           <div class="loan-input-item">
             <h4>貸款年限</h4>
             <div class="loan-input">
-              <input
-                type="number"
-                id="cal-year"
-                min="0"
-                max="99"
-                v-model="loanInputModel.year"
-                @click.stop="checkClick('cal-year')"
-              />
-              <p>年</p>
+              <p>30年</p>
             </div>
           </div>
           <div class="loan-input-item">
@@ -148,7 +140,7 @@ import '@/assets/scss/loan/loan.scss'
 const loanStore = useLoan()
 
 const loanInputModel = ref({
-  year: 0,
+  year: 30,
   total: 0,
   ratio: '',
   allowance: 'none',
