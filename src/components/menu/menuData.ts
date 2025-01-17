@@ -92,17 +92,14 @@ export const menuData = [
       {
         key: 'link-1',
         name: '美學光雕',
-        link: '',
       },
       {
         key: 'link-2',
         name: '美學生活',
-        link: '',
       },
       {
         key: 'link-3',
         name: '平面圖集',
-        link: '',
       },
     ],
   },
