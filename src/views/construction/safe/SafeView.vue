@@ -3,18 +3,19 @@
     <BuildingNav color="purple" tag="safe" :innerkey="tag" @toggle-tag="toggleTag" />
     <div class="safe-container">
       <div class="safe-content">
-        <div class="safe-content-left">
-          <FadeInItem>
-            <div
-              class="safe-content-left-item"
-              v-for="item in safeContent?.images"
-              :key="item.key"
-              :class="item.className"
-              v-show="item.order === innerTag"
-            >
-              <img :src="item.img" alt="" /></div
-          ></FadeInItem>
-        </div>
+        <FadeIn>
+          <div class="safe-content-left" v-if="safeContent">
+            <FadeInItem>
+              <div
+                class="safe-content-left-item"
+                v-for="item in safeContent?.images"
+                :key="item.key"
+                :class="item.className"
+                v-show="item.order === innerTag"
+              >
+                <img :src="item.img" alt="" /></div
+            ></FadeInItem></div
+        ></FadeIn>
         <div class="safe-content-right">
           <h1>{{ safeContent?.name }}</h1>
           <p>
@@ -39,6 +40,7 @@
 
 <script setup lang="ts">
 import FadeInItem from '@/components/transition/FadeInItem.vue'
+import FadeIn from '@/components/transition/FadeIn.vue'
 import BuildingNav from '@/components/nav/BuildingNav.vue'
 import { SafeData } from './SafeData'
 import '@/assets/scss/method/safe.scss'

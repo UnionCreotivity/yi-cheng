@@ -46,6 +46,7 @@
 <script setup lang="ts">
 import BuildingNav from '@/components/nav/BuildingNav.vue'
 import FadeInItem from '@/components/transition/FadeInItem.vue'
+import FadeIn from '@/components/transition/FadeIn.vue'
 import { BuildingData } from './BuildingData'
 import '@/assets/scss/method/building.scss'
 

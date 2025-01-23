@@ -16,10 +16,16 @@
       align-items: center;
       justify-content: center;
       gap: 4vw;
+      @include pad {
+        padding-bottom: 6vw;
+      }
       .safe-content-left {
         position: relative;
         width: 44.5%;
         height: 100%;
+        @include pad {
+          height: 38vw;
+        }
         .safe-content-left-item {
           position: absolute;
           left: 0;
@@ -31,6 +37,9 @@
         }
         .safe-2-item-1 {
           margin-top: 7vw;
+          @include pad {
+            margin-top: 0vw;
+          }
         }
       }
       .safe-content-right {
@@ -40,8 +49,8 @@
         width: 37%;
         white-space: pre-line;
         @include pad {
-          height: 100%;
-          margin-top: 8vw;
+          // height: 100%;
+          // margin-top: 8vw;
         }
         h1 {
           font-family: var(--serif);

@@ -38,6 +38,7 @@
 </template>
 
 <script setup lang="ts">
+import gsap from 'gsap'
 import '../../../assets/scss/method/method.scss'
 
 const methods = [
@@ -60,6 +61,38 @@ const methods = [
     img: new URL('@/assets/img/construction/first/constr-1-txt-5.svg', import.meta.url).href,
   },
 ]
+
+const gsapInit = () => {
+  let timeline = gsap.timeline({})
+
+  timeline
+    .from('.method-top-text-1', {
+      y: '105%',
+      duration: 1.5,
+    })
+    .from(
+      '.method-bottom-item img',
+      {
+        y: '105%',
+        opacity: 0,
+        duration: 1.5,
+        stagger: 0.1,
+      },
+      '<+0.5',
+    )
+    .from(
+      '.method-top-text-2',
+      {
+        opacity: 0,
+        duration: 1.5,
+      },
+      '<+0.5',
+    )
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>

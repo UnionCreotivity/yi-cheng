@@ -16,7 +16,7 @@
   "dependencies": {
     "@vitejs/plugin-legacy": "^6.0.0",
     "axios": "^1.7.9",
-    "gsap": "^3.12.5",
+    "gsap": "^3.12.7",
     "pinia": "^2.3.0",
     "sass": "^1.83.0",
     "screenfull": "^6.0.2",

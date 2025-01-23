@@ -8,7 +8,8 @@ export const BuildingData = [
   {
     id: 'building-2',
     name: '排水系統',
-    image: new URL('@/assets/img/construction/first/building-1@2x.webp', import.meta.url).href,
+    image: new URL('@/assets/img/construction/building/新型存水彎排水NEW.webp', import.meta.url)
+      .href,
     content:
       '廚房排水較易因油脂硬化而堵塞，舊型排水管存水彎，角度低於90度，當層疏通之通管條較難通過，必須至樓下天花板開啟舊型存水彎才能疏通，新型排水管存水彎工法升級，角度較大，堵塞時可單層維修，不需至樓下樓層麻煩鄰居，容易當層清潔。\n 污水分流，減少排水造成逆流。\n 2F以下樓層獨立分流管線。',
   },
@@ -42,7 +43,7 @@ export const BuildingData = [
     id: 'building-6',
     name: '樓地板厚度',
     content:
-      '於當樓層直接排風，避免上下樓層空氣互相影響，保持浴室內空氣順暢，潔淨清爽，不易因潮濕滋生黴菌或細菌，守護您的健康；並採一次灌漿，將管道間逐層封閉，當火災不幸發生時可避免產生煙囪效應，確保住戶之居家安全。',
+      '樓地板隔音效果和厚度有直接關係，樓上跑動、甚至走路重一點，樓下往往聽得一清二楚。秉持建築安全的理念，樓地板都為15分厚度，對降低震動、隔絕噪音效果提升不少，讓居住品質更提升!',
     video: new URL('@/assets/video/building/樓地板厚度.mp4', import.meta.url).href,
   },
   {
