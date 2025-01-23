@@ -202,7 +202,7 @@ export const menuSubData = [
       {
         key: 'link-1',
         name: '建築工法',
-        link: '',
+        link: 'method',
       },
       {
         key: 'link-2',
@@ -250,5 +250,32 @@ export const menuSubData = [
         link: 'loan',
       },
     ],
+  },
+]
+
+export const menuTags = [
+  {
+    id: 'menu-1',
+    path: 'brand',
+  },
+  {
+    id: 'menu-2',
+    path: 'brand',
+  },
+  {
+    id: 'menu-3',
+    path: 'brand',
+  },
+  {
+    id: 'menu-4',
+    path: 'construction',
+  },
+  {
+    id: 'menu-5',
+    path: 'brand',
+  },
+  {
+    id: 'menu-6',
+    path: 'smart',
   },
 ]

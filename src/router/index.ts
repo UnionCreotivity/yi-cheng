@@ -13,6 +13,9 @@ import LoanView from '@/views/smart/loan/LoanView.vue'
 // <--- 精工光譜 --->
 import ConstructionView from '@/views/construction/ConstructionView.vue'
 import MethodView from '@/views/construction/method/MethodView.vue'
+import BuildingView from '@/views/construction/building/BuildingView.vue'
+import WaterProofView from '@/views/construction/waterproof/WaterProofView.vue'
+import SafeView from '@/views/construction/safe/SafeView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -57,6 +60,21 @@ const router = createRouter({
           path: '',
           name: 'method',
           component: MethodView,
+        },
+        {
+          path: 'building',
+          name: 'building',
+          component: BuildingView,
+        },
+        {
+          path: 'water',
+          name: 'water',
+          component: WaterProofView,
+        },
+        {
+          path: 'safe',
+          name: 'safe',
+          component: SafeView,
         },
       ],
     },

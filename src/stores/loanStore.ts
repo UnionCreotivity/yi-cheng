@@ -37,6 +37,7 @@ export const useLoan = defineStore('loan', {
     loanCalc(val: CalFormVal) {
       //月利率
       const monthRatio = Number(val.ratio) / 12 / 100
+      console.log(monthRatio)
       let loanMonth = 0
       let periodMoney = 0
       let avgMonthRatio = 0
@@ -59,7 +60,6 @@ export const useLoan = defineStore('loan', {
         avgMonthRatio =
           (Math.pow(1 + monthRatio, loanMonth) * monthRatio) /
           (Math.pow(1 + monthRatio, loanMonth) - 1)
-
         totalMoney = Math.floor(val.total * 0.8 * avgMonthRatio * 10000 * loanMonth)
       }
       //---------------- 拆款 ----------------

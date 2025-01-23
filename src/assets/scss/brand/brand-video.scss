@@ -75,11 +75,15 @@
             right: 18vw;
           }
           @include laptop {
-            right: 15vw;
+            right: 15.5vw;
+            width: 45px;
           }
         }
         .brand-video-prev {
           left: 55vw;
+          @include pad {
+            width: 45px;
+          }
         }
         .brand-video-scollbar {
           width: 50.75%;

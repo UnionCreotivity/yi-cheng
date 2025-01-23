@@ -1,0 +1,83 @@
+@use '../config' as *;
+.safe-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  .safe-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    .safe-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4vw;
+      .safe-content-left {
+        position: relative;
+        width: 44.5%;
+        height: 100%;
+        .safe-content-left-item {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+        }
+        .safe-1-item-2 {
+          margin-top: 8vw;
+        }
+        .safe-2-item-1 {
+          margin-top: 7vw;
+        }
+      }
+      .safe-content-right {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 37%;
+        white-space: pre-line;
+        @include pad {
+          height: 100%;
+          margin-top: 8vw;
+        }
+        h1 {
+          font-family: var(--serif);
+          font-weight: 600;
+          font-size: 2vw;
+          letter-spacing: 4px;
+          margin-bottom: 2.5vw;
+        }
+        p {
+          font-family: var(--micro);
+          font-size: 1.25vw;
+          font-weight: 500;
+          letter-spacing: 4px;
+          line-height: 2.5;
+        }
+        .safe-content-button {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 2vw;
+          margin-top: 2vw;
+          padding-left: 1vw;
+          button {
+            background-color: transparent;
+            border: none;
+          }
+          .safe-content-prev-button,
+          .safe-content-next-button {
+            width: 60px;
+            cursor: pointer;
+            @include pad {
+              width: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

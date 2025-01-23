@@ -1,5 +1,5 @@
 <template>
-  <div id="menu" :style="leftZero">
+  <div id="menu" :style="leftStyle">
     <div class="menu-container" v-show="is_Show">
       <ul class="menu-main-ul">
         <li class="menu-icon"><img src="@/assets/img/menu/menu-icon.svg" alt="" /></li>
@@ -18,7 +18,10 @@
       </ul>
       <ul class="menu-link-items" v-if="subItem">
         <li class="menu-link-item" v-for="link in subItem.linkItem" :key="link.key">
-          <router-link :to="{ name: link.link }">{{ link.name }}</router-link>
+          <router-link :to="{ name: link.link }">
+            <div class="menu-link-item-block"></div>
+            <p>{{ link.name }}</p></router-link
+          >
         </li>
       </ul>
     </div>
@@ -27,8 +30,10 @@
 </template>
 
 <script setup lang="ts">
-import { menuData, menuSubData } from './menuData'
+import { menuData, menuSubData, menuTags } from './menuData'
 import '@/assets/scss/menu/menu.scss'
+
+const route = useRoute()
 
 const is_Show = ref(false)
 
@@ -47,11 +52,16 @@ const toggleSubMenuClick = (key: string) => {
   subItem.value = findSubData
 }
 
-const leftZero = computed(() => {
+const leftStyle = computed(() => {
   return is_Show.value === false ? 'left:0%' : 'left:1.25%'
 })
 
 onMounted(() => {
+  const pathSplit = route.path.split('/')[1]
+  const findId = menuTags.find((item) => item.path.includes(pathSplit))?.id
+  if (findId) {
+    tag.value = findId
+  }
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
   subItem.value = findSubData
 })

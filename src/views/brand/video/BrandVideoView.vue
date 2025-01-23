@@ -1,6 +1,6 @@
 <template>
   <div class="brand-video">
-    <Nav />
+    <Nav color="purple" tag="brand" />
     <div class="brand-video-container">
       <div class="brand-video-title">
         <p>品牌影片</p>

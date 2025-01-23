@@ -1,9 +1,7 @@
 <template>
   <nav id="nav">
     <div class="nav-icon">
-      <router-link :to="{ name: 'home' }">
-        <img src="@/assets/img/other/inner-icon.svg" alt=""
-      /></router-link>
+      <router-link :to="{ name: 'home' }"> <img :src="iconStyle" alt="" /></router-link>
     </div>
     <ul class="nav-links">
       <li
@@ -20,12 +18,18 @@
 <script setup lang="ts">
 import { navLinks } from './navLinks'
 
-const tag = ref('brand')
+const props = defineProps(['color', 'tag'])
 
 const linkItem = ref()
 
+const iconStyle = computed(() => {
+  return props.color === 'white'
+    ? new URL('@/assets/img/other/inner-white-icon.svg', import.meta.url).href
+    : new URL('@/assets/img/other/inner-purple-icon.svg', import.meta.url).href
+})
+
 onMounted(() => {
-  const findLinks = navLinks.map((link) => link).find((key) => key.key === tag.value)
+  const findLinks = navLinks.map((link) => link).find((key) => key.key === props.tag)
   linkItem.value = findLinks?.links
 })
 </script>

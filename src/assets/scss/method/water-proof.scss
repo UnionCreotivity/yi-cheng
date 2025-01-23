@@ -1,0 +1,110 @@
+@use '../config' as *;
+.water-proof-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  .water-proof-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    .water-proof-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4vw;
+      @include pad {
+        gap: 4vw;
+      }
+      .water-proof-content-left {
+        width: 44.5%;
+        height: 100%;
+        position: relative;
+        .water-proof-content-left-img {
+          position: absolute;
+          top: 12%;
+          left: 0;
+          width: 100%;
+          @include pad {
+            top: 10vw;
+          }
+        }
+      }
+      .water-proof-2 {
+        width: 33.5%;
+      }
+      .water-proof-content-right {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 37%;
+        height: 100%;
+        padding-top: 3%;
+        white-space: pre-line;
+        @include pad {
+          padding-top: 7vw;
+        }
+        .water-proof-content-right-para {
+          position: relative;
+          overflow: hidden;
+          p {
+            position: relative;
+            font-family: var(--micro);
+            font-size: 1.25vw;
+            font-weight: 500;
+            letter-spacing: 4px;
+            line-height: 2.5;
+            padding-left: 1vw;
+            color: black;
+            z-index: 1;
+            transition: all 0.75s;
+          }
+          .water-proof-content-right-para-block {
+            position: absolute;
+            left: -101%;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #5e0152 12%, #4a0155 29%);
+            transition: all 0.5s;
+          }
+        }
+        .p-active {
+          p {
+            color: white;
+            transition: all 0.75s;
+          }
+          .water-proof-content-right-para-block {
+            left: 0%;
+            transition: all 0.5s;
+          }
+        }
+        .water-proof-content-button {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 2vw;
+          margin-top: 2vw;
+          padding-left: 1vw;
+          button {
+            background-color: transparent;
+            border: none;
+          }
+          .water-proof-content-prev-button,
+          .water-proof-content-next-button {
+            width: 60px;
+            cursor: pointer;
+            @include pad {
+              width: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

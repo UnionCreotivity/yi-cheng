@@ -153,7 +153,7 @@ const tempRatio = ref('.')
 //年利率因為小數點的關係，所以使用字串處理
 const cleanClick = () => {
   loanInputModel.value = {
-    year: 0,
+    year: 30,
     total: 0,
     ratio: '',
     allowance: 'none',
@@ -172,11 +172,7 @@ const checkClick = (id: string) => {
 const keyboardClick = (num: string) => {
   let inputNum = num
   let modelTemp: any
-  if (nowInputId.value === 'cal-year') {
-    modelTemp = loanInputModel.value.year.toString() + inputNum
-    const year = Math.floor(Number(modelTemp))
-    loanInputModel.value.year = year
-  } else if (nowInputId.value === 'cal-total') {
+ if (nowInputId.value === 'cal-total') {
     modelTemp = loanInputModel.value.total.toString() + inputNum
     const total = Math.floor(Number(modelTemp))
     loanInputModel.value.total = total
@@ -188,12 +184,7 @@ const keyboardClick = (num: string) => {
 const keyboardBackClick = () => {
   let length
   let temp
-  if (nowInputId.value === 'cal-year') {
-    temp = loanInputModel.value.year.toString()
-    length = temp.length >= 1 ? temp.length : 0
-    if (0) return
-    loanInputModel.value.year = Number(temp.slice(0, length - 1))
-  } else if (nowInputId.value === 'cal-total') {
+ if (nowInputId.value === 'cal-total') {
     temp = loanInputModel.value.total.toString()
     length = temp.length >= 1 ? temp.length : 0
     if (0) return
@@ -220,9 +211,6 @@ const testRatio = () => {
 watch(
   loanInputModel,
   () => {
-    if (Number(loanInputModel.value.year) > 99) {
-      loanInputModel.value.year = 99
-    }
     if (Number(loanInputModel.value.total) > 100000) {
       loanInputModel.value.total = 100000
     }

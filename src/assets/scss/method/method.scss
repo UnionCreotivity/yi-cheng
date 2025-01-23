@@ -1,3 +1,4 @@
+@use '../config' as *;
 .method {
   display: flex;
   align-items: center;
@@ -5,6 +6,12 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  .white-icon {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    width: 9.75vw;
+  }
   .method-top {
     width: 100%;
     .method-top-text-1 {
@@ -21,32 +28,70 @@
     }
   }
   .method-bottom {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
     gap: 7vw;
+    background-color: white;
+    overflow: hidden;
+    .method-bottom-fixed {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 47.65%;
+      pointer-events: none;
+      filter: brightness(0.5);
+      @include pad {
+        bottom: 40%;
+        width: 53.65%;
+      }
+    }
     .method-safe {
       width: 9.81vw;
+      @include pad {
+        width: 16.5vw;
+      }
     }
     .method-water {
       width: 6.7vw;
+      @include pad {
+        width: 11.25vw;
+      }
     }
     .method-building {
       width: 10.35vw;
       margin-top: 0.6%;
+      @include pad {
+        width: 17.35vw;
+        margin-top: 1%;
+      }
     }
     .method-bottom-item {
       position: relative;
+      cursor: pointer;
       &::after {
         content: '';
         position: absolute;
-        right: 0;
+        right: -3.5vw;
+        top: 0;
         width: 1px;
         height: 100%;
         background-color: black;
       }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
     }
+  }
+  .method-fixed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 }

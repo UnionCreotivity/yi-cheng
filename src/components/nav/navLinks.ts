@@ -25,3 +25,85 @@ export const navLinks = [
     ],
   },
 ]
+
+export const constrLinks = [
+  {
+    key: 'building',
+    links: [
+      {
+        key: 'building-1',
+        name: '雨水回收',
+      },
+      {
+        key: 'building-2',
+        name: '排水系統',
+      },
+      {
+        key: 'building-4',
+        name: '靜音工法',
+      },
+      {
+        key: 'building-5',
+        name: '距離感應器',
+      },
+      {
+        key: 'building-6',
+        name: '樓地板厚度',
+      },
+      {
+        key: 'building-7',
+        name: '單層排氣',
+      },
+      {
+        key: 'building-8',
+        name: '全區WIFI',
+      },
+      {
+        key: 'building-9',
+        name: '地下室換氣',
+      },
+      {
+        key: 'building-10',
+        name: '垃圾冷藏',
+      },
+      {
+        key: 'building-11',
+        name: '緊急發電',
+      },
+    ],
+  },
+  {
+    key: 'safe',
+    links: [
+      {
+        key: 'safe-1',
+        name: 'SRC 耐震工法',
+      },
+      {
+        key: 'safe-2',
+        name: '水泥磅數',
+      },
+    ],
+  },
+  {
+    key: 'water',
+    links: [
+      {
+        key: 'water-proof-1',
+        name: '屋頂防水',
+      },
+      {
+        key: 'water-proof-2',
+        name: '外牆層縫防水',
+      },
+      {
+        key: 'water-proof-3',
+        name: '窗框防水',
+      },
+      {
+        key: 'water-proof-4',
+        name: '浴室防水',
+      },
+    ],
+  },
+]

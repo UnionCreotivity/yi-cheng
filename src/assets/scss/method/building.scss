@@ -1,0 +1,119 @@
+@use '../config' as *;
+.building-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  .building-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    @include pad {
+      justify-content: space-between;
+      height: 90%;
+    }
+    .building-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 5vw;
+      gap: 4vw;
+      .building-content-left {
+        width: 46.5%;
+        height: 100%;
+        padding-top: 7vw;
+        @include pad {
+          height: auto;
+          padding-top: 0vw;
+        }
+        .building-content-left-first {
+          position: relative;
+          width: 100%;
+          .building-content-left-item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+          }
+        }
+      }
+      .building-4 {
+        padding-top: 1vw;
+      }
+      .building-5 {
+        padding-top: 7vw;
+        @include pad {
+          padding-top: 0vw;
+          height: 27vw;
+        }
+      }
+      .building-8 {
+        padding-top: 1vw;
+        @include pad {
+          height: 46vw;
+        }
+        .building-content-left-first {
+          width: 85%;
+          @include pad {
+            width: 100%;
+          }
+          .building-content-left-item:nth-child(2) {
+            margin-top: 9vw;
+            @include pad {
+              margin-top: 7vw;
+            }
+          }
+        }
+      }
+      .building-content-right {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 37%;
+        white-space: pre-line;
+        @include pad {
+          height: 100%;
+          justify-content: center;
+          margin-bottom: 0%;
+        }
+        h1 {
+          font-family: var(--serif);
+          font-weight: 600;
+          font-size: 2vw;
+          letter-spacing: 4px;
+          margin-bottom: 2.5vw;
+        }
+        p {
+          font-family: var(--micro);
+          font-size: 1.25vw;
+          font-weight: 500;
+          letter-spacing: 4px;
+          line-height: 2.5;
+        }
+        .building-content-right-button {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 2vw;
+          margin-top: 2vw;
+          padding-left: 1vw;
+          button {
+            background-color: transparent;
+            border: none;
+          }
+          .building-content-prev-button,
+          .building-content-next-button {
+            width: 60px;
+            cursor: pointer;
+            @include pad {
+              width: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
