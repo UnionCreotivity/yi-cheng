@@ -44,6 +44,7 @@
 </template>
 
 <script setup lang="ts">
+import gsap from 'gsap'
 import BuildingNav from '@/components/nav/BuildingNav.vue'
 import FadeInItem from '@/components/transition/FadeInItem.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'

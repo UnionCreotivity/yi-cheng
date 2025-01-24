@@ -283,7 +283,7 @@ export const WaterProofData = [
       {
         key: 'content-11',
         tag: 10,
-        content: '11.嵌縫處防水樹脂砂漿塗佈第一道。',
+        content: '11.嵌縫處防水樹脂砂漿塗佈第二道。',
       },
     ],
   },
