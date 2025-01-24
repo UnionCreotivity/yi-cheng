@@ -13,7 +13,7 @@
                 :key="item.key"
               >
                 <img :src="item.image" alt="" v-if="item.image" />
-                <video :src="item.video" muted loop autoplay v-else></video></div
+                <video :src="item.video" muted loop auto v-else></video></div
             ></FadeInItem>
           </div>
           <div class="building-content-left-second" v-else>
@@ -65,6 +65,12 @@ const buildingContet = ref<{
 const innerTag = ref(0)
 
 const toggleTag = (id: string) => {
+  // const tl = gsap.timeline({})
+  // tl.to('.building-content-left', {
+  //   x: '50%',
+  //   opacity: 0,
+  //   duration: 1.5,
+  // })
   tag.value = id
   innerTag.value = 0
   buildingContet.value = BuildingData.filter((item) => item.id === id)[0]
