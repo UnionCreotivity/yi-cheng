@@ -9,6 +9,7 @@
     height: 90%;
     display: flex;
     flex-direction: column;
+    position: relative;
     @include pad {
       justify-content: space-between;
       height: 90%;
@@ -21,6 +22,7 @@
       justify-content: center;
       padding-bottom: 5vw;
       gap: 4vw;
+      position: absolute;
       .building-content-left {
         width: 46.5%;
         height: 100%;
@@ -114,6 +116,12 @@
           }
         }
       }
+    }
+    .building-container-bottom {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
     }
   }
 }
