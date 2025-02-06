@@ -77,14 +77,6 @@ const handleInnerImg = (img?: string) => {
   }
 }
 
-const handleOrder = (
-  item: { key: string; img: string; order: number; className: string }[],
-  num: number,
-) => {
-  const length = item.length
-  innerTag.value = (innerTag.value + num + length) % length
-}
-
 watch(tag, (newValue) => {
   if (newValue !== 'safe-1') {
     innerTag.value = 0
