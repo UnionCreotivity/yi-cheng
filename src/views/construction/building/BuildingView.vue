@@ -6,6 +6,7 @@
         <div
           class="building-content"
           v-for="content in buildingContet"
+          :key="content.id"
           v-show="content?.id === tag"
         >
           <div class="building-content-left" :class="content?.id">

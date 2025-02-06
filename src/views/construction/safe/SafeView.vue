@@ -3,7 +3,12 @@
     <BuildingNav color="purple" tag="safe" :innerkey="tag" @toggle-tag="toggleTag" />
     <div class="safe-container">
       <FadeInItem>
-        <div class="safe-content" v-for="content in SafeData" v-show="tag === content?.id">
+        <div
+          class="safe-content"
+          v-for="content in SafeData"
+          :key="content.id"
+          v-show="tag === content?.id"
+        >
           <div class="safe-content-left">
             <div class="safe-content-left-item" :class="content.className">
               <img :src="content.image" alt="" />

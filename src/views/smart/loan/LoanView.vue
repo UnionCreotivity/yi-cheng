@@ -170,8 +170,8 @@ const checkClick = (id: string) => {
 }
 
 const keyboardClick = (num: string) => {
-  let inputNum = num
-  let modelTemp: any
+  const inputNum = num
+  let modelTemp: string;
  if (nowInputId.value === 'cal-total') {
     modelTemp = loanInputModel.value.total.toString() + inputNum
     const total = Math.floor(Number(modelTemp))

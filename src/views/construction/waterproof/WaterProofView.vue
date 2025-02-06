@@ -6,6 +6,7 @@
         <div
           class="water-proof-content"
           v-for="content in waterContent"
+          :key="content.id"
           v-show="content?.id === tag"
         >
           <div class="water-proof-content-left" :class="content?.id">
