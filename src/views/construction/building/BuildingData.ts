@@ -23,38 +23,14 @@ export const BuildingData = [
   {
     id: 'building-5',
     name: '車道感應雙系統',
-    items: [
-      {
-        key: 'building-5-item-1',
-        order: 0,
-        video: new URL('@/assets/video/building/車道感應.mp4', import.meta.url).href,
-      },
-      {
-        key: 'building-5-item-2',
-        order: 1,
-        image: new URL('@/assets/img/construction/building/04-02-04-03_table.webp', import.meta.url)
-          .href,
-      },
-    ],
+    video: new URL('@/assets/video/building/車道感應.mp4', import.meta.url).href,
     content:
-      'ETag感應系統、長距感應系統\n1.車道門禁使用雙系統感應。\n 2.長距感應也可提供機車、腳踏車進出方便。\n 3.長距感應系統可結合社區其它門禁使用更便利。 \n\n 中距離感應式門禁系統\n1.全社區分層分棟管理。\n2.專屬門禁感應器，無須持卡，中距離感應即可通過社區所有門禁。\n3.住家玄關門還可使用指紋辨識。',
+      'ETag感應系統、長距感應系統\n1.車道門禁使用雙系統感應。\n 2.長距感應也可提供機車、腳踏車進出方便。\n 3.長距感應系統可結合社區其它門禁使用更便利。 ',
   },
   {
     id: 'building-6',
     name: '智能免持卡系統',
-    items: [
-      {
-        key: 'building-6-item-1',
-        order: 0,
-        video: new URL('@/assets/video/building/車道感應.mp4', import.meta.url).href,
-      },
-      {
-        key: 'building-6-item-2',
-        order: 1,
-        image: new URL('@/assets/img/construction/building/04-02-04-03_table.webp', import.meta.url)
-          .href,
-      },
-    ],
+    image: new URL('@/assets/img/construction/building/智能免持卡@2x.webp', import.meta.url).href,
     content:
       '中距離感應式門禁系統\n1.全社區分層分棟管理。\n2.專屬門禁感應器，無須持卡，中距離感應即可通過社區所有門禁。\n3.住家玄關門還可使用指紋辨識。',
   },
