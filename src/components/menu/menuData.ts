@@ -48,24 +48,6 @@ export const menuData = [
     zhName: '生活光譜',
     active: new URL('@/assets/img/menu/menu-icon-3-active.svg', import.meta.url).href,
     inactive: new URL('@/assets/img/menu/menu-icon-3-inactive.svg', import.meta.url).href,
-    linkItem: [
-      {
-        key: 'link-1',
-        name: '生活機能圖',
-      },
-      {
-        key: 'link-2',
-        name: '逐光生活',
-      },
-      {
-        key: 'link-3',
-        name: '知識靈光',
-      },
-      {
-        key: 'link-4',
-        name: '四季風光',
-      },
-    ],
   },
   {
     key: 'menu-4',
@@ -167,31 +149,6 @@ export const menuSubData = [
       {
         key: 'link-3',
         name: '區域行情',
-        link: '',
-      },
-    ],
-  },
-  {
-    key: 'menu-3',
-    linkItem: [
-      {
-        key: 'link-1',
-        name: '生活機能圖',
-        link: '',
-      },
-      {
-        key: 'link-2',
-        name: '逐光生活',
-        link: '',
-      },
-      {
-        key: 'link-3',
-        name: '知識靈光',
-        link: '',
-      },
-      {
-        key: 'link-4',
-        name: '四季風光',
         link: '',
       },
     ],
