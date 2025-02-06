@@ -36,7 +36,10 @@
         }
       }
       .water-proof-2 {
-        width: 33.5%;
+        .water-proof-content-left-img {
+          width: 75%;
+          left: 14%;
+        }
       }
       .water-proof-content-right {
         position: relative;

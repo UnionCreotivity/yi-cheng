@@ -18,7 +18,7 @@
                   :key="item.key"
                 >
                   <img :src="item.image" alt="" v-if="item.image" />
-                  <video :src="item.video" muted loop auto v-else></video></div
+                  <video :src="item.video" muted loop autoplay v-else></video></div
               ></FadeInItem>
             </div>
             <div class="building-content-left-second" v-else>

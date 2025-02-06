@@ -64,7 +64,7 @@ const menuItems = [
     key: 'menu-3',
     zhName: '精工光譜',
     enName: 'METHOD',
-    link: '',
+    link: 'method',
   },
   {
     key: 'menu-4',

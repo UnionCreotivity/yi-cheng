@@ -11,6 +11,12 @@
       >
         <div class="nav-link-name" @click.stop="handleClick(link.key)">{{ link.name }}</div>
       </li>
+      <router-link :to="{ name: 'method' }" class="back-button">
+        <div class="window-line">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </div>
+      </router-link>
     </ul>
   </nav>
 </template>
@@ -41,4 +47,4 @@ onMounted(() => {
 })
 </script>
 
-<style scoped></style>
+<style></style>

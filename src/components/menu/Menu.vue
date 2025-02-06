@@ -14,6 +14,7 @@
             <img :src="item.key === tag ? item.active : item.inactive" alt="" />
           </div>
           <p>{{ item.zhName }}</p>
+          <!-- <router-link :to="{ name: item?.link }" v-if="item?.link"></router-link> -->
         </li>
       </ul>
       <ul class="menu-link-items" v-if="subItem">
