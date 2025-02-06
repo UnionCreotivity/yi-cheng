@@ -44,30 +44,34 @@ export const constrLinks = [
       },
       {
         key: 'building-5',
-        name: '距離感應器',
+        name: '車道感應雙系統',
       },
       {
         key: 'building-6',
-        name: '樓地板厚度',
+        name: '智能免持卡系統',
       },
       {
         key: 'building-7',
-        name: '單層排氣',
+        name: '樓地板厚度',
       },
       {
         key: 'building-8',
-        name: '全區WIFI',
+        name: '單層排氣',
       },
       {
         key: 'building-9',
-        name: '地下室換氣',
+        name: '全區WIFI',
       },
       {
         key: 'building-10',
-        name: '垃圾冷藏',
+        name: '地下室換氣',
       },
       {
         key: 'building-11',
+        name: '垃圾冷藏',
+      },
+      {
+        key: 'building-12',
         name: '緊急發電',
       },
     ],

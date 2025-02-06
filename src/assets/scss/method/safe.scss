@@ -35,18 +35,12 @@
           width: 100%;
         }
         .safe-1-item-1 {
-          width: 80%;
-          left: 12%;
-          top: 6%;
+          width: 90%;
+          left: 8%;
+          top: 10%;
         }
         .safe-1-item-2 {
           margin-top: 8vw;
-        }
-        .safe-2-item-1 {
-          margin-top: 7vw;
-          @include pad {
-            margin-top: 0vw;
-          }
         }
       }
       .safe-content-right {
@@ -89,6 +83,10 @@
             cursor: pointer;
             color: white;
             background-color: rgb(62, 37, 77);
+            @include pad {
+              font-size: 1.1vw;
+              padding: 0.5vw 1.25vw;
+            }
           }
           .safe-content-prev-button,
           .safe-content-next-button {

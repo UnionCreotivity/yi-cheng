@@ -22,7 +22,7 @@ export const BuildingData = [
   },
   {
     id: 'building-5',
-    name: '距離感應器',
+    name: '車道感應雙系統',
     items: [
       {
         key: 'building-5-item-1',
@@ -41,20 +41,39 @@ export const BuildingData = [
   },
   {
     id: 'building-6',
+    name: '智能免持卡系統',
+    items: [
+      {
+        key: 'building-6-item-1',
+        order: 0,
+        video: new URL('@/assets/video/building/車道感應.mp4', import.meta.url).href,
+      },
+      {
+        key: 'building-6-item-2',
+        order: 1,
+        image: new URL('@/assets/img/construction/building/04-02-04-03_table.webp', import.meta.url)
+          .href,
+      },
+    ],
+    content:
+      '中距離感應式門禁系統\n1.全社區分層分棟管理。\n2.專屬門禁感應器，無須持卡，中距離感應即可通過社區所有門禁。\n3.住家玄關門還可使用指紋辨識。',
+  },
+  {
+    id: 'building-7',
     name: '樓地板厚度',
     content:
       '樓地板隔音效果和厚度有直接關係，樓上跑動、甚至走路重一點，樓下往往聽得一清二楚。秉持建築安全的理念，樓地板都為15分厚度，對降低震動、隔絕噪音效果提升不少，讓居住品質更提升!',
     video: new URL('@/assets/video/building/樓地板厚度.mp4', import.meta.url).href,
   },
   {
-    id: 'building-7',
+    id: 'building-8',
     name: '單獨排氣',
     video: new URL('@/assets/video/building/當層排氣.mp4', import.meta.url).href,
     content:
       '於當樓層直接排風，避免上下樓層空氣互相影響，保持浴室內空氣順暢，潔淨清爽，不易因潮濕滋生黴菌或細菌，守護您的健康；並採一次灌漿，將管道間逐層封閉，當火災不幸發生時可避免產生煙囪效應，確保住戶之居家安全。',
   },
   {
-    id: 'building-8',
+    id: 'building-9',
     name: '全區WIFI',
     items: [
       {
@@ -72,21 +91,21 @@ export const BuildingData = [
     content: '一樓公設及地下室停車空間皆支援WIFI訊號，隨時連網。',
   },
   {
-    id: 'building-9',
+    id: 'building-10',
     name: '地下室換氣',
     video: new URL('@/assets/video/building/地下室換氣設備_1.mp4', import.meta.url).href,
     content:
       '車場設排氣機，自動設定開關控制風機運轉，誘導式排風機將停車場廢氣排出，進風管不斷補充新鮮空氣，維持停車場空氣品質。',
   },
   {
-    id: 'building-10',
+    id: 'building-11',
     name: '垃圾冷藏',
     video: new URL('@/assets/video/building/垃圾冷藏.mp4', import.meta.url).href,
     content:
       '於當樓層直接排風，避免上下樓層空氣互相影響，保持浴室內空氣順暢，潔淨清爽，不易因潮濕滋生黴菌或細菌，守護您的健康；並採一次灌漿，將管道間逐層封閉，當火災不幸發生時可避免產生煙囪效應，確保住戶之居家安全。',
   },
   {
-    id: 'building-11',
+    id: 'building-12',
     name: '緊急發電',
     video: new URL('@/assets/video/building/緊急發電機.mp4', import.meta.url).href,
     content:
