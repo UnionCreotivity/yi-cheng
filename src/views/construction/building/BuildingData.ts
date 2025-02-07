@@ -3,7 +3,7 @@ export const BuildingData = [
     id: 'building-1',
     name: '雨水回收',
     content: '收集城市雨水，經系統性處理提供1F中庭植栽澆灌綠化噴灌用水等...非飲用水回收使用。',
-    video: new URL('@/assets/video/building/雨水回收_2.mp4', import.meta.url).href,
+    video: new URL('@/assets/video/building/雨水回收NEW.mp4', import.meta.url).href,
   },
   {
     id: 'building-2',
