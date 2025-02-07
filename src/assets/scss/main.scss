@@ -110,26 +110,12 @@ body {
       }
     }
     .back-button {
-      border-radius: 50%;
-      background-color: rgba(161, 161, 161, 0.671);
+      background-color: #55214e;
       position: relative;
       width: 2vw;
       height: 2vw;
-      .line {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 0.75vw;
-        height: 2px;
-        background-color: white;
-        transform-origin: 50% 50%;
-      }
-      .line-1 {
-        transform: translate(-50%, -50%) rotate(45deg);
-      }
-      .line-2 {
-        transform: translate(-50%, -50%) rotate(135deg);
-      }
+      padding: 0.25vw;
+      cursor: pointer;
     }
     .nav-active {
       a,

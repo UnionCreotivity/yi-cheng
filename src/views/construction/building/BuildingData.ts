@@ -39,11 +39,11 @@ export const BuildingData = [
     name: '樓地板厚度',
     content:
       '樓地板隔音效果和厚度有直接關係，樓上跑動、甚至走路重一點，樓下往往聽得一清二楚。秉持建築安全的理念，樓地板都為15分厚度，對降低震動、隔絕噪音效果提升不少，讓居住品質更提升!',
-    video: new URL('@/assets/video/building/樓地板厚度.mp4', import.meta.url).href,
+    video: new URL('@/assets/video/building/樓地板厚度NEW.mp4', import.meta.url).href,
   },
   {
     id: 'building-8',
-    name: '單獨排氣',
+    name: '單層排氣',
     video: new URL('@/assets/video/building/當層排氣.mp4', import.meta.url).href,
     content:
       '於當樓層直接排風，避免上下樓層空氣互相影響，保持浴室內空氣順暢，潔淨清爽，不易因潮濕滋生黴菌或細菌，守護您的健康；並採一次灌漿，將管道間逐層封閉，當火災不幸發生時可避免產生煙囪效應，確保住戶之居家安全。',

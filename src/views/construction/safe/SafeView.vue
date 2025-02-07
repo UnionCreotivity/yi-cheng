@@ -39,7 +39,9 @@
         <div class="safe-content-toggle-img-inner">
           <img :src="toggleImg" alt="" />
         </div>
-        <button class="safe-content-toggle-button" @click.stop="handleInnerImg()">返回</button>
+        <button class="safe-content-toggle-button" @click.stop="handleInnerImg()">
+          <img src="@/assets/img/other/close-button.svg" alt="" />
+        </button>
       </div>
     </FadeIn>
   </div>
