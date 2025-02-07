@@ -7,9 +7,10 @@
           class="building-content"
           v-for="content in buildingContet"
           :key="content.id"
+          :class="content?.id"
           v-show="content?.id === tag"
         >
-          <div class="building-content-left" :class="content?.id">
+          <div class="building-content-left">
             <div class="building-content-left-first" v-if="content?.items">
               <FadeInItem>
                 <div
