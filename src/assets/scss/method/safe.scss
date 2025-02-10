@@ -136,6 +136,13 @@
       border: none;
       color: white;
       background-color: #55214e;
+      @include pad {
+        top: 3vw;
+        right: 3vw;
+        width: 2.5vw;
+        height: 2.5vw;
+        padding: 0.5vw;
+      }
     }
   }
 }

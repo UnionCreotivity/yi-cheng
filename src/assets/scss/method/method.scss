@@ -13,6 +13,7 @@
     width: 9.75vw;
   }
   .method-top {
+    position: relative;
     width: 100%;
     flex: 2.1 1;
     overflow: hidden;
@@ -22,8 +23,11 @@
     .method-top-text-1 {
       position: absolute;
       left: 18.75vw;
-      top: 32.5vw;
+      bottom: 0;
       width: 62.5%;
+      @include pad {
+        bottom: -1%;
+      }
     }
     .method-top-text-2 {
       position: absolute;

@@ -63,7 +63,7 @@ const methods = [
 ]
 
 const gsapInit = () => {
-  let timeline = gsap.timeline({})
+  const timeline = gsap.timeline({})
 
   timeline
     .from('.method-top-text-1', {
