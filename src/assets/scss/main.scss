@@ -74,6 +74,17 @@ body {
   .nav-icon {
     width: 9.45vw;
   }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5vw;
+    width: 100%;
+    @include pad {
+      gap: 1vw;
+      width: 70%;
+    }
+  }
   .nav-links {
     position: relative;
     display: flex;
@@ -81,9 +92,9 @@ body {
     justify-content: center;
     @include pad {
       justify-content: flex-end;
-      width: 65%;
+      width: 100%;
       flex-wrap: wrap;
-      gap: 0.5vw 0;
+      gap: 0.75vw 0;
     }
     li {
       position: relative;
@@ -114,29 +125,34 @@ body {
         }
       }
       &:last-child {
+        margin-right: 0;
+        @include pad {
+          margin-right: 1vw;
+        }
         &::after {
           content: unset;
         }
       }
     }
-    .back-button {
-      background-color: #55214e;
-      position: relative;
-      width: 2vw;
-      height: 2vw;
-      padding: 0.25vw;
-      cursor: pointer;
-      @include pad() {
-        width: 2.5vw;
-        height: 2.5vw;
-        padding: 0.5vw;
-      }
-    }
+
     .nav-active {
       a,
       .nav-link-name {
         color: #761d4a;
       }
+    }
+  }
+  .back-button {
+    background-color: #55214e;
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    padding: 0.25vw;
+    cursor: pointer;
+    @include pad() {
+      width: 2.75vw;
+      height: 2.75vw;
+      padding: 0.5vw;
     }
   }
 }

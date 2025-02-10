@@ -3,18 +3,20 @@
     <div class="nav-icon">
       <router-link :to="{ name: 'home' }"> <img :src="iconStyle" alt="" /></router-link>
     </div>
-    <ul class="nav-links">
-      <li
-        v-for="link in linkItem"
-        :key="link.key"
-        :class="link.key === props.innerkey ? 'nav-active' : ''"
-      >
-        <div class="nav-link-name" @click.stop="handleClick(link.key)">{{ link.name }}</div>
-      </li>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li
+          v-for="link in linkItem"
+          :key="link.key"
+          :class="link.key === props.innerkey ? 'nav-active' : ''"
+        >
+          <div class="nav-link-name" @click.stop="handleClick(link.key)">{{ link.name }}</div>
+        </li>
+      </ul>
       <router-link :to="{ name: 'method' }" class="back-button">
         <img src="@/assets/img/other/close-button.svg" alt="" />
       </router-link>
-    </ul>
+    </div>
   </nav>
 </template>
 
