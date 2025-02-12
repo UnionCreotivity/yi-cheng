@@ -1,7 +1,7 @@
 export const SafeData = [
   {
     id: 'safe-1',
-    name: 'SRC 耐震工法',
+    name: 'SRC 卍字型工法',
     image: new URL('@/assets/img/construction/safe/src@2x.webp', import.meta.url).href,
     innerImg: new URL('@/assets/img/construction/safe/SRC比較表@2x.webp', import.meta.url).href,
     className: 'safe-1-item-1',

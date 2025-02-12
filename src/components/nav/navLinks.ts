@@ -60,7 +60,7 @@ export const constrLinks = [
       },
       {
         key: 'building-9',
-        name: '全區WIFI',
+        name: '光纖到府',
       },
       {
         key: 'building-10',
@@ -81,7 +81,7 @@ export const constrLinks = [
     links: [
       {
         key: 'safe-1',
-        name: 'SRC 耐震工法',
+        name: 'SRC 卍字型工法',
       },
       {
         key: 'safe-2',

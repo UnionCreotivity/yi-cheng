@@ -17,13 +17,13 @@ export const BuildingData = [
     id: 'building-4',
     name: '靜音工法',
     content:
-      '本隔間牆採輕質材質，隔音性能優異，可阻隔52分貝聲音，營造安靜空間。結構輕巧堅固，便於快速安裝，適用於辦公室、住宅與商業空間。',
+      '本隔間磚牆採輕質材質，隔音性能優異，可阻隔52分貝聲音，營造安靜空間。結構輕巧堅固，便於快速安裝，適用於辦公室、住宅與商業空間。',
     video: new URL('@/assets/video/building/輕隔間.mp4', import.meta.url).href,
   },
   {
     id: 'building-5',
     name: '車道感應雙系統',
-    video: new URL('@/assets/video/building/車道感應.mp4', import.meta.url).href,
+    video: new URL('@/assets/video/building/汽車雙感應.mp4', import.meta.url).href,
     content:
       'ETag感應系統、長距感應系統\n1.車道門禁使用雙系統感應。\n 2.長距感應也可提供機車、腳踏車進出方便。\n 3.長距感應系統可結合社區其它門禁使用更便利。 ',
   },
@@ -38,7 +38,7 @@ export const BuildingData = [
     id: 'building-7',
     name: '樓地板厚度',
     content:
-      '樓地板隔音效果和厚度有直接關係，樓上跑動、甚至走路重一點，樓下往往聽得一清二楚。秉持建築安全的理念，樓地板都為15分厚度，對降低震動、隔絕噪音效果提升不少，讓居住品質更提升!',
+      '樓地板隔音效果和厚度有直接關係，樓上跑動、甚至走路重一點，樓下往往聽得一清二楚。秉持建築安全的理念，樓地板都為18分厚度，對降低震動、隔絕噪音效果提升不少，讓居住品質更提升!',
     video: new URL('@/assets/video/building/樓地板厚度NEW.mp4', import.meta.url).href,
   },
   {
@@ -50,7 +50,7 @@ export const BuildingData = [
   },
   {
     id: 'building-9',
-    name: '全區WIFI',
+    name: '光纖到府',
     items: [
       {
         key: 'item-1',
@@ -64,7 +64,7 @@ export const BuildingData = [
           .href,
       },
     ],
-    content: '一樓公設及地下室停車空間皆支援WIFI訊號，隨時連網。',
+    content: '',
   },
   {
     id: 'building-10',
@@ -85,6 +85,6 @@ export const BuildingData = [
     name: '緊急發電',
     video: new URL('@/assets/video/building/緊急發電機.mp4', import.meta.url).href,
     content:
-      '15人/12人三菱電梯停電不斷電系統，緊急發電不斷電，搭配三菱電腦式感應讀卡，無障礙按鈕面板。',
+      '15人/13人三菱電梯停電不斷電系統，緊急發電不斷電，搭配三菱電腦式感應讀卡，無障礙按鈕面板。',
   },
 ]

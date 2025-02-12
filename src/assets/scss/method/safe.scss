@@ -12,7 +12,7 @@
     position: relative;
     .safe-content {
       width: 100%;
-      height: 100%;
+      height: 80%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -20,16 +20,13 @@
       position: absolute;
       @include pad {
         padding-bottom: 6vw;
+        height: 100%;
       }
       .safe-content-left {
         position: relative;
         width: 44.5%;
-        height: 100%;
-        @include pad {
-          height: 38vw;
-        }
         .safe-content-left-item {
-          position: absolute;
+          position: relative;
           left: 0;
           top: 0;
           width: 100%;
