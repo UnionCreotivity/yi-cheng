@@ -30,7 +30,7 @@ export const BuildingData = [
   {
     id: 'building-6',
     name: '智能免持卡系統',
-    image: new URL('@/assets/img/construction/building/智能免持卡@2x.webp', import.meta.url).href,
+    image: new URL('@/assets/img/construction/building/智能免持@2x.webp', import.meta.url).href,
     content:
       '中距離感應式門禁系統\n1.全社區分層分棟管理。\n2.專屬門禁感應器，無須持卡，中距離感應即可通過社區所有門禁。\n3.住家玄關門還可使用指紋辨識。',
   },
@@ -64,14 +64,15 @@ export const BuildingData = [
           .href,
       },
     ],
-    content: '',
+    content:
+      '網路傳輸速度成了走入雲端系統中最重要的環節之一，\nFTTH則是將光纖連結至家中，\n達到網路傳輸量極大化。',
   },
   {
     id: 'building-10',
     name: '地下室換氣',
     video: new URL('@/assets/video/building/地下室換氣設備_1.mp4', import.meta.url).href,
     content:
-      '車場設排氣機，自動設定開關控制風機運轉，誘導式排風機將停車場廢氣排出，進風管不斷補充新鮮空氣，維持停車場空氣品質。',
+      '車場設排氣機，自動設定開關控制風機運轉，誘導式排風機將停車場廢氣排出，進風管不斷補充新鮮空氣，維持停車場空氣品質。\n地下室WIFI，讓你的通訊無死角。',
   },
   {
     id: 'building-11',
