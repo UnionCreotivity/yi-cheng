@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.1 26.49">
-  <g id="icon">
+  <g id="text">
     <g>
-      <polygon points=".38 6.04 12.54 .38 24.17 6.04 12.54 12.49 .38 6.04" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
-      <polyline points="12.54 12.49 12.54 26.11 .38 19.12 .38 6.15" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
-      <line x1="12.54" y1="26.11" x2="17.18" y2="23.5" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+      <polygon points=".38 6.04 12.54 .38 24.17 6.04 12.54 12.49 .38 6.04" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+      <polyline points="12.54 12.49 12.54 26.11 .38 19.12 .38 6.15" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+      <line x1="12.54" y1="26.11" x2="17.18" y2="23.5" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
       <g>
-        <polygon points="17.86 14.52 23.42 11.94 28.72 14.52 23.42 17.47 17.86 14.52" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
-        <polyline points="23.42 17.47 23.42 24.12 17.86 20.92 17.86 14.57" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
-        <polyline points="23.42 24.12 28.72 20.98 28.72 14.6" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+        <polygon points="17.86 14.52 23.42 11.94 28.72 14.52 23.42 17.47 17.86 14.52" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+        <polyline points="23.42 17.47 23.42 24.12 17.86 20.92 17.86 14.57" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+        <polyline points="23.42 24.12 28.72 20.98 28.72 14.6" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
       </g>
-      <line x1="24.17" y1="6.04" x2="24.17" y2="9.27" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+      <line x1="24.17" y1="6.04" x2="24.17" y2="9.27" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
     </g>
   </g>
 </svg>

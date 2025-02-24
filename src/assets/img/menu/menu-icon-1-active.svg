@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 29.98">
-  <g id="icon">
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.14 30.22">
+  <g id="text">
     <g>
-      <path d="M26.64,22.23V7.74L13.57,.5,.5,7.74v14.49l13.07,7.24,13.07-7.24Z" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round"/>
-      <polygon points="13.57 1.07 1.18 21.67 18.2 16.85 13.57 1.07" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
-      <polyline points="13.57 29.48 18.2 16.85 26.64 7.74" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
-      <line x1="18.2" y1="16.85" x2="26.64" y2="22.23" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+      <path d="M26.64,22.4V7.91L13.57,.67,.5,7.91v14.49l13.07,7.24,13.07-7.24Z" fill="none" stroke="#d27c8e" stroke-miterlimit="10"/>
+      <polygon points="13.57 1.23 1.18 21.83 18.2 17.01 13.57 1.23" fill="none" stroke="#d27c8e" stroke-miterlimit="10"/>
+      <polyline points="13.57 29.64 18.2 17.01 26.64 7.91" fill="none" stroke="#d27c8e" stroke-miterlimit="10"/>
+      <line x1="18.2" y1="17.01" x2="26.64" y2="22.4" fill="none" stroke="#d27c8e" stroke-miterlimit="10"/>
     </g>
   </g>
 </svg>

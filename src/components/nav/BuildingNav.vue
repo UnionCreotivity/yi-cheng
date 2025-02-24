@@ -33,7 +33,7 @@ const linkItem = ref()
 const iconStyle = computed(() => {
   return props.color === 'white'
     ? new URL('@/assets/img/other/inner-white-icon.svg', import.meta.url).href
-    : new URL('@/assets/img/other/inner-purple-icon.svg', import.meta.url).href
+    : new URL('@/assets/img/other/company-icon.svg', import.meta.url).href
 })
 
 const handleClick = (id: string) => {

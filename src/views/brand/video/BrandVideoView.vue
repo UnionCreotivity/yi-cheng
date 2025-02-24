@@ -53,7 +53,7 @@
     </div>
     <div class="brand-fixed"><img src="@/assets/img/brand/brand-video/brand-fixed@2x.webp" /></div>
     <div class="brand-bottom">
-      <img src="@/assets/img/brand/brand-video/brand-video-bottom@2x.webp" alt="" />
+      <img src="@/assets/img/other/fixed-bottom@2x.webp" alt="" />
     </div>
     <FadeIn>
       <section class="brand-video-bump" v-if="video">

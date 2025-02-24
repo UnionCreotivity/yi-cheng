@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="method-fixed">
-      <img src="../../../assets/img/other/purple-bottom@2x.webp" alt="" />
+      <img src="../../../assets/img/other/fixed-bottom@2x.webp" alt="" />
     </div>
   </div>
 </template>

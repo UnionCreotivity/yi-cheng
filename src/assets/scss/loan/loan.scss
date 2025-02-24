@@ -154,7 +154,11 @@
             button {
               color: white;
               border: none;
-              background-image: linear-gradient(to right, #55214e 12%, #3f244b 29%);
+              background-image: linear-gradient(
+                to right,
+                rgb(210, 124, 141) 0%,
+                rgb(185, 93, 117) 100%
+              );
             }
           }
           button {
@@ -171,7 +175,7 @@
       .loan-vertical-line {
         width: 3px;
         height: 30vw;
-        background-image: linear-gradient(to right, #55214e 12%, #3f244b 29%);
+        background-image: linear-gradient(to right, rgb(210, 124, 141) 0%, rgb(185, 93, 117) 100%);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -79,7 +79,7 @@
             padding: 0.25vw 0.75vw;
             cursor: pointer;
             color: white;
-            background-color: rgb(62, 37, 77);
+            background-color: #d27c8d;
             @include pad {
               font-size: 1.1vw;
               padding: 0.5vw 1.25vw;
@@ -132,7 +132,7 @@
       cursor: pointer;
       border: none;
       color: white;
-      background-color: #55214e;
+      background-color: #d27c8d;
       @include pad {
         top: 3vw;
         right: 3vw;

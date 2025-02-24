@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.1 19.79">
-  <g id="icon">
+  <g id="text">
     <g>
-      <path d="M.5,2.77C1.78,1.77,3.86,.48,6.42,.5c3.96,.03,5.67,3.18,10.03,3.75,1.6,.21,4.01,.13,7.15-1.48" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M.5,7.8c1.28-1,3.36-2.29,5.92-2.27,3.96,.03,5.67,3.18,10.03,3.75,1.6,.21,4.01,.13,7.15-1.48" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
-      <path d="M.5,12.82c1.28-1,3.36-2.29,5.92-2.27,3.96,.03,5.67,3.18,10.03,3.75,1.6,.21,4.01,.13,7.15-1.48" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M.5,17.85c1.28-1,3.36-2.29,5.92-2.27,3.96,.03,5.67,3.18,10.03,3.75,1.6,.21,4.01,.13,7.15-1.48" fill="none" stroke="#603499" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+      <path d="M.5,2.77C1.78,1.77,3.86,.48,6.42,.5c3.96,.03,5.67,3.18,10.03,3.75,1.6,.21,4.01,.13,7.15-1.48" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M.5,7.8c1.28-1,3.36-2.29,5.92-2.27,3.96,.03,5.67,3.18,10.03,3.75,1.6,.21,4.01,.13,7.15-1.48" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
+      <path d="M.5,12.82c1.28-1,3.36-2.29,5.92-2.27,3.96,.03,5.67,3.18,10.03,3.75,1.6,.21,4.01,.13,7.15-1.48" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M.5,17.85c1.28-1,3.36-2.29,5.92-2.27,3.96,.03,5.67,3.18,10.03,3.75,1.6,.21,4.01,.13,7.15-1.48" fill="none" stroke="#d27c8e" stroke-linecap="round" stroke-linejoin="round" stroke-width=".75"/>
     </g>
   </g>
 </svg>
