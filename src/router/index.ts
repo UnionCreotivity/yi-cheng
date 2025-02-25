@@ -5,6 +5,7 @@ import AboutView from '@/views/about/AboutView.vue'
 // <--- 品牌光譜 --->
 import BrandView from '@/views/brand/BrandView.vue'
 import BrandVideoView from '@/views/brand/video/BrandVideoView.vue'
+import BrandIdeaView from '@/views/brand/idea/BrandIdeaView.vue'
 
 // <--- 智能光譜 --->
 import SmartView from '@/views/smart/SmartView.vue'
@@ -16,6 +17,14 @@ import MethodView from '@/views/construction/method/MethodView.vue'
 import BuildingView from '@/views/construction/building/BuildingView.vue'
 import WaterProofView from '@/views/construction/waterproof/WaterProofView.vue'
 import SafeView from '@/views/construction/safe/SafeView.vue'
+
+// <--- 繁華光譜 --->
+import BustlingView from '@/views/bustling/BustlingView.vue'
+import DevelopView from '@/views/bustling/develop/DevelopView.vue'
+import MRTView from '@/views/bustling/mrt/MRTView.vue'
+import HighwayView from '@/views/bustling/highway/HighwayView.vue'
+import MajorView from '@/views/bustling/major/MajorView.vue'
+import RezonedView from '@/views/bustling/rezoned/RezonedView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -38,6 +47,11 @@ const router = createRouter({
           path: '',
           name: 'brand',
           component: BrandVideoView,
+        },
+        {
+          path: 'idea',
+          name: 'idea',
+          component: BrandIdeaView,
         },
       ],
     },
@@ -75,6 +89,37 @@ const router = createRouter({
           path: 'safe',
           name: 'safe',
           component: SafeView,
+        },
+      ],
+    },
+    {
+      path: '/bustling',
+      component: BustlingView,
+      children: [
+        {
+          path: '',
+          name: 'develop',
+          component: DevelopView,
+        },
+        {
+          path: 'mrt',
+          name: 'mrt',
+          component: MRTView,
+        },
+        {
+          path: 'highway',
+          name: 'highway',
+          component: HighwayView,
+        },
+        {
+          path: 'major',
+          name: 'major',
+          component: MajorView,
+        },
+        {
+          path: 'rezoned',
+          name: 'rezoned',
+          component: RezonedView,
         },
       ],
     },

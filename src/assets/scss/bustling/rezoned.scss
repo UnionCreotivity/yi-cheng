@@ -1,0 +1,46 @@
+@use '../config' as *;
+.rezoned-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .rezoned-view-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7%;
+    .rezoned-view-left {
+      width: 51%;
+    }
+    .rezoned-view-right {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 26%;
+      margin-bottom: 5%;
+      h2 {
+        font-family: var(--cor);
+        font-weight: 400;
+        font-size: 2.1vw;
+        letter-spacing: 4px;
+        margin-bottom: 3%;
+        color: #b5b5b6;
+      }
+      h1 {
+        font-family: var(--serif);
+        font-weight: 500;
+        font-size: 1.9vw;
+        letter-spacing: 6px;
+        margin-bottom: 5%;
+        color: #231815;
+      }
+      p {
+        font-family: var(--micro);
+        font-size: 1vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: #2d2d2d;
+      }
+    }
+  }
+}

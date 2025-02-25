@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <nav id="nav">
+  <nav id="nav" :class="mainClass">
     <div class="nav-icon">
       <router-link :to="{ name: 'home' }"> <img :src="iconStyle" alt="" /></router-link>
     </div>
@@ -23,10 +23,20 @@ const props = defineProps(['color', 'tag'])
 
 const linkItem = ref()
 
+const targetMap: Record<string, 'nav-white' | 'nav-black' | ''> = {
+  white: 'nav-white',
+  black: 'nav-black',
+  default: '',
+}
+
 const iconStyle = computed(() => {
   return props.color === 'white'
     ? new URL('@/assets/img/other/inner-white-icon.svg', import.meta.url).href
     : new URL('@/assets/img/other/company-icon.svg', import.meta.url).href
+})
+
+const mainClass = computed(() => {
+  return targetMap[props.color]
 })
 
 onMounted(() => {

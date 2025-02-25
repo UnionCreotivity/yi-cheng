@@ -1,0 +1,92 @@
+.major-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .major-view-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .major-swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      .major-swiper-slide-top {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .major-swiper-slide-top-constr {
+          position: absolute;
+          bottom: -1%;
+          right: 0;
+          left: 0;
+          width: 77%;
+          margin: auto;
+        }
+      }
+      .major-swiper-slide-bottom {
+        width: 78%;
+        h1 {
+          font-family: var(--serif);
+          font-weight: 500;
+          font-size: 1.9vw;
+          letter-spacing: 6px;
+          margin-bottom: 1vw;
+          color: #231815;
+        }
+        p {
+          font-family: var(--micro);
+          font-size: 1vw;
+          font-weight: 500;
+          letter-spacing: 2px;
+          line-height: 2;
+          color: #2d2d2d;
+        }
+      }
+    }
+    .major-swiper-slide-1 {
+      .major-swiper-slide-bottom {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 78%;
+        margin-top: 3.5%;
+      }
+    }
+    .major-swiper-slide-2 {
+      .major-swiper-slide-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 91%;
+        margin-top: 3vw;
+        .major-swiper-slide-bottom-left {
+          margin-left: 6vw;
+          margin-right: 5vw;
+        }
+        .major-swiper-slide-bottom-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.75vw;
+          > div {
+            width: 18vw;
+          }
+        }
+      }
+    }
+    .major-way-prev,
+    .major-way-next {
+      width: 3vw;
+    }
+    .major-way-prev {
+      left: 3%;
+    }
+    .major-way-next {
+      right: 3%;
+    }
+  }
+}

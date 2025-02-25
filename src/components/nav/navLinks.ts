@@ -5,7 +5,7 @@ export const navLinks = [
       {
         key: 'brand-1',
         name: '品牌理念',
-        linkName: '',
+        linkName: 'idea',
       },
       {
         key: 'brand-2',
@@ -20,6 +20,26 @@ export const navLinks = [
       {
         key: 'brand-4',
         name: '建築團隊',
+        linkName: '',
+      },
+    ],
+  },
+  {
+    key: 'develop',
+    links: [
+      {
+        key: 'develop-1',
+        name: '八擴之光',
+        linkName: 'develop',
+      },
+      {
+        key: 'develop-2',
+        name: '交通動線圖',
+        linkName: '',
+      },
+      {
+        key: 'develop-3',
+        name: '區域行情',
         linkName: '',
       },
     ],
@@ -109,5 +129,24 @@ export const constrLinks = [
         name: '浴室防水',
       },
     ],
+  },
+]
+
+export const developLinks = [
+  {
+    key: 'rezoned',
+    name: '八擴重劃區',
+  },
+  {
+    key: 'mrt',
+    name: '捷運路網',
+  },
+  {
+    key: 'highway',
+    name: '國道速網',
+  },
+  {
+    key: 'major',
+    name: '重大建設',
   },
 ]

@@ -62,12 +62,14 @@ body {
 }
 
 #nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 10%;
   padding: 2vw 2vw 2vw 2.25vw;
+  z-index: 15;
   @include pad {
     padding: 3vw 2vw 1vw 2.25vw;
   }
@@ -96,6 +98,7 @@ body {
       flex-wrap: wrap;
       gap: 0.75vw 0;
     }
+    a,
     li {
       position: relative;
       margin-right: 2.25vw;
@@ -110,6 +113,7 @@ body {
       a,
       .nav-link-name {
         color: black;
+        transition: all 0.5s;
         cursor: pointer;
       }
       &::after {
@@ -120,6 +124,7 @@ body {
         top: 25%;
         right: -1.25vw;
         background-color: black;
+        transition: all 0.5s;
         @include pad {
           right: -1vw;
         }
@@ -141,6 +146,32 @@ body {
         color: #d27c8d;
       }
     }
+    .develop-link {
+      .black-bottom-line {
+        position: absolute;
+        bottom: -20%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        margin: auto;
+        background-color: black;
+        transform: scale(0);
+        transition: all 0.5s;
+      }
+      &:hover {
+        .black-bottom-line {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .develop-active {
+      position: relative;
+      .black-bottom-line {
+        transform: scale(1.2);
+        transition: all 0.5s;
+      }
+    }
   }
   .back-button {
     background-color: #d27c8d;
@@ -154,5 +185,54 @@ body {
       height: 2.75vw;
       padding: 0.5vw;
     }
+  }
+}
+
+.nav-white {
+  .nav-links {
+    li {
+      a {
+        color: white !important;
+      }
+      &::after {
+        background-color: white !important;
+      }
+    }
+  }
+  .nav-active {
+    a,
+    .nav-link-name {
+      color: white !important;
+    }
+  }
+  .develop-link {
+    &::after {
+      background-color: white !important;
+    }
+    .nav-link-name {
+      color: white !important;
+    }
+    .black-bottom-line {
+      background-color: white !important;
+    }
+  }
+}
+.nav-black {
+  .develop-link {
+    &::after {
+      background-color: black !important;
+    }
+    .nav-link-name {
+      color: black !important;
+    }
+    .black-bottom-line {
+      background-color: black !important;
+    }
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  &::after {
+    display: none;
   }
 }

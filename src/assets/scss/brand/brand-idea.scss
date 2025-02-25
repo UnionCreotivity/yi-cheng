@@ -1,0 +1,119 @@
+@use '../config' as *;
+.brand-idea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .brand-idea-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .brand-idea-swiper-container {
+      width: 100%;
+      .brand-idea-slide {
+        display: flex;
+        flex-direction: column;
+        .brand-idea-content-top {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          .brand-idea-content-yi {
+            position: absolute;
+            bottom: -0.75%;
+            left: 0;
+            right: 0;
+            width: 84.5%;
+            margin: auto;
+          }
+        }
+        .brand-idea-content-bottom {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          margin-top: 3vw;
+          gap: 3vw;
+          .brand-idea-content-second-left {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 46.75vw;
+            .brand-idea-second-icon {
+              width: 15vw;
+              margin-bottom: 1.5vw;
+            }
+            h2 {
+              font-family: var(--serif);
+              font-weight: 400;
+              font-size: 2vw;
+              letter-spacing: 8px;
+              margin-bottom: 1vw;
+              color: #231815;
+            }
+            p {
+              font-family: var(--micro);
+              font-size: 1vw;
+              line-height: 2;
+              letter-spacing: 2px;
+              color: #2d2d2d;
+            }
+          }
+          .brand-idea-content-second-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 38vw;
+            h2 {
+              font-family: var(--serif);
+              font-weight: 400;
+              font-size: 2vw;
+              letter-spacing: 8px;
+              margin-bottom: 1.5vw;
+              color: #231815;
+            }
+          }
+        }
+        .brand-idea-content-second-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          .brand-idea-content-second-bottom-container {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 67.25vw;
+            margin-right: 20vw;
+            margin-top: 5vw;
+            h2 {
+              font-family: var(--serif);
+              font-weight: 400;
+              font-size: 2vw;
+              letter-spacing: 8px;
+              margin-bottom: 1vw;
+              color: #231815;
+            }
+            p {
+              font-family: var(--micro);
+              font-size: 1vw;
+              line-height: 2;
+              letter-spacing: 2px;
+              color: #2d2d2d;
+            }
+          }
+        }
+      }
+      .brand-idea-prev {
+        left: 2vw;
+      }
+      .brand-idea-next {
+        right: 2vw;
+      }
+      .brand-idea-prev,
+      .brand-idea-next {
+        width: 3vw;
+      }
+    }
+  }
+}

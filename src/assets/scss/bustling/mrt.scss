@@ -1,0 +1,159 @@
+@use '../config' as *;
+.mrt-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .mrt-view-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    .mrt-view-left {
+      width: 63%;
+    }
+    .mrt-view-right {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 26%;
+      margin-bottom: 5%;
+      h2 {
+        font-family: var(--cor);
+        font-weight: 400;
+        font-size: 2.1vw;
+        letter-spacing: 4px;
+        margin-bottom: 3%;
+        color: #b5b5b6;
+      }
+      h1 {
+        font-family: var(--serif);
+        font-weight: 400;
+        font-size: 1.9vw;
+        letter-spacing: 6px;
+        margin-bottom: 5%;
+        color: #231815;
+      }
+      p {
+        font-family: var(--micro);
+        font-size: 1vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 2;
+        margin-bottom: 8%;
+        color: #2d2d2d;
+      }
+      .mrt-view-right-button {
+        font-family: var(--serif);
+        font-size: 1vw;
+        font-weight: 500;
+        color: white;
+        letter-spacing: 2px;
+        border-radius: 1vw;
+        border: none;
+        padding: 0.5vw 1vw;
+        background: linear-gradient(
+          to bottom,
+          rgba(210, 124, 141, 1) 0%,
+          rgba(185, 93, 117, 1) 100%
+        );
+      }
+    }
+  }
+  .mrt-fancybox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 15;
+    .mrt-fancybox-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2%;
+      .mrt-fancybox-left {
+        position: relative;
+        width: 61%;
+        .mrt-fancybox-left-inner {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .mrt-fancybox-left-inner-close {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 2vw;
+          height: 2vw;
+          padding: 0.25vw;
+          background-color: #d27c8d;
+          cursor: pointer;
+        }
+      }
+      .mrt-fancybox-right {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 26%;
+        margin-bottom: 5%;
+        h2 {
+          font-family: var(--cor);
+          font-weight: 400;
+          font-size: 2.1vw;
+          letter-spacing: 4px;
+          margin-bottom: 3%;
+          color: #b5b5b6;
+        }
+        h1 {
+          width: 110%;
+          font-family: var(--serif);
+          font-weight: 500;
+          font-size: 2vw;
+          letter-spacing: 6px;
+          margin-bottom: 5%;
+          color: #231815;
+        }
+        p {
+          font-family: var(--micro);
+          font-size: 1vw;
+          font-weight: 500;
+          letter-spacing: 2px;
+          line-height: 2;
+          margin-bottom: 8%;
+          color: #2d2d2d;
+        }
+        .mrt-fancybox-right-button {
+          font-family: var(--serif);
+          font-size: 1vw;
+          font-weight: 500;
+          color: white;
+          letter-spacing: 2px;
+          border-radius: 1vw;
+          border: none;
+          padding: 0.5vw 1vw;
+          background: linear-gradient(
+            to bottom,
+            rgba(210, 124, 141, 1) 0%,
+            rgba(185, 93, 117, 1) 100%
+          );
+        }
+      }
+    }
+    .mrt-fancybox-close {
+      position: absolute;
+      top: 3%;
+      right: 2%;
+      width: 2vw;
+      height: 2vw;
+      padding: 0.25vw;
+      border: none;
+      background-color: #d27c8d;
+      cursor: pointer;
+    }
+  }
+}

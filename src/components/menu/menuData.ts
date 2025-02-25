@@ -115,7 +115,7 @@ export const menuSubData = [
       {
         key: 'link-1',
         name: '宜誠理念',
-        link: '',
+        link: 'idea',
       },
       {
         key: 'link-2',
@@ -140,7 +140,7 @@ export const menuSubData = [
       {
         key: 'link-1',
         name: '八擴之光',
-        link: '',
+        link: 'develop',
       },
       {
         key: 'link-2',

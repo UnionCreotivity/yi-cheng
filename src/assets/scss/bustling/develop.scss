@@ -1,0 +1,99 @@
+@use '../config' as *;
+.develop-view {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  .white-icon {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    width: 9.75vw;
+  }
+  .develop-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .develop-top {
+    position: relative;
+    width: 100%;
+    flex: 2.1 1;
+    overflow: hidden;
+    @include pad {
+      flex: 1.05 1;
+    }
+    .develop-top-bg {
+      width: 100%;
+    }
+  }
+  .develop-bottom {
+    position: relative;
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 7vw;
+    background-color: white;
+    overflow: hidden;
+    .develop-bottom-fixed {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 47.65%;
+      pointer-events: none;
+      filter: brightness(0.5);
+      @include pad {
+        bottom: 40%;
+        width: 53.65%;
+      }
+    }
+    .bustling-rezoned {
+      width: 7.75vw;
+      @include pad {
+        width: 16.5vw;
+      }
+    }
+    .bustling-MRT {
+      width: 6.2vw;
+      @include pad {
+        width: 11.25vw;
+      }
+    }
+    .bustling-highway {
+      width: 9.15vw;
+      @include pad {
+        width: 17.35vw;
+        margin-top: 1%;
+      }
+    }
+    .bustling-major {
+      width: 10.2vw;
+    }
+    .develop-bottom-item {
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: '';
+        position: absolute;
+        right: -3.5vw;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-color: black;
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
