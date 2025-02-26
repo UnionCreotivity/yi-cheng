@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: center;
     gap: 7%;
+    @include pad {
+      gap: 5%;
+      margin-top: 5%;
+    }
     .rezoned-view-left {
       width: 51%;
     }
@@ -17,6 +21,9 @@
       flex-direction: column;
       width: 26%;
       margin-bottom: 5%;
+      @include pad {
+        width: 28%;
+      }
       h2 {
         font-family: var(--cor);
         font-weight: 400;
@@ -40,6 +47,12 @@
         letter-spacing: 2px;
         line-height: 2;
         color: #2d2d2d;
+        @include pad {
+          font-size: 1.1vw;
+          br {
+            display: none;
+          }
+        }
       }
     }
   }

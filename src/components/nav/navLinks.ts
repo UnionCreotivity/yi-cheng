@@ -44,6 +44,26 @@ export const navLinks = [
       },
     ],
   },
+  {
+    key: 'smart',
+    links: [
+      {
+        key: 'smart-1',
+        name: '電動車整合',
+        linkName: '',
+      },
+      {
+        key: 'smart-2',
+        name: '智慧社區',
+        linkName: 'homesmart',
+      },
+      {
+        key: 'smart-3',
+        name: '房貸試算',
+        linkName: 'loan',
+      },
+    ],
+  },
 ]
 
 export const constrLinks = [

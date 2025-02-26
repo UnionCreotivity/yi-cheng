@@ -18,6 +18,7 @@
         <swiper-slide class="major-swiper-slide major-swiper-slide-1">
           <div class="major-swiper-slide-top">
             <img src="/src/assets/img/bustling/develop/major/major-1-big-img@2x.webp" alt="" />
+            <p>情境示意圖</p>
             <div class="major-swiper-slide-top-constr">
               <img src="/src/assets/img/bustling/develop/major/major-constr@2x.webp" alt="" />
             </div>
@@ -33,6 +34,7 @@
         <swiper-slide class="major-swiper-slide major-swiper-slide-2">
           <div class="major-swiper-slide-top">
             <img src="/src/assets/img/bustling/develop/major/major-2-big-img@2x.webp" alt="" />
+            <p>情境示意圖</p>
             <div class="major-swiper-slide-top-constr">
               <img src="/src/assets/img/bustling/develop/major/major-constr@2x.webp" alt="" />
             </div>
@@ -57,6 +59,7 @@
         <swiper-slide class="major-swiper-slide major-swiper-slide-2">
           <div class="major-swiper-slide-top">
             <img src="/src/assets/img/bustling/develop/major/major-2-big-img@2x.webp" alt="" />
+            <p>情境示意圖</p>
             <div class="major-swiper-slide-top-constr">
               <img src="/src/assets/img/bustling/develop/major/major-constr@2x.webp" alt="" />
             </div>
@@ -81,6 +84,7 @@
         <swiper-slide class="major-swiper-slide major-swiper-slide-1">
           <div class="major-swiper-slide-top">
             <img src="/src/assets/img/bustling/develop/major/major-3-big-img@2x.webp" alt="" />
+            <p>情境示意圖</p>
             <div class="major-swiper-slide-top-constr">
               <img src="/src/assets/img/bustling/develop/major/major-constr@2x.webp" alt="" />
             </div>

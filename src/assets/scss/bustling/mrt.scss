@@ -8,8 +8,15 @@
     align-items: center;
     justify-content: center;
     gap: 1%;
+    @include pad {
+      gap: 2%;
+      margin-top: 5%;
+    }
     .mrt-view-left {
       width: 63%;
+      @include pad {
+        width: 61%;
+      }
     }
     .mrt-view-right {
       display: flex;
@@ -41,6 +48,9 @@
         line-height: 2;
         margin-bottom: 8%;
         color: #2d2d2d;
+        @include pad {
+          font-size: 1.1vw;
+        }
       }
       .mrt-view-right-button {
         font-family: var(--serif);
@@ -56,6 +66,9 @@
           rgba(210, 124, 141, 1) 0%,
           rgba(185, 93, 117, 1) 100%
         );
+        @include pad {
+          font-size: 1.1vw;
+        }
       }
     }
   }
@@ -74,9 +87,13 @@
       align-items: center;
       justify-content: center;
       gap: 2%;
+      overflow: hidden;
       .mrt-fancybox-left {
         position: relative;
         width: 61%;
+        @include pad {
+          width: 58%;
+        }
         .mrt-fancybox-left-inner {
           position: absolute;
           left: 0;
@@ -93,6 +110,11 @@
           padding: 0.25vw;
           background-color: #d27c8d;
           cursor: pointer;
+          @include pad {
+            width: 2.75vw;
+            height: 2.75vw;
+            padding: 0.5vw;
+          }
         }
       }
       .mrt-fancybox-right {
@@ -101,6 +123,9 @@
         flex-direction: column;
         width: 26%;
         margin-bottom: 5%;
+        @include pad {
+          width: 28%;
+        }
         h2 {
           font-family: var(--cor);
           font-weight: 400;
@@ -154,6 +179,11 @@
       border: none;
       background-color: #d27c8d;
       cursor: pointer;
+      @include pad {
+        width: 2.75vw;
+        height: 2.75vw;
+        padding: 0.5vw;
+      }
     }
   }
 }

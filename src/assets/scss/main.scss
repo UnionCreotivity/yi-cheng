@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 @mixin laptop() {
   @media all and (max-width: 1600px) {
@@ -25,6 +26,7 @@
   --micro: 'Microsoft JhengHei';
   --lato: 'Lato', sans-serif;
   --cor: 'Cormorant Garamond', sans-serif;
+  --jost: 'Jost', serif;
 }
 
 *,
@@ -158,6 +160,9 @@ body {
         background-color: black;
         transform: scale(0);
         transition: all 0.5s;
+        @include pad {
+          bottom: -40%;
+        }
       }
       &:hover {
         .black-bottom-line {

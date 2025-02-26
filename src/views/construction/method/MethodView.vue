@@ -75,8 +75,8 @@ const gsapInit = () => {
       {
         y: '105%',
         opacity: 0,
-        duration: 1.5,
         stagger: 0.1,
+        duration: 1.5,
       },
       '<+0.5',
     )

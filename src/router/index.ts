@@ -10,6 +10,7 @@ import BrandIdeaView from '@/views/brand/idea/BrandIdeaView.vue'
 // <--- 智能光譜 --->
 import SmartView from '@/views/smart/SmartView.vue'
 import LoanView from '@/views/smart/loan/LoanView.vue'
+import HomeSmartView from '@/views/smart/homesmart/HomeSmartView.vue'
 
 // <--- 精工光譜 --->
 import ConstructionView from '@/views/construction/ConstructionView.vue'
@@ -63,6 +64,11 @@ const router = createRouter({
           path: '',
           name: 'loan',
           component: LoanView,
+        },
+        {
+          path: 'homesmart',
+          name: 'homesmart',
+          component: HomeSmartView,
         },
       ],
     },

@@ -21,6 +21,7 @@
             <div class="brand-idea-content-yi">
               <img src="/src/assets/img/brand/brand-idea/brand-idea-yi@2x.webp" alt="" />
             </div>
+            <p>情境示意圖</p>
           </div>
           <div class="brand-idea-content-bottom">
             <div class="brand-idea-content-second-left">
@@ -49,6 +50,7 @@
             <div class="brand-idea-content-yi">
               <img src="/src/assets/img/brand/brand-idea/brand-idea-yi@2x.webp" alt="" />
             </div>
+            <p>情境示意圖</p>
           </div>
           <div class="brand-idea-content-second-bottom">
             <div class="brand-idea-content-second-bottom-container">
@@ -71,10 +73,44 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import Nav from '@/components/nav/Nav.vue'
 import '@/assets/scss/brand/brand-idea.scss'
+
+const gsapInit = () => {
+  const tl = gsap.timeline({})
+
+  tl.from('.brand-idea-content-yi', {
+    y: '100%',
+    opacity: 0,
+    duration: 1.5,
+  })
+    .from(
+      '.brand-idea-content-second-left',
+      {
+        y: '20%',
+        opacity: 0,
+        duration: 1.5,
+      },
+      '<+0.5',
+    )
+    .from(
+      '.brand-idea-content-second-right',
+      {
+        y: '20%',
+        opacity: 0,
+        duration: 1.5,
+      },
+      '<+0.25',
+    )
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>

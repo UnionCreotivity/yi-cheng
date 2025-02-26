@@ -6,6 +6,9 @@
         <div class="develop-top-bg">
           <img src="../../../assets/img/bustling/develop/develop-bg@2x.webp" alt="" />
         </div>
+        <div class="develop-top-txt">
+          <img src="/src/assets/img/bustling/develop/development@2x.webp" alt="" />
+        </div>
       </div>
       <div class="develop-bottom">
         <div class="develop-bottom-fixed">
@@ -27,6 +30,8 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 import Nav from '@/components/nav/Nav.vue'
 import '@/assets/scss/bustling/develop.scss'
 
@@ -56,6 +61,28 @@ const develops = [
     img: new URL('@/assets/img/bustling/develop/develop-4-txt.svg', import.meta.url).href,
   },
 ]
+
+const gsapInit = () => {
+  const tl = gsap.timeline({ delay: 0.5 })
+  tl.from('.develop-top-txt', {
+    y: '105%',
+    opacity: 0,
+    duration: 1.5,
+  }).from(
+    '.develop-bottom-item',
+    {
+      y: '105%',
+      opacity: 0,
+      duration: 1.5,
+      stagger: 0.1,
+    },
+    '<+0.5',
+  )
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>

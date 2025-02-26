@@ -30,7 +30,16 @@
       flex: 1.05 1;
     }
     .develop-top-bg {
+      position: relative;
       width: 100%;
+    }
+    .develop-top-txt {
+      position: absolute;
+      bottom: -0.5%;
+      left: 0;
+      right: 0;
+      width: 69%;
+      margin: auto;
     }
   }
   .develop-bottom {
@@ -58,24 +67,27 @@
     .bustling-rezoned {
       width: 7.75vw;
       @include pad {
-        width: 16.5vw;
+        width: 13.5vw;
       }
     }
     .bustling-MRT {
       width: 6.2vw;
       @include pad {
-        width: 11.25vw;
+        width: 10.5vw;
       }
     }
     .bustling-highway {
       width: 9.15vw;
       @include pad {
-        width: 17.35vw;
+        width: 16vw;
         margin-top: 1%;
       }
     }
     .bustling-major {
       width: 10.2vw;
+      @include pad {
+        width: 18.25vw;
+      }
     }
     .develop-bottom-item {
       position: relative;

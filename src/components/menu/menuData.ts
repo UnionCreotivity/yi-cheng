@@ -200,7 +200,7 @@ export const menuSubData = [
       {
         key: 'link-2',
         name: '智慧社區',
-        link: '',
+        link: 'homesmart',
       },
       {
         key: 'link-3',
@@ -218,7 +218,7 @@ export const menuTags = [
   },
   {
     id: 'menu-2',
-    path: 'brand',
+    path: 'bustling',
   },
   {
     id: 'menu-3',

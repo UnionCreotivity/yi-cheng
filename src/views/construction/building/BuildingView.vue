@@ -50,7 +50,7 @@
           </div></div
       ></FadeInItem>
       <div class="building-container-bottom">
-        <img src="@/assets/img/other/purple-bottom@2x.webp" alt="" />
+        <img src="@/assets/img/other/fixed-bottom@2x.webp" alt="" />
       </div>
     </div>
   </div>

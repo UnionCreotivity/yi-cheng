@@ -11,13 +11,47 @@
     height: 100%;
     .brand-idea-swiper-container {
       width: 100%;
+      @include pad {
+        height: 100%;
+      }
       .brand-idea-slide {
         display: flex;
         flex-direction: column;
+        @include pad {
+          height: 100%;
+        }
         .brand-idea-content-top {
           position: relative;
           width: 100%;
           overflow: hidden;
+          @include pad {
+            height: 60%;
+          }
+          p {
+            display: none;
+          }
+          @include pad {
+            p {
+              display: block;
+              position: absolute;
+              right: 1%;
+              bottom: 1%;
+              font-size: 0.75vw;
+              color: white;
+              letter-spacing: 2px;
+            }
+          }
+          .brand-idea-content-top-img {
+            width: 100%;
+            height: 100%;
+
+            @include pad {
+              img {
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
           .brand-idea-content-yi {
             position: absolute;
             bottom: -0.75%;
@@ -33,6 +67,9 @@
           justify-content: center;
           margin-top: 3vw;
           gap: 3vw;
+          @include pad {
+            margin-top: 4%;
+          }
           .brand-idea-content-second-left {
             display: flex;
             align-items: flex-start;
@@ -56,6 +93,9 @@
               line-height: 2;
               letter-spacing: 2px;
               color: #2d2d2d;
+              @include pad {
+                font-size: 1.1vw;
+              }
             }
           }
           .brand-idea-content-second-right {
@@ -86,6 +126,9 @@
             width: 67.25vw;
             margin-right: 20vw;
             margin-top: 5vw;
+            @include pad {
+              margin-top: 8%;
+            }
             h2 {
               font-family: var(--serif);
               font-weight: 400;
@@ -100,6 +143,9 @@
               line-height: 2;
               letter-spacing: 2px;
               color: #2d2d2d;
+              @include pad {
+                font-size: 1.1vw;
+              }
             }
           }
         }
@@ -113,6 +159,10 @@
       .brand-idea-prev,
       .brand-idea-next {
         width: 3vw;
+        @include pad {
+          width: 5vw;
+          top: 48%;
+        }
       }
     }
   }
