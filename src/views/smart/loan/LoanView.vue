@@ -1,10 +1,6 @@
 <template>
   <section class="loan">
-    <div class="white-icon">
-      <router-link :to="{ name: 'home' }"
-        ><img src="../../../assets/img/other/white-icon.svg" alt=""
-      /></router-link>
-    </div>
+    <Nav color="white" tag="smart" />
     <div class="loan-container">
       <div class="loan-container-bg"></div>
       <div class="loan-container-top">
@@ -134,6 +130,7 @@
 
 <script setup lang="ts">
 import { useLoan } from '@/stores/loanStore'
+import Nav from '@/components/nav/Nav.vue'
 import LoanResult from '@/components/loan/LoanResult.vue'
 import '@/assets/scss/loan/loan.scss'
 
