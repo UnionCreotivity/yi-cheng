@@ -34,7 +34,7 @@
       }
       h1 {
         font-family: var(--serif);
-        font-weight: 400;
+        font-weight: 600;
         font-size: 1.9vw;
         letter-spacing: 6px;
         margin-bottom: 5%;
@@ -66,6 +66,7 @@
           rgba(210, 124, 141, 1) 0%,
           rgba(185, 93, 117, 1) 100%
         );
+        cursor: pointer;
         @include pad {
           font-size: 1.1vw;
         }
@@ -137,7 +138,7 @@
         h1 {
           width: 110%;
           font-family: var(--serif);
-          font-weight: 500;
+          font-weight: 600;
           font-size: 2vw;
           letter-spacing: 6px;
           margin-bottom: 5%;
@@ -166,6 +167,7 @@
             rgba(210, 124, 141, 1) 0%,
             rgba(185, 93, 117, 1) 100%
           );
+          cursor: pointer;
         }
       }
     }

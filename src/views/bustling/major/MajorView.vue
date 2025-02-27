@@ -58,7 +58,7 @@
         </swiper-slide>
         <swiper-slide class="major-swiper-slide major-swiper-slide-2">
           <div class="major-swiper-slide-top">
-            <img src="/src/assets/img/bustling/develop/major/major-2-big-img@2x.webp" alt="" />
+            <img src="/src/assets/img/bustling/develop/major/major-4-big-img@2x.webp" alt="" />
             <p>情境示意圖</p>
             <div class="major-swiper-slide-top-constr">
               <img src="/src/assets/img/bustling/develop/major/major-constr@2x.webp" alt="" />
@@ -73,11 +73,12 @@
             </div>
             <div class="major-swiper-slide-bottom-right">
               <div class="major-swiper-slide-bottom-right-1">
-                <img src="/src/assets/img/bustling/develop/major/major-2-img-1@2x.webp" alt="" />
+                <img
+                  src="/src/assets/img/bustling/develop/major/major-4-big-img-1@2x.webp"
+                  alt=""
+                />
               </div>
-              <div class="major-swiper-slide-bottom-right-2">
-                <img src="/src/assets/img/bustling/develop/major/major-2-img-2@2x.webp" alt="" />
-              </div>
+              <div class="major-swiper-slide-bottom-right-2"></div>
             </div>
           </div>
         </swiper-slide>

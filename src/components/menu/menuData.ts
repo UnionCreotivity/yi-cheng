@@ -7,7 +7,7 @@ export const menuData = [
     linkItem: [
       {
         key: 'link-1',
-        name: '宜誠理念',
+        name: '品牌理念',
       },
       {
         key: 'link-2',
@@ -114,7 +114,7 @@ export const menuSubData = [
     linkItem: [
       {
         key: 'link-1',
-        name: '宜誠理念',
+        name: '品牌理念',
         link: 'idea',
       },
       {
