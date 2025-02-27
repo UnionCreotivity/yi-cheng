@@ -145,7 +145,8 @@ body {
     .nav-active {
       a,
       .nav-link-name {
-        color: #d27c8d;
+        color: #d27c8d !important;
+        font-weight: 700;
       }
     }
     .develop-link {
