@@ -69,7 +69,7 @@ const gsapInit = () => {
     opacity: 0,
     duration: 1.5,
   }).from(
-    '.develop-bottom-item',
+    '.develop-bottom-item img',
     {
       y: '105%',
       opacity: 0,

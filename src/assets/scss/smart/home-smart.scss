@@ -55,6 +55,8 @@
             img {
               object-fit: cover;
               height: 100%;
+              width: 105%;
+              object-position: 93%;
             }
           }
           .home-smart-txt {
@@ -102,6 +104,7 @@
           h1:last-child {
             font-family: var(--jost);
             margin-left: 4px;
+            font-weight: 500;
           }
         }
         .home-smart-bottom-txt-bottom {
@@ -161,6 +164,7 @@
             }
             .jost {
               font-family: var(--jost);
+              font-weight: 500;
             }
           }
           .home-smart-bottom-txt-bottom {

@@ -70,7 +70,7 @@
             </div>
           </div>
           <div class="home-smart-phone-2">
-            <img src="/src/assets/img/smart/home-smart/home-smart-2-left@2x.webp" alt="" />
+            <img src="/src/assets/img/smart/home-smart/app@2x.webp" alt="" />
           </div>
         </swiper-slide>
         <div class="swiper-button-prev home-smart-prev" @click.stop>
