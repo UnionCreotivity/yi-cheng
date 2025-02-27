@@ -52,13 +52,13 @@ const menuItems = [
     key: 'menu-1',
     zhName: '品牌光譜',
     enName: 'BRAND',
-    link: 'brand',
+    link: 'idea',
   },
   {
     key: 'menu-2',
     zhName: '繁華光譜',
     enName: 'HUB',
-    link: '',
+    link: 'develop',
   },
   {
     key: 'menu-3',
@@ -76,7 +76,7 @@ const menuItems = [
     key: 'menu-5',
     zhName: '智能光譜',
     enName: 'SMART',
-    link: 'loan',
+    link: 'homesmart',
   },
 ]
 
