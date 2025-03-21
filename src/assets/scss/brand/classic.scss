@@ -52,6 +52,7 @@
       width: 100%;
       margin: auto;
       height: 25.5vw;
+      position: relative;
       @include pad {
         display: flex;
         align-items: center;
@@ -65,10 +66,23 @@
       @media screen and (max-width: 1200px) {
         height: 28.25vw;
       }
+      .brand-classic-bottom-txt {
+        position: absolute;
+        width: 39.5%;
+        left: 0;
+        right: 0;
+        top: -11%;
+        margin: auto;
+        z-index: 5;
+        @include pad {
+          top: -16%;
+        }
+      }
       .brand-classic-swiper {
         position: relative;
         width: 90%;
         height: 100%;
+        margin-top: 2vw;
         @include pad {
           height: 100%;
         }
@@ -169,8 +183,8 @@
           width: 3vw;
           z-index: 1;
           @include pad {
-            width: 5vw;
-            top: 48%;
+            width: 4vw;
+            top: 50%;
           }
         }
         .brand-reverse {

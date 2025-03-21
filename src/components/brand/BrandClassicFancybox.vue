@@ -52,7 +52,7 @@ const gsapInit = () => {
   const tl = gsap.timeline({ delay: 0.5 })
   tl.to('#classic-circle', {
     strokeDashoffset: 0,
-    duration: 2,
+    duration: 1.5,
   })
     .from(
       '.brand-classic-fancybox-para',
@@ -61,7 +61,7 @@ const gsapInit = () => {
         opacity: 0,
         duration: 1.5,
       },
-      '<+0.5',
+      '<+0.35',
     )
     .from(
       '.brand-classic-fancybox-work img',
@@ -69,7 +69,7 @@ const gsapInit = () => {
         opacity: 0,
         duration: 1.5,
       },
-      '<+0.5',
+      '<+0.35',
     )
 }
 

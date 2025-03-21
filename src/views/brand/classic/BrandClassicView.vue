@@ -14,6 +14,9 @@
         </div>
       </div>
       <div class="brand-classic-bottom">
+        <div class="brand-classic-bottom-txt">
+          <img src="/src/assets/img/brand/classic/brand-classic-bottom-txt@2x.webp" alt="" />
+        </div>
         <Swiper
           :slidesPerView="'auto'"
           :freeMode="true"
@@ -69,7 +72,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, FreeMode } from 'swiper/modules'
 import Nav from '@/components/nav/Nav.vue'
@@ -93,7 +96,6 @@ const toProduct = (year?: string, id?: string) => {
     }
   }
 }
-onMounted(() => {})
 </script>
 
 <style scoped></style>
