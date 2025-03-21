@@ -51,13 +51,13 @@
     .brand-classic-bottom {
       width: 100%;
       margin: auto;
-      height: 25.9vw;
+      height: 25.5vw;
       @include pad {
         display: flex;
         align-items: center;
       }
       @media screen and (max-width: 1920px) {
-        height: 26.65vw;
+        height: 26vw;
       }
       @media screen and (max-width: 1366px) {
         height: 27.25vw;
