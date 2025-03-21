@@ -51,19 +51,24 @@
     .brand-classic-bottom {
       width: 100%;
       margin: auto;
+      height: 25.9vw;
       @include pad {
         display: flex;
         align-items: center;
+      }
+      @media screen and (max-width: 1920px) {
+        height: 26.65vw;
       }
       @media screen and (max-width: 1366px) {
         height: 27.25vw;
       }
       @media screen and (max-width: 1200px) {
-        height: 28.5vw;
+        height: 28.25vw;
       }
       .brand-classic-swiper {
         position: relative;
         width: 90%;
+        height: 100%;
         @include pad {
           height: 100%;
         }
@@ -95,11 +100,7 @@
           flex-direction: column-reverse;
           align-items: flex-start;
           justify-content: flex-end;
-          height: 25.9vw;
-          pointer-events: none;
-          @media screen and (max-width: 1920px) {
-            height: 26.65vw;
-          }
+          height: 100%;
           @include pad {
             height: 100%;
           }
@@ -177,18 +178,18 @@
         }
         .classic-2027 {
           margin-left: -23%;
-          clip-path: inset(48% 0% 0% 0%);
+          clip-path: inset(45% 0% 0% 0%);
         }
         .classic-2025 {
           margin-left: -13%;
         }
         .classic-2024 {
           margin-left: -19%;
-          clip-path: inset(46% 0% 0% 0%);
+          clip-path: inset(36% 0% 0% 0%);
         }
         .classic-2023 {
           margin-left: -36%;
-          clip-path: inset(0% 0% 53% 0%);
+          clip-path: inset(0% 0% 40% 0%);
         }
         .classic-2022 {
           margin-left: -24%;
