@@ -122,14 +122,6 @@ export const classicInnerData = [
         ).href,
       },
       {
-        tag: '2024-4',
-        name: '宜誠吾寓',
-        img: new URL(
-          '@/assets/img/brand/classic/classical-inner/2024-big-4@2x.webp',
-          import.meta.url,
-        ).href,
-      },
-      {
         tag: '2024-5',
         name: '宜誠吾界',
         img: new URL(
@@ -221,7 +213,7 @@ export const classicInnerData = [
     contents: [
       {
         tag: '2021-1',
-        name: '玓瓅',
+        name: '宜誠玓瓅',
         img: new URL(
           '@/assets/img/brand/classic/classical-inner/2021-big-1@2x.webp',
           import.meta.url,
@@ -235,7 +227,7 @@ export const classicInnerData = [
     contents: [
       {
         tag: '2020-1',
-        name: '禾雅',
+        name: '宜誠禾雅',
         img: new URL(
           '@/assets/img/brand/classic/classical-inner/2020-big-1@2x.webp',
           import.meta.url,
@@ -243,7 +235,7 @@ export const classicInnerData = [
       },
       {
         tag: '2020-1',
-        name: '雙橡園',
+        name: '宜誠雙橡園',
         img: new URL(
           '@/assets/img/brand/classic/classical-inner/2020-big-2@2x.webp',
           import.meta.url,
@@ -257,7 +249,7 @@ export const classicInnerData = [
     contents: [
       {
         tag: '2019-1',
-        name: '有余',
+        name: '宜誠有余',
         img: new URL(
           '@/assets/img/brand/classic/classical-inner/2019-big-1@2x.webp',
           import.meta.url,
@@ -265,7 +257,7 @@ export const classicInnerData = [
       },
       {
         tag: '2019-2',
-        name: '夏都行館',
+        name: '宜誠夏都行館',
         img: new URL(
           '@/assets/img/brand/classic/classical-inner/2019-big-2@2x.webp',
           import.meta.url,
@@ -273,7 +265,7 @@ export const classicInnerData = [
       },
       {
         tag: '2019-3',
-        name: '一森青',
+        name: '宜誠一森青',
         img: new URL(
           '@/assets/img/brand/classic/classical-inner/2019-big-3@2x.webp',
           import.meta.url,
@@ -281,7 +273,7 @@ export const classicInnerData = [
       },
       {
         tag: '2019-4',
-        name: '一極',
+        name: '宜誠一極',
         img: new URL(
           '@/assets/img/brand/classic/classical-inner/2019-big-4@2x.webp',
           import.meta.url,
@@ -289,7 +281,7 @@ export const classicInnerData = [
       },
       {
         tag: '2019-5',
-        name: '心天地',
+        name: '宜誠心天地',
         img: new URL(
           '@/assets/img/brand/classic/classical-inner/2019-big-5@2x.webp',
           import.meta.url,
