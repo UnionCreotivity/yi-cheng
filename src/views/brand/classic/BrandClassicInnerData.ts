@@ -587,13 +587,13 @@ export const classicInnerData = [
       },
       {
         tag: '2008-4',
-        name: '悅灣一期(透天)',
+        name: '悅灣一期\n(透天)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
       {
         tag: '2008-5',
-        name: '悅灣一期(大樓)',
+        name: '悅灣一期\n(大樓)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
@@ -641,13 +641,13 @@ export const classicInnerData = [
     contents: [
       {
         tag: '2006-1',
-        name: '宜誠領航(透天)',
+        name: '宜誠領航\n(透天)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
       {
         tag: '2006-2',
-        name: '宜誠領航(大樓)',
+        name: '宜誠領航\n(大樓)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
@@ -695,13 +695,13 @@ export const classicInnerData = [
       },
       {
         tag: '2005-3',
-        name: '宜誠皇家(透天)',
+        name: '宜誠皇家\n(透天)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
       {
         tag: '2005-4',
-        name: '宜誠皇家(大樓)',
+        name: '宜誠皇家\n(大樓)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
@@ -731,13 +731,13 @@ export const classicInnerData = [
     contents: [
       {
         tag: '2004-1',
-        name: '園鄉(透天)',
+        name: '園鄉\n(透天)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
       {
         tag: '2004-2',
-        name: '園鄉(公寓)',
+        name: '園鄉\n(公寓)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
@@ -749,7 +749,7 @@ export const classicInnerData = [
       },
       {
         tag: '2004-4',
-        name: '麗都二(領袖特區)',
+        name: '麗都二\n(領袖特區)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
@@ -785,13 +785,13 @@ export const classicInnerData = [
       },
       {
         tag: '2003-2',
-        name: '麗都一(凱旋特區)',
+        name: '麗都一\n(凱旋特區)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
       {
         tag: '2003-3',
-        name: '麗都一(羅浮特區)',
+        name: '麗都一\n(羅浮特區)',
         img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
           .href,
       },
