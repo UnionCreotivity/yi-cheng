@@ -9,6 +9,7 @@ import FadeIn from './components/transition/FadeIn.vue'
 import axios from 'axios'
 
 onMounted(() => {
+  // alert(window.innerWidth)
   axios
     .post(
       'https://web-board.tw/sys/login_axios.php',

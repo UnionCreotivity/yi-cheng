@@ -10,7 +10,7 @@ export const navLinks = [
       {
         key: 'brand-2',
         name: '經典作品',
-        linkName: '',
+        linkName: 'classic',
       },
       {
         key: 'brand-3',

@@ -120,7 +120,7 @@ export const menuSubData = [
       {
         key: 'link-2',
         name: '經典作品',
-        link: '',
+        link: 'classic',
       },
       {
         key: 'link-4',

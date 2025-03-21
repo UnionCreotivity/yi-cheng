@@ -6,6 +6,7 @@ import AboutView from '@/views/about/AboutView.vue'
 import BrandView from '@/views/brand/BrandView.vue'
 import BrandVideoView from '@/views/brand/video/BrandVideoView.vue'
 import BrandIdeaView from '@/views/brand/idea/BrandIdeaView.vue'
+import BrandClassicView from '@/views/brand/classic/BrandClassicView.vue'
 
 // <--- 智能光譜 --->
 import SmartView from '@/views/smart/SmartView.vue'
@@ -53,6 +54,11 @@ const router = createRouter({
           path: 'idea',
           name: 'idea',
           component: BrandIdeaView,
+        },
+        {
+          path: 'classic',
+          name: 'classic',
+          component: BrandClassicView,
         },
       ],
     },
