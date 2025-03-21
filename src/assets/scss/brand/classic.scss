@@ -140,7 +140,6 @@
             display: flex;
             .brand-classic-swiper-line {
               width: 1px;
-              // height: 85px;
               height: 6.25vw;
               margin-left: 3.5vw;
               margin-right: 3vw;
@@ -159,8 +158,6 @@
               margin-right: 1vw;
               pointer-events: auto;
               z-index: 1;
-              cursor: pointer;
-
               p {
                 font-family: var(--micro);
                 font-size: 1vw;

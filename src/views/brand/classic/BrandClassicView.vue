@@ -46,6 +46,7 @@
                   class="brand-classic-swiper-product"
                   v-for="content in classic.contents"
                   :key="content.id"
+                  :style="{ cursor: content.cursor ? 'pointer' : '' }"
                   @click.stop="toProduct(classic.year, content.itemTag)"
                 >
                   <div class="brand-classic-swiper-product-img">
@@ -87,7 +88,7 @@ const fancyData = ref<null | { year: string; name: string; img: string }>(null)
 const toProduct = (year?: string, id?: string) => {
   if (!year || !id) return (fancyData.value = null)
   const outer_data = classicInnerData.filter((item) => item.year === year)[0]
-  const inner_data = outer_data.contents.find((item) => item.tag === id)
+  const inner_data = outer_data?.contents.find((item) => item.tag === id)
   if (outer_data && inner_data) {
     fancyData.value = {
       year: outer_data.year,
