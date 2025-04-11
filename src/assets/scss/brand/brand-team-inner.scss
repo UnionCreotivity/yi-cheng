@@ -1,0 +1,302 @@
+@use '../config' as *;
+.brand-team-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 16;
+  .brand-team-inner-main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 6vw;
+    padding-bottom: 4.5%;
+    padding-right: 2%;
+    @include pad {
+      align-items: center;
+      padding-bottom: 0%;
+    }
+    .brand-team-inner-people {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include pad {
+        margin-top: 15%;
+      }
+      .brand-team-inner-people-main {
+        position: relative;
+        width: 19.3vw;
+        .brand-team-inner-people-deco {
+          width: 100%;
+        }
+        .brand-team-inner-people-avator {
+          position: absolute;
+          left: -19%;
+          top: -29%;
+          width: 133%;
+        }
+        .brand-team-inner-people-sign {
+          position: absolute;
+          left: 48%;
+          bottom: 6%;
+          width: 42%;
+        }
+      }
+      .brand-team-inner-people-land {
+        width: 1.85vw;
+        margin-inline: 1.5vw;
+      }
+      .brand-team-inner-people-line {
+        width: 1px;
+        height: 26vw;
+        background-color: #b15b71;
+      }
+    }
+    .brand-team-inner-para {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 56vw;
+      .brand-team-inner-summary,
+      .brand-team-inner-exper {
+        width: 50vw;
+        @include pad {
+          width: 52vw;
+        }
+      }
+      .brand-team-inner-carousel {
+        width: 56vw;
+        user-select: none;
+        .brand-team-inner-swiper {
+          width: 100%;
+          .brand-team-prev,
+          .brand-team-next {
+            width: 2vw;
+            top: 45%;
+            @include pad {
+              width: 3vw;
+            }
+          }
+          .brand-team-prev {
+            left: 2%;
+          }
+          .brand-team-next {
+            right: 2%;
+          }
+          .brand-right-bg,
+          .brand-left-bg {
+            position: absolute;
+            top: 0;
+            pointer-events: none;
+            width: 7%;
+            height: 85%;
+            z-index: 10;
+          }
+          .brand-left-bg {
+            left: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+          }
+          .brand-right-bg {
+            right: 0;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+          }
+          .brand-swiper-img {
+            cursor: pointer;
+          }
+        }
+      }
+      .brand-team-inner-line {
+        width: 100%;
+        height: 1px;
+        margin-block: 1.5vw;
+        background-color: #a0a0a0;
+      }
+      h3 {
+        font-family: var(--serif);
+        font-weight: 500;
+        font-size: 1.7vw;
+        letter-spacing: 6px;
+        margin-bottom: 2.5%;
+        color: #231815;
+        @include pad {
+          letter-spacing: 4px;
+        }
+      }
+      p {
+        font-family: var(--micro);
+        font-size: 1vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: #231815;
+        white-space: pre-line;
+        @include pad {
+          font-size: 1.1vw;
+        }
+      }
+      h5 {
+        font-family: var(--micro);
+        font-size: 0.9vw;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 2;
+        margin-top: 2%;
+        text-align: center;
+        color: #231815;
+        @include pad {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+  .brand-team-inner-brand-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 6vw;
+    margin-left: 3vw;
+    @include pad {
+      height: 100%;
+    }
+    .brand-team-inner-brand-2-left {
+      display: flex;
+      flex-direction: column;
+      width: 39%;
+      h3 {
+        font-family: var(--serif);
+        font-weight: 500;
+        font-size: 1.7vw;
+        letter-spacing: 6px;
+        margin-bottom: 2.5%;
+        color: #231815;
+      }
+      p {
+        font-family: var(--micro);
+        font-size: 1vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: #231815;
+        white-space: pre-line;
+      }
+      p:first-of-type {
+        margin-top: 2%;
+      }
+      p:last-of-type {
+        margin-top: 4%;
+      }
+      h5 {
+        font-family: var(--serif);
+        font-size: 1.25vw;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 2;
+        color: #231815;
+      }
+      .brand-2-sign {
+        width: 22vw;
+        align-self: flex-end;
+        margin-top: 7%;
+      }
+    }
+
+    .brand-team-inner-brand-2-right {
+      width: 30.75%;
+      margin-top: 7%;
+    }
+  }
+  .big-img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 18;
+    .big-img-main {
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    .close-button {
+      position: absolute;
+      right: 2vw;
+      top: 5vw;
+      width: 2.75vw;
+      padding: 0.25vw;
+      cursor: pointer;
+      background-color: #d27c8d;
+      z-index: 17;
+    }
+  }
+  .brand-team-close {
+    position: absolute;
+    right: 2%;
+    top: 48%;
+    width: 3.25vw;
+    cursor: pointer;
+    @include pad {
+      width: 4.5vw;
+      top: 45%;
+      right: 3%;
+    }
+  }
+}
+.brand-1 {
+  .brand-team-inner-bg {
+    .brand-team-squre-2 {
+      @include pad {
+        top: 36%;
+      }
+    }
+  }
+}
+.brand-2 {
+  .brand-team-inner-bg {
+    .brand-team-squre-2 {
+      display: none;
+    }
+    .brand-team-left-bottom,
+    .brand-team-top-deco {
+      display: block;
+    }
+  }
+}
+.brand-3 {
+  .brand-team-inner-main {
+    .brand-team-inner-people {
+      .brand-team-inner-people-main {
+        .brand-team-inner-people-avator {
+          top: -39%;
+          left: -1%;
+          width: 127%;
+        }
+      }
+    }
+  }
+  .brand-team-inner-bg {
+    .brand-team-squre-2 {
+      top: 36%;
+    }
+  }
+}
+.brand-4 {
+  .brand-team-inner-bg {
+    .brand-team-squre-2 {
+      top: 34%;
+      @include pad {
+        top: 36%;
+      }
+    }
+  }
+}

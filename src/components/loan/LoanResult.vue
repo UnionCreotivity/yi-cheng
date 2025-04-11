@@ -22,13 +22,7 @@
         </div>
         <div class="loan-result-text">萬元</div>
       </li>
-      <li class="loan-result-li">
-        <h4>使照取得:</h4>
-        <div class="loan-result-number">
-          <p>{{ license }}</p>
-        </div>
-        <div class="loan-result-text">萬元</div>
-      </li>
+
       <li class="loan-result-li">
         <h4>交屋款:</h4>
         <div class="loan-result-number">
@@ -75,7 +69,6 @@ const {
   deposit,
   sign,
   construction,
-  license,
   delivery,
   ownMoney,
   monthlyCost,

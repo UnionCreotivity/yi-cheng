@@ -123,14 +123,14 @@ export const menuSubData = [
         link: 'classic',
       },
       {
-        key: 'link-4',
-        name: '建築團隊',
-        link: '',
-      },
-      {
         key: 'link-3',
         name: '品牌影片',
         link: 'brand',
+      },
+      {
+        key: 'link-4',
+        name: '建築團隊',
+        link: 'team',
       },
     ],
   },
@@ -206,6 +206,11 @@ export const menuSubData = [
         key: 'link-3',
         name: '房貸試算',
         link: 'loan',
+      },
+      {
+        key: 'link-4',
+        name: '店面房貸試算',
+        link: 'storeloan',
       },
     ],
   },

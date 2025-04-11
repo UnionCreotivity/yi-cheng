@@ -9,6 +9,8 @@ declare module 'vue' {
   export interface GlobalComponents {
     BackHome: typeof import('./src/components/back-home/BackHome.vue')['default']
     BrandClassicFancybox: typeof import('./src/components/brand/BrandClassicFancybox.vue')['default']
+    BrandTeamFancyBg: typeof import('./src/components/brand/BrandTeamFancyBg.vue')['default']
+    BrandTeamFancyBox: typeof import('./src/components/brand/BrandTeamFancyBox.vue')['default']
     BuildingNav: typeof import('./src/components/nav/BuildingNav.vue')['default']
     DevelopNav: typeof import('./src/components/nav/DevelopNav.vue')['default']
     FadeIn: typeof import('./src/components/transition/FadeIn.vue')['default']

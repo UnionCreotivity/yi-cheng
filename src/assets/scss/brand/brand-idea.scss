@@ -11,6 +11,7 @@
     height: 100%;
     .brand-idea-swiper-container {
       width: 100%;
+      height: 100%;
       @include pad {
         height: 100%;
       }
@@ -145,6 +146,97 @@
               color: #2d2d2d;
               @include pad {
                 font-size: 1.1vw;
+              }
+            }
+          }
+        }
+      }
+      .brand-idea-slide-row {
+        display: flex;
+        align-items: center;
+        .brand-idea-slide-row-left {
+          height: 100%;
+          flex-basis: auto;
+          img {
+            height: 100%;
+          }
+        }
+        .brand-idea-slide-row-right {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          h2 {
+            font-family: var(--serif);
+            font-weight: 600;
+            font-size: 2vw;
+            letter-spacing: 8px;
+            margin-bottom: 1vw;
+            color: #231815;
+          }
+          .content {
+            display: flex;
+            gap: 1vw;
+            .content-table {
+              width: 27.25vw;
+            }
+            table {
+              border-collapse: separate;
+              border-spacing: 0 2vw;
+            }
+            .content-title {
+              font-family: var(--micro);
+              font-weight: 500;
+              font-size: 1vw;
+              letter-spacing: 2px;
+              color: #231815;
+            }
+            .content-title-first {
+              padding-left: 1.5vw;
+            }
+            .content-title-last {
+              padding-right: 1vw;
+            }
+            .content-title-middle {
+              padding-right: 3vw;
+            }
+            .content-table-body {
+              tr {
+                width: 100%;
+              }
+              th {
+                border-radius: 20px 0px 0px 20px;
+              }
+              .tag {
+                font-family: var(--jost);
+                font-weight: 400;
+                font-size: 1.75vw;
+                text-align: center;
+                padding-block: 0.75vw;
+                padding-left: 1.5vw;
+                background-color: #f7f8f8;
+              }
+              td {
+                font-family: var(--serif);
+                font-weight: 400;
+                font-size: 1.75vw;
+                text-align: center;
+                background-color: #f7f8f8;
+              }
+              .main-item {
+                letter-spacing: 6px;
+                text-align: left;
+                padding-left: 1vw;
+              }
+              .number {
+                font-family: var(--jost);
+                font-weight: 500;
+                text-align: center;
+                padding-right: 1vw;
+                border-radius: 0px 20px 20px 0px;
+                letter-spacing: 2px;
+                color: #f26497;
               }
             }
           }

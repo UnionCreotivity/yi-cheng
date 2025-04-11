@@ -20,7 +20,7 @@ export const navLinks = [
       {
         key: 'brand-4',
         name: '建築團隊',
-        linkName: '',
+        linkName: 'team',
       },
     ],
   },
@@ -61,6 +61,11 @@ export const navLinks = [
         key: 'smart-3',
         name: '房貸試算',
         linkName: 'loan',
+      },
+      {
+        key: 'smart-4',
+        name: '店面房貸試算',
+        linkName: 'storeloan',
       },
     ],
   },

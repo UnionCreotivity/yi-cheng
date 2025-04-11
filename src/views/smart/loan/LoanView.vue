@@ -14,7 +14,15 @@
           <div class="loan-input-item">
             <h4>貸款年限</h4>
             <div class="loan-input">
-              <p>30年</p>
+              <input
+                type="number"
+                id="cal-year"
+                min="0"
+                max="99"
+                v-model="loanInputModel.year"
+                @click.stop="checkClick('cal-year')"
+              />
+              <p>年</p>
             </div>
           </div>
           <div class="loan-input-item">
@@ -137,7 +145,7 @@ import '@/assets/scss/loan/loan.scss'
 const loanStore = useLoan()
 
 const loanInputModel = ref({
-  year: 30,
+  year: 0,
   total: 0,
   ratio: '',
   allowance: 'none',
@@ -147,10 +155,16 @@ const nowInputId = ref('')
 
 const tempRatio = ref('.')
 
+const targetMap: Record<string, 'year' | 'total' | 'ratio'> = {
+  'cal-year': 'year',
+  'cal-total': 'total',
+  'cal-ratio': 'ratio',
+}
+
 //年利率因為小數點的關係，所以使用字串處理
 const cleanClick = () => {
   loanInputModel.value = {
-    year: 30,
+    year: 0,
     total: 0,
     ratio: '',
     allowance: 'none',
@@ -159,7 +173,7 @@ const cleanClick = () => {
 }
 
 const submitClick = () => {
-  loanStore.loanCalc(loanInputModel.value)
+  loanStore.loanCalc(loanInputModel.value, 'normal')
 }
 
 const checkClick = (id: string) => {
@@ -167,31 +181,51 @@ const checkClick = (id: string) => {
 }
 
 const keyboardClick = (num: string) => {
+  const key = targetMap[nowInputId.value]
+  if (!key) return
   const inputNum = num
-  let modelTemp: string
-  if (nowInputId.value === 'cal-total') {
-    modelTemp = loanInputModel.value.total.toString() + inputNum
-    const total = Math.floor(Number(modelTemp))
-    loanInputModel.value.total = total
-  } else if (nowInputId.value === 'cal-ratio') {
+  if (key === 'ratio') {
     loanInputModel.value.ratio += inputNum
+  } else {
+    const modelTemp = loanInputModel.value[key].toString() + inputNum
+    const total = Math.floor(Number(modelTemp))
+    loanInputModel.value[key] = total
   }
+  // const inputNum = num
+  // let modelTemp: string
+  // if (nowInputId.value === 'cal-total') {
+  //   modelTemp = loanInputModel.value.total.toString() + inputNum
+  //   const total = Math.floor(Number(modelTemp))
+  //   loanInputModel.value.total = total
+  // } else if (nowInputId.value === 'cal-ratio') {
+  //   loanInputModel.value.ratio += inputNum
+  // }
 }
 
 const keyboardBackClick = () => {
-  let length
-  let temp
-  if (nowInputId.value === 'cal-total') {
-    temp = loanInputModel.value.total.toString()
-    length = temp.length >= 1 ? temp.length : 0
-    if (0) return
-    loanInputModel.value.total = Number(temp.slice(0, length - 1))
-  } else if (nowInputId.value === 'cal-ratio') {
-    temp = loanInputModel.value.ratio.toString()
-    length = temp.length >= 1 ? temp.length : 0
-    if (0) return
-    loanInputModel.value.ratio = temp.slice(0, length - 1)
+  const key = targetMap[nowInputId.value]
+  if (!key) return
+  const temp = loanInputModel.value[key].toString()
+  if (temp.length === 0) return
+
+  if (key === 'ratio') {
+    loanInputModel.value[key] = temp.slice(0, length - 1)
+  } else {
+    loanInputModel.value[key] = Math.floor(Number(temp.slice(0, length - 1)))
   }
+  // let length
+  // let temp
+  // if (nowInputId.value === 'cal-total') {
+  //   temp = loanInputModel.value.total.toString()
+  //   length = temp.length >= 1 ? temp.length : 0
+  //   if (0) return
+  //   loanInputModel.value.total = Number(temp.slice(0, length - 1))
+  // } else if (nowInputId.value === 'cal-ratio') {
+  //   temp = loanInputModel.value.ratio.toString()
+  //   length = temp.length >= 1 ? temp.length : 0
+  //   if (0) return
+  //   loanInputModel.value.ratio = temp.slice(0, length - 1)
+  // }
 }
 
 //年利率檢查
@@ -208,6 +242,9 @@ const testRatio = () => {
 watch(
   loanInputModel,
   () => {
+    if (Number(loanInputModel.value.year) > 99) {
+      loanInputModel.value.year = 99
+    }
     if (Number(loanInputModel.value.total) > 100000) {
       loanInputModel.value.total = 100000
     }

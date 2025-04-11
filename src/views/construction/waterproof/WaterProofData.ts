@@ -113,32 +113,42 @@ export const WaterProofData = [
       {
         key: 'image-1',
         tag: 0,
-        image: new URL('@/assets/img/construction/seam-water-proof/wall1.png', import.meta.url)
-          .href,
+        image: new URL(
+          '@/assets/img/construction/seam-water-proof/03-01-03_img01.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-2',
         tag: 1,
-        image: new URL('@/assets/img/construction/seam-water-proof/wall2.png', import.meta.url)
-          .href,
+        image: new URL(
+          '@/assets/img/construction/seam-water-proof/03-01-03_img02.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-3',
         tag: 2,
-        image: new URL('@/assets/img/construction/seam-water-proof/wall3.png', import.meta.url)
-          .href,
+        image: new URL(
+          '@/assets/img/construction/seam-water-proof/03-01-03_img03.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-4',
         tag: 3,
-        image: new URL('@/assets/img/construction/seam-water-proof/wall4.png', import.meta.url)
-          .href,
+        image: new URL(
+          '@/assets/img/construction/seam-water-proof/03-01-03_img04.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-5',
         tag: 4,
-        image: new URL('@/assets/img/construction/seam-water-proof/wall5.png', import.meta.url)
-          .href,
+        image: new URL(
+          '@/assets/img/construction/seam-water-proof/03-01-03_img05.webp',
+          import.meta.url,
+        ).href,
       },
     ],
     contents: [
@@ -294,57 +304,90 @@ export const WaterProofData = [
       {
         key: 'image-1',
         tag: 0,
-        image: new URL('@/assets/img/construction/bath-water-proof/1.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img01.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-2',
         tag: 1,
-        image: new URL('@/assets/img/construction/bath-water-proof/2.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img02.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-3',
         tag: 2,
-        image: new URL('@/assets/img/construction/bath-water-proof/3.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img03.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-4',
         tag: 3,
-        image: new URL('@/assets/img/construction/bath-water-proof/4.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img04.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-5',
         tag: 4,
-        image: new URL('@/assets/img/construction/bath-water-proof/5.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img05.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-6',
         tag: 5,
-        image: new URL('@/assets/img/construction/bath-water-proof/6.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img06.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-7',
         tag: 6,
-        image: new URL('@/assets/img/construction/bath-water-proof/7.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img07.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-8',
         tag: 7,
-        image: new URL('@/assets/img/construction/bath-water-proof/8.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img08.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-9',
         tag: 8,
-        image: new URL('@/assets/img/construction/bath-water-proof/9.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img09.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-10',
         tag: 9,
-        image: new URL('@/assets/img/construction/bath-water-proof/10.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img10.webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'image-11',
         tag: 10,
-        image: new URL('@/assets/img/construction/bath-water-proof/11.webp', import.meta.url).href,
+        image: new URL(
+          '@/assets/img/construction/bath-water-proof/03-01-06_img11.webp',
+          import.meta.url,
+        ).href,
       },
     ],
     contents: [

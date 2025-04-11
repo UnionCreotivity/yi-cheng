@@ -7,11 +7,13 @@ import BrandView from '@/views/brand/BrandView.vue'
 import BrandVideoView from '@/views/brand/video/BrandVideoView.vue'
 import BrandIdeaView from '@/views/brand/idea/BrandIdeaView.vue'
 import BrandClassicView from '@/views/brand/classic/BrandClassicView.vue'
+import BrandTeamView from '@/views/brand/team/BrandTeamView.vue'
 
 // <--- 智能光譜 --->
 import SmartView from '@/views/smart/SmartView.vue'
 import LoanView from '@/views/smart/loan/LoanView.vue'
 import HomeSmartView from '@/views/smart/homesmart/HomeSmartView.vue'
+import StoreLoanView from '@/views/smart/loan/StoreLoanView.vue'
 
 // <--- 精工光譜 --->
 import ConstructionView from '@/views/construction/ConstructionView.vue'
@@ -60,6 +62,11 @@ const router = createRouter({
           name: 'classic',
           component: BrandClassicView,
         },
+        {
+          path: 'team',
+          name: 'team',
+          component: BrandTeamView,
+        },
       ],
     },
     {
@@ -70,6 +77,11 @@ const router = createRouter({
           path: '',
           name: 'loan',
           component: LoanView,
+        },
+        {
+          path: 'storeloan',
+          name: 'storeloan',
+          component: StoreLoanView,
         },
         {
           path: 'homesmart',

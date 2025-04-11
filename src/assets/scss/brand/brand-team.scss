@@ -1,0 +1,244 @@
+@use '../config' as *;
+.brand-team {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .brand-team-title-container {
+    position: absolute;
+    left: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+    @include pad {
+      margin-top: 12%;
+    }
+    .brand-team-h1 {
+      font-family: var(--cor);
+      font-weight: 400;
+      font-size: 6.75vw;
+      letter-spacing: 6px;
+      color: #d1d1d1;
+    }
+    .brand-team-h2 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 2.75vw;
+      letter-spacing: 6px;
+    }
+  }
+  .brand-team-deco {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    .deco {
+      position: absolute;
+      bottom: 0;
+    }
+    .deco-1 {
+      left: 0;
+      width: 16.8%;
+    }
+    .deco-2 {
+      right: 0;
+      width: 12.5%;
+    }
+    .deco-3 {
+      right: 0;
+      top: 15%;
+      width: 9.5%;
+      bottom: unset;
+    }
+    .deco-4 {
+      top: 0;
+      left: 56%;
+      bottom: unset;
+      width: 5.75%;
+    }
+  }
+  .brand-team-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    .line {
+      position: absolute;
+    }
+    .line-1 {
+      width: 20%;
+      left: 17.5%;
+      bottom: 22%;
+      @include pad {
+        bottom: 14%;
+      }
+    }
+    .line-2 {
+      width: 19.5%;
+      left: 36%;
+      bottom: 42%;
+      @include pad {
+        bottom: 29%;
+      }
+    }
+    .line-3 {
+      width: 20%;
+      left: 53.5%;
+      bottom: 39%;
+      @include pad {
+        bottom: 28%;
+      }
+    }
+    .line-4 {
+      width: 19.25%;
+      left: 71.5%;
+      bottom: 40%;
+      @include pad {
+        bottom: 28%;
+      }
+    }
+  }
+  .brand-team-people {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .brand-team-people-1,
+  .brand-team-people-2,
+  .brand-team-people-3,
+  .brand-team-people-4 {
+    position: absolute;
+    cursor: pointer;
+  }
+  .brand-team-people-1-container {
+    position: absolute;
+    left: 13.25%;
+    bottom: 0;
+    width: 29.25vw;
+    .line-1 {
+      position: absolute;
+      width: 68%;
+      left: 15%;
+      bottom: 47%;
+    }
+  }
+  .brand-team-people-1 {
+    position: relative;
+    z-index: 4;
+    .brand-team-people-img {
+      width: 100%;
+    }
+    .brand-team-people-sign {
+      position: absolute;
+      top: 14%;
+      width: 28%;
+    }
+  }
+  .brand-team-people-2-container {
+    position: absolute;
+    left: 26.25%;
+    bottom: -19%;
+    width: 30.75vw;
+    @include pad {
+      bottom: -11vw;
+    }
+    .line-2 {
+      position: absolute;
+      width: 63.95%;
+      left: 31%;
+      bottom: 71%;
+    }
+  }
+  .brand-team-people-2 {
+    position: relative;
+    z-index: 3;
+    .brand-team-people-img {
+      width: 100%;
+    }
+    .brand-team-people-sign {
+      position: absolute;
+      top: 15%;
+      left: 21%;
+      width: 26%;
+    }
+  }
+  .brand-team-people-3-container {
+    position: absolute;
+    left: 47.25%;
+    bottom: -26%;
+    width: 30.75vw;
+    @include pad {
+      bottom: -14vw;
+    }
+    .line-3 {
+      position: absolute;
+      width: 63.95%;
+      left: 21.5%;
+      bottom: 73%;
+    }
+  }
+  .brand-team-people-3 {
+    position: relative;
+    z-index: 1;
+    .brand-team-people-img {
+      width: 100%;
+    }
+    .brand-team-people-sign {
+      position: absolute;
+      bottom: 39%;
+      left: 36%;
+      width: 28.5%;
+      @include pad {
+        bottom: 43%;
+        left: 32%;
+      }
+    }
+  }
+  .brand-team-people-4-container {
+    position: absolute;
+    bottom: -22%;
+    left: 66%;
+    width: 27vw;
+    @include pad {
+      bottom: -12vw;
+    }
+    .line-4 {
+      position: absolute;
+      width: 63.95%;
+      left: 20.5%;
+      bottom: 71%;
+      @include pad {
+        bottom: 72%;
+      }
+    }
+  }
+  .brand-team-people-4 {
+    position: relative;
+    z-index: 2;
+    .brand-team-people-img {
+      width: 100%;
+    }
+    .brand-team-people-sign {
+      position: absolute;
+      bottom: 58%;
+      left: 62%;
+      width: 31.75%;
+    }
+  }
+}
+.list-z-18 {
+  #nav {
+    z-index: unset;
+    .nav-icon {
+      opacity: 0;
+    }
+    .nav-links {
+      z-index: 18;
+    }
+  }
+}

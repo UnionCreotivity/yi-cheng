@@ -1,6 +1,6 @@
 <template>
   <div class="brand-idea">
-    <Nav color="white" tag="brand" />
+    <Nav :color="colorTag" tag="brand" />
     <div class="brand-idea-container">
       <Swiper
         :speed="1000"
@@ -10,6 +10,8 @@
           nextEl: '.brand-idea-next',
           prevEl: '.brand-idea-prev',
         }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
         :modules="[Navigation]"
         class="brand-idea-swiper-container"
       >
@@ -61,6 +63,88 @@
             </div>
           </div>
         </swiper-slide>
+        <swiper-slide class="brand-idea-slide-row">
+          <div class="brand-idea-slide-row-left">
+            <img src="/src/assets/img/brand/brand-idea/brand-idea-big-img3-left@2x.webp" alt="" />
+          </div>
+          <div class="brand-idea-slide-row-right">
+            <h2>十大建商好感度</h2>
+            <div class="content">
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="content-title content-title-first">排名</th>
+                    <th scope="col" class="content-title content-title-middle">建設公司</th>
+                    <th scope="col" class="content-title content-title-last">網路好感度</th>
+                  </tr>
+                </thead>
+                <tbody class="content-table-body">
+                  <tr>
+                    <th scope="row" class="tag">1.</th>
+                    <td class="main-item">聯聚建設</td>
+                    <td class="number">126.71</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="tag">2.</th>
+                    <td class="main-item">富宇建設</td>
+                    <td class="number">105.84</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="tag">3.</th>
+                    <td class="main-item">宜誠建設</td>
+                    <td class="number">105.12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="tag">4.</th>
+                    <td class="main-item">璟都建設</td>
+                    <td class="number">42.49</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="tag">5.</th>
+                    <td class="main-item">大同建設</td>
+                    <td class="number">15.09</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="content-title content-title-first">排名</th>
+                    <th scope="col" class="content-title content-title-middle">建設公司</th>
+                    <th scope="col" class="content-title content-title-last">網路好感度</th>
+                  </tr>
+                </thead>
+                <tbody class="content-table-body">
+                  <tr>
+                    <th scope="row" class="tag">1.</th>
+                    <td class="main-item">國泰建設</td>
+                    <td class="number">126.71</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="tag">2.</th>
+                    <td class="main-item">新濠建設</td>
+                    <td class="number">105.84</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="tag">3.</th>
+                    <td class="main-item">中悅建設</td>
+                    <td class="number">105.12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="tag">4.</th>
+                    <td class="main-item">愛山林建設</td>
+                    <td class="number">42.49</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="tag">5.</th>
+                    <td class="main-item">國賓大建設</td>
+                    <td class="number">15.09</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </swiper-slide>
         <div class="swiper-button-prev brand-idea-prev" @click.stop>
           <img src="@/assets/img/other/prev.svg" />
         </div>
@@ -77,8 +161,11 @@ import { onMounted } from 'vue'
 import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
+import { Swiper as SwiperType } from 'swiper'
 import Nav from '@/components/nav/Nav.vue'
 import '@/assets/scss/brand/brand-idea.scss'
+
+const colorTag = ref('')
 
 const gsapInit = () => {
   const tl = gsap.timeline({})
@@ -106,6 +193,22 @@ const gsapInit = () => {
       },
       '<+0.25',
     )
+}
+
+const handleTag = (swiper: SwiperType) => {
+  if (swiper.realIndex === 2) {
+    colorTag.value = 'black'
+  } else {
+    colorTag.value = 'white'
+  }
+}
+
+const onSwiper = (swiper: SwiperType) => {
+  handleTag(swiper)
+}
+
+const onSlideChange = (swiper: SwiperType) => {
+  handleTag(swiper)
 }
 
 onMounted(() => {

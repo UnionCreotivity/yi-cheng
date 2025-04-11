@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-  left: 1.25%;
+  // left: 1.25%;
   top: 15%;
   z-index: 15;
   .menu-button {
@@ -23,6 +23,8 @@
     background: linear-gradient(to bottom, rgba(210, 124, 141, 1) 0%, rgba(185, 93, 117, 1) 100%);
     margin-top: 1vw;
     cursor: pointer;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
     @include laptop {
       font-size: 1.5vw;
       width: 3.25vw;
@@ -37,6 +39,7 @@
       margin-top: 2vw;
     }
   }
+
   .menu-container {
     position: relative;
     display: flex;
@@ -125,7 +128,7 @@
       flex-direction: column;
       gap: 1.75vw;
       border-radius: 0px 20px 20px 0px;
-      padding-left: 2.75vw;
+      padding-left: 3vw;
       padding-right: 1.5vw;
       margin-left: -1.5vw;
       background-color: #e8cfd7;
@@ -136,7 +139,7 @@
       }
       .menu-link-item {
         position: relative;
-        width: 110%;
+        width: 125%;
         a {
           position: relative;
           display: block;
@@ -161,7 +164,7 @@
           position: absolute;
           top: 0;
           left: -110%;
-          width: 100%;
+          width: 110%;
           height: 100%;
           background: linear-gradient(to bottom, rgb(210, 124, 141) 0%, rgb(185, 93, 117) 100%);
           transition: all 0.5s;
@@ -182,7 +185,7 @@
         }
         &:hover {
           .menu-link-item-block {
-            left: -3%;
+            left: -12%;
             transition: all 0.5s;
           }
           p {
@@ -192,5 +195,31 @@
         }
       }
     }
+  }
+}
+
+.menu-active {
+  transform: translateX(1.25vw);
+  transition: all 0.5s;
+  .menu-container {
+    opacity: 1;
+    transition: all 0.25s;
+  }
+}
+.menu-inactive {
+  transform: translateX(-18.75vw);
+  transition: all 0.5s;
+  .menu-container {
+    opacity: 0;
+    transition: all 0.25s;
+  }
+}
+@keyframes test {
+  0% {
+    transform: translateX(5vw);
+  }
+
+  100% {
+    display: none;
   }
 }
