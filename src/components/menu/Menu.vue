@@ -43,18 +43,12 @@ const is_Show = ref(false)
 
 const tag = ref('menu-1')
 
-// const menuWidth = ref(0)
-
 const subItem = ref()
 
 const testDiv = ref<HTMLElement>()
 
 const showMenuClick = () => {
   is_Show.value = !is_Show.value
-  // if (testDiv.value) {
-  //   menuWidth.value = Number(testDiv.value.getBoundingClientRect().width.toFixed(2))
-  // }
-  // console.log(testDiv.value?.getBoundingClientRect().width.toFixed(2))
 }
 
 const leftStyle = computed(() => {
@@ -68,15 +62,6 @@ const toggleSubMenuClick = (key: string) => {
   subItem.value = findSubData
 }
 
-// watch(subItem, () => {
-//   console.log(subItem.value)
-//   const ts = document.querySelector('.menu-container')
-//   if (ts) {
-//     console.log(ts.getBoundingClientRect().width.toFixed(2))
-//   }
-//   console.log(testDiv.value?.getBoundingClientRect().width.toFixed(2))
-// })
-
 onMounted(() => {
   const pathSplit = route.path.split('/')[1]
   const findId = menuTags.find((item) => item.path.includes(pathSplit))?.id
@@ -88,14 +73,4 @@ onMounted(() => {
 })
 </script>
 
-<style lang="scss" scoped>
-// .menu-sub-enter-active,
-// .menu-sub-leave-active {
-//   transition: all 0.3s ease-out;
-// }
-
-// .menu-sub-enter-from,
-// .menu-sub-leave-to {
-//   transform: translateX(-5%);
-// }
-</style>
+<style lang="scss" scoped></style>
