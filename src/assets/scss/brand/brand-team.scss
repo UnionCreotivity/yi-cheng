@@ -222,6 +222,7 @@
   .brand-team-people-4 {
     position: relative;
     z-index: 2;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%, 0 55%, 21% 29%);
     .brand-team-people-img {
       width: 100%;
     }
