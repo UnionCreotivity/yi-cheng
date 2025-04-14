@@ -132,6 +132,7 @@
       padding-right: 1.5vw;
       margin-left: -1.5vw;
       background-color: #e8cfd7;
+      width: 13vw;
       @include pad {
         border-radius: 0px 15px 15px 0px;
         padding-left: 3vw;
@@ -139,7 +140,7 @@
       }
       .menu-link-item {
         position: relative;
-        width: 125%;
+        width: 110%;
         a {
           position: relative;
           display: block;
@@ -164,7 +165,7 @@
           position: absolute;
           top: 0;
           left: -110%;
-          width: 110%;
+          width: 100%;
           height: 100%;
           background: linear-gradient(to bottom, rgb(210, 124, 141) 0%, rgb(185, 93, 117) 100%);
           transition: all 0.5s;
@@ -174,8 +175,10 @@
           position: absolute;
           bottom: -50%;
           left: 0%;
+          right: 0;
           height: 1px;
-          width: 97%;
+          width: 100%;
+          margin: auto;
           background-color: #808080;
         }
         &:last-child {
@@ -185,7 +188,7 @@
         }
         &:hover {
           .menu-link-item-block {
-            left: -12%;
+            left: 0%;
             transition: all 0.5s;
           }
           p {
@@ -197,29 +200,3 @@
     }
   }
 }
-
-// .menu-active {
-//   transform: translateX(1.25vw);
-//   transition: all 0.5s;
-//   .menu-container {
-//     opacity: 1;
-//     transition: all 0.25s;
-//   }
-// }
-// .menu-inactive {
-//   transform: translateX(-18.75vw);
-//   transition: all 0.5s;
-//   .menu-container {
-//     opacity: 0;
-//     transition: all 0.25s;
-//   }
-// }
-// @keyframes test {
-//   0% {
-//     transform: translateX(5vw);
-//   }
-
-//   100% {
-//     display: none;
-//   }
-// }

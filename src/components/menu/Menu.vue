@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div id="menu" :style="leftStyle">
-    <div class="menu-container" ref="testDiv" v-show="is_Show">
+  <div id="menu" :style="is_Show ? menuActive : menuInactiveStyle">
+    <div class="menu-container">
       <ul class="menu-main-ul">
         <li class="menu-icon"><img src="@/assets/img/menu/menu-icon.svg" alt="" /></li>
         <li
@@ -42,16 +42,20 @@ const tag = ref('menu-1')
 
 const subItem = ref()
 
-const testDiv = ref<HTMLElement>()
+const menuActive = ref({
+  transform: ' translateX(1.25vw)',
+  transition: 'all 0.5s',
+})
 
 const showMenuClick = () => {
   is_Show.value = !is_Show.value
-
-  console.log(testDiv.value?.offsetWidth)
 }
 
-const leftStyle = computed(() => {
-  return is_Show.value === false ? 'left:0%' : 'left:1.25%'
+const menuInactiveStyle = computed(() => {
+  return {
+    transform: subItem.value ? 'translateX(-88.5%)' : 'translateX(-80.5%)',
+    transition: 'all 0.5s',
+  }
 })
 
 const toggleSubMenuClick = (key: string) => {
@@ -69,18 +73,7 @@ onMounted(() => {
   }
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
   subItem.value = findSubData
-  // console.log(testDiv.value?.clientWidth)
 })
 </script>
 
-<style lang="scss" scoped>
-// .menu-sub-enter-active,
-// .menu-sub-leave-active {
-//   transition: all 0.3s ease-out;
-// }
-
-// .menu-sub-enter-from,
-// .menu-sub-leave-to {
-//   transform: translateX(-5%);
-// }
-</style>
+<style lang="scss" scoped></style>
