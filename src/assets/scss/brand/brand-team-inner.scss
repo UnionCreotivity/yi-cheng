@@ -287,6 +287,9 @@
   .brand-team-inner-bg {
     .brand-team-squre-2 {
       top: 36%;
+      @include pad {
+        top: 34%;
+      }
     }
   }
 }
