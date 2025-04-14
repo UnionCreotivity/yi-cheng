@@ -154,9 +154,15 @@
       .brand-idea-slide-row {
         display: flex;
         align-items: center;
+        @include pad {
+          gap: 2vw;
+        }
         .brand-idea-slide-row-left {
           height: 100%;
           flex-basis: auto;
+          @include pad {
+            height: auto;
+          }
           img {
             height: 100%;
           }
@@ -167,6 +173,9 @@
           align-items: center;
           justify-content: center;
           flex-direction: column;
+          @include pad {
+            padding-right: 2vw;
+          }
           h2 {
             font-family: var(--serif);
             font-weight: 600;
@@ -178,6 +187,9 @@
           .content {
             display: flex;
             gap: 1vw;
+            @include pad {
+              gap: 2vw;
+            }
             .content-table {
               width: 27.25vw;
             }
@@ -191,6 +203,9 @@
               font-size: 1vw;
               letter-spacing: 2px;
               color: #231815;
+              @include pad {
+                font-size: 1.1vw;
+              }
             }
             .content-title-first {
               padding-left: 1.5vw;
