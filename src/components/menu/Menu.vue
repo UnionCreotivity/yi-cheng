@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div id="menu" :style="leftStyle">
-    <div class="menu-container" v-show="is_Show">
+    <div class="menu-container" ref="testDiv" v-show="is_Show">
       <ul class="menu-main-ul">
         <li class="menu-icon"><img src="@/assets/img/menu/menu-icon.svg" alt="" /></li>
         <li
@@ -42,8 +42,12 @@ const tag = ref('menu-1')
 
 const subItem = ref()
 
+const testDiv = ref<HTMLElement>()
+
 const showMenuClick = () => {
   is_Show.value = !is_Show.value
+
+  console.log(testDiv.value?.offsetWidth)
 }
 
 const leftStyle = computed(() => {
@@ -65,6 +69,7 @@ onMounted(() => {
   }
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
   subItem.value = findSubData
+  // console.log(testDiv.value?.clientWidth)
 })
 </script>
 
