@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div id="menu" :class="is_Show ? 'menu-active' : 'menu-inactive'">
-    <div class="menu-container">
+  <div id="menu" :style="leftStyle">
+    <div class="menu-container" v-show="is_Show">
       <ul class="menu-main-ul">
         <li class="menu-icon"><img src="@/assets/img/menu/menu-icon.svg" alt="" /></li>
         <li
@@ -46,6 +46,10 @@ const showMenuClick = () => {
   is_Show.value = !is_Show.value
 }
 
+const leftStyle = computed(() => {
+  return is_Show.value === false ? 'left:0%' : 'left:1.25%'
+})
+
 const toggleSubMenuClick = (key: string) => {
   if (!key) return
   tag.value = key
@@ -65,13 +69,13 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.menu-sub-enter-active,
-.menu-sub-leave-active {
-  transition: all 0.3s ease-out;
-}
+// .menu-sub-enter-active,
+// .menu-sub-leave-active {
+//   transition: all 0.3s ease-out;
+// }
 
-.menu-sub-enter-from,
-.menu-sub-leave-to {
-  transform: translateX(-5%);
-}
+// .menu-sub-enter-from,
+// .menu-sub-leave-to {
+//   transform: translateX(-5%);
+// }
 </style>

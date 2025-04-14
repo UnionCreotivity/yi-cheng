@@ -198,28 +198,28 @@
   }
 }
 
-.menu-active {
-  transform: translateX(1.25vw);
-  transition: all 0.5s;
-  .menu-container {
-    opacity: 1;
-    transition: all 0.25s;
-  }
-}
-.menu-inactive {
-  transform: translateX(-18.75vw);
-  transition: all 0.5s;
-  .menu-container {
-    opacity: 0;
-    transition: all 0.25s;
-  }
-}
-@keyframes test {
-  0% {
-    transform: translateX(5vw);
-  }
+// .menu-active {
+//   transform: translateX(1.25vw);
+//   transition: all 0.5s;
+//   .menu-container {
+//     opacity: 1;
+//     transition: all 0.25s;
+//   }
+// }
+// .menu-inactive {
+//   transform: translateX(-18.75vw);
+//   transition: all 0.5s;
+//   .menu-container {
+//     opacity: 0;
+//     transition: all 0.25s;
+//   }
+// }
+// @keyframes test {
+//   0% {
+//     transform: translateX(5vw);
+//   }
 
-  100% {
-    display: none;
-  }
-}
+//   100% {
+//     display: none;
+//   }
+// }
