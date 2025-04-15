@@ -54,7 +54,7 @@
             <swiper-slide
               v-for="item in props.fancyContent.items"
               :key="item.key"
-              @click="showBigImg(item.bigImg)"
+              @click="showBigImg(item.bigImg, item.mention)"
             >
               <div class="brand-swiper-img"><img :src="item.img" alt="" /></div>
               <h5>{{ item.name }}</h5>
@@ -95,6 +95,7 @@
       <div class="big-img-container" v-if="bigImgUrl">
         <div class="big-img-main">
           <img :src="bigImgUrl" alt="" />
+          <p v-if="mentionRef">{{ mentionRef }}</p>
         </div>
         <div class="close-button" @click="showBigImg()">
           <img src="/src/assets/img/other/close-button.svg" alt="" />
@@ -119,15 +120,23 @@ const emits = defineEmits(['handle-fancy'])
 
 const bigImgUrl = ref<string | null>(null)
 
+const mentionRef = ref<string | null>(null)
+
 const handleFancy = () => {
   emits('handle-fancy')
 }
 
-const showBigImg = (url?: string) => {
+const showBigImg = (url?: string, mention?: string) => {
   if (url) {
     bigImgUrl.value = url
   } else {
     bigImgUrl.value = null
+  }
+
+  if (mention) {
+    mentionRef.value = mention
+  } else {
+    mentionRef.value = null
   }
 }
 

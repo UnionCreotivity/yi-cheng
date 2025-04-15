@@ -234,14 +234,3 @@
     }
   }
 }
-.list-z-18 {
-  #nav {
-    z-index: unset;
-    .nav-icon {
-      opacity: 0;
-    }
-    .nav-links {
-      z-index: 18;
-    }
-  }
-}

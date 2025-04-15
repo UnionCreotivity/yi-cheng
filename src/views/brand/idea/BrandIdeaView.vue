@@ -70,6 +70,9 @@
           <div class="brand-idea-slide-row-right">
             <h2>十大建商好感度</h2>
             <div class="content">
+              <div class="crown">
+                <img src="/src/assets/img/brand/brand-idea/crown.svg" alt="" />
+              </div>
               <table class="content-table">
                 <thead>
                   <tr>

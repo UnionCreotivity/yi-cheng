@@ -185,13 +185,24 @@
             color: #231815;
           }
           .content {
+            position: relative;
             display: flex;
             gap: 1vw;
+            .crown {
+              position: absolute;
+              width: 8.5%;
+              top: 44%;
+              left: 13.5%;
+              z-index: 1;
+            }
             @include pad {
               gap: 2vw;
             }
             .content-table {
               width: 27.25vw;
+              tr {
+                position: relative;
+              }
             }
             table {
               border-collapse: separate;

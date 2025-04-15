@@ -37,11 +37,6 @@ export const navLinks = [
         name: '交通動線圖',
         linkName: '',
       },
-      {
-        key: 'develop-3',
-        name: '區域行情',
-        linkName: '',
-      },
     ],
   },
   {

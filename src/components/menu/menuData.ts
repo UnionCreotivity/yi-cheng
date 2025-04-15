@@ -37,10 +37,6 @@ export const menuData = [
         key: 'link-2',
         name: '交通動線圖',
       },
-      {
-        key: 'link-3',
-        name: '區域行情',
-      },
     ],
   },
   {
@@ -145,11 +141,6 @@ export const menuSubData = [
       {
         key: 'link-2',
         name: '交通動線圖',
-        link: '',
-      },
-      {
-        key: 'link-3',
-        name: '區域行情',
         link: '',
       },
     ],

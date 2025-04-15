@@ -177,6 +177,7 @@ export const brandTeamData = [
           '@/assets/img/brand/team/people-4/people-4-swiper-big-1@2x.webp',
           import.meta.url,
         ).href,
+        mention: '3D外觀示意圖',
       },
       {
         key: 'item-2',
@@ -187,6 +188,7 @@ export const brandTeamData = [
           '@/assets/img/brand/team/people-4/people-4-swiper-big-2@2x.webp',
           import.meta.url,
         ).href,
+        mention: '3D外觀示意圖',
       },
       {
         key: 'item-3',
@@ -197,6 +199,7 @@ export const brandTeamData = [
           '@/assets/img/brand/team/people-4/people-4-swiper-big-3@2x.webp',
           import.meta.url,
         ).href,
+        mention: '3D外觀示意圖',
       },
       {
         key: 'item-4',
@@ -207,6 +210,7 @@ export const brandTeamData = [
           '@/assets/img/brand/team/people-4/people-4-swiper-big-4@2x.webp',
           import.meta.url,
         ).href,
+        mention: '3D外觀示意圖',
       },
       {
         key: 'item-5',
@@ -217,6 +221,7 @@ export const brandTeamData = [
           '@/assets/img/brand/team/people-4/people-4-swiper-big-5@2x.webp',
           import.meta.url,
         ).href,
+        mention: '3D外觀示意圖',
       },
       {
         key: 'item-6',
@@ -227,6 +232,7 @@ export const brandTeamData = [
           '@/assets/img/brand/team/people-4/people-4-swiper-big-6@2x.webp',
           import.meta.url,
         ).href,
+        mention: '3D外觀示意圖',
       },
     ],
   },
