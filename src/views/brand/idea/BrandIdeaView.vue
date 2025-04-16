@@ -119,27 +119,27 @@
                 </thead>
                 <tbody class="content-table-body">
                   <tr>
-                    <th scope="row" class="tag">1.</th>
+                    <th scope="row" class="tag">6.</th>
                     <td class="main-item">國泰建設</td>
                     <td class="number">13.78</td>
                   </tr>
                   <tr>
-                    <th scope="row" class="tag">2.</th>
+                    <th scope="row" class="tag">7.</th>
                     <td class="main-item">新濠建設</td>
                     <td class="number">10.75</td>
                   </tr>
                   <tr>
-                    <th scope="row" class="tag">3.</th>
+                    <th scope="row" class="tag">8.</th>
                     <td class="main-item">中悅建設</td>
                     <td class="number">9.08</td>
                   </tr>
                   <tr>
-                    <th scope="row" class="tag">4.</th>
+                    <th scope="row" class="tag">9.</th>
                     <td class="main-item">愛山林建設</td>
                     <td class="number">7.15</td>
                   </tr>
                   <tr>
-                    <th scope="row" class="tag">5.</th>
+                    <th scope="row" class="tag">10.</th>
                     <td class="main-item">國賓大建設</td>
                     <td class="number">6.62</td>
                   </tr>
