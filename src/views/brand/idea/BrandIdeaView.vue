@@ -121,27 +121,27 @@
                   <tr>
                     <th scope="row" class="tag">1.</th>
                     <td class="main-item">國泰建設</td>
-                    <td class="number">126.71</td>
+                    <td class="number">13.78</td>
                   </tr>
                   <tr>
                     <th scope="row" class="tag">2.</th>
                     <td class="main-item">新濠建設</td>
-                    <td class="number">105.84</td>
+                    <td class="number">10.75</td>
                   </tr>
                   <tr>
                     <th scope="row" class="tag">3.</th>
                     <td class="main-item">中悅建設</td>
-                    <td class="number">105.12</td>
+                    <td class="number">9.08</td>
                   </tr>
                   <tr>
                     <th scope="row" class="tag">4.</th>
                     <td class="main-item">愛山林建設</td>
-                    <td class="number">42.49</td>
+                    <td class="number">7.15</td>
                   </tr>
                   <tr>
                     <th scope="row" class="tag">5.</th>
                     <td class="main-item">國賓大建設</td>
-                    <td class="number">15.09</td>
+                    <td class="number">6.62</td>
                   </tr>
                 </tbody>
               </table>
