@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div id="menu" :style="is_Show ? menuActive : menuInactiveStyle">
+  <div id="menu" :style="props.show ? menuActive : menuInactiveStyle">
     <div class="menu-container">
       <ul class="menu-main-ul">
         <li class="menu-icon"><img src="@/assets/img/menu/menu-icon.svg" alt="" /></li>
@@ -18,7 +18,12 @@
         </li>
       </ul>
       <ul class="menu-link-items" v-if="subItem">
-        <li class="menu-link-item" v-for="link in subItem.linkItem" :key="link.key">
+        <li
+          class="menu-link-item"
+          v-for="link in subItem.linkItem"
+          :key="link.key"
+          :class="subTag === link.link ? 'menu-link-item-active' : ''"
+        >
           <router-link :to="{ name: link.link }">
             <div class="menu-link-item-block"></div>
             <p>{{ link.name }}</p></router-link
@@ -26,7 +31,7 @@
         </li>
       </ul>
     </div>
-    <div class="menu-button" @click="showMenuClick">MENU</div>
+    <div class="menu-button" @click.stop="showMenuClick">MENU</div>
   </div>
 </template>
 
@@ -34,13 +39,17 @@
 import { menuData, menuSubData, menuTags } from './menuData'
 import '@/assets/scss/menu/menu.scss'
 
-const route = useRoute()
+const emits = defineEmits(['show-menu-click'])
 
-const is_Show = ref(false)
+const props = defineProps(['show'])
+
+const route = useRoute()
 
 const tag = ref('menu-1')
 
 const subItem = ref()
+
+const subTag = ref('')
 
 const menuActive = ref({
   transform: ' translateX(1.25vw)',
@@ -48,7 +57,7 @@ const menuActive = ref({
 })
 
 const showMenuClick = () => {
-  is_Show.value = !is_Show.value
+  emits('show-menu-click')
 }
 
 const menuInactiveStyle = computed(() => {
@@ -73,6 +82,7 @@ onMounted(() => {
   }
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
   subItem.value = findSubData
+  subTag.value = route.name as string
 })
 </script>
 

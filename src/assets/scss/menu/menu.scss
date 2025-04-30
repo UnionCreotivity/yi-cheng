@@ -137,6 +137,7 @@
         border-radius: 0px 15px 15px 0px;
         padding-left: 3vw;
         padding-right: 1.75vw;
+        width: 14vw;
       }
       .menu-link-item {
         position: relative;
@@ -194,6 +195,25 @@
           p {
             color: white;
             transition: all 0.5s;
+          }
+        }
+        // .router-link-exact-active {
+        //   .menu-link-item-block {
+        //     left: 0%;
+        //   }
+        //   p {
+        //     color: white;
+        //     transition: all 0.5s;
+        //   }
+        // }
+      }
+      .menu-link-item-active {
+        a {
+          .menu-link-item-block {
+            left: 0;
+          }
+          p {
+            color: white;
           }
         }
       }

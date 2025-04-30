@@ -156,7 +156,7 @@ export const menuSubData = [
       {
         key: 'link-2',
         name: '建築精裝',
-        link: '',
+        link: 'feature',
       },
     ],
   },
@@ -186,7 +186,7 @@ export const menuSubData = [
       {
         key: 'link-1',
         name: '電動車整合',
-        link: '',
+        link: 'electric',
       },
       {
         key: 'link-2',

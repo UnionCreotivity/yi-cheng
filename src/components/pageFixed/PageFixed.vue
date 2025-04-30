@@ -2,7 +2,7 @@
   <main :id="props.title">
     <slot></slot>
     <div v-if="routeName !== 'home'">
-      <Menu />
+      <Menu :show="is_Show" @show-menu-click="showMenuClick" />
       <FullScreen />
     </div>
   </main>
@@ -17,6 +17,12 @@ const props = defineProps(['title'])
 const route = useRoute()
 
 const routeName = ref('')
+
+const is_Show = ref(false)
+
+const showMenuClick = () => {
+  is_Show.value = !is_Show.value
+}
 
 onMounted(() => {
   if (route.name) {

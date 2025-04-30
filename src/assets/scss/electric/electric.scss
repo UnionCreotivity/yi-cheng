@@ -1,0 +1,160 @@
+@use '../config' as *;
+.electric-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  #nav {
+    .nav-links {
+      li {
+        a {
+          color: black !important;
+        }
+      }
+      .nav-active {
+        a {
+          color: #d27c8d !important;
+        }
+      }
+    }
+  }
+  .electric-view-cotainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .electric-view-top {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      @include pad {
+        height: 60%;
+      }
+      .electric-view-top-img {
+        width: 100%;
+        position: relative;
+        @include pad {
+          height: 100%;
+          img {
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+      }
+      .electric-view-top-txt {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.5%;
+        width: 88%;
+        margin: 0 auto;
+      }
+    }
+    .electric-view-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex: 1;
+      gap: 2vw;
+      .electric-view-bottom-item-1 {
+        width: 10.25%;
+        @include pad {
+          width: 12.25%;
+        }
+      }
+      .electric-view-bottom-para {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 25%;
+        gap: 0.35vw;
+        @include pad {
+          width: 29%;
+          gap: 0.75vw;
+        }
+        .electric-view-bottom-para-icon {
+          width: 8.5vw;
+        }
+        h1 {
+          font-family: var(--serif);
+          font-size: 1.9vw;
+          letter-spacing: 6px;
+          color: #231815;
+        }
+        p {
+          font-family: var(--micro);
+          font-size: 1vw;
+          font-weight: 500;
+          letter-spacing: 2px;
+          text-align: justify;
+          line-height: 2;
+          color: #2d2d2d;
+          @include pad {
+            font-size: 1.1vw;
+          }
+        }
+        button {
+          font-family: var(--serif);
+          font-size: 1vw;
+          letter-spacing: 2px;
+          border: none;
+          border-radius: 25px;
+          padding: 1.25% 4.5%;
+          color: white;
+          background: linear-gradient(to right, rgb(210, 124, 141) 0%, rgb(185, 93, 117) 100%);
+          cursor: pointer;
+          @include pad {
+            font-size: 1.1vw;
+            padding: 2.25% 4.5%;
+          }
+        }
+      }
+      .electric-view-bottom-flow {
+        width: 58.25%;
+        @include pad {
+          width: 52.25%;
+        }
+      }
+    }
+  }
+  .electric-view-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 16;
+    .electric-view-inner-bg {
+      width: 42%;
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .electric-view-inner-para {
+      width: 47%;
+      margin: auto;
+    }
+    .electric-view-inner-close {
+      position: absolute;
+      right: 2%;
+      top: 3%;
+      width: 2.5vw;
+      height: 2.5vw;
+      padding: 0.25vw;
+      background-color: #d27c8d;
+      cursor: pointer;
+      @include pad {
+        width: 4.5vw;
+        height: 4.5vw;
+        top: 3%;
+        right: 3%;
+        padding: 0.5vw;
+      }
+    }
+  }
+}

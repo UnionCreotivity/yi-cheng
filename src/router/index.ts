@@ -11,6 +11,7 @@ import BrandTeamView from '@/views/brand/team/BrandTeamView.vue'
 
 // <--- 智能光譜 --->
 import SmartView from '@/views/smart/SmartView.vue'
+import ElectricView from '@/views/smart/electric/ElectricView.vue'
 import LoanView from '@/views/smart/loan/LoanView.vue'
 import HomeSmartView from '@/views/smart/homesmart/HomeSmartView.vue'
 import StoreLoanView from '@/views/smart/loan/StoreLoanView.vue'
@@ -21,6 +22,8 @@ import MethodView from '@/views/construction/method/MethodView.vue'
 import BuildingView from '@/views/construction/building/BuildingView.vue'
 import WaterProofView from '@/views/construction/waterproof/WaterProofView.vue'
 import SafeView from '@/views/construction/safe/SafeView.vue'
+//建築精裝
+import FeatureView from '@/views/construction/feature/FeatureView.vue'
 
 // <--- 繁華光譜 --->
 import BustlingView from '@/views/bustling/BustlingView.vue'
@@ -79,6 +82,11 @@ const router = createRouter({
           component: LoanView,
         },
         {
+          path: 'electric',
+          name: 'electric',
+          component: ElectricView,
+        },
+        {
           path: 'storeloan',
           name: 'storeloan',
           component: StoreLoanView,
@@ -113,6 +121,11 @@ const router = createRouter({
           path: 'safe',
           name: 'safe',
           component: SafeView,
+        },
+        {
+          path: 'feature',
+          name: 'feature',
+          component: FeatureView,
         },
       ],
     },

@@ -45,7 +45,7 @@ export const navLinks = [
       {
         key: 'smart-1',
         name: '電動車整合',
-        linkName: '',
+        linkName: 'electric',
       },
       {
         key: 'smart-2',

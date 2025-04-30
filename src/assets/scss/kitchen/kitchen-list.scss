@@ -1,0 +1,231 @@
+@use '../config' as *;
+.kitchen-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  @include pad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .kitchen-list-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    @include pad {
+      position: relative;
+      height: 82.5%;
+    }
+    .kitchen-list-icon {
+      position: absolute;
+      right: 2%;
+      top: 4%;
+      width: 10.5vw;
+      @include pad {
+        top: 0%;
+      }
+    }
+    .kitchen-list-left {
+      position: relative;
+      width: 55%;
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .kitchen-list-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-inline: 5%;
+      margin-top: 2%;
+      @include pad {
+        height: 100%;
+      }
+      .kitchen-list-right-top {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+        margin-bottom: 2.5vw;
+        .kitchen-list-right-top-h1-container {
+          display: flex;
+          align-items: center;
+          gap: 2vw;
+          .kitchen-list-right-top-icon {
+            width: 7.75vw;
+          }
+        }
+        h1 {
+          font-family: var(--serif);
+          font-size: 1.9vw;
+          letter-spacing: 4px;
+          font-weight: 600;
+          color: #231815;
+        }
+        p {
+          font-family: var(--micro);
+          font-size: 1vw;
+          font-weight: 500;
+          letter-spacing: 2px;
+          line-height: 2;
+          text-align: justify;
+          color: #2d2d2d;
+        }
+      }
+      .kitchen-list-right-bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1vw;
+        .kitchen-list-right-bottom-item {
+          cursor: pointer;
+          background-color: #f0efef;
+          overflow: hidden;
+        }
+      }
+    }
+    .kitchen-list-close,
+    .kitchen-detail-close {
+      position: absolute;
+      right: 2%;
+      top: 10%;
+      width: 2.5vw;
+      height: 2.5vw;
+      padding: 0.25vw;
+      background-color: #d27c8d;
+      cursor: pointer;
+      z-index: 16;
+      @include pad {
+        width: 3vw;
+        height: 3vw;
+        padding: 0.5vw;
+        top: 8%;
+        right: 2%;
+      }
+    }
+    .kitchen-detail {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      .kitchen-detail-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        .kitchen-detail-left {
+          width: 58%;
+          height: 100%;
+          .kitchen-detail-bg {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img {
+              object-fit: cover;
+              height: 100%;
+            }
+          }
+        }
+        .kitchen-detail-right {
+          flex: 1;
+          .kitchen-detail-right-para-1 {
+            width: 54%;
+            margin: auto;
+          }
+        }
+        .kitchen-detail-icon {
+          position: absolute;
+          right: 2%;
+          top: 4%;
+          width: 10.5vw;
+          @include pad {
+            top: 0;
+          }
+        }
+      }
+    }
+    .item-3 {
+      .kitchen-detail-container {
+        .kitchen-detail-right {
+          .kitchen-detail-right-para-1 {
+            width: 87%;
+            margin-top: 4%;
+            margin-right: 8%;
+          }
+        }
+      }
+    }
+    .item-4 {
+      .kitchen-detail-container {
+        .kitchen-detail-right {
+          .kitchen-detail-right-para-1 {
+            width: 92%;
+          }
+        }
+      }
+    }
+    .item-5 {
+      .kitchen-detail-container {
+        display: flex;
+        flex-direction: column;
+        .kitchen-detail-icon {
+          @include pad {
+            top: 2%;
+          }
+        }
+        .kitchen-detail-left {
+          width: 100%;
+          height: auto;
+          .kitchen-detail-bg {
+            height: auto;
+            img {
+              height: auto;
+            }
+          }
+        }
+        .kitchen-detail-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 7vw;
+          .kitchen-detail-right-para-1 {
+            width: 42vw;
+            margin: unset;
+            margin-bottom: 4%;
+          }
+          .kitchen-detail-right-para-2 {
+            width: 43.25vw;
+          }
+        }
+      }
+    }
+    .item-6 {
+      .kitchen-detail-container {
+        justify-content: center;
+        gap: 3vw;
+        .kitchen-detail-left {
+          height: auto;
+        }
+        .kitchen-detail-right {
+          flex: unset;
+          .kitchen-detail-right-para-1 {
+            width: 28vw;
+            margin: unset;
+          }
+        }
+      }
+    }
+  }
+}
