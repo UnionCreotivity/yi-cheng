@@ -21,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+// 建築工法內頁使用
 import { constrLinks } from './navLinks'
 
 const props = defineProps(['color', 'tag', 'innerkey'])

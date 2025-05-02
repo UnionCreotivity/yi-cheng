@@ -180,6 +180,7 @@ const checkClick = (id: string) => {
   nowInputId.value = id
 }
 
+//判斷鍵盤點擊項目，鍵盤輸入為text
 const keyboardClick = (num: string) => {
   const key = targetMap[nowInputId.value]
   if (!key) return
@@ -191,41 +192,21 @@ const keyboardClick = (num: string) => {
     const total = Math.floor(Number(modelTemp))
     loanInputModel.value[key] = total
   }
-  // const inputNum = num
-  // let modelTemp: string
-  // if (nowInputId.value === 'cal-total') {
-  //   modelTemp = loanInputModel.value.total.toString() + inputNum
-  //   const total = Math.floor(Number(modelTemp))
-  //   loanInputModel.value.total = total
-  // } else if (nowInputId.value === 'cal-ratio') {
-  //   loanInputModel.value.ratio += inputNum
-  // }
 }
 
+//back按鈕功能
 const keyboardBackClick = () => {
   const key = targetMap[nowInputId.value]
   if (!key) return
   const temp = loanInputModel.value[key].toString()
   if (temp.length === 0) return
 
+  //ratio的input是text，其餘為number，所以除了ratio以外要轉換成number
   if (key === 'ratio') {
     loanInputModel.value[key] = temp.slice(0, length - 1)
   } else {
     loanInputModel.value[key] = Math.floor(Number(temp.slice(0, length - 1)))
   }
-  // let length
-  // let temp
-  // if (nowInputId.value === 'cal-total') {
-  //   temp = loanInputModel.value.total.toString()
-  //   length = temp.length >= 1 ? temp.length : 0
-  //   if (0) return
-  //   loanInputModel.value.total = Number(temp.slice(0, length - 1))
-  // } else if (nowInputId.value === 'cal-ratio') {
-  //   temp = loanInputModel.value.ratio.toString()
-  //   length = temp.length >= 1 ? temp.length : 0
-  //   if (0) return
-  //   loanInputModel.value.ratio = temp.slice(0, length - 1)
-  // }
 }
 
 //年利率檢查

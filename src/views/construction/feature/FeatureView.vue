@@ -21,6 +21,9 @@
             </div>
           </li>
           <li class="feature-view-content-li item-2 txt-right">
+            <!-- <button style="position: absolute; left: 0; top: 0" @click="renderItem('kitch')">
+              廚具設備
+            </button> -->
             <div class="color-lump">
               <img src="/src/assets/img/construction/list-icon/sakura@2x.webp" alt="" />
             </div>

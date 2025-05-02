@@ -11,6 +11,7 @@
           v-show="content?.id === tag"
         >
           <div class="building-content-left">
+            <!-- 判斷是否為輪播 -->
             <div class="building-content-left-first" v-if="content?.items">
               <FadeInItem>
                 <div
@@ -19,11 +20,14 @@
                   v-show="item.order === itemsTag"
                   :key="item.key"
                 >
+                  <!-- 圖片與影片的判斷 -->
                   <img :src="item.image" alt="" v-if="item.image" />
                   <video :src="item.video" muted loop autoplay v-else></video></div
               ></FadeInItem>
             </div>
+            <!-- 判斷是否為輪播 -->
             <div class="building-content-left-second" v-else>
+              <!-- 圖片與影片的判斷 -->
               <img :src="content?.image" alt="" v-if="content?.image" />
               <video :src="content?.video" muted loop autoplay v-else></video>
             </div>
@@ -33,6 +37,7 @@
             <p>
               {{ content?.content }}
             </p>
+            <!-- 判斷是否為輪播，會出現相對應的按鈕 -->
             <div class="building-content-right-button" v-if="content?.items">
               <button
                 class="building-content-prev-button"
@@ -82,7 +87,7 @@ const toggleTag = (id: string) => {
   tag.value = id
   itemsTag.value = 0
 }
-
+// 輪播按鈕功能
 const handleOrder = (
   item: { key: string; order: number; image?: string; video?: string }[],
   num: number,

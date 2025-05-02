@@ -17,6 +17,7 @@
           <p>{{ item.zhName }}</p>
         </li>
       </ul>
+      <!-- 有無子項目 -->
       <ul class="menu-link-items" v-if="subItem">
         <li
           class="menu-link-item"
@@ -67,6 +68,7 @@ const menuInactiveStyle = computed(() => {
   }
 })
 
+//看menu是否有子選項
 const toggleSubMenuClick = (key: string) => {
   if (!key) return
   tag.value = key
@@ -75,11 +77,14 @@ const toggleSubMenuClick = (key: string) => {
 }
 
 onMounted(() => {
+  //抓第一個路徑，例如/construction/feature就會抓construction
   const pathSplit = route.path.split('/')[1]
+  // 尋找tag對應的id
   const findId = menuTags.find((item) => item.path.includes(pathSplit))?.id
   if (findId) {
     tag.value = findId
   }
+  //尋找子項目
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
   subItem.value = findSubData
   subTag.value = route.name as string

@@ -39,6 +39,7 @@
         <div class="kitchen-detail" v-if="kitchenDetail" :class="kitchenDetail.tag">
           <div class="kitchen-detail-container">
             <div class="kitchen-detail-left">
+              <!-- 是否有圖片 -->
               <div class="kitchen-detail-bg" v-if="kitchenDetail.bg">
                 <img :src="kitchenDetail.bg" alt="" />
                 <MentionTxt
@@ -46,6 +47,7 @@
                   :color="kitchenDetail.tag === 'item-3' ? 'black' : 'white'"
                 />
               </div>
+              <!-- 是否有影片 -->
               <div class="kitchen-detail-video" v-if="kitchenDetail.video">
                 <video :src="kitchenDetail.video" controls autoplay></video>
               </div>
@@ -54,10 +56,12 @@
               <div class="kitchen-detail-right-para-1">
                 <img :src="kitchenDetail.para" alt="" />
               </div>
+              <!-- 是否有第二段文字 -->
               <div class="kitchen-detail-right-para-2" v-if="kitchenDetail.paraSec">
                 <img :src="kitchenDetail.paraSec" alt="" />
               </div>
             </div>
+            <!-- 是否有icon -->
             <div class="kitchen-detail-icon" v-if="kitchenDetail.icon">
               <img :src="kitchenDetail.icon" alt="" />
             </div>

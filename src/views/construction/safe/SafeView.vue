@@ -19,6 +19,7 @@
             <p>
               {{ content?.content }}
             </p>
+            <!-- 判斷是否有前往內頁的點擊按鈕 -->
             <div class="safe-content-button" v-if="content.innerImg">
               <button
                 class="safe-content-inner-button"
@@ -35,6 +36,7 @@
       <img src="@/assets/img/other/fixed-bottom@2x.webp" alt="" />
     </div>
     <FadeIn>
+      <!-- 內頁 -->
       <div class="safe-content-toggle-img" v-if="toggleImg">
         <div class="safe-content-toggle-img-inner">
           <img :src="toggleImg" alt="" />

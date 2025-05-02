@@ -78,6 +78,7 @@ const toggleTag = (id: string) => {
   innerTag.value = 0
 }
 
+// 輪播按鈕功能
 const handleOrder = (item: { key: string; tag: number; image: string }[], num: number) => {
   if (waterContent.value) {
     const length = item.length

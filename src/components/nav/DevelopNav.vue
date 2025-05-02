@@ -24,6 +24,7 @@
 </template>
 
 <script setup lang="ts">
+// 八擴之光內頁使用
 import { developLinks } from './navLinks'
 
 const props = defineProps(['tag', 'innerkey', 'mainColor'])
