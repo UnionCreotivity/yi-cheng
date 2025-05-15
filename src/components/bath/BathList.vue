@@ -30,12 +30,15 @@
         <div class="bath-detail" v-if="bathDetail" :class="bathDetail.tag">
           <div class="bath-detail-container">
             <div class="bath-detail-left">
+              <!-- 是否有影片 -->
               <div class="bath-detail-left-video" v-if="bathDetail.video">
                 <video :src="bathDetail.video" controls autoplay></video>
               </div>
+              <!-- 左側底下是否有文字 -->
               <div class="bath-detail-left-bottom" v-if="bathDetail.bottom">
                 <img :src="bathDetail.bottom" alt="" />
               </div>
+              <!-- 是否有圖片 -->
               <div class="bath-detail-left-bg" v-if="bathDetail.bg">
                 <MentionTxt
                   text="情境示意圖"

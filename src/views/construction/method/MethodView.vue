@@ -67,16 +67,16 @@ const gsapInit = () => {
 
   timeline
     .from('.method-top-text-1', {
-      y: '105%',
+      y: '115%',
       duration: 1.5,
     })
     .from(
       '.method-bottom-item img',
       {
-        y: '105%',
+        y: '115%',
         opacity: 0,
-        stagger: 0.1,
-        duration: 1.5,
+        stagger: 0.35,
+        duration: 1.25,
       },
       '<+0.5',
     )

@@ -25,8 +25,11 @@
             nextEl: '.brand-classic-next',
             prevEl: '.brand-classic-prev',
           }"
+          :initial-slide="5"
           :modules="[Navigation, FreeMode]"
           class="brand-classic-swiper"
+          @swiper="onSwiper"
+          ref="slide"
         >
           <div class="brand-classic-swiper-nav-line"></div>
           <swiper-slide
@@ -74,7 +77,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Swiper as SwiperType } from 'swiper'
 import { Navigation, FreeMode } from 'swiper/modules'
 import Nav from '@/components/nav/Nav.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
@@ -84,6 +89,8 @@ import { classicInnerData } from './BrandClassicInnerData'
 import '@/assets/scss/brand/classic.scss'
 
 const fancyData = ref<null | { year: string; name: string; img: string }>(null)
+
+const slide = ref()
 
 const toProduct = (year?: string, id?: string) => {
   if (!year || !id) return (fancyData.value = null)
@@ -96,6 +103,34 @@ const toProduct = (year?: string, id?: string) => {
       img: inner_data.img,
     }
   }
+}
+
+const onSwiper = (swiper: SwiperType) => {
+  //初始動畫
+  swiper.allowTouchMove = false
+  //更改timing-function
+  slide.value.$el.querySelector('.swiper-wrapper').style['transition-timing-function'] =
+    ' cubic-bezier(.63,0,.3,1)'
+
+  gsapInit(swiper)
+  setTimeout(() => {
+    swiper.slideTo(0, 1500)
+  }, 750)
+}
+
+const gsapInit = (swiper: SwiperType) => {
+  const tl = gsap.timeline({ delay: 0.25 })
+  tl.from('.brand-classic-txt img', {
+    y: '120%',
+    ease: 'power4.inOut',
+    duration: 1.25,
+    onComplete: () => {
+      swiper.allowTouchMove = true
+      //恢復timing-function
+      slide.value.$el.querySelector('.swiper-wrapper').style['transition-timing-function'] =
+        'ease-out'
+    },
+  })
 }
 </script>
 

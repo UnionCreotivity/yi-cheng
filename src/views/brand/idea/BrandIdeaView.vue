@@ -181,7 +181,7 @@ const gsapInit = () => {
     .from(
       '.brand-idea-content-second-left',
       {
-        y: '20%',
+        y: '30%',
         opacity: 0,
         duration: 1.5,
       },
@@ -190,11 +190,11 @@ const gsapInit = () => {
     .from(
       '.brand-idea-content-second-right',
       {
-        y: '20%',
+        y: '40%',
         opacity: 0,
         duration: 1.5,
       },
-      '<+0.25',
+      '<+0.45',
     )
 }
 

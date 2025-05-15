@@ -166,8 +166,8 @@ const gsapInit = () => {
         '.brand-team-inner-summary > p,.brand-team-inner-exper > p,.brand-team-inner-carousel >.swiper',
         {
           opacity: 0,
-          x: '5%',
-          stagger: 0.2,
+          x: '12.5%',
+          stagger: 0.3,
           duration: 1.5,
         },
         '<+0.25',

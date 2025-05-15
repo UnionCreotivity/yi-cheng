@@ -46,21 +46,56 @@
       margin-top: 4.25%;
       .color-lump {
         z-index: 1;
+        position: relative;
+        overflow: hidden;
+        .light {
+          mix-blend-mode: plus-lighter;
+          opacity: 0.4;
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          height: 23vw;
+          background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgb(255, 255, 255) 50%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          transform: rotate(27deg) translateX(-300%);
+          animation-name: lightMv;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+        }
+        @keyframes lightMv {
+          0% {
+            transform: rotate(27deg) translateX(-300%);
+          }
+          50% {
+            transform: rotate(27deg) translateX(200%);
+          }
+          100% {
+            transform: rotate(27deg) translateX(200%);
+          }
+        }
       }
+
       .item-img {
         overflow: hidden;
       }
+      .feature-view-content-li {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        box-shadow: 11px 11px 10px rgba(35, 24, 21, 0.35);
+        overflow: hidden;
+        cursor: pointer;
+      }
+
       .feature-view-content-ul-left {
         position: relative;
         height: 100%;
         flex: 1;
-        .feature-view-content-li {
-          display: flex;
-          justify-content: center;
-          position: absolute;
-          box-shadow: 11px 11px 10px rgba(35, 24, 21, 0.35);
-          overflow: hidden;
-        }
+
         .item-1 {
           top: 0%;
           left: 0%;
@@ -190,12 +225,7 @@
         position: relative;
         height: 100%;
         width: 44.5%;
-        .feature-view-content-li {
-          display: flex;
-          justify-content: center;
-          position: absolute;
-          box-shadow: 11px 11px 10px rgba(35, 24, 21, 0.35);
-        }
+
         .item-1 {
           left: 0;
           top: 0;
@@ -303,6 +333,24 @@
       .feature-view-content-txt {
         width: 1.6vw;
         filter: drop-shadow(6px 11px 6px rgba(35, 24, 21, 0.35));
+      }
+    }
+    .hover-active {
+      .feature-view-content-li {
+        .item-img {
+          img {
+            transform: scale(1);
+            transition: all 0.3s;
+          }
+        }
+        &:hover {
+          .item-img {
+            img {
+              transform: scale(1.1) !important;
+              transition: all 0.3s;
+            }
+          }
+        }
       }
     }
   }

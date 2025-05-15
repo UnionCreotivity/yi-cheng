@@ -69,9 +69,9 @@ const gsapInit = () => {
   }).from(
     '.electric-view-bottom-item-1,.electric-view-bottom-para,.electric-view-bottom-flow',
     {
-      y: '20%',
+      y: '30%',
       opacity: 0,
-      stagger: 0.2,
+      stagger: 0.45,
       duration: 1.5,
     },
     '<+0.5',

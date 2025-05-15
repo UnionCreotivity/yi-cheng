@@ -65,16 +65,16 @@ const develops = [
 const gsapInit = () => {
   const tl = gsap.timeline({ delay: 0.5 })
   tl.from('.develop-top-txt', {
-    y: '105%',
+    y: '120%',
     opacity: 0,
     duration: 1.5,
   }).from(
     '.develop-bottom-item img',
     {
-      y: '105%',
+      y: '115%',
       opacity: 0,
+      stagger: 0.35,
       duration: 1.5,
-      stagger: 0.1,
     },
     '<+0.5',
   )

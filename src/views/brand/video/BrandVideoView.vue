@@ -74,6 +74,8 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Scrollbar, Pagination } from 'swiper/modules'
 import Nav from '@/components/nav/Nav.vue'
@@ -96,6 +98,29 @@ const showVideo = (val?: string) => {
     video.value = null
   }
 }
+
+const gsapInit = () => {
+  const tl = gsap.timeline({})
+  tl.from('.brand-offical', {
+    x: '115%',
+    opacity: 0.5,
+    ease: 'power4.inOut',
+    duration: 1.5,
+  }).from(
+    '.brand-video-swiper',
+    {
+      y: '20%',
+      opacity: 0,
+      ease: 'power4.inOut',
+      duration: 1.25,
+    },
+    '<+0.45',
+  )
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>

@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div id="menu" :style="props.show ? menuActive : menuInactiveStyle">
+  <div id="menu" :style="props.show ? menuActive : menuInactiveStyle" @click.stop>
     <div class="menu-container">
       <ul class="menu-main-ul">
         <li class="menu-icon"><img src="@/assets/img/menu/menu-icon.svg" alt="" /></li>
@@ -58,7 +58,9 @@ const menuActive = ref({
 })
 
 const showMenuClick = () => {
-  emits('show-menu-click')
+  const val = !props.show
+  console.log(val)
+  emits('show-menu-click', val)
 }
 
 const menuInactiveStyle = computed(() => {

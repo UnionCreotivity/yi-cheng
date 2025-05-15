@@ -1,0 +1,111 @@
+export const featureData = [
+  {
+    tag: 'left',
+    items: [
+      {
+        tag: 'left-1',
+        class: 'txt-left',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/賀眾牌@2x.webp', import.meta.url)
+          .href,
+        decoImg: new URL(
+          '@/assets/img/construction/list/list-water-filter@2x.webp',
+          import.meta.url,
+        ).href,
+      },
+      {
+        tag: 'left-2',
+        class: 'txt-right',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/sakura@2x.webp', import.meta.url)
+          .href,
+        decoImg: new URL('@/assets/img/construction/list/list-sakura@2x.webp', import.meta.url)
+          .href,
+      },
+      {
+        tag: 'left-3',
+        class: 'txt-left',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/EMS系統@2x.webp', import.meta.url)
+          .href,
+        decoImg: new URL('@/assets/img/construction/list/list-ems@2x.webp', import.meta.url).href,
+      },
+      {
+        tag: 'left-4',
+        class: 'txt-left',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/BWT@2x.webp', import.meta.url).href,
+        decoImg: new URL('@/assets/img/construction/list/list-bwt@2x.webp', import.meta.url).href,
+      },
+      {
+        tag: 'left-5',
+        class: 'txt-left',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/泡沫洗淨@2x.webp', import.meta.url)
+          .href,
+        decoImg: new URL('@/assets/img/construction/list/list-toilet@2x.webp', import.meta.url)
+          .href,
+      },
+      {
+        tag: 'left-6',
+        class: 'txt-top',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/全熱交換器@2x.webp', import.meta.url)
+          .href,
+        decoImg: new URL('@/assets/img/construction/list/list-panasonic@2x.webp', import.meta.url)
+          .href,
+      },
+      {
+        tag: 'left-7',
+        class: 'txt-left',
+        lumpTxt: new URL(
+          '@/assets/img/construction/list-icon/四合一暖風機@2x.webp',
+          import.meta.url,
+        ).href,
+        decoImg: new URL('@/assets/img/construction/list/list-panasonic-2@2x.webp', import.meta.url)
+          .href,
+      },
+      {
+        tag: 'left-8',
+        class: 'txt-left',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/電子鎖@2x.webp', import.meta.url)
+          .href,
+        decoImg: new URL('@/assets/img/construction/list/list-philips@2x.webp', import.meta.url)
+          .href,
+      },
+    ],
+  },
+  {
+    tag: 'right',
+    items: [
+      {
+        tag: 'right-1',
+        class: 'txt-top',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/svago@2x.webp', import.meta.url).href,
+        decoImg: new URL('@/assets/img/construction/list/list-svago@2x.webp', import.meta.url).href,
+      },
+      {
+        tag: 'right-2',
+        class: 'txt-top',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/toto@2x.webp', import.meta.url).href,
+        decoImg: new URL('@/assets/img/construction/list/list-toto@2x.webp', import.meta.url).href,
+      },
+      {
+        tag: 'right-3',
+        class: 'txt-top',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/kohler@2x.webp', import.meta.url)
+          .href,
+        decoImg: new URL('@/assets/img/construction/list/list-kohler@2x.webp', import.meta.url)
+          .href,
+      },
+      {
+        tag: 'right-4',
+        class: 'txt-top',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/japan@2x.webp', import.meta.url).href,
+        decoImg: new URL('@/assets/img/construction/list/list-japan@2x.webp', import.meta.url).href,
+      },
+      {
+        tag: 'right-5',
+        class: 'txt-right',
+        lumpTxt: new URL('@/assets/img/construction/list-icon/dupont@2x.webp', import.meta.url)
+          .href,
+        decoImg: new URL('@/assets/img/construction/list/list-dupont@2x.webp', import.meta.url)
+          .href,
+      },
+    ],
+  },
+]
