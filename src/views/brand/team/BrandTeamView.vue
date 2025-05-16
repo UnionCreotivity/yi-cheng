@@ -110,9 +110,9 @@ const gsapInit = () => {
     '.brand-team-people-img img,.brand-team-people-sign img',
     {
       opacity: 0,
-      y: '10%',
+      y: '12.5%',
       stagger: 0.25,
-      duration: 1.5,
+      duration: 1.25,
     },
     '<+0.5',
   )

@@ -293,7 +293,7 @@ const gsapInit = () => {
         stagger: 0.3,
         duration: 1.5,
       },
-      '<+0.75',
+      '<+0.25',
     )
     .from(
       '.txt-top .item-img img',

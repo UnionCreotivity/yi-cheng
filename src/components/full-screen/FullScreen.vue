@@ -31,8 +31,8 @@ const handleClick = () => {
     height: 100%;
   }
 }
-.full-screen-color {
-  // padding-inline: 10px;
-  // background-color: darkgray;
-}
+// .full-screen-color {
+// padding-inline: 10px;
+// background-color: darkgray;
+// }
 </style>
