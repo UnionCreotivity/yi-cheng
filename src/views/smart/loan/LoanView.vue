@@ -137,6 +137,8 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 import { useLoan } from '@/stores/loanStore'
 import Nav from '@/components/nav/Nav.vue'
 import LoanResult from '@/components/loan/LoanResult.vue'
@@ -220,6 +222,15 @@ const testRatio = () => {
   }
 }
 
+const gsapInit = () => {
+  const tl = gsap.timeline()
+  tl.from('.loan', {
+    backgroundSize: '130% 130%',
+    ease: 'power1.out',
+    duration: 0.8,
+  })
+}
+
 watch(
   loanInputModel,
   () => {
@@ -236,6 +247,10 @@ watch(
   },
   { deep: true },
 )
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>

@@ -63,21 +63,31 @@ const develops = [
 ]
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.5 })
-  tl.from('.develop-top-txt', {
-    y: '120%',
-    opacity: 0,
-    duration: 1.5,
-  }).from(
-    '.develop-bottom-item img',
-    {
-      y: '115%',
-      opacity: 0,
-      stagger: 0.35,
-      duration: 1.5,
-    },
-    '<+0.5',
-  )
+  const tl = gsap.timeline()
+  tl.from('.develop-top-bg', {
+    scale: 1.5,
+    ease: 'power1.out',
+    duration: 1,
+  })
+    .from(
+      '.develop-top-txt',
+      {
+        y: '115%',
+        opacity: 0,
+        duration: 0.75,
+      },
+      '<+0.25',
+    )
+    .from(
+      '.develop-bottom-item img',
+      {
+        y: '75%',
+        opacity: 0,
+        stagger: 0.13,
+        duration: 0.75,
+      },
+      '<',
+    )
 }
 
 onMounted(() => {

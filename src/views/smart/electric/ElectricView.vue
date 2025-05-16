@@ -62,20 +62,31 @@ const handleShow = () => {
 }
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.5 })
-  tl.from('.electric-view-top-txt', {
-    y: '105%',
-    duration: 1.5,
-  }).from(
-    '.electric-view-bottom-item-1,.electric-view-bottom-para,.electric-view-bottom-flow',
-    {
-      y: '30%',
-      opacity: 0,
-      stagger: 0.45,
-      duration: 1.5,
-    },
-    '<+0.5',
-  )
+  const tl = gsap.timeline()
+  tl.from('.electric-view-top-img', {
+    scale: 1.5,
+    ease: 'power1.out',
+    duration: 0.8,
+  })
+    .from(
+      '.electric-view-top-txt',
+      {
+        y: '115%',
+        opacity: 0,
+        duration: 0.75,
+      },
+      '<+0.25',
+    )
+    .from(
+      '.electric-view-bottom-item-1,.electric-view-bottom-para,.electric-view-bottom-flow',
+      {
+        y: '60%',
+        opacity: 0,
+        stagger: 0.35,
+        duration: 1,
+      },
+      '<',
+    )
 }
 
 onMounted(() => {

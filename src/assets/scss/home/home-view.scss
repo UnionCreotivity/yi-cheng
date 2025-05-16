@@ -80,26 +80,27 @@
         mix-blend-mode: plus-lighter;
         opacity: 0.4;
         position: relative;
+        top: -100%;
         z-index: 1;
         width: 100%;
-        height: 200vw;
+        height: 30vw;
         background: linear-gradient(
           to right,
           rgba(255, 255, 255, 0) 0%,
           rgb(255, 255, 255) 50%,
           rgba(255, 255, 255, 0) 100%
         );
-        transform: rotate(27deg) translateX(-300%);
+        transform: rotate(27deg) translateX(-100%);
         animation-name: lightMv;
         animation-duration: 10s;
         animation-iteration-count: infinite;
       }
       @keyframes lightMv {
         0% {
-          transform: rotate(27deg) translateX(-300%);
+          transform: rotate(27deg) translateX(-100%);
         }
         100% {
-          transform: rotate(27deg) translateX(200%);
+          transform: rotate(27deg) translateX(100%);
         }
       }
 

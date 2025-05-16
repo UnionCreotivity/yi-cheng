@@ -57,11 +57,11 @@ const gsapInit = () => {
     .from(
       '.brand-classic-fancybox-para',
       {
-        y: '30%',
+        y: '100%',
         opacity: 0,
-        duration: 1.5,
+        duration: 0.75,
       },
-      '<+0.25',
+      '<+0.15',
     )
     .from(
       '.brand-classic-fancybox-work img',

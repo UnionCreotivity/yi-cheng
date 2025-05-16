@@ -93,29 +93,39 @@ import Nav from '@/components/nav/Nav.vue'
 import '@/assets/scss/smart/home-smart.scss'
 
 const gsapInit = () => {
-  const tl = gsap.timeline({ delay: 0.5 })
+  const tl = gsap.timeline()
 
-  tl.from('.home-smart-txt', {
-    y: '105%',
-    duration: 1.5,
+  tl.from('.home-smart-slide-top-img > img', {
+    scale: 1.5,
+    ease: 'power1.out',
+    duration: 1,
   })
+    .from(
+      '.home-smart-txt',
+      {
+        y: '115%',
+        opacity: 0,
+        duration: 0.75,
+      },
+      '<+0.25',
+    )
     .from(
       '.home-smart-bottom-txt',
       {
-        y: '20%',
+        y: '50%',
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
       },
-      '<+0.5',
+      '<+0.25',
     )
     .from(
       '.home-smart-phone',
       {
-        y: '10%',
+        y: '20%',
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
       },
-      '<+0.5',
+      '<+0.35',
     )
 }
 

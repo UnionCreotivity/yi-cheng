@@ -17,10 +17,26 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 import DevelopNav from '@/components/nav/DevelopNav.vue'
 import '@/assets/scss/bustling/rezoned.scss'
 
 const tag = ref('rezoned')
+
+const gsapInit = () => {
+  const tl = gsap.timeline({})
+  tl.from('.rezoned-view-right h2,.rezoned-view-right h1,.rezoned-view-right p', {
+    x: '25%',
+    opacity: 0,
+    stagger: 0.25,
+    duration: 0.75,
+  })
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>

@@ -102,19 +102,19 @@ const showVideo = (val?: string) => {
 const gsapInit = () => {
   const tl = gsap.timeline({})
   tl.from('.brand-offical', {
-    x: '115%',
+    x: '75%',
     opacity: 0.5,
     ease: 'power4.inOut',
-    duration: 1.5,
+    duration: 1,
   }).from(
     '.brand-video-swiper',
     {
-      y: '20%',
+      y: '30%',
       opacity: 0,
       ease: 'power4.inOut',
-      duration: 1.25,
+      duration: 1,
     },
-    '<+0.45',
+    '<+0.15',
   )
 }
 

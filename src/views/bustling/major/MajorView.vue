@@ -109,7 +109,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import { Swiper as SwiperType } from 'swiper'
@@ -135,6 +136,19 @@ const onSwiper = (swiper: SwiperType) => {
 const onSlideChange = (swiper: SwiperType) => {
   handleTag(swiper)
 }
+
+const gsapInit = () => {
+  const tl = gsap.timeline({})
+  tl.from('.major-swiper-slide-top > img', {
+    scale: 1.5,
+    ease: 'power1.out',
+    duration: 1,
+  })
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>

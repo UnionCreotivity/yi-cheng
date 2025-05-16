@@ -281,46 +281,47 @@ const gsapInit = () => {
   const tl = gsap.timeline({ delay: 0.5 })
   tl.from('.feature-view-title-en,.feature-view-title-zh', {
     y: '-2vw',
+    scale: 1.1,
     opacity: 0,
     stagger: 0.3,
-    duration: 1.5,
+    duration: 0.6,
   })
-    .from(
-      '.txt-left .item-img img',
-      {
-        x: '-30%',
-        opacity: 0,
-        stagger: 0.3,
-        duration: 1.5,
-      },
-      '<+0.25',
-    )
-    .from(
-      '.txt-top .item-img img',
-      {
-        y: '-30%',
-        opacity: 0,
-        stagger: 0.3,
-        duration: 1.5,
-      },
-      '<+0.75',
-    )
-    .from(
-      '.txt-right .item-img img',
-      {
-        x: '30%',
-        opacity: 0,
-        stagger: 0.3,
-        duration: 1.5,
-      },
-      '<+0.75',
-    )
+    // .from(
+    //   '.txt-left .item-img img',
+    //   {
+    //     x: '-30%',
+    //     opacity: 0,
+    //     stagger: 0.3,
+    //     duration: 1.5,
+    //   },
+    //   '<+0.25',
+    // )
+    // .from(
+    //   '.txt-top .item-img img',
+    //   {
+    //     y: '-30%',
+    //     opacity: 0,
+    //     stagger: 0.3,
+    //     duration: 1.5,
+    //   },
+    //   '<+0.75',
+    // )
+    // .from(
+    //   '.txt-right .item-img img',
+    //   {
+    //     x: '30%',
+    //     opacity: 0,
+    //     stagger: 0.3,
+    //     duration: 1.5,
+    //   },
+    //   '<+0.75',
+    // )
     .from(
       '.feature-view-content-txt',
       {
-        y: '-10%',
+        y: '15%',
         opacity: 0,
-        duration: 1.5,
+        duration: 0.6,
         onComplete: () => {
           is_Hover.value = true
         },
@@ -338,7 +339,7 @@ const addDelay = () => {
   // const itemsLength=featureItems.value.length;
   lightItems.value.forEach((el: HTMLElement) => {
     el.style.animationDelay = `${animationDelay.value}ms`
-    animationDelay.value += 400
+    animationDelay.value += 100
   })
 }
 

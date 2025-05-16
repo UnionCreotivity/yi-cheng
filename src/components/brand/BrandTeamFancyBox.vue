@@ -151,14 +151,14 @@ const gsapInit = () => {
       x: '-10%',
       y: '10%',
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
     })
       .from(
         '.brand-team-inner-people-sign img',
         {
           opacity: 0,
           filter: 'blur(10px)',
-          duration: 1.5,
+          duration: 1,
         },
         '<+0.25',
       )
@@ -166,9 +166,9 @@ const gsapInit = () => {
         '.brand-team-inner-summary > p,.brand-team-inner-exper > p,.brand-team-inner-carousel >.swiper',
         {
           opacity: 0,
-          x: '12.5%',
-          stagger: 0.3,
-          duration: 1.5,
+          x: '25%',
+          stagger: 0.25,
+          duration: 0.75,
         },
         '<+0.25',
       )
@@ -176,13 +176,15 @@ const gsapInit = () => {
     tl.from('.brand-team-inner-brand-2-right img', {
       y: '5%',
       opacity: 0,
-      duration: 1.5,
+      stagger: 0.25,
+      duration: 1,
     }).from(
-      '.brand-team-inner-brand-2-left',
+      '.brand-team-inner-brand-2-left h3,.brand-team-inner-brand-2-left h5,.brand-team-inner-brand-2-left p,.brand-2-sign img',
       {
-        y: '5%',
+        y: '3vw',
         opacity: 0,
-        duration: 1.5,
+        stagger: 0.13,
+        duration: 1,
       },
       '<+0.5',
     )

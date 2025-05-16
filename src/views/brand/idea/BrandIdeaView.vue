@@ -173,28 +173,37 @@ const colorTag = ref('')
 const gsapInit = () => {
   const tl = gsap.timeline({})
 
-  tl.from('.brand-idea-content-yi', {
-    y: '100%',
-    opacity: 0,
-    duration: 1.5,
+  tl.from('.brand-idea-content-top-img img', {
+    scale: 1.5,
+    ease: 'power1.out',
+    duration: 1,
   })
+    .from(
+      '.brand-idea-content-yi',
+      {
+        y: '115%',
+        opacity: 0,
+        duration: 0.75,
+      },
+      '<0.25',
+    )
     .from(
       '.brand-idea-content-second-left',
       {
         y: '30%',
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
       },
-      '<+0.5',
+      '<+0.25',
     )
     .from(
       '.brand-idea-content-second-right',
       {
-        y: '40%',
+        y: '50%',
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
       },
-      '<+0.45',
+      '<+0.15',
     )
 }
 

@@ -25,7 +25,7 @@
             nextEl: '.brand-classic-next',
             prevEl: '.brand-classic-prev',
           }"
-          :initial-slide="5"
+          :initial-slide="3"
           :modules="[Navigation, FreeMode]"
           class="brand-classic-swiper"
           @swiper="onSwiper"
@@ -114,23 +114,30 @@ const onSwiper = (swiper: SwiperType) => {
 
   gsapInit(swiper)
   setTimeout(() => {
-    swiper.slideTo(0, 1500)
-  }, 750)
+    swiper.slideTo(0, 1000)
+  }, 500)
 }
 
 const gsapInit = (swiper: SwiperType) => {
-  const tl = gsap.timeline({ delay: 0.25 })
-  tl.from('.brand-classic-txt img', {
-    y: '120%',
-    ease: 'power4.inOut',
-    duration: 1.25,
-    onComplete: () => {
-      swiper.allowTouchMove = true
-      //恢復timing-function
-      slide.value.$el.querySelector('.swiper-wrapper').style['transition-timing-function'] =
-        'ease-out'
+  const tl = gsap.timeline({ delay: 0.6 })
+  tl.from('.brand-classic-main-img img', {
+    scale: 1.5,
+    ease: 'power1.out',
+    duration: 0.5,
+  }).from(
+    '.brand-classic-txt img',
+    {
+      y: '120%',
+      duration: 0.75,
+      onComplete: () => {
+        swiper.allowTouchMove = true
+        //恢復timing-function
+        slide.value.$el.querySelector('.swiper-wrapper').style['transition-timing-function'] =
+          'ease-out'
+      },
     },
-  })
+    '<',
+  )
 }
 </script>
 

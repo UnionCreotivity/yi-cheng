@@ -103,18 +103,18 @@ const gsapInit = () => {
   const tl = gsap.timeline({})
   tl.from('.brand-team-h1,.brand-team-h2', {
     opacity: 0,
-    x: '3vw',
-    stagger: 0.5,
-    duration: 1.5,
+    x: '4vw',
+    stagger: 0.35,
+    duration: 0.75,
   }).from(
     '.brand-team-people-img img,.brand-team-people-sign img',
     {
       opacity: 0,
-      y: '12.5%',
-      stagger: 0.25,
-      duration: 1.25,
+      y: '10%',
+      stagger: 0.15,
+      duration: 1,
     },
-    '<+0.5',
+    '<+0.25',
   )
 }
 

@@ -40,13 +40,29 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import DevelopNav from '@/components/nav/DevelopNav.vue'
 import '@/assets/scss/bustling/highway.scss'
 
 const tag = ref('highway')
+
+const gsapInit = () => {
+  const tl = gsap.timeline({})
+
+  tl.from('.highway-view-right h2,.highway-view-right h1,.highway-view-right p', {
+    x: '25%',
+    opacity: 0,
+    stagger: 0.25,
+    duration: 0.75,
+  })
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>

@@ -66,27 +66,38 @@ const gsapInit = () => {
   const timeline = gsap.timeline({})
 
   timeline
-    .from('.method-top-text-1', {
-      y: '115%',
-      duration: 1.5,
+    .from('.method-top-bg', {
+      scale: 1.5,
+      ease: 'power1.out',
+      duration: 1,
     })
     .from(
-      '.method-bottom-item img',
+      '.method-top-text-1',
       {
         y: '115%',
         opacity: 0,
-        stagger: 0.35,
-        duration: 1.25,
+        duration: 0.75,
       },
-      '<+0.5',
+      '<+0.25',
+    )
+    .from(
+      '.method-bottom-item img',
+      {
+        y: '75%',
+        opacity: 0,
+        stagger: 0.15,
+        duration: 0.75,
+      },
+      '<',
     )
     .from(
       '.method-top-text-2',
       {
         opacity: 0,
-        duration: 1.5,
+        scale: 1.5,
+        duration: 0.5,
       },
-      '<+0.5',
+      '<+0.25',
     )
 }
 

@@ -51,6 +51,8 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 import DevelopNav from '@/components/nav/DevelopNav.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
 import '@/assets/scss/bustling/mrt.scss'
@@ -68,6 +70,20 @@ const handleToggle = (val: boolean) => {
 const handleToggleInner = (val: boolean) => {
   is_toggleInner.value = val
 }
+
+const gsapInit = () => {
+  const tl = gsap.timeline({})
+  tl.from('.mrt-view-right h2,.mrt-view-right h1,.mrt-view-right p,.mrt-view-right button', {
+    x: '25%',
+    opacity: 0,
+    stagger: 0.25,
+    duration: 0.75,
+  })
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style scoped></style>
