@@ -114,13 +114,8 @@ const initGsap = () => {
 const showClick = () => {
   isShow.value = !isShow.value
   if (!screenfull.isFullscreen) {
-    // screenfull.toggle()
+    screenfull.toggle()
   }
   initGsap()
 }
-
-onMounted(() => {
-  // console.log(document.querySelector('body')?.offsetHeight)
-  // console.log(document.documentElement)
-})
 </script>

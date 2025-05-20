@@ -59,7 +59,6 @@ const menuActive = ref({
 
 const showMenuClick = () => {
   const val = !props.show
-  console.log(val)
   emits('show-menu-click', val)
 }
 
