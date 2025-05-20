@@ -144,6 +144,24 @@ const gsapInit = () => {
     ease: 'power1.out',
     duration: 1,
   })
+    .from(
+      '.major-swiper-slide-top-constr',
+      {
+        y: '115%',
+        opacity: 0,
+        duration: 0.75,
+      },
+      '<0.25',
+    )
+    .from(
+      '.major-swiper-slide-bottom',
+      {
+        y: '50%',
+        opacity: 0,
+        duration: 0.75,
+      },
+      '<+0.25',
+    )
 }
 
 onMounted(() => {
