@@ -112,7 +112,7 @@ const gsapInit = () => {
       opacity: 0,
       y: '10%',
       stagger: 0.15,
-      duration: 1,
+      duration: 0.75,
     },
     '<+0.25',
   )

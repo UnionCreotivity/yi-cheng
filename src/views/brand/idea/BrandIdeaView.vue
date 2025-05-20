@@ -199,11 +199,11 @@ const gsapInit = () => {
     .from(
       '.brand-idea-content-second-right',
       {
-        y: '50%',
+        y: '35%',
         opacity: 0,
         duration: 1,
       },
-      '<+0.15',
+      '<+0.25',
     )
 }
 

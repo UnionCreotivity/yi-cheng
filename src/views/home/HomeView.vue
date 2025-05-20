@@ -25,11 +25,13 @@
         <ul class="home-menu-ul">
           <li v-for="item in menuItems" :key="item.key" class="home-menu-li">
             <router-link :to="{ name: item.link }">
-              <div class="home-menu-zhName">
-                <p>{{ item.zhName }}</p>
-              </div>
-              <div class="home-menu-enName">
-                <p>{{ item.enName }}</p>
+              <div class="home-menu-li-container">
+                <div class="home-menu-zhName">
+                  <p>{{ item.zhName }}</p>
+                </div>
+                <div class="home-menu-enName">
+                  <p>{{ item.enName }}</p>
+                </div>
               </div>
             </router-link>
           </li>
@@ -86,15 +88,15 @@ const initGsap = () => {
   tl.from('.home-title', {
     opacity: 0,
     filter: 'blur(10px)',
-    duration: 2,
+    duration: 1,
   })
     .from(
-      '.home-menu-li p',
+      '.home-menu-li-container',
       {
-        y: '105%',
+        y: '135%',
         opacity: 0,
-        stagger: 0.1,
-        duration: 1.5,
+        stagger: 0.15,
+        duration: 1,
       },
       '<+0.25',
     )
@@ -112,7 +114,7 @@ const initGsap = () => {
 const showClick = () => {
   isShow.value = !isShow.value
   if (!screenfull.isFullscreen) {
-    screenfull.toggle()
+    // screenfull.toggle()
   }
   initGsap()
 }

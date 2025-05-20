@@ -127,8 +127,8 @@ const gsapInit = (swiper: SwiperType) => {
   }).from(
     '.brand-classic-txt img',
     {
-      y: '120%',
-      duration: 0.75,
+      y: '150%',
+      duration: 0.5,
       onComplete: () => {
         swiper.allowTouchMove = true
         //恢復timing-function
