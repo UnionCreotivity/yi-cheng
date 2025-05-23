@@ -171,7 +171,7 @@ import '@/assets/scss/brand/brand-idea.scss'
 const colorTag = ref('')
 
 const gsapInit = () => {
-  const tl = gsap.timeline({})
+  const tl = gsap.timeline({ delay: 0.25 })
 
   tl.from('.brand-idea-content-top-img img', {
     scale: 1.5,

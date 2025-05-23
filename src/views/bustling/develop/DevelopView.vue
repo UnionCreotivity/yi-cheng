@@ -4,7 +4,7 @@
     <div class="develop-container">
       <div class="develop-top">
         <div class="develop-top-bg">
-          <img src="../../../assets/img/bustling/develop/develop-bg@2x.webp" alt="" />
+          <img ref="testRef" src="../../../assets/img/bustling/develop/develop-bg@2x.webp" alt="" />
         </div>
         <div class="develop-top-txt">
           <img src="/src/assets/img/bustling/develop/development@2x.webp" alt="" />
@@ -21,7 +21,7 @@
           :class="develop.className"
         >
           <router-link :to="{ name: develop.route }">
-            <img :src="develop.img" alt="" />
+            <img ref="testSecondRef" :src="develop.img" alt="" />
           </router-link>
         </div>
       </div>
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
 import Nav from '@/components/nav/Nav.vue'
 import '@/assets/scss/bustling/develop.scss'
@@ -62,8 +62,12 @@ const develops = [
   },
 ]
 
+const testRef = ref<HTMLElement | null>(null)
+
+const testSecondRef = ref<Array<HTMLElement> | null>(null)
+
 const gsapInit = () => {
-  const tl = gsap.timeline()
+  const tl = gsap.timeline({ delay: 0.25 })
   tl.from('.develop-top-bg', {
     scale: 1.5,
     ease: 'power1.out',
@@ -90,7 +94,25 @@ const gsapInit = () => {
     )
 }
 
+// const lazyTest = () => {
+//   if (testRef.value) {
+//     const url = testRef.value.getAttribute('data-src')
+//     if (url) {
+//       testRef.value.setAttribute('src', url)
+//     }
+//   }
+//   if (testSecondRef.value) {
+//     testSecondRef.value.forEach((el) => {
+//       const url = el.getAttribute('data-src')
+//       if (url) {
+//         el.setAttribute('src', url)
+//       }
+//     })
+//   }
+// }
+
 onMounted(() => {
+  // lazyTest()
   gsapInit()
 })
 </script>

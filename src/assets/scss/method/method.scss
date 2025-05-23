@@ -21,11 +21,15 @@
     @include pad {
       flex: 1.05 1;
     }
+    .method-top-bg {
+      will-change: transform;
+    }
     .method-top-text-1 {
       position: absolute;
       left: 18.75vw;
       bottom: -1%;
       width: 62.5%;
+      will-change: transform;
       @include pad {
         bottom: -1%;
       }
@@ -82,6 +86,9 @@
     .method-bottom-item {
       position: relative;
       cursor: pointer;
+      img {
+        will-change: transform;
+      }
       &::after {
         content: '';
         position: absolute;

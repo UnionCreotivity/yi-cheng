@@ -100,7 +100,7 @@ const showVideo = (val?: string) => {
 }
 
 const gsapInit = () => {
-  const tl = gsap.timeline({})
+  const tl = gsap.timeline({ delay: 0.25 })
   tl.from('.brand-offical', {
     x: '75%',
     opacity: 0.5,

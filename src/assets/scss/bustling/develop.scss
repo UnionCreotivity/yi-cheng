@@ -32,6 +32,7 @@
     .develop-top-bg {
       position: relative;
       width: 100%;
+      will-change: transform;
     }
     .develop-top-txt {
       position: absolute;
@@ -40,6 +41,7 @@
       right: 0;
       width: 69%;
       margin: auto;
+      will-change: transform;
     }
   }
   .develop-bottom {
@@ -92,6 +94,9 @@
     .develop-bottom-item {
       position: relative;
       cursor: pointer;
+      img {
+        will-change: transform;
+      }
       &::after {
         content: '';
         position: absolute;

@@ -65,6 +65,9 @@
       .brand-team-inner-summary,
       .brand-team-inner-exper {
         width: 50vw;
+        p {
+          will-change: transform;
+        }
         @include pad {
           width: 52vw;
         }
@@ -74,6 +77,7 @@
         user-select: none;
         .brand-team-inner-swiper {
           width: 100%;
+          will-change: transform;
           .brand-team-prev,
           .brand-team-next {
             width: 2vw;

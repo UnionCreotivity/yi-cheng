@@ -51,6 +51,9 @@
         .home-smart-slide-top-img {
           position: relative;
           width: 100%;
+          > img {
+            will-change: transform;
+          }
           @include pad {
             height: 100%;
             img {
@@ -64,6 +67,7 @@
             position: absolute;
             bottom: -0.75%;
             width: 100%;
+            will-change: transform;
           }
         }
       }
@@ -89,6 +93,7 @@
           flex-direction: column;
           padding-left: 11.5%;
           padding-top: 5%;
+          will-change: transform;
         }
         .home-smart-bottom-txt-top {
           margin-bottom: 0.5vw;
@@ -124,6 +129,7 @@
           right: 5%;
           bottom: 5%;
           width: 27%;
+          will-change: transform;
           @include pad {
             bottom: 7.5%;
           }

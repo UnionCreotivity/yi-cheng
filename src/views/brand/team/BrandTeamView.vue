@@ -100,7 +100,7 @@ const navZIndex = computed(() => {
 })
 
 const gsapInit = () => {
-  const tl = gsap.timeline({})
+  const tl = gsap.timeline({ delay: 0.25 })
   tl.from('.brand-team-h1,.brand-team-h2', {
     opacity: 0,
     x: '4vw',

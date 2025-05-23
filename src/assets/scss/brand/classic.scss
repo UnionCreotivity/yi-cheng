@@ -20,6 +20,9 @@
       }
       .brand-classic-main-img {
         width: 100%;
+        img {
+          will-change: transform;
+        }
         @include pad {
           height: 100%;
           img {
@@ -46,6 +49,9 @@
         right: 0;
         width: 79.5%;
         margin: auto;
+        img {
+          will-change: transform;
+        }
       }
     }
     .brand-classic-bottom {

@@ -38,6 +38,7 @@
       .electric-view-top-img {
         width: 100%;
         position: relative;
+        will-change: transform;
         @include pad {
           height: 100%;
           img {
@@ -53,6 +54,7 @@
         bottom: -0.5%;
         width: 88%;
         margin: 0 auto;
+        will-change: transform;
       }
     }
     .electric-view-bottom {
@@ -64,6 +66,7 @@
       gap: 2vw;
       .electric-view-bottom-item-1 {
         width: 10.25%;
+        will-change: transform;
         @include pad {
           width: 12.25%;
         }
@@ -74,6 +77,7 @@
         flex-direction: column;
         width: 25%;
         gap: 0.35vw;
+        will-change: transform;
         @include pad {
           width: 29%;
           gap: 0.75vw;
@@ -117,6 +121,7 @@
       }
       .electric-view-bottom-flow {
         width: 58.25%;
+        will-change: transform;
         @include pad {
           width: 52.25%;
         }
