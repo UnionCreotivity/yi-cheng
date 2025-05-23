@@ -124,11 +124,15 @@ const gsapInit = (swiper: SwiperType) => {
     scale: 1.5,
     ease: 'power1.out',
     duration: 0.5,
+    force3D: true,
+    willChange: 'transform',
   }).from(
     '.brand-classic-txt img',
     {
       y: '150%',
       duration: 0.5,
+      force3D: true,
+      willChange: 'transform',
       onComplete: () => {
         swiper.allowTouchMove = true
         //恢復timing-function

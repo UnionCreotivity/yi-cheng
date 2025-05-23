@@ -79,6 +79,8 @@ const gsapInit = () => {
         y: '115%',
         opacity: 0,
         duration: 0.75,
+        force3D: true,
+        willChange: 'transform',
       },
       '<+0.25',
     )
@@ -89,6 +91,8 @@ const gsapInit = () => {
         opacity: 0,
         stagger: 0.13,
         duration: 0.75,
+        force3D: true,
+        willChange: 'transform',
       },
       '<',
     )

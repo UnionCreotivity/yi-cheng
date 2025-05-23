@@ -106,6 +106,8 @@ const gsapInit = () => {
     opacity: 0.5,
     ease: 'power4.inOut',
     duration: 1,
+    force3D: true,
+    willChange: 'transform',
   }).from(
     '.brand-video-swiper',
     {
@@ -113,6 +115,8 @@ const gsapInit = () => {
       opacity: 0,
       ease: 'power4.inOut',
       duration: 1,
+      force3D: true,
+      willChange: 'transform',
     },
     '<+0.15',
   )
