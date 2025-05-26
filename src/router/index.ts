@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/home/HomeView.vue'
-import AboutView from '@/views/about/AboutView.vue'
 
 // <--- 品牌光譜 --->
 import BrandView from '@/views/brand/BrandView.vue'
@@ -40,11 +39,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: AboutView,
     },
     {
       path: '/brand',
