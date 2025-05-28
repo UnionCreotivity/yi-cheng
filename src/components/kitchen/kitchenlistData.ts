@@ -1,51 +1,40 @@
 export const kitchenlistData = [
   {
-    key: 'item-1',
     tag: 'item-1',
-    img: new URL('@/assets/img/construction/廚具設備/kitchen-list-1@2x.webp', import.meta.url).href,
-    color: false,
+    class: 'kitchen-1',
+    img: new URL('@/assets/img/construction/廚具設備/new/龍頭與水槽@2x.webp', import.meta.url).href,
   },
   {
-    key: 'item-2',
     tag: 'item-2',
-    img: new URL('@/assets/img/construction/廚具設備/kitchen-list-2@2x.webp', import.meta.url).href,
-    color: false,
+    class: 'kitchen-2',
+    icon: new URL('@/assets/img/construction/廚具設備/new/sakura-icon.svg', import.meta.url).href,
+    img: new URL('@/assets/img/construction/廚具設備/new/石英石檯面@2x.webp', import.meta.url).href,
   },
   {
-    key: 'item-3',
     tag: 'item-3',
-    img: new URL('@/assets/img/construction/廚具設備/kitchen-list-3@2x.webp', import.meta.url).href,
-    color: false,
+    class: 'kitchen-3',
+    icon: new URL('@/assets/img/construction/廚具設備/new/svago-icon.svg', import.meta.url).href,
+    img: new URL('@/assets/img/construction/廚具設備/new/svago洗碗機@2x.webp', import.meta.url)
+      .href,
   },
   {
-    key: 'item-4',
-    tag: 'item-3',
-    img: new URL('@/assets/img/construction/廚具設備/kitchen-list-4@2x.webp', import.meta.url).href,
-    color: false,
-  },
-  {
-    key: 'item-5',
     tag: 'item-4',
-    img: new URL('@/assets/img/construction/廚具設備/kitchen-list-5@2x.webp', import.meta.url).href,
-    color: false,
+    class: 'kitchen-4',
+    icon: new URL('@/assets/img/construction/廚具設備/new/sakura-icon.svg', import.meta.url).href,
+    img: new URL('@/assets/img/construction/廚具設備/new/櫻花-瓦斯爐@2x.webp', import.meta.url)
+      .href,
   },
   {
-    key: 'item-6',
-    tag: 'item-4',
-    img: new URL('@/assets/img/construction/廚具設備/kitchen-list-6@2x.webp', import.meta.url).href,
-    color: false,
-  },
-  {
-    key: 'item-7',
     tag: 'item-5',
-    img: new URL('@/assets/img/construction/廚具設備/kitchen-list-7@2x.webp', import.meta.url).href,
-    color: false,
+    class: 'kitchen-5',
+    icon: new URL('@/assets/img/construction/廚具設備/new/sakura-icon.svg', import.meta.url).href,
+    img: new URL('@/assets/img/construction/廚具設備/new/櫻花-油煙機@2x.webp', import.meta.url)
+      .href,
   },
   {
-    key: 'item-8',
     tag: 'item-6',
-    img: new URL('@/assets/img/construction/廚具設備/kitchen-list-8@2x.webp', import.meta.url).href,
-    color: true,
+    class: 'kitchen-6',
+    img: new URL('@/assets/img/construction/廚具設備/new/五金與拉籃@2x.webp', import.meta.url).href,
   },
 ]
 
@@ -121,5 +110,32 @@ export const kitchenInnerData = [
     ).href,
     icon: new URL('@/assets/img/construction/廚具設備/inner/sakura-icon@2x.webp', import.meta.url)
       .href,
+  },
+]
+
+export const kitchenPoints = [
+  {
+    tag: 'item-1',
+    class: 'point-1',
+  },
+  {
+    tag: 'item-2',
+    class: 'point-2',
+  },
+  {
+    tag: 'item-3',
+    class: 'point-3',
+  },
+  {
+    tag: 'item-4',
+    class: 'point-4',
+  },
+  {
+    tag: 'item-5',
+    class: 'point-5',
+  },
+  {
+    tag: 'item-6',
+    class: 'point-6',
   },
 ]

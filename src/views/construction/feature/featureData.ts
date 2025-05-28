@@ -14,6 +14,7 @@ export const featureData = [
       },
       {
         tag: 'left-2',
+        item: 'kitchen',
         class: 'txt-right',
         lumpTxt: new URL('@/assets/img/construction/list-icon/sakura@2x.webp', import.meta.url)
           .href,
@@ -35,6 +36,7 @@ export const featureData = [
       },
       {
         tag: 'left-5',
+        item: 'bath',
         class: 'txt-left',
         lumpTxt: new URL('@/assets/img/construction/list-icon/泡沫洗淨@2x.webp', import.meta.url)
           .href,
@@ -74,18 +76,21 @@ export const featureData = [
     items: [
       {
         tag: 'right-1',
+        item: 'kitchen',
         class: 'txt-top',
         lumpTxt: new URL('@/assets/img/construction/list-icon/svago@2x.webp', import.meta.url).href,
         decoImg: new URL('@/assets/img/construction/list/list-svago@2x.webp', import.meta.url).href,
       },
       {
         tag: 'right-2',
+        item: 'bath',
         class: 'txt-top',
         lumpTxt: new URL('@/assets/img/construction/list-icon/toto@2x.webp', import.meta.url).href,
         decoImg: new URL('@/assets/img/construction/list/list-toto@2x.webp', import.meta.url).href,
       },
       {
         tag: 'right-3',
+        item: 'bath',
         class: 'txt-top',
         lumpTxt: new URL('@/assets/img/construction/list-icon/kohler@2x.webp', import.meta.url)
           .href,

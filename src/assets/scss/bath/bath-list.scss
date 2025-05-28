@@ -6,6 +6,7 @@
   width: 100%;
   height: 100%;
   background-color: white;
+  z-index: 1;
   @include pad {
     display: flex;
     align-items: center;
@@ -22,52 +23,31 @@
       position: relative;
       height: 82.5%;
     }
-    .bath-list-left {
-      position: relative;
-      width: 55%;
-      height: 100%;
-      img {
-        height: 100%;
-        object-fit: cover;
+    .bath-list-icon {
+      position: absolute;
+      right: 2vw;
+      top: 4%;
+      width: 10.5vw;
+      @include pad {
+        top: 0%;
       }
     }
+    .bath-list-left {
+      position: relative;
+      width: 61.5%;
+      margin-left: 1.5%;
+    }
     .bath-list-right {
+      right: 0;
       flex: 1;
+      width: 37%;
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      margin-inline: 5%;
-      .bath-list-right-top {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5vw;
-        margin-bottom: 2.5vw;
-        h1 {
-          font-family: var(--serif);
-          font-size: 1.9vw;
-          letter-spacing: 4px;
-          font-weight: 600;
-          color: #231815;
-        }
-        p {
-          font-family: var(--micro);
-          font-size: 1vw;
-          font-weight: 500;
-          letter-spacing: 2px;
-          line-height: 2;
-          text-align: justify;
-          color: #2d2d2d;
-        }
-      }
-      .bath-list-right-bottom {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1vw;
-        .bath-list-right-bottom-item {
-          background-color: #f0efef;
-          cursor: pointer;
-          overflow: hidden;
-        }
+      flex-direction: column;
+      height: 100%;
+      .bath-list-right-para {
+        width: 100%;
       }
     }
     .bath-list-close,

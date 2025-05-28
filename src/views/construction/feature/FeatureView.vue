@@ -17,6 +17,7 @@
             v-for="(item, index) in featureData.find((item) => item.tag === 'left')?.items"
             :class="[item.class, `item-${index + 1}`]"
             :key="item.tag"
+            @click="renderItem(item.item)"
           >
             <div class="color-lump">
               <div class="light" ref="lightItems"></div>
@@ -26,82 +27,6 @@
               <img :src="item.decoImg" />
             </div>
           </li>
-          <!-- <li class="feature-view-content-li item-1 txt-left">
-            <div class="color-lump">
-              <div class="light"></div>
-              <img src="/src/assets/img/construction/list-icon/賀眾牌@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-water-filter@2x.webp" alt="" />
-            </div>
-          </li> -->
-          <!-- <li class="feature-view-content-li item-2 txt-right"> -->
-          <!-- <button style="position: absolute; left: 0; top: 0" @click="renderItem('kitch')">
-              廚具設備
-            </button> -->
-          <!-- <div class="color-lump">
-              <div class="light" style="animation-delay: 300ms"></div>
-              <img src="/src/assets/img/construction/list-icon/sakura@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-sakura@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-3 txt-left">
-            <div class="color-lump">
-              <div class="light" style="animation-delay: 700ms"></div>
-              <img src="/src/assets/img/construction/list-icon/EMS系統@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <div class="light" style="animation-delay: 1100ms"></div>
-              <img src="/src/assets/img/construction/list/list-ems@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-4 txt-left">
-            <div class="color-lump">
-              <div class="light" style="animation-delay: 1500ms"></div>
-              <img src="/src/assets/img/construction/list-icon/BWT@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-bwt@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-5 txt-left">
-            <div class="color-lump">
-              <div class="light" style="animation-delay: 1900ms"></div>
-              <img src="/src/assets/img/construction/list-icon/泡沫洗淨@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-toilet@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-6 txt-top">
-            <div class="color-lump">
-              <div class="light" style="animation-delay: 2300ms"></div>
-              <img src="/src/assets/img/construction/list-icon/全熱交換器@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-panasonic@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-7 txt-left">
-            <div class="color-lump">
-              <div class="light" style="animation-delay: 2700ms"></div>
-              <img src="/src/assets/img/construction/list-icon/四合一暖風機@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-panasonic-2@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-8 txt-left">
-            <div class="color-lump">
-              <div class="light" style="animation-delay: 3100ms"></div>
-              <img src="/src/assets/img/construction/list-icon/電子鎖@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-philips@2x.webp" alt="" />
-            </div>
-          </li> -->
           <!-- <li><button @click="renderItem('bwt')">BWT</button></li>
           <li><button @click="renderItem('bath')">衛浴設備</button></li>
           <li><button @click="renderItem('kitch')">廚具設備</button></li>
@@ -119,6 +44,7 @@
             v-for="(item, index) in featureData.find((item) => item.tag === 'right')?.items"
             :class="[item.class, `item-${index + 1}`]"
             :key="item.tag"
+            @click="renderItem(item.item)"
           >
             <div class="color-lump">
               <div class="light" ref="lightItems"></div>
@@ -128,46 +54,6 @@
               <img :src="item.decoImg" />
             </div>
           </li>
-          <!-- <li class="feature-view-content-li item-1 txt-top">
-            <div class="color-lump">
-              <img src="/src/assets/img/construction/list-icon/svago@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-svago@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-2 txt-top">
-            <div class="color-lump">
-              <img src="/src/assets/img/construction/list-icon/toto@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-toto@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-3 txt-top">
-            <div class="color-lump">
-              <img src="/src/assets/img/construction/list-icon/kohler@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-kohler@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-4 txt-top">
-            <div class="color-lump">
-              <img src="/src/assets/img/construction/list-icon/japan@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-japan@2x.webp" alt="" />
-            </div>
-          </li>
-          <li class="feature-view-content-li item-5 txt-right">
-            <div class="color-lump">
-              <img src="/src/assets/img/construction/list-icon/dupont@2x.webp" alt="" />
-            </div>
-            <div class="item-img">
-              <img src="/src/assets/img/construction/list/list-dupont@2x.webp" alt="" />
-            </div>
-          </li> -->
           <li class="feature-view-content-li item-6 txt-right">
             <div class="color-lump"></div>
             <p>品質保固</p>
@@ -185,7 +71,7 @@
         @handle-nav-color="handleNavColor"
       />
       <KitchenList
-        v-else-if="tag === 'kitch'"
+        v-else-if="tag === 'kitchen'"
         @render-item="renderItem"
         @handle-nav-color="handleNavColor"
       />

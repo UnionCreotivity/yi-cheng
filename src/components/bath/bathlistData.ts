@@ -13,37 +13,55 @@ export const bathlistData = [
   },
   {
     key: 'item-3',
-    tag: 'item-2',
+    tag: 'item-3',
     img: new URL('@/assets/img/construction/衛浴設備/溫水洗淨便座@2x.webp', import.meta.url).href,
     color: true,
   },
   {
     key: 'item-4',
-    tag: 'item-3',
+    tag: 'item-4',
     img: new URL('@/assets/img/construction/衛浴設備/下嵌式臉盆@2x.webp', import.meta.url).href,
     color: true,
   },
   {
     key: 'item-5',
-    tag: 'item-4',
+    tag: 'item-5',
     img: new URL('@/assets/img/construction/衛浴設備/恆溫淋浴柱@2x.webp', import.meta.url).href,
     color: false,
   },
   {
     key: 'item-6',
-    tag: 'item-4',
+    tag: 'item-6',
     img: new URL('@/assets/img/construction/衛浴設備/壁掛沐浴龍頭@2x.webp', import.meta.url).href,
     color: false,
   },
   {
     key: 'item-7',
-    tag: 'item-5',
+    tag: 'item-7',
     img: new URL('@/assets/img/construction/衛浴設備/單槍面盆龍頭@2x.webp', import.meta.url).href,
     color: false,
   },
   {
     key: 'item-8',
-    tag: 'item-6',
+    tag: 'item-8',
+    img: new URL('@/assets/img/construction/衛浴設備/乾燥暖風機@2x.webp', import.meta.url).href,
+    color: false,
+  },
+  {
+    key: 'item-9',
+    tag: 'item-9',
+    img: new URL('@/assets/img/construction/衛浴設備/乾燥暖風機@2x.webp', import.meta.url).href,
+    color: false,
+  },
+  {
+    key: 'item-10',
+    tag: 'item-10',
+    img: new URL('@/assets/img/construction/衛浴設備/乾燥暖風機@2x.webp', import.meta.url).href,
+    color: false,
+  },
+  {
+    key: 'item-11',
+    tag: 'item-11',
     img: new URL('@/assets/img/construction/衛浴設備/乾燥暖風機@2x.webp', import.meta.url).href,
     color: false,
   },
@@ -145,5 +163,62 @@ export const bathInnerData = [
     ).href,
     iconName: 'panasonic',
     color: false,
+  },
+]
+
+export const bathPoints = [
+  {
+    main: true,
+    content: [
+      {
+        tag: 'item-1',
+        class: 'point-1',
+      },
+      {
+        tag: 'item-2',
+        class: 'point-2',
+      },
+      {
+        tag: 'item-3',
+        class: 'point-3',
+      },
+      {
+        tag: 'item-4',
+        class: 'point-4',
+      },
+      {
+        tag: 'item-5',
+        class: 'point-5',
+      },
+    ],
+  },
+  {
+    main: false,
+    content: [
+      {
+        tag: 'item-6',
+        class: 'point-6',
+      },
+      {
+        tag: 'item-7',
+        class: 'point-7',
+      },
+      {
+        tag: 'item-8',
+        class: 'point-8',
+      },
+      {
+        tag: 'item-9',
+        class: 'point-9',
+      },
+      {
+        tag: 'item-10',
+        class: 'point-10',
+      },
+      {
+        tag: 'item-11',
+        class: 'point-11',
+      },
+    ],
   },
 ]
