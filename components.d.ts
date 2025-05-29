@@ -16,7 +16,6 @@ declare module 'vue' {
     BuildingNav: typeof import('./src/components/nav/BuildingNav.vue')['default']
     BWTItem: typeof import('./src/components/featureItems/BWTItem.vue')['default']
     DevelopNav: typeof import('./src/components/nav/DevelopNav.vue')['default']
-    Elevator: typeof import('./src/components/featureItems/Elevator.vue')['default']
     ElevatorItem: typeof import('./src/components/featureItems/ElevatorItem.vue')['default']
     EntranceDoor: typeof import('./src/components/featureItems/EntranceDoor.vue')['default']
     FadeIn: typeof import('./src/components/transition/FadeIn.vue')['default']
@@ -27,12 +26,10 @@ declare module 'vue' {
     FlexRow: typeof import('./src/components/UI/FlexRow.vue')['default']
     FullScreen: typeof import('./src/components/full-screen/FullScreen.vue')['default']
     GuaranteeItem: typeof import('./src/components/featureItems/GuaranteeItem.vue')['default']
-    Kitchen: typeof import('./src/components/kitchen/Kitchen.vue')['default']
     KitchenList: typeof import('./src/components/kitchen/KitchenList.vue')['default']
     LoanResult: typeof import('./src/components/loan/LoanResult.vue')['default']
     MentionTxt: typeof import('./src/components/UI/MentionTxt.vue')['default']
     Menu: typeof import('./src/components/menu/Menu.vue')['default']
-    MrtFancybox: typeof import('./src/components/mrt/MrtFancybox.vue')['default']
     Nav: typeof import('./src/components/nav/Nav.vue')['default']
     PageFixed: typeof import('./src/components/pageFixed/PageFixed.vue')['default']
     RedPoint: typeof import('./src/components/point/RedPoint.vue')['default']
@@ -41,6 +38,5 @@ declare module 'vue' {
     SystemItem: typeof import('./src/components/featureItems/SystemItem.vue')['default']
     WaterFilter: typeof import('./src/components/featureItems/WaterFilter.vue')['default']
     WoodenFloor: typeof import('./src/components/featureItems/WoodenFloor.vue')['default']
-    WoodFloor: typeof import('./src/components/featureItems/WoodFloor.vue')['default']
   }
 }

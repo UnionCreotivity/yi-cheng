@@ -18,7 +18,7 @@
 <script setup lang="ts">
 import '@/assets/scss/point/red-point.scss'
 
-const props = defineProps(['name', 'tag', 'activeTag'])
+const props = defineProps(['name', 'tag', 'activeTag', 'main', 'show'])
 
 const emits = defineEmits(['handle-tag'])
 
