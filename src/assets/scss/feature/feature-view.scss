@@ -89,6 +89,11 @@
         box-shadow: 11px 11px 10px rgba(35, 24, 21, 0.35);
         overflow: hidden;
         cursor: pointer;
+        .feature-view-content-li-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+        }
       }
 
       .feature-view-content-ul-left {
@@ -176,7 +181,9 @@
           width: 13vw;
           left: 0;
           bottom: 0%;
-          flex-direction: column;
+          .feature-view-content-li-container {
+            flex-direction: column;
+          }
           .color-lump {
             width: 100%;
             display: flex;

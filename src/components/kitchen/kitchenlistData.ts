@@ -36,6 +36,20 @@ export const kitchenlistData = [
     class: 'kitchen-6',
     img: new URL('@/assets/img/construction/廚具設備/new/五金與拉籃@2x.webp', import.meta.url).href,
   },
+  {
+    tag: 'item-7',
+    class: 'kitchen-7',
+    icon: new URL('@/assets/img/construction/廚具設備/new/淨水器LOGO.svg', import.meta.url).href,
+    img: new URL('@/assets/img/construction/廚具設備/new/淨水器上面的@2x.webp', import.meta.url)
+      .href,
+  },
+  {
+    tag: 'item-8',
+    class: 'kitchen-8',
+    icon: new URL('@/assets/img/construction/廚具設備/new/淨水器LOGO.svg', import.meta.url).href,
+    img: new URL('@/assets/img/construction/廚具設備/new/淨水器下面的@2x.webp', import.meta.url)
+      .href,
+  },
 ]
 
 export const kitchenInnerData = [
@@ -137,5 +151,13 @@ export const kitchenPoints = [
   {
     tag: 'item-6',
     class: 'point-6',
+  },
+  {
+    tag: 'item-7',
+    class: 'point-7',
+  },
+  {
+    tag: 'item-8',
+    class: 'point-8',
   },
 ]

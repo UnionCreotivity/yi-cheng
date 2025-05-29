@@ -19,12 +19,27 @@
             :key="item.tag"
             @click="renderItem(item.item)"
           >
-            <div class="color-lump">
-              <div class="light" ref="lightItems"></div>
-              <img :src="item.lumpTxt" />
-            </div>
-            <div class="item-img">
-              <img :src="item.decoImg" />
+            <router-link
+              class="feature-view-content-li-container"
+              :to="{ name: 'electric' }"
+              v-if="item.tag === 'left-3'"
+            >
+              <div class="color-lump">
+                <div class="light" ref="lightItems"></div>
+                <img :src="item.lumpTxt" />
+              </div>
+              <div class="item-img">
+                <img :src="item.decoImg" />
+              </div>
+            </router-link>
+            <div class="feature-view-content-li-container" v-else>
+              <div class="color-lump">
+                <div class="light" ref="lightItems"></div>
+                <img :src="item.lumpTxt" />
+              </div>
+              <div class="item-img">
+                <img :src="item.decoImg" />
+              </div>
             </div>
           </li>
           <!-- <li><button @click="renderItem('bwt')">BWT</button></li>

@@ -86,6 +86,7 @@ onMounted(() => {
 
 <style lang="scss">
 .water-filter-fancy {
+  z-index: 1;
   @media screen and (max-width: 1400px) {
     display: flex;
     align-items: center;

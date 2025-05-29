@@ -8,30 +8,26 @@
           </router-link>
         </div>
         <div class="bath-list-left-bg">
-          <FadeIn>
+          <FadeInItem>
             <img
               src="/src/assets/img/construction/衛浴設備/new/bath-main-bg@2x.webp"
               alt=""
-              v-if="main === true" />
+              v-show="main === true" />
             <img
               src="/src/assets/img/construction/衛浴設備/new/bath-second-bg@2x.webp"
               alt=""
-              v-else
-          /></FadeIn>
-        </div>
-        <div class="red-point-container">
-          <FadeInItem>
-            <RedPoint
-              v-for="item in pointData?.content"
-              :key="item.tag"
-              :name="item.class"
-              :activeTag="tag"
-              :tag="item.tag"
-              :main="pointData?.main"
-              :show="main"
-              @handle-tag="handleTag"
+              v-show="main !== true"
           /></FadeInItem>
         </div>
+        <FadeInItem>
+          <RedPoint
+            v-for="item in pointData?.content"
+            :key="item.tag"
+            :name="item.class"
+            :activeTag="tag"
+            :tag="item.tag"
+            @handle-tag="handleTag"
+        /></FadeInItem>
         <MentionTxt text="情境示意圖" color="white" />
       </div>
       <div class="bath-list-right">
@@ -68,9 +64,7 @@
 </template>
 
 <script setup lang="ts">
-import { watch, computed, onMounted } from 'vue'
-import gsap from 'gsap'
-import FadeIn from '../transition/FadeIn.vue'
+import { watch, onMounted } from 'vue'
 import FadeInItem from '../transition/FadeInItem.vue'
 import FadeInRightToLeft from '../transition/FadeInRightToLeft.vue'
 import RedPoint from '../point/RedPoint.vue'
@@ -111,10 +105,6 @@ watch(main, () => {
     tag.value = 'item-6'
   }
 })
-
-// const showClose = computed(() => {
-//   return bathDetail.value !== null ? 'visibility: hidden;' : ''
-// })
 
 onMounted(() => {
   const findPoints = bathPoints.find((item) => item.main === main.value)

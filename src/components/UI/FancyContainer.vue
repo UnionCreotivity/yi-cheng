@@ -16,5 +16,6 @@
   height: 100%;
   background-color: white;
   overflow: hidden;
+  z-index: 1;
 }
 </style>

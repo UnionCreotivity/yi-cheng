@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  z-index: 1;
+  z-index: 15;
   @include pad {
     display: flex;
     align-items: center;
@@ -37,6 +37,13 @@
       position: relative;
       width: 61.5%;
       margin-left: 1.5%;
+      .nav-icon {
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        width: 9.45vw;
+        z-index: 1;
+      }
     }
     .kitchen-list-right {
       right: 0;
@@ -52,21 +59,15 @@
       }
     }
     .kitchen-1 {
-      margin-bottom: 8%;
-      @include pad {
-        margin-bottom: 0;
-      }
       .kitchen-list-right-para {
         width: 91.5%;
+        margin-bottom: 11%;
       }
     }
     .kitchen-2 {
-      margin-bottom: 10%;
-      @include pad {
-        margin-bottom: 0;
-      }
       .kitchen-list-right-para {
         width: 74.25%;
+        margin-bottom: 13%;
       }
     }
     .kitchen-3 {
@@ -94,7 +95,22 @@
         width: 76.75%;
       }
     }
-
+    .kitchen-7 {
+      .kitchen-list-icon {
+        width: 7vw;
+      }
+      .kitchen-list-right-para {
+        width: 80%;
+      }
+    }
+    .kitchen-8 {
+      .kitchen-list-icon {
+        width: 7vw;
+      }
+      .kitchen-list-right-para {
+        width: 80%;
+      }
+    }
     .kitchen-list-close,
     .kitchen-detail-close {
       position: absolute;

@@ -2,6 +2,11 @@
   <div class="kitchen-list">
     <div class="kitchen-list-container">
       <div class="kitchen-list-left">
+        <div class="nav-icon">
+          <router-link :to="{ name: 'home' }">
+            <img src="/src/assets/img/other/inner-white-icon.svg" alt="" />
+          </router-link>
+        </div>
         <img src="/src/assets/img/construction/廚具設備/new/bath-big-img@2x.webp" alt="" />
         <RedPoint
           v-for="item in kitchenPoints"
@@ -37,8 +42,6 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
-// import gsap from 'gsap'
-// import FadeIn from '../transition/FadeIn.vue'
 import FadeInRightToLeft from '../transition/FadeInRightToLeft.vue'
 import MentionTxt from '../UI/MentionTxt.vue'
 import RedPoint from '../point/RedPoint.vue'
@@ -58,11 +61,6 @@ const handleTag = (val: string) => {
     tag.value = val
   }
 }
-
-// const showClose = computed(() => {
-//   return kitchenDetail.value !== null ? 'visibility: hidden;' : ''
-// })
-
 onMounted(() => {
   emits('handle-nav-color', false)
 })

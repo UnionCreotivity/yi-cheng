@@ -34,6 +34,7 @@ const handleClose = () => {
 
 <style lang="scss">
 .wooden-floor-container {
+  z-index: 1;
   @media screen and (max-width: 1400px) {
     display: flex;
     align-items: center;

@@ -124,6 +124,9 @@
         justify-content: center;
         flex-direction: column;
         margin-bottom: 10%;
+        @include pad {
+          margin-bottom: 0%;
+        }
       }
       .bath-list-right-para {
         width: 100%;

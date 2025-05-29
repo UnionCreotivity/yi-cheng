@@ -5,6 +5,7 @@ export const featureData = [
       {
         tag: 'left-1',
         class: 'txt-left',
+        item: 'waterfilter',
         lumpTxt: new URL('@/assets/img/construction/list-icon/賀眾牌@2x.webp', import.meta.url)
           .href,
         decoImg: new URL(
@@ -24,6 +25,7 @@ export const featureData = [
       {
         tag: 'left-3',
         class: 'txt-left',
+        item: 'waterfilter',
         lumpTxt: new URL('@/assets/img/construction/list-icon/EMS系統@2x.webp', import.meta.url)
           .href,
         decoImg: new URL('@/assets/img/construction/list/list-ems@2x.webp', import.meta.url).href,
@@ -31,13 +33,14 @@ export const featureData = [
       {
         tag: 'left-4',
         class: 'txt-left',
+        item: 'bwt',
         lumpTxt: new URL('@/assets/img/construction/list-icon/BWT@2x.webp', import.meta.url).href,
         decoImg: new URL('@/assets/img/construction/list/list-bwt@2x.webp', import.meta.url).href,
       },
       {
         tag: 'left-5',
-        item: 'bath',
         class: 'txt-left',
+        item: 'bath',
         lumpTxt: new URL('@/assets/img/construction/list-icon/泡沫洗淨@2x.webp', import.meta.url)
           .href,
         decoImg: new URL('@/assets/img/construction/list/list-toilet@2x.webp', import.meta.url)
@@ -46,6 +49,7 @@ export const featureData = [
       {
         tag: 'left-6',
         class: 'txt-top',
+        item: 'system',
         lumpTxt: new URL('@/assets/img/construction/list-icon/全熱交換器@2x.webp', import.meta.url)
           .href,
         decoImg: new URL('@/assets/img/construction/list/list-panasonic@2x.webp', import.meta.url)
@@ -54,6 +58,7 @@ export const featureData = [
       {
         tag: 'left-7',
         class: 'txt-left',
+        item: 'bath',
         lumpTxt: new URL(
           '@/assets/img/construction/list-icon/四合一暖風機@2x.webp',
           import.meta.url,
@@ -99,12 +104,14 @@ export const featureData = [
       },
       {
         tag: 'right-4',
+        item: 'airtight',
         class: 'txt-top',
         lumpTxt: new URL('@/assets/img/construction/list-icon/japan@2x.webp', import.meta.url).href,
         decoImg: new URL('@/assets/img/construction/list/list-japan@2x.webp', import.meta.url).href,
       },
       {
         tag: 'right-5',
+        item: 'wooden',
         class: 'txt-right',
         lumpTxt: new URL('@/assets/img/construction/list-icon/dupont@2x.webp', import.meta.url)
           .href,
