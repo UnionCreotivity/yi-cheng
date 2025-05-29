@@ -69,7 +69,7 @@
               <img :src="item.decoImg" />
             </div>
           </li>
-          <li class="feature-view-content-li item-6 txt-right">
+          <li class="feature-view-content-li item-6 txt-right" @click="renderItem('guarantee')">
             <div class="color-lump"></div>
             <p>品質保固</p>
           </li>
@@ -130,6 +130,11 @@
         @render-item="renderItem"
         @handle-nav-color="handleNavColor"
       />
+      <LockItem
+        v-else-if="tag === 'lock'"
+        @render-item="renderItem"
+        @handle-nav-color="handleNavColor"
+      />
     </FadeIn>
   </div>
 </template>
@@ -149,6 +154,7 @@ import EntranceDoor from '@/components/featureItems/EntranceDoor.vue'
 import WoodenFloor from '@/components/featureItems/WoodenFloor.vue'
 import GuaranteeItem from '@/components/featureItems/GuaranteeItem.vue'
 import BWTItem from '@/components/featureItems/BWTItem.vue'
+import LockItem from '@/components/featureItems/LockItem.vue'
 import { featureData } from './featureData'
 import '@/assets/scss/feature/feature-view.scss'
 

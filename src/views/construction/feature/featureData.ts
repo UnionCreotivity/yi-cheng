@@ -69,6 +69,7 @@ export const featureData = [
       {
         tag: 'left-8',
         class: 'txt-left',
+        item: 'lock',
         lumpTxt: new URL('@/assets/img/construction/list-icon/電子鎖@2x.webp', import.meta.url)
           .href,
         decoImg: new URL('@/assets/img/construction/list/list-philips@2x.webp', import.meta.url)
