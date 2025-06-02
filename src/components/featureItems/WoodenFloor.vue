@@ -90,8 +90,8 @@ onMounted(() => {
     .wooden-floor-icon {
       position: absolute;
       top: 3%;
-      right: 7%;
-      width: 9.25vw;
+      right: 6.5%;
+      width: 8vw;
       @media screen and (max-width: 1400px) {
         right: 8%;
         top: 4%;
