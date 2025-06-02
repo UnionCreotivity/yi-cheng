@@ -62,8 +62,8 @@ onMounted(() => {
   z-index: 1;
   .lock-icon {
     position: absolute;
-    top: 7%;
-    right: 2%;
+    top: 8%;
+    right: 7%;
     width: 10.5vw;
   }
   .flex-top {
@@ -121,7 +121,7 @@ onMounted(() => {
 .lock-close {
   position: absolute;
   right: 2%;
-  top: 10%;
+  top: 4%;
   width: 2.5vw;
   height: 2.5vw;
   padding: 0.25vw;
@@ -131,7 +131,7 @@ onMounted(() => {
   @media screen and (max-width: 1400px) {
     width: 4vw;
     height: 4vw;
-    top: 15%;
+    top: 3.5%;
     padding: 0.5vw;
   }
 }

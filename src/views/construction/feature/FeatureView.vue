@@ -17,7 +17,7 @@
             v-for="(item, index) in featureData.find((item) => item.tag === 'left')?.items"
             :class="[item.class, `item-${index + 1}`]"
             :key="item.tag"
-            @click="renderItem(item.item)"
+            @click="renderItem(item.item, item.index)"
           >
             <router-link
               class="feature-view-content-li-container"
@@ -102,6 +102,7 @@
       />
       <WaterFilter
         v-else-if="tag === 'waterfilter'"
+        :swiperIndex="swiperIndex"
         @render-item="renderItem"
         @handle-nav-color="handleNavColor"
       />
@@ -168,7 +169,10 @@ const animationDelay = ref(0)
 
 const lightItems = ref()
 
-const renderItem = (val?: string) => {
+const swiperIndex = ref(0)
+
+const renderItem = (val?: string, index?: number) => {
+  swiperIndex.value = index ? index : 0
   if (val) {
     tag.value = val
   } else {

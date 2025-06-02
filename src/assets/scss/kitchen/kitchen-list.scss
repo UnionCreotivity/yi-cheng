@@ -21,16 +21,17 @@
     justify-content: space-between;
     overflow: hidden;
     @include pad {
-      position: relative;
+      position: unset;
       height: 82.5%;
     }
     .kitchen-list-icon {
       position: absolute;
-      right: 2vw;
-      top: 4%;
+      top: 2.5%;
       width: 10.5vw;
+      right: 6vw;
       @include pad {
-        top: 0%;
+        top: 13.5%;
+        right: 7vw;
       }
     }
     .kitchen-list-left {
@@ -43,6 +44,10 @@
         top: 1%;
         width: 9.45vw;
         z-index: 1;
+        @include pad {
+          left: 2%;
+          top: 2%;
+        }
       }
     }
     .kitchen-list-right {
@@ -54,6 +59,9 @@
       justify-content: center;
       flex-direction: column;
       height: 100%;
+      @include pad {
+        position: absolute;
+      }
       .kitchen-list-right-para {
         width: 100%;
       }
@@ -71,9 +79,22 @@
       }
     }
     .kitchen-3 {
+      .kitchen-list-icon {
+        top: 3.75%;
+        width: 6.5vw;
+        right: 6vw;
+        @include pad {
+          top: 14%;
+          width: 7.5vw;
+          right: 8vw;
+        }
+      }
       .kitchen-list-right-para {
         width: 95%;
         margin-top: 3%;
+        @include pad {
+          margin-top: 11%;
+        }
       }
     }
     .kitchen-4 {
@@ -97,7 +118,13 @@
     }
     .kitchen-7 {
       .kitchen-list-icon {
-        width: 7vw;
+        width: 5vw;
+        top: 3%;
+        @include pad {
+          width: 6vw;
+          top: 14%;
+          right: 8vw;
+        }
       }
       .kitchen-list-right-para {
         width: 80%;
@@ -105,7 +132,13 @@
     }
     .kitchen-8 {
       .kitchen-list-icon {
-        width: 7vw;
+        width: 5vw;
+        top: 3%;
+        @include pad {
+          width: 6vw;
+          top: 14%;
+          right: 8vw;
+        }
       }
       .kitchen-list-right-para {
         width: 80%;
@@ -115,7 +148,7 @@
     .kitchen-detail-close {
       position: absolute;
       right: 2%;
-      top: 10%;
+      top: 3%;
       width: 2.5vw;
       height: 2.5vw;
       padding: 0.25vw;
@@ -127,6 +160,7 @@
         height: 4vw;
         padding: 0.5vw;
         right: 2%;
+        top: 13%;
       }
     }
     .kitchen-detail {

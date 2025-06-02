@@ -6,6 +6,7 @@ export const featureData = [
         tag: 'left-1',
         class: 'txt-left',
         item: 'waterfilter',
+        index: 1,
         lumpTxt: new URL('@/assets/img/construction/list-icon/賀眾牌@2x.webp', import.meta.url)
           .href,
         decoImg: new URL(
@@ -25,7 +26,7 @@ export const featureData = [
       {
         tag: 'left-3',
         class: 'txt-left',
-        item: 'waterfilter',
+        item: 'none',
         lumpTxt: new URL('@/assets/img/construction/list-icon/EMS系統@2x.webp', import.meta.url)
           .href,
         decoImg: new URL('@/assets/img/construction/list/list-ems@2x.webp', import.meta.url).href,
@@ -33,7 +34,8 @@ export const featureData = [
       {
         tag: 'left-4',
         class: 'txt-left',
-        item: 'bwt',
+        item: 'waterfilter',
+        index: 0,
         lumpTxt: new URL('@/assets/img/construction/list-icon/BWT@2x.webp', import.meta.url).href,
         decoImg: new URL('@/assets/img/construction/list/list-bwt@2x.webp', import.meta.url).href,
       },

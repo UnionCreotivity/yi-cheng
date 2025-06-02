@@ -81,11 +81,13 @@ const handleClose = () => {
 
 <style lang="scss">
 .airtight-item-container {
-  z-index: 1;
   @media screen and (max-width: 1400px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    .nav-icon {
+      top: 14.25%;
+    }
   }
 }
 .airtight-swiper {
@@ -118,11 +120,13 @@ const handleClose = () => {
       height: 100%;
       .airtight-icon {
         position: absolute;
-        top: 3%;
-        right: 2%;
+        top: 3.5%;
+        right: 7%;
         width: 6.75vw;
         @media screen and (max-width: 1400px) {
-          right: 6%;
+          right: 9%;
+          top: 5%;
+          width: 7.75vw;
         }
       }
       .flex-left {
@@ -162,7 +166,7 @@ const handleClose = () => {
 .airtight-close {
   position: absolute;
   right: 2%;
-  top: 10%;
+  top: 3%;
   width: 2.5vw;
   height: 2.5vw;
   padding: 0.25vw;
@@ -173,7 +177,7 @@ const handleClose = () => {
     width: 4vw;
     height: 4vw;
     padding: 0.5vw;
-    top: 15%;
+    top: 12%;
   }
 }
 </style>

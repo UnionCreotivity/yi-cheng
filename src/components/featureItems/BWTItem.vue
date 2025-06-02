@@ -57,7 +57,7 @@ onMounted(() => {
 })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .fancy-bwt-item {
   z-index: 1;
   @media screen and (max-width: 1400px) {
@@ -70,7 +70,7 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   @media screen and (max-width: 1400px) {
-    height: 82.5%;
+    // height: 82.5%;
   }
   .flex-left {
     width: 50.25%;
@@ -96,10 +96,11 @@ onMounted(() => {
     .bwt-item-icon {
       position: absolute;
       top: 3%;
-      right: 2%;
+      right: 20%;
       width: 8.25vw;
       @media screen and (max-width: 1400px) {
-        top: -9%;
+        top: -13%;
+        right: 14vw;
       }
     }
     .bwt-item-para {

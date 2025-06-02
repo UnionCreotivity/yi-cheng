@@ -1,5 +1,5 @@
 <template>
-  <FancyContainer>
+  <FancyContainer color="white" class="guarantee-fancy">
     <div class="guarantee-item">
       <div class="guarantee-item-bg">
         <img src="/src/assets/img/construction/五大保固/guarantee-bg@2x.webp" alt="" />
@@ -54,6 +54,13 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+.guarantee-fancy {
+  @media screen and (max-width: 1400px) {
+    .nav-icon {
+      top: 13.25%;
+    }
+  }
+}
 .guarantee-item {
   width: 100%;
   height: 100%;
@@ -109,7 +116,7 @@ onMounted(() => {
 .guarantee-close {
   position: absolute;
   right: 2%;
-  top: 10%;
+  top: 3%;
   width: 2.5vw;
   height: 2.5vw;
   padding: 0.25vw;
@@ -120,7 +127,7 @@ onMounted(() => {
     width: 4vw;
     height: 4vw;
     padding: 0.5vw;
-    top: 15%;
+    top: 12%;
   }
 }
 </style>

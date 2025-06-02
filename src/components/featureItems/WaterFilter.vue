@@ -1,5 +1,5 @@
 <template>
-  <FancyContainer class="water-filter-fancy">
+  <FancyContainer class="water-filter-fancy" color="white">
     <Swiper
       :slides-per-view="1"
       :spaceBetween="25"
@@ -8,48 +8,34 @@
         prevEl: '.water-filter-prev',
       }"
       :modules="[Navigation]"
+      :initial-slide="props.swiperIndex"
       class="water-filter-swiper"
     >
       <swiper-slide class="water-filter-swiper-slide-1">
-        <FlexRow>
+        <FlexRow class="bwt-item">
           <template #left>
-            <div class="water-filter-left">
-              <img src="/src/assets/img/construction/淨水器/filter-1-bg@2x.webp" alt="" />
+            <div class="bwt-item-left">
+              <img src="/src/assets/img/construction/BWT/bwt-bg@2x.webp" alt="" />
               <MentionTxt text="情境示意圖" color="white" />
             </div>
           </template>
           <template #right>
-            <div class="water-filter-icon">
-              <img src="/src/assets/img/construction/淨水器/filter-icon@2x.webp" alt="" />
+            <div class="bwt-item-icon">
+              <img src="/src/assets/img/construction/BWT/bwt-icon@2x.webp" alt="" />
             </div>
-            <div class="water-filter-para">
-              <img src="/src/assets/img/construction/淨水器/filter-1-para@2x.webp" alt="" />
+            <div class="bwt-item-para">
+              <img src="/src/assets/img/construction/BWT/bwt-para@2x.webp" alt="" />
             </div>
           </template>
         </FlexRow>
       </swiper-slide>
       <swiper-slide class="water-filter-swiper-slide-2">
-        <FlexRow>
-          <template #left>
-            <div class="water-filter-left">
-              <img src="/src/assets/img/construction/淨水器/filter-2-bg@2x.webp" alt="" />
-              <MentionTxt text="情境示意圖" color="white" />
-            </div>
-          </template>
-          <template #right>
-            <div class="water-filter-icon">
-              <img src="/src/assets/img/construction/淨水器/filter-icon@2x.webp" alt="" />
-            </div>
-            <div class="water-filter-para">
-              <img src="/src/assets/img/construction/淨水器/filter-2-para@2x.webp" alt="" />
-            </div>
-          </template>
-        </FlexRow>
-      </swiper-slide>
-      <swiper-slide class="water-filter-swiper-slide-3">
         <FlexCol>
           <template #top>
             <div class="water-filter-top">
+              <div class="panasonic-icon">
+                <img src="/src/assets/img/construction/淨水器/賀眾牌-icon@2x.webp" alt="" />
+              </div>
               <img src="/src/assets/img/construction/淨水器/filter-3-bg@2x.webp" alt="" />
               <MentionTxt text="情境示意圖" color="white" />
             </div>
@@ -85,6 +71,8 @@ import MentionTxt from '../UI/MentionTxt.vue'
 
 const emits = defineEmits(['render-item', 'handle-nav-color'])
 
+const props = defineProps(['swiperIndex'])
+
 const handleClose = () => {
   emits('render-item')
 }
@@ -96,11 +84,13 @@ onMounted(() => {
 
 <style lang="scss">
 .water-filter-fancy {
-  z-index: 1;
   @media screen and (max-width: 1400px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    .nav-icon {
+      top: 11.25%;
+    }
   }
 }
 .water-filter-swiper {
@@ -128,79 +118,18 @@ onMounted(() => {
       top: 42.5%;
     }
   }
-  .water-filter-swiper-slide-1 {
-    .flex-row {
-      position: relative;
-      justify-content: space-between;
-      height: 100%;
-      .flex-left {
-        width: 50.25%;
-        .water-filter-left {
-          width: 100%;
-          height: 100%;
-          img {
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-      }
-      .flex-right {
-        margin: auto;
-        width: 43vw;
-        .water-filter-icon {
-          position: absolute;
-          top: 3%;
-          right: 2%;
-          width: 6.75vw;
-          @media screen and (max-width: 1400px) {
-            right: 6%;
-          }
-        }
-        .water-filter-para {
-          width: 100%;
-        }
-      }
-    }
-  }
   .water-filter-swiper-slide-2 {
-    .flex-row {
-      position: relative;
-      justify-content: space-between;
-      height: 100%;
-      .flex-left {
-        width: 50.25%;
-        .water-filter-left {
-          width: 100%;
-          height: 100%;
-          img {
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-      }
-      .flex-right {
-        margin: auto;
-        width: 41vw;
-        .water-filter-icon {
-          position: absolute;
-          top: 3%;
-          right: 2%;
-          width: 6.75vw;
-          @media screen and (max-width: 1400px) {
-            right: 6%;
-          }
-        }
-        .water-filter-para {
-          width: 100%;
-        }
-      }
-    }
-  }
-  .water-filter-swiper-slide-3 {
     .flex-col {
       height: 100%;
       .water-filter-top {
+        position: relative;
         width: 100%;
+        .panasonic-icon {
+          position: absolute;
+          right: 7%;
+          top: 6%;
+          width: 6vw;
+        }
       }
       .flex-bottom {
         flex: 1;
@@ -212,10 +141,54 @@ onMounted(() => {
     }
   }
 }
+
+.bwt-item {
+  width: 100%;
+  height: 100%;
+
+  .flex-left {
+    width: 50.25%;
+    @media screen and (max-width: 1400px) {
+      height: 100%;
+    }
+    .bwt-item-left {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .flex-right {
+    margin: auto;
+    width: 37vw;
+    margin-left: 3%;
+    margin-top: 6%;
+    @media screen and (max-width: 1400px) {
+      // position: relative;
+      margin: auto;
+    }
+    .bwt-item-icon {
+      position: absolute;
+      top: 3.25%;
+      right: 7%;
+      width: 6.25vw;
+      @media screen and (max-width: 1400px) {
+        top: 4%;
+        right: 7vw;
+      }
+    }
+    .bwt-item-para {
+      width: 100%;
+    }
+  }
+}
 .water-filter-close {
   position: absolute;
   right: 2%;
-  top: 10%;
+  top: 3%;
   width: 2.5vw;
   height: 2.5vw;
   padding: 0.25vw;
@@ -226,7 +199,7 @@ onMounted(() => {
     width: 4vw;
     height: 4vw;
     padding: 0.5vw;
-    top: 17%;
+    top: 10.5%;
   }
 }
 </style>

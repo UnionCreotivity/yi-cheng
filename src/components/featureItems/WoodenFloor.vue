@@ -57,11 +57,13 @@ onMounted(() => {
 
 <style lang="scss">
 .wooden-floor-container {
-  z-index: 1;
   @media screen and (max-width: 1400px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    .nav-icon {
+      top: 13.75%;
+    }
   }
 }
 .wooden-floor {
@@ -88,10 +90,11 @@ onMounted(() => {
     .wooden-floor-icon {
       position: absolute;
       top: 3%;
-      right: 2%;
+      right: 7%;
       width: 9.25vw;
       @media screen and (max-width: 1400px) {
-        right: 6%;
+        right: 8%;
+        top: 4%;
       }
     }
     .wooden-floor-para {
@@ -102,7 +105,7 @@ onMounted(() => {
 .wooden-floor-close {
   position: absolute;
   right: 2%;
-  top: 10%;
+  top: 3%;
   width: 2.5vw;
   height: 2.5vw;
   padding: 0.25vw;
@@ -113,7 +116,7 @@ onMounted(() => {
     width: 4vw;
     height: 4vw;
     padding: 0.5vw;
-    top: 15%;
+    top: 11%;
   }
 }
 </style>
