@@ -33,10 +33,6 @@ export const menuData = [
         key: 'link-1',
         name: '八擴之光',
       },
-      {
-        key: 'link-2',
-        name: '交通動線圖',
-      },
     ],
   },
   {
@@ -137,11 +133,6 @@ export const menuSubData = [
         key: 'link-1',
         name: '八擴之光',
         link: 'develop',
-      },
-      {
-        key: 'link-2',
-        name: '交通動線圖',
-        link: '',
       },
     ],
   },

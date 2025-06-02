@@ -11,10 +11,19 @@
           :class="item.key === tag ? 'menu-main-li-active' : ''"
           @click.stop="toggleSubMenuClick(item.key)"
         >
-          <div class="menu-link-icon">
-            <img :src="item.key === tag ? item.active : item.inactive" alt="" />
+          <!-- 有無連結
+          <router-link :to="{ name: item.link }" class="menu-link-inner" v-if="item.link">
+            <div class="menu-link-icon">
+              <img :src="item.key === tag ? item.active : item.inactive" alt="" />
+            </div>
+            <p>{{ item.zhName }}</p>
+          </router-link> -->
+          <div class="menu-link-inner">
+            <div class="menu-link-icon">
+              <img :src="item.key === tag ? item.active : item.inactive" alt="" />
+            </div>
+            <p>{{ item.zhName }}</p>
           </div>
-          <p>{{ item.zhName }}</p>
         </li>
       </ul>
       <!-- 有無子項目 -->
@@ -23,7 +32,10 @@
           class="menu-link-item"
           v-for="link in subItem.linkItem"
           :key="link.key"
-          :class="subTag === link.link ? 'menu-link-item-active' : ''"
+          :class="[
+            subTag === link.link ? 'menu-link-item-active' : '',
+            link.link === 'develop' ? 'show-line' : '',
+          ]"
         >
           <router-link :to="{ name: link.link }">
             <div class="menu-link-item-block"></div>

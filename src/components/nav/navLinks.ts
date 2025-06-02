@@ -32,11 +32,6 @@ export const navLinks = [
         name: '八擴之光',
         linkName: 'develop',
       },
-      {
-        key: 'develop-2',
-        name: '交通動線圖',
-        linkName: '',
-      },
     ],
   },
   {

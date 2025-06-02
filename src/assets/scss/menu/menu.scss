@@ -73,7 +73,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        gap: 0.5vw;
+
         cursor: pointer;
         &::after {
           content: '';
@@ -83,14 +83,21 @@
           height: 1px;
           background-color: white;
         }
+        .menu-link-inner {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5vw;
+        }
         .menu-link-icon {
           width: 11%;
           margin-top: 1%;
         }
         a {
-          position: absolute;
-          left: 0;
-          top: 0;
+          // position: absolute;
+          // left: 0;
+          // top: 0;
           width: 100%;
           height: 100%;
         }
@@ -206,6 +213,13 @@
         //     transition: all 0.5s;
         //   }
         // }
+      }
+      .show-line {
+        &:last-child {
+          &::after {
+            content: '';
+          }
+        }
       }
       .menu-link-item-active {
         a {

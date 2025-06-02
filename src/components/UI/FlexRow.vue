@@ -16,8 +16,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .flex-left {
-    // height: 100%;
-  }
 }
 </style>
