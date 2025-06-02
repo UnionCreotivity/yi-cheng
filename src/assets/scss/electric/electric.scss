@@ -35,6 +35,13 @@
       @include pad {
         height: 60%;
       }
+      .nav-icon {
+        position: absolute;
+        left: 2%;
+        top: 4%;
+        width: 9.45vw;
+        z-index: 1;
+      }
       .electric-view-top-img {
         width: 100%;
         position: relative;
@@ -127,6 +134,23 @@
         }
       }
     }
+    .electric-view-close {
+      position: absolute;
+      right: 2%;
+      top: 10%;
+      width: 2.5vw;
+      height: 2.5vw;
+      padding: 0.25vw;
+      background-color: #d27c8d;
+      cursor: pointer;
+      @include pad {
+        width: 4vw;
+        height: 4vw;
+        top: 15%;
+        right: 3%;
+        padding: 0.5vw;
+      }
+    }
   }
   .electric-view-inner {
     display: flex;
@@ -148,7 +172,7 @@
     .electric-view-inner-close {
       position: absolute;
       right: 2%;
-      top: 3%;
+      top: 45%;
       width: 2.5vw;
       height: 2.5vw;
       padding: 0.25vw;
@@ -157,7 +181,7 @@
       @include pad {
         width: 4.5vw;
         height: 4.5vw;
-        top: 3%;
+        // top: 3%;
         right: 3%;
         padding: 0.5vw;
       }

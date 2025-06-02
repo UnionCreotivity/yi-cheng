@@ -1,8 +1,12 @@
 <template>
   <section class="electric-view">
-    <Nav color="white" tag="smart" />
     <div class="electric-view-cotainer">
       <div class="electric-view-top">
+        <div class="nav-icon">
+          <router-link :to="{ name: 'home' }">
+            <img src="/src/assets/img/other/inner-white-icon.svg" alt="" />
+          </router-link>
+        </div>
         <div class="electric-view-top-img">
           <img src="/src/assets/img/electric/elect-bg@2x.webp" alt="" />
           <MentionTxt text="情境示意圖" color="black" />
@@ -29,6 +33,11 @@
           <img src="/src/assets/img/electric/elect-flow@2x.webp" alt="" />
         </div>
       </div>
+      <div class="electric-view-close">
+        <router-link :to="{ name: 'feature' }">
+          <img src="@/assets/img/other/close-button.svg" alt="" />
+        </router-link>
+      </div>
     </div>
     <FadeIn>
       <FancyContainer class="electric-view-inner" v-show="is_Show">
@@ -51,7 +60,6 @@ import { onMounted } from 'vue'
 import gsap from 'gsap'
 import FadeIn from '@/components/transition/FadeIn.vue'
 import FancyContainer from '@/components/UI/FancyContainer.vue'
-import Nav from '@/components/nav/Nav.vue'
 import MentionTxt from '@/components/UI/MentionTxt.vue'
 import '@/assets/scss/electric/electric.scss'
 

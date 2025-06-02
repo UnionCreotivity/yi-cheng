@@ -22,6 +22,8 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 import FancyContainer from '../UI/FancyContainer.vue'
 import FlexRow from '../UI/FlexRow.vue'
 
@@ -30,6 +32,27 @@ const emits = defineEmits(['render-item'])
 const handleClose = () => {
   emits('render-item')
 }
+
+const gsapInit = () => {
+  const tl = gsap.timeline({ delay: 0.5 })
+  tl.from('.wooden-floor-left', {
+    x: '-10%',
+    opacity: 0,
+    duration: 1,
+  }).from(
+    '.flex-right .wooden-floor-para img',
+    {
+      x: '10%',
+      opacity: 0,
+      duration: 1,
+    },
+    '<+0.25',
+  )
+}
+
+onMounted(() => {
+  gsapInit()
+})
 </script>
 
 <style lang="scss">
@@ -86,5 +109,11 @@ const handleClose = () => {
   background-color: #d27c8d;
   z-index: 1;
   cursor: pointer;
+  @media screen and (max-width: 1400px) {
+    width: 4vw;
+    height: 4vw;
+    padding: 0.5vw;
+    top: 15%;
+  }
 }
 </style>

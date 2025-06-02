@@ -99,6 +99,7 @@
           font-weight: 400;
           font-size: 1.5vw;
           letter-spacing: 5px;
+          color: black;
           background-color: transparent;
           border: none;
           transition: all 0.5s;
@@ -109,6 +110,9 @@
           width: 1px;
           margin-inline: 26px;
           background-color: black;
+          @include pad {
+            margin-inline: 16px;
+          }
         }
         .main-active {
           color: brown;
@@ -174,7 +178,8 @@
     }
     .item-9 {
       .bath-list-right-para {
-        width: 75%;
+        width: 53%;
+        margin-bottom: 25%;
       }
     }
     .item-10 {
@@ -191,7 +196,7 @@
     .bath-detail-close {
       position: absolute;
       right: 2%;
-      top: 45%;
+      top: 10%;
       width: 2.5vw;
       height: 2.5vw;
       padding: 0.25vw;
@@ -199,11 +204,11 @@
       cursor: pointer;
       z-index: 16;
       @include pad {
-        width: 3vw;
-        height: 3vw;
+        width: 4vw;
+        height: 4vw;
         padding: 0.5vw;
-        top: 45%;
         right: 2%;
+        top: 15%;
       }
     }
     .bath-detail {

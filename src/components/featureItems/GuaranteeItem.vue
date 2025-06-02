@@ -117,10 +117,10 @@ onMounted(() => {
   z-index: 1;
   cursor: pointer;
   @media screen and (max-width: 1400px) {
-    top: 13%;
-    width: 3vw;
-    height: 3vw;
+    width: 4vw;
+    height: 4vw;
     padding: 0.5vw;
+    top: 15%;
   }
 }
 </style>

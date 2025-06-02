@@ -100,8 +100,9 @@ onMounted(() => {
   z-index: 1;
   cursor: pointer;
   @media screen and (max-width: 1400px) {
-    width: 3vw;
-    height: 3vw;
+    width: 4vw;
+    height: 4vw;
+    top: 12.5%;
     padding: 0.5vw;
   }
 }

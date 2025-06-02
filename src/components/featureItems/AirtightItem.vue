@@ -1,6 +1,15 @@
 <template>
   <FancyContainer class="airtight-item-container">
-    <Swiper :slides-per-view="1" :spaceBetween="25" :modules="[Navigation]" class="airtight-swiper">
+    <Swiper
+      :slides-per-view="1"
+      :spaceBetween="25"
+      :navigation="{
+        nextEl: '.airtight-filter-next',
+        prevEl: '.airtight-filter-prev',
+      }"
+      :modules="[Navigation]"
+      class="airtight-swiper"
+    >
       <swiper-slide class="airtight-swiper-slide-1">
         <FlexRow>
           <template #left>
@@ -43,6 +52,12 @@
           </template>
         </FlexRow>
       </swiper-slide>
+      <div class="swiper-button-prev airtight-filter-prev" @click.stop>
+        <img src="@/assets/img/other/prev.svg" />
+      </div>
+      <div class="swiper-button-next airtight-filter-next" @click.stop>
+        <img src="@/assets/img/other/next.svg" />
+      </div>
     </Swiper>
     <div class="airtight-close" @click="handleClose">
       <img src="@/assets/img/other/close-button.svg" alt="" />
@@ -81,6 +96,21 @@ const handleClose = () => {
   }
   .flex-left {
     position: relative;
+  }
+  .airtight-filter-prev {
+    left: 3%;
+  }
+  .airtight-filter-next {
+    right: 2%;
+  }
+  .airtight-filter-prev,
+  .airtight-filter-next {
+    width: 3vw;
+    z-index: 1;
+    @media screen and (max-width: 1400px) {
+      width: 4vw;
+      top: 42.5%;
+    }
   }
   .airtight-swiper-slide-1 {
     .flex-row {
@@ -140,9 +170,10 @@ const handleClose = () => {
   z-index: 1;
   cursor: pointer;
   @media screen and (max-width: 1400px) {
-    width: 3vw;
-    height: 3vw;
+    width: 4vw;
+    height: 4vw;
     padding: 0.5vw;
+    top: 15%;
   }
 }
 </style>

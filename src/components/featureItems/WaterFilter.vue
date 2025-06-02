@@ -3,6 +3,10 @@
     <Swiper
       :slides-per-view="1"
       :spaceBetween="25"
+      :navigation="{
+        nextEl: '.water-filter-next',
+        prevEl: '.water-filter-prev',
+      }"
       :modules="[Navigation]"
       class="water-filter-swiper"
     >
@@ -57,6 +61,12 @@
           </template>
         </FlexCol>
       </swiper-slide>
+      <div class="swiper-button-prev water-filter-prev" @click.stop>
+        <img src="@/assets/img/other/prev.svg" />
+      </div>
+      <div class="swiper-button-next water-filter-next" @click.stop>
+        <img src="@/assets/img/other/next.svg" />
+      </div>
     </Swiper>
     <div class="water-filter-close" @click="handleClose">
       <img src="@/assets/img/other/close-button.svg" alt="" />
@@ -102,6 +112,21 @@ onMounted(() => {
   .water-filter-left,
   .water-filter-top {
     position: relative;
+  }
+  .water-filter-prev {
+    left: 3%;
+  }
+  .water-filter-next {
+    right: 2%;
+  }
+  .water-filter-prev,
+  .water-filter-next {
+    width: 3vw;
+    z-index: 1;
+    @media screen and (max-width: 1400px) {
+      width: 4vw;
+      top: 42.5%;
+    }
   }
   .water-filter-swiper-slide-1 {
     .flex-row {
@@ -198,10 +223,10 @@ onMounted(() => {
   z-index: 1;
   cursor: pointer;
   @media screen and (max-width: 1400px) {
-    width: 3vw;
-    height: 3vw;
+    width: 4vw;
+    height: 4vw;
     padding: 0.5vw;
-    top: 11%;
+    top: 17%;
   }
 }
 </style>

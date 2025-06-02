@@ -55,7 +55,8 @@ export const bathlistData = [
   {
     key: 'item-9',
     tag: 'item-9',
-    img: new URL('@/assets/img/construction/衛浴設備/new/恆溫沐浴柱@2x.webp', import.meta.url).href,
+    img: new URL('@/assets/img/construction/衛浴設備/new/壁掛沐浴龍頭@2x.webp', import.meta.url)
+      .href,
     icon: new URL('@/assets/img/construction/衛浴設備/new/kohler-icon.svg', import.meta.url).href,
   },
   {

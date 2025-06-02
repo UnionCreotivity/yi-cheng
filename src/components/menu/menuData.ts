@@ -184,11 +184,6 @@ export const menuSubData = [
     key: 'menu-6',
     linkItem: [
       {
-        key: 'link-1',
-        name: '電動車整合',
-        link: 'electric',
-      },
-      {
         key: 'link-2',
         name: '智慧社區',
         link: 'homesmart',
