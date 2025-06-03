@@ -32,6 +32,9 @@ import HighwayView from '@/views/bustling/highway/HighwayView.vue'
 import MajorView from '@/views/bustling/major/MajorView.vue'
 import RezonedView from '@/views/bustling/rezoned/RezonedView.vue'
 
+// <--- 生活光譜 --->
+import LifeView from '@/views/life/LifeView.vue'
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
@@ -153,6 +156,11 @@ const router = createRouter({
           component: RezonedView,
         },
       ],
+    },
+    {
+      path: '/life',
+      name: 'life',
+      component: LifeView,
     },
   ],
 })

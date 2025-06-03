@@ -40,7 +40,7 @@ export const menuData = [
     zhName: '生活光譜',
     active: new URL('@/assets/img/menu/menu-icon-3-active.svg', import.meta.url).href,
     inactive: new URL('@/assets/img/menu/menu-icon-3-inactive.svg', import.meta.url).href,
-    link: 'home',
+    link: 'life',
   },
   {
     key: 'menu-4',
@@ -137,6 +137,9 @@ export const menuSubData = [
     ],
   },
   {
+    key: 'menu-3',
+  },
+  {
     key: 'menu-4',
     linkItem: [
       {
@@ -204,7 +207,7 @@ export const menuTags = [
   },
   {
     id: 'menu-3',
-    path: 'brand',
+    path: 'life',
   },
   {
     id: 'menu-4',

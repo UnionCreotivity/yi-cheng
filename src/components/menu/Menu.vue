@@ -11,14 +11,14 @@
           :class="item.key === tag ? 'menu-main-li-active' : ''"
           @click.stop="toggleSubMenuClick(item.key)"
         >
-          <!-- 有無連結
+          <!-- 有無連結 -->
           <router-link :to="{ name: item.link }" class="menu-link-inner" v-if="item.link">
             <div class="menu-link-icon">
               <img :src="item.key === tag ? item.active : item.inactive" alt="" />
             </div>
             <p>{{ item.zhName }}</p>
-          </router-link> -->
-          <div class="menu-link-inner">
+          </router-link>
+          <div class="menu-link-inner" v-else>
             <div class="menu-link-icon">
               <img :src="item.key === tag ? item.active : item.inactive" alt="" />
             </div>
@@ -86,12 +86,17 @@ const toggleSubMenuClick = (key: string) => {
   if (!key) return
   tag.value = key
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
-  subItem.value = findSubData
+  if (findSubData?.key !== 'menu-3') {
+    subItem.value = findSubData
+  } else {
+    subItem.value = null
+  }
 }
 
 onMounted(() => {
   //抓第一個路徑，例如/construction/feature就會抓construction
   const pathSplit = route.path.split('/')[1]
+  console.log(pathSplit)
   // 尋找tag對應的id
   const findId = menuTags.find((item) => item.path.includes(pathSplit))?.id
   if (findId) {
@@ -99,7 +104,11 @@ onMounted(() => {
   }
   //尋找子項目
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
-  subItem.value = findSubData
+  if (findSubData?.key !== 'menu-3') {
+    subItem.value = findSubData
+  } else {
+    subItem.value = null
+  }
   subTag.value = route.name as string
 })
 </script>

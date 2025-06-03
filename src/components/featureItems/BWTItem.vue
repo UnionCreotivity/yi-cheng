@@ -111,7 +111,7 @@ onMounted(() => {
 .bwt-close {
   position: absolute;
   right: 2%;
-  top: 10%;
+  top: 3%;
   width: 2.5vw;
   height: 2.5vw;
   padding: 0.25vw;
