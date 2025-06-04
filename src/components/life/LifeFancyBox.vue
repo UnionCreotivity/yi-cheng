@@ -17,6 +17,7 @@
         class="life-swiper-slide"
       >
         <img :src="item?.img" alt="" />
+        <p>{{ props.fancyData?.txt }}</p>
       </swiper-slide>
       <div class="swiper-button-prev life-fancy-prev" @click.stop>
         <img src="/src/assets/img/other/prev.svg" alt="" />

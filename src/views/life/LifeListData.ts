@@ -60,6 +60,7 @@ export const LifePoints = [
 export const LifeSwiperData = [
   {
     tag: 'tag-1',
+    txt: '中大公園',
     images: [
       {
         key: 'img-1',
@@ -80,6 +81,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-2',
+    txt: '建德公園',
     images: [
       {
         key: 'img-1',
@@ -100,6 +102,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-3',
+    txt: '溪濱公園',
     images: [
       {
         key: 'img-1',
@@ -120,6 +123,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-4',
+    txt: '興豐公園',
     images: [
       {
         key: 'img-1',
@@ -140,6 +144,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-5',
+    txt: '豐德公園',
     images: [
       {
         key: 'img-1',
@@ -155,6 +160,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-6',
+    txt: '八德國小與附設幼稚園',
     images: [
       {
         key: 'img-1',
@@ -179,6 +185,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-7',
+    txt: '八德國中',
     images: [
       {
         key: 'img-1',
@@ -199,6 +206,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-8',
+    txt: '八德公有零售市場',
     images: [
       {
         key: 'img-1',
@@ -211,6 +219,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-9',
+    txt: '大潤發',
     images: [
       {
         key: 'img-1',
@@ -221,6 +230,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-10',
+    txt: '星巴克',
     images: [
       {
         key: 'img-1',
@@ -231,6 +241,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-11',
+    txt: '置地生活廣場',
     images: [
       {
         key: 'img-1',
@@ -243,6 +254,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-12',
+    txt: '興仁花園夜市',
     images: [
       {
         key: 'img-1',
@@ -255,6 +267,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-13',
+    txt: '興豐路商圈日景/夜景',
     images: [
       {
         key: 'img-1',
@@ -274,6 +287,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-14',
+    txt: '藏壽司',
     images: [
       {
         key: 'img-1',
@@ -284,6 +298,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-15',
+    txt: '寶雅',
     images: [
       {
         key: 'img-1',
@@ -293,6 +308,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-16',
+    txt: '八德戶政事務所',
     images: [
       {
         key: 'img-1',
@@ -305,6 +321,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-17',
+    txt: '八德北區青少年活動中心',
     images: [
       {
         key: 'img-1',
@@ -317,6 +334,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-18',
+    txt: '八德社會住宅',
     images: [
       {
         key: 'img-1',
@@ -329,6 +347,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-19',
+    txt: '八德社會住宅圖書館',
     images: [
       {
         key: 'img-1',
@@ -341,6 +360,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-20',
+    txt: '八德農會+區公所',
     images: [
       {
         key: 'img-1',
@@ -353,6 +373,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-21',
+    txt: '八德興豐社福館',
     images: [
       {
         key: 'img-1',
@@ -365,6 +386,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-22',
+    txt: '國道二號',
     images: [
       {
         key: 'img-1',
@@ -375,6 +397,7 @@ export const LifeSwiperData = [
   },
   {
     tag: 'tag-23',
+    txt: '捷運綠線G01站',
     images: [
       {
         key: 'img-1',

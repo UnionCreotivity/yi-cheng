@@ -28,7 +28,6 @@ declare module 'vue' {
     GuaranteeItem: typeof import('./src/components/featureItems/GuaranteeItem.vue')['default']
     KitchenList: typeof import('./src/components/kitchen/KitchenList.vue')['default']
     LifeFancyBox: typeof import('./src/components/life/LifeFancyBox.vue')['default']
-    LifePoints: typeof import('./src/components/points/LifePoints.vue')['default']
     LoanResult: typeof import('./src/components/loan/LoanResult.vue')['default']
     LockItem: typeof import('./src/components/featureItems/LockItem.vue')['default']
     MentionTxt: typeof import('./src/components/UI/MentionTxt.vue')['default']
