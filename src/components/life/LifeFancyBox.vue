@@ -3,6 +3,7 @@
     <Swiper
       :slides-per-view="1"
       :spaceBetween="25"
+      :speed="1000"
       :navigation="{
         nextEl: '.life-fancy-next',
         prevEl: '.life-fancy-prev',

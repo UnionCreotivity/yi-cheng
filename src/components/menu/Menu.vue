@@ -96,7 +96,6 @@ const toggleSubMenuClick = (key: string) => {
 onMounted(() => {
   //抓第一個路徑，例如/construction/feature就會抓construction
   const pathSplit = route.path.split('/')[1]
-  console.log(pathSplit)
   // 尋找tag對應的id
   const findId = menuTags.find((item) => item.path.includes(pathSplit))?.id
   if (findId) {

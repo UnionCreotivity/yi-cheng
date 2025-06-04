@@ -35,27 +35,32 @@
           <div class="container">
             <div class="anchor-area">
               <div class="anchor-area-map">
-                <FadeIn>
-                  <div class="life-points" v-if="pointsData">
-                    <FadeInItem>
-                      <RedPoint
-                        v-for="item in pointsData.content"
-                        :key="item.tag"
-                        :tag="item.tag"
-                        :activeTag="item.tag"
-                        :className="item.className"
-                        @handle-tag="handelTagClick"
-                    /></FadeInItem></div
-                ></FadeIn>
+                <FadeInItem>
+                  <RedPoint
+                    v-for="item in LifePoints"
+                    :key="item?.key"
+                    :tag="item?.tag"
+                    :listKey="item?.key"
+                    :activeTag="listTag"
+                    :className="item?.className"
+                    @handle-tag="handelTagClick"
+                /></FadeInItem>
                 <img class="imgBoxMap" src="/src/assets/img/life/life-main-img@2x.webp" />
               </div>
             </div></div
         ></ScaleDrag>
       </div>
     </div>
-    <FadeIn>
+    <FadeInItem>
       <LifeFancyBox v-if="fancyData" :fancyData="fancyData" @handel-tag-click="handelTagClick" />
-    </FadeIn>
+      <!-- <LifeFancyBox
+        v-for="item in LifeSwiperData"
+        :key="item.tag"
+        :fancyData="item.images"
+        @handel-tag-click="handelTagClick"
+        v-show="fancyTag === item.tag"
+      /> -->
+    </FadeInItem>
   </PageFixed>
 </template>
 
@@ -75,10 +80,7 @@ import '@/assets/scss/life/life.scss'
 const listTag = ref<string | null>(null)
 
 //紅點內容
-const pointsData = ref<{
-  key: string
-  content: { tag: string; name: string; className: string }[]
-} | null>(null)
+// const pointsData = ref<{ key: string; tag: string; name: string; className: string }[] | null>(null)
 
 //左邊文字
 const toggle = ref(false)
@@ -86,23 +88,21 @@ const toggle = ref(false)
 //fancybox內容
 const fancyData = ref<{ tag: string; images: { key: string; img: string }[] } | null>(null)
 
+const fancyTag = ref<string | null>(null)
+
 const handleListClick = (val: string) => {
   listTag.value = val
-  if (listTag.value) {
-    const result = LifePoints.find((item) => item.key === listTag.value)
-    if (result) {
-      pointsData.value = result
-    }
-  }
 }
 
 const handelTagClick = (val?: string) => {
   if (val) {
+    fancyTag.value = val
     const findData = LifeSwiperData.find((item) => item.tag === val)
     if (findData) {
       fancyData.value = findData
     }
   } else {
+    fancyTag.value = null
     fancyData.value = null
   }
 }

@@ -1,7 +1,11 @@
 <template>
   <div
     class="red-point"
-    :class="[props.name, props.tag === props.activeTag ? 'point-active' : '', props?.className]"
+    :class="[
+      props.name,
+      props.tag === props.activeTag || props.listKey === props.activeTag ? 'point-active' : '',
+      props?.className,
+    ]"
     @click="handleClick"
   >
     <div class="red-point-img">
@@ -18,7 +22,7 @@
 <script setup lang="ts">
 import '@/assets/scss/point/red-point.scss'
 
-const props = defineProps(['name', 'tag', 'activeTag', 'className'])
+const props = defineProps(['name', 'tag', 'activeTag', 'listKey', 'className'])
 
 const emits = defineEmits(['handle-tag'])
 

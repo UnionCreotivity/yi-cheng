@@ -29,144 +29,32 @@ export const LifeListData = [
 export const LifePoints = [
   {
     key: 'list-1',
-    content: [
-      {
-        tag: 'tag-1',
-        name: '中大公園',
-        className: 'life-point-1',
-      },
-      {
-        tag: 'tag-2',
-        name: '建德公園',
-        className: 'life-point-2',
-      },
-      {
-        tag: 'tag-3',
-        name: '溪濱公園',
-        className: 'life-point-3',
-      },
-      {
-        tag: 'tag-4',
-        name: '興豐公園',
-        className: 'life-point-4',
-      },
-      {
-        tag: 'tag-5',
-        name: '豐德公園',
-        className: 'life-point-5',
-      },
-    ],
+    tag: 'tag-1',
+    name: '中大公園',
+    className: 'life-point-1',
   },
-  {
-    key: 'list-2',
-    content: [
-      {
-        tag: 'tag-6',
-        name: '八德國小',
-        className: 'life-point-6',
-      },
-      {
-        tag: 'tag-7',
-        name: '八德國中',
-        className: 'life-point-7',
-      },
-    ],
-  },
-  {
-    key: 'list-3',
-    content: [
-      {
-        tag: 'tag-8',
-        name: '八德公有零售市場',
-        className: 'life-point-8',
-      },
-      {
-        tag: 'tag-9',
-        name: '大潤發',
-        className: 'life-point-9',
-      },
-      {
-        tag: 'tag-10',
-        name: '星巴克',
-        className: 'life-point-10',
-      },
-      {
-        tag: 'tag-11',
-        name: '置地生活廣場',
-        className: 'life-point-11',
-      },
-      {
-        tag: 'tag-12',
-        name: '興仁花園夜市',
-        className: 'life-point-12',
-      },
-      {
-        tag: 'tag-13',
-        name: '興豐路商圈',
-        className: 'life-point-13',
-      },
-      {
-        tag: 'tag-14',
-        name: '藏壽司',
-        className: 'life-point-14',
-      },
-      {
-        tag: 'tag-15',
-        name: '寶雅',
-        className: 'life-point-15',
-      },
-    ],
-  },
-  {
-    key: 'list-4',
-    content: [
-      {
-        tag: 'tag-16',
-        name: '八德戶政事務所',
-        className: 'life-point-16',
-      },
-      {
-        tag: 'tag-17',
-        name: '八德北區青少年活動中心',
-        className: 'life-point-17',
-      },
-      {
-        tag: 'tag-18',
-        name: '八德社會住宅',
-        className: 'life-point-18',
-      },
-      {
-        tag: 'tag-19',
-        name: '八德社會住宅圖書館',
-        className: 'life-point-19',
-      },
-      {
-        tag: 'tag-20',
-        name: '八德農會+區公所',
-        className: 'life-point-20',
-      },
-      {
-        tag: 'tag-21',
-        name: '八德興豐社福館',
-        className: 'life-point-21',
-      },
-    ],
-  },
-  {
-    key: 'list-5',
-    content: [
-      {
-        tag: 'tag-22',
-        name: '國道二號',
-        className: 'life-point-22',
-      },
-      {
-        tag: 'tag-23',
-        name: '捷運綠線',
-        className: 'life-point-23',
-      },
-    ],
-  },
+  { key: 'list-1', tag: 'tag-2', name: '建德公園', className: 'life-point-2' },
+  { key: 'list-1', tag: 'tag-3', name: '溪濱公園', className: 'life-point-3' },
+  { key: 'list-1', tag: 'tag-4', name: '興豐公園', className: 'life-point-4' },
+  { key: 'list-1', tag: 'tag-5', name: '豐德公園', className: 'life-point-5' },
+  { key: 'list-2', tag: 'tag-6', name: '八德國小', className: 'life-point-6' },
+  { key: 'list-2', tag: 'tag-7', name: '八德國中', className: 'life-point-7' },
+  { key: 'list-3', tag: 'tag-8', name: '八德公有零售市場', className: 'life-point-8' },
+  { key: 'list-3', tag: 'tag-9', name: '大潤發', className: 'life-point-9' },
+  { key: 'list-3', tag: 'tag-10', name: '星巴克', className: 'life-point-10' },
+  { key: 'list-3', tag: 'tag-11', name: '置地生活廣場', className: 'life-point-11' },
+  { key: 'list-3', tag: 'tag-12', name: '興仁花園夜市', className: 'life-point-12' },
+  { key: 'list-3', tag: 'tag-13', name: '興豐路商圈', className: 'life-point-13' },
+  { key: 'list-3', tag: 'tag-14', name: '藏壽司', className: 'life-point-14' },
+  { key: 'list-3', tag: 'tag-15', name: '寶雅', className: 'life-point-15' },
+  { key: 'list-4', tag: 'tag-16', name: '八德戶政事務所', className: 'life-point-16' },
+  { key: 'list-4', tag: 'tag-17', name: '八德北區青少年活動中心', className: 'life-point-17' },
+  { key: 'list-4', tag: 'tag-18', name: '八德社會住宅', className: 'life-point-18' },
+  { key: 'list-4', tag: 'tag-19', name: '八德社會住宅圖書館', className: 'life-point-19' },
+  { key: 'list-4', tag: 'tag-20', name: '八德農會+區公所', className: 'life-point-20' },
+  { key: 'list-4', tag: 'tag-21', name: '八德興豐社福館', className: 'life-point-21' },
+  { key: 'list-5', tag: 'tag-22', name: '國道二號', className: 'life-point-22' },
+  { key: 'list-5', tag: 'tag-23', name: '捷運綠線', className: 'life-point-23' },
 ]
 
 export const LifeSwiperData = [
