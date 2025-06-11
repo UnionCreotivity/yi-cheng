@@ -86,7 +86,20 @@ const listTag = ref<string | null>(null)
 const toggle = ref(false)
 
 //fancybox內容
-const fancyData = ref<{ tag: string; images: { key: string; img: string }[] } | null>(null)
+const fancyData = ref<{
+  tag: string
+  paraToggle: boolean
+  images: {
+    key: string
+    img?: string
+    newsIcon?: string
+    title?: string
+    time?: string
+    para?: string
+    source?: string
+    paraImg?: string
+  }[]
+} | null>(null)
 
 const fancyTag = ref<string | null>(null)
 
