@@ -19,7 +19,8 @@
         @mouseout="removeTag()"
       >
         <router-link :to="{ name: 'floorinner', query: { q: item.tag } }">
-          {{ item.name }}
+          <p>{{ item.name }}</p>
+          <div class="block"></div>
         </router-link>
       </li>
     </ul>

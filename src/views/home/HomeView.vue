@@ -72,7 +72,7 @@ const menuItems = [
     key: 'menu-4',
     zhName: '藝築光譜',
     enName: 'BUILDING',
-    link: '',
+    link: 'floor',
   },
   {
     key: 'menu-5',

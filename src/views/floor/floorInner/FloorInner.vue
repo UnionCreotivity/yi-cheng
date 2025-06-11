@@ -21,19 +21,29 @@
       ></ScaleDrag>
       <FadeIn> <p v-show="!is_ToggleShow">本圖面僅供參考，實際圖面依合約書附圖為準</p></FadeIn>
     </div>
+    <div class="floor-inner-close" @click="backMain">
+      <img src="@/assets/img/other/close-button.svg" alt="" />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import FadeIn from '@/components/transition/FadeIn.vue'
 import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import '@/assets/scss/floor/floor-inner.scss'
+
+const router = useRouter()
 
 const is_ToggleShow = ref(false)
 
 const toggleText = (val: boolean) => {
   is_ToggleShow.value = val
+}
+
+const backMain = () => {
+  router.push({ name: 'floor' })
 }
 </script>
 
