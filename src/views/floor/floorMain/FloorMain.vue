@@ -18,7 +18,14 @@
         @mouseover="addTag(item.tag)"
         @mouseout="removeTag()"
       >
-        <router-link :to="{ name: 'floorinner', query: { q: item.tag } }">
+        <router-link
+          :to="{ name: 'floorinner', query: { q: item.tag } }"
+          v-if="item.tag === '3F-14F'"
+        >
+          <p>{{ item.name }}</p>
+          <div class="block"></div>
+        </router-link>
+        <router-link to="" v-else>
           <p>{{ item.name }}</p>
           <div class="block"></div>
         </router-link>
