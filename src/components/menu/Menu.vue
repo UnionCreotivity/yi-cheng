@@ -86,7 +86,7 @@ const toggleSubMenuClick = (key: string) => {
   if (!key) return
   tag.value = key
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
-  if (findSubData?.key !== 'menu-3') {
+  if (findSubData?.key !== 'menu-3' && findSubData?.key !== 'menu-5') {
     subItem.value = findSubData
   } else {
     subItem.value = null
@@ -103,7 +103,7 @@ onMounted(() => {
   }
   //尋找子項目
   const findSubData = menuSubData.find((subItem) => subItem.key === tag.value)
-  if (findSubData?.key !== 'menu-3') {
+  if (findSubData?.key !== 'menu-3' && findSubData?.key !== 'menu-5') {
     subItem.value = findSubData
   } else {
     subItem.value = null

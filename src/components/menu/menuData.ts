@@ -63,20 +63,7 @@ export const menuData = [
     zhName: '藝築光譜',
     active: new URL('@/assets/img/menu/menu-icon-5-active.svg', import.meta.url).href,
     inactive: new URL('@/assets/img/menu/menu-icon-5-inactive.svg', import.meta.url).href,
-    linkItem: [
-      {
-        key: 'link-1',
-        name: '美學光雕',
-      },
-      {
-        key: 'link-2',
-        name: '美學生活',
-      },
-      {
-        key: 'link-3',
-        name: '平面圖集',
-      },
-    ],
+    link: 'floor',
   },
   {
     key: 'menu-6',
@@ -156,23 +143,6 @@ export const menuSubData = [
   },
   {
     key: 'menu-5',
-    linkItem: [
-      {
-        key: 'link-1',
-        name: '美學光雕',
-        link: '',
-      },
-      {
-        key: 'link-2',
-        name: '美學生活',
-        link: '',
-      },
-      {
-        key: 'link-3',
-        name: '平面圖集',
-        link: '',
-      },
-    ],
   },
   {
     key: 'menu-6',
@@ -215,7 +185,7 @@ export const menuTags = [
   },
   {
     id: 'menu-5',
-    path: 'brand',
+    path: 'floor',
   },
   {
     id: 'menu-6',

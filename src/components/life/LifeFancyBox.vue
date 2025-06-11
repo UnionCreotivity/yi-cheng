@@ -16,7 +16,21 @@
         :key="item?.key"
         class="life-swiper-slide"
       >
-        <img :src="item?.img" alt="" />
+        <div class="life-swiper-slide-img" v-if="!props.fancyData.paraToggle">
+          <img :src="item?.img" alt="" />
+        </div>
+        <div class="life-swiper-slide-para" v-else>
+          <div class="life-swiper-slide-para-left">
+            <img :src="item?.paraImg" alt="" />
+          </div>
+          <div class="life-swiper-slide-para-right">
+            <div class="news-icon"><img :src="item?.newsIcon" alt="" /></div>
+            <h2>{{ item?.title }}</h2>
+            <p class="time">{{ item?.time }}</p>
+            <p class="p-1">{{ item?.para }}</p>
+            <p class="p-2">{{ item?.source }}</p>
+          </div>
+        </div>
         <p>{{ props.fancyData?.txt }}</p>
       </swiper-slide>
       <div class="swiper-button-prev life-fancy-prev" @click.stop>

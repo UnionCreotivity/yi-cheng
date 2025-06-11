@@ -35,6 +35,11 @@ import RezonedView from '@/views/bustling/rezoned/RezonedView.vue'
 // <--- 生活光譜 --->
 import LifeView from '@/views/life/LifeView.vue'
 
+// <--- 藝築光譜 --->
+import FloorView from '@/views/floor/FloorView.vue'
+import FloorMain from '@/views/floor/floorMain/FloorMain.vue'
+import FloorInner from '@/views/floor/floorInner/FloorInner.vue'
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
@@ -161,6 +166,22 @@ const router = createRouter({
       path: '/life',
       name: 'life',
       component: LifeView,
+    },
+    {
+      path: '/floor',
+      component: FloorView,
+      children: [
+        {
+          path: '',
+          name: 'floor',
+          component: FloorMain,
+        },
+        {
+          path: 'floorinner',
+          name: 'floorinner',
+          component: FloorInner,
+        },
+      ],
     },
   ],
 })

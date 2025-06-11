@@ -34,7 +34,8 @@ export const kitchenlistData = [
   {
     tag: 'item-6',
     class: 'kitchen-6',
-    img: new URL('@/assets/img/construction/廚具設備/new/五金與拉籃@2x.webp', import.meta.url).href,
+    icon: new URL('@/assets/img/construction/廚具設備/new/sakura-icon.svg', import.meta.url).href,
+    img: new URL('@/assets/img/construction/廚具設備/new/下拉式五金@2x.webp', import.meta.url).href,
   },
   {
     tag: 'item-7',
@@ -48,6 +49,13 @@ export const kitchenlistData = [
     class: 'kitchen-8',
     icon: new URL('@/assets/img/construction/廚具設備/new/淨水器LOGO.svg', import.meta.url).href,
     img: new URL('@/assets/img/construction/廚具設備/new/淨水器下面的@2x.webp', import.meta.url)
+      .href,
+  },
+  {
+    tag: 'item-9',
+    class: 'kitchen-9',
+    icon: new URL('@/assets/img/construction/廚具設備/new/sakura-icon.svg', import.meta.url).href,
+    img: new URL('@/assets/img/construction/廚具設備/new/櫻花緩衝側拉籃@2x.webp', import.meta.url)
       .href,
   },
 ]
@@ -159,5 +167,9 @@ export const kitchenPoints = [
   {
     tag: 'item-8',
     class: 'point-8',
+  },
+  {
+    tag: 'item-9',
+    class: 'point-9',
   },
 ]

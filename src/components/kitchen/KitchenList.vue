@@ -7,7 +7,7 @@
             <img src="/src/assets/img/other/inner-white-icon.svg" alt="" />
           </router-link>
         </div>
-        <img src="/src/assets/img/construction/廚具設備/new/bath-big-img@2x.webp" alt="" />
+        <img src="/src/assets/img/construction/廚具設備/new/宜誠廚具.webp" alt="" />
         <RedPoint
           v-for="item in kitchenPoints"
           :key="item.tag"
