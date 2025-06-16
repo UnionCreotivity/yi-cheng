@@ -85,7 +85,6 @@ export const BuildingData = [
     id: 'building-12',
     name: '緊急發電',
     video: new URL('@/assets/video/building/緊急發電機.mp4', import.meta.url).href,
-    content:
-      '15人人三菱電梯停電不斷電系統，緊急發電不斷電，搭配三菱電腦式感應讀卡，無障礙按鈕面板。',
+    content: '15人三菱電梯停電不斷電系統，緊急發電不斷電，搭配三菱電腦式感應讀卡，無障礙按鈕面板。',
   },
 ]
