@@ -70,7 +70,7 @@ export const constrLinks = [
       },
       {
         key: 'building-4',
-        name: '隔間磚牆',
+        name: '石膏牆',
       },
       {
         key: 'building-5',

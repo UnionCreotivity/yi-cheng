@@ -15,10 +15,10 @@ export const BuildingData = [
   },
   {
     id: 'building-4',
-    name: '隔間磚牆',
+    name: '石膏牆',
     content:
-      '本隔間磚牆採輕質材質，隔音性能優異，可阻隔52分貝聲音，營造安靜空間。結構輕巧堅固，便於快速安裝，適用於辦公室、住宅與商業空間。',
-    video: new URL('@/assets/video/building/輕隔間.mp4', import.meta.url).href,
+      '本隔間磚牆採石膏材質，隔音性能優異，可阻隔52分貝聲音，營造安靜空間。結構輕巧堅固，便於快速安裝，適用於辦公室、住宅與商業空間。',
+    video: new URL('@/assets/video/building/石膏牆.mp4', import.meta.url).href,
   },
   {
     id: 'building-5',
@@ -86,6 +86,6 @@ export const BuildingData = [
     name: '緊急發電',
     video: new URL('@/assets/video/building/緊急發電機.mp4', import.meta.url).href,
     content:
-      '15人/13人三菱電梯停電不斷電系統，緊急發電不斷電，搭配三菱電腦式感應讀卡，無障礙按鈕面板。',
+      '15人人三菱電梯停電不斷電系統，緊急發電不斷電，搭配三菱電腦式感應讀卡，無障礙按鈕面板。',
   },
 ]
