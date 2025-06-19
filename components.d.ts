@@ -25,6 +25,7 @@ declare module 'vue' {
     FlexCol: typeof import('./src/components/UI/FlexCol.vue')['default']
     FlexRow: typeof import('./src/components/UI/FlexRow.vue')['default']
     FullScreen: typeof import('./src/components/full-screen/FullScreen.vue')['default']
+    Glow: typeof import('./src/components/glow/Glow.vue')['default']
     GuaranteeItem: typeof import('./src/components/featureItems/GuaranteeItem.vue')['default']
     KitchenList: typeof import('./src/components/kitchen/KitchenList.vue')['default']
     LifeFancyBox: typeof import('./src/components/life/LifeFancyBox.vue')['default']

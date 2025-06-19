@@ -31,7 +31,7 @@
           </ul></div
       ></FadeIn>
       <div class="life-right">
-        <ScaleDrag :max-ratio="2" :init="{ x: 0, y: 0 }" @toggle-text="toggleText">
+        <ScaleDrag :max-ratio="2" :init="{ x: xMove, y: 0 }" @toggle-text="toggleText">
           <div class="container">
             <div class="anchor-area">
               <div class="anchor-area-map">
@@ -45,6 +45,7 @@
                     :className="item?.className"
                     @handle-tag="handelTagClick"
                 /></FadeInItem>
+                <Glow />
                 <img class="imgBoxMap" src="/src/assets/img/life/life-main-img@2x.webp" />
               </div>
             </div></div
@@ -71,6 +72,7 @@ import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import PageFixed from '@/components/pageFixed/PageFixed.vue'
 import RedPoint from '@/components/point/RedPoint.vue'
 import LifeFancyBox from '@/components/life/LifeFancyBox.vue'
+import Glow from '@/components/glow/Glow.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
 import FadeInItem from '@/components/transition/FadeInItem.vue'
 import { LifeListData, LifePoints, LifeSwiperData } from './LifeListData'
@@ -85,21 +87,35 @@ const listTag = ref<string | null>(null)
 //左邊文字
 const toggle = ref(false)
 
+const xMove = ref(-400)
+
+type FancyType = {
+  //Record<key,type>
+  [T in string]: string | boolean | undefined | Record<string, string | undefined>[]
+}
+
 //fancybox內容
-const fancyData = ref<{
-  tag: string
-  paraToggle: boolean
-  images: {
-    key: string
-    img?: string
-    newsIcon?: string
-    title?: string
-    time?: string
-    para?: string
-    source?: string
-    paraImg?: string
-  }[]
-} | null>(null)
+// const fancyData = ref<{
+//   tag: string
+//   paraToggle: boolean
+//   images: {
+//     key: string
+//     img?: string
+//     newsIcon?: string
+//     title?: string
+//     time?: string
+//     para?: string
+//     source?: string
+//     paraImg?: string
+//   }[]
+// } | null>(null)
+const fancyData = ref<FancyType | null>(null)
+
+// type TestT = {
+//   [K in string]: string | boolean
+// }
+
+// const test = ref<TestT>({ tag: 'test', other: 'test2', ex: true })
 
 const fancyTag = ref<string | null>(null)
 
@@ -144,8 +160,20 @@ const gsapInit = () => {
   )
 }
 
+const handleResize = () => {
+  if (window.innerWidth > 1400) {
+    xMove.value = -400
+  } else {
+    xMove.value = -250
+  }
+}
+
 onMounted(() => {
   gsapInit()
+  handleResize()
+  window.addEventListener('resize', () => {
+    handleResize()
+  })
 })
 </script>
 
