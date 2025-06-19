@@ -18,7 +18,7 @@ export default defineConfig({
   plugins: [
     vue(),
     preloadImg({
-      dir: 'src/assets/img/**/*.{jpg,png,svg,webp}',
+      dir: 'src/assets/**/*.{jpg,png,svg,webp,mp4}',
       attrs: {
         rel: 'preload',
       },

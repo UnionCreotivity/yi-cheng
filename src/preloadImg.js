@@ -2,9 +2,6 @@ import fg from 'fast-glob';
 export const preloadImg = (options) => {
     const { dir, attrs = {} } = options;
     const assetsImages = [];
-    // console.log(dir)
-    // console.log(options)
-    // console.log('Plugin function called')
     return {
         name: 'vite-plugin-image-prefetch',
         generateBundle(_, bundle) {
@@ -15,7 +12,6 @@ export const preloadImg = (options) => {
                     assetsImages.push(item.fileName);
                 }
             });
-            console.log(assetsImages);
         },
         transformIndexHtml(html, ctx) {
             let images = [];
@@ -27,8 +23,20 @@ export const preloadImg = (options) => {
             else {
                 images = assetsImages;
             }
-            console.log(images);
             return images.map((href) => {
+                if (href.includes('mp4')) {
+                    return {
+                        tag: 'link',
+                        attrs: {
+                            rel: 'prefetch',
+                            href: href,
+                            as: 'fetch',
+                            fetchpriority: 'high',
+                            crossorigin: 'anonymous',
+                            ...attrs,
+                        },
+                    };
+                }
                 return {
                     tag: 'link',
                     attrs: {
