@@ -34,19 +34,6 @@ export const preloadImg = (options: PreloadImagesOptions): Plugin => {
         images = assetsImages
       }
       return images.map((href) => {
-        if (href.includes('mp4')) {
-          return {
-            tag: 'link',
-            attrs: {
-              rel: 'prefetch',
-              href: href,
-              as: 'fetch',
-              fetchpriority: 'high',
-              crossorigin: 'anonymous',
-              ...attrs,
-            },
-          }
-        }
         return {
           tag: 'link',
           attrs: {
