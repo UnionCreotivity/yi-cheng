@@ -3,9 +3,11 @@
     <FadeIn>
       <div class="app-loading" v-show="!is_Load">
         <div class="app-loading-container">
-          <h1>讀取中</h1>
-          <div class="app-loading-bar">
-            <div class="app-loading-bar-inner" :style="{ width: progress + '%' }"></div>
+          <h1>Loading...</h1>
+          <div class="app-loading-circle">
+            <div class="spinner">
+              <img src="/src/assets/img/other/loading-circle@2x.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -91,6 +93,14 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+@keyframes spin {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 .app-loading {
   position: absolute;
   display: flex;
@@ -109,10 +119,51 @@ onMounted(() => {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 70px;
+    font-size: 40px;
     letter-spacing: 6px;
+    gap: 24px;
+    > h1 {
+      opacity: 0.5;
+      letter-spacing: 2px;
+      font-size: 60px;
+      font-weight: 300;
+      margin-left: 2%;
+    }
     @media screen and (max-width: 1400px) {
-      font-size: 40px;
+      font-size: 30px;
+      gap: 16px;
+      > h1 {
+        font-size: 40px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      gap: 12px;
+      > h1 {
+        font-size: 30px;
+      }
+    }
+    .app-loading-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .spinner {
+        width: 80px;
+        height: 80px;
+        animation: spin 1.5s linear 0s infinite;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        @media screen and (max-width: 1400px) {
+          width: 60px;
+          height: 60px;
+        }
+        @media screen and (max-width: 768px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
     }
     .app-loading-bar {
       width: 30%;
