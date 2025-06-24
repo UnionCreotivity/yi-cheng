@@ -3,12 +3,12 @@
     <FadeIn>
       <div class="app-loading" v-show="!is_Load">
         <div class="app-loading-container">
-          <h1>Loading...</h1>
           <div class="app-loading-circle">
             <div class="spinner">
               <img src="/src/assets/img/other/loading-circle@2x.png" alt="" />
             </div>
           </div>
+          <h1>Loading</h1>
         </div>
       </div>
     </FadeIn>
@@ -121,26 +121,23 @@ onMounted(() => {
     flex-direction: column;
     font-size: 40px;
     letter-spacing: 6px;
-    gap: 24px;
+    gap: 16px;
     > h1 {
       opacity: 0.5;
       letter-spacing: 2px;
-      font-size: 60px;
+      font-size: 23px;
       font-weight: 300;
-      margin-left: 2%;
     }
     @media screen and (max-width: 1400px) {
-      font-size: 30px;
-      gap: 16px;
+      gap: 12px;
       > h1 {
-        font-size: 40px;
+        font-size: 16px;
       }
     }
     @media screen and (max-width: 768px) {
-      font-size: 24px;
-      gap: 12px;
+      gap: 6px;
       > h1 {
-        font-size: 30px;
+        font-size: 12px;
       }
     }
     .app-loading-circle {
@@ -160,8 +157,8 @@ onMounted(() => {
           height: 60px;
         }
         @media screen and (max-width: 768px) {
-          width: 40px;
-          height: 40px;
+          width: 50px;
+          height: 50px;
         }
       }
     }
