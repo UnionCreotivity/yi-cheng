@@ -87,7 +87,7 @@ const listTag = ref<string | null>(null)
 //左邊文字
 const toggle = ref(false)
 
-const xMove = ref(-400)
+const xMove = ref(-200)
 
 type FancyType = {
   //Record<key,type>
@@ -143,7 +143,7 @@ const toggleText = (val: boolean) => {
 const gsapInit = () => {
   const tl = gsap.timeline({ delay: 0.25 })
 
-  tl.from('.life-left-para h2,.life-left-para h3,.life-left-para .line ,.life-left-para P', {
+  tl.from('.life-left-para h2,.life-left-para h3,.life-left-para .line ,.life-left-para p', {
     x: '10%',
     opacity: 0,
     stagger: 0.17,
@@ -162,9 +162,9 @@ const gsapInit = () => {
 
 const handleResize = () => {
   if (window.innerWidth > 1400) {
-    xMove.value = -400
+    xMove.value = -200
   } else {
-    xMove.value = -250
+    xMove.value = -125
   }
 }
 

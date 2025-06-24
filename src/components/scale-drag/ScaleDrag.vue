@@ -67,20 +67,28 @@ const onClick = (e: MouseEvent) => {
 const zoomIn = (e: MouseEvent) => {
   e.stopPropagation()
   e.preventDefault()
+  x.value = props.init.x
+  y.value = props.init.y
+  if (scaleRatio.value >= 1.5) {
+    x.value = props.init.x * 2
+    y.value = props.init.y * 2
+  }
   if (scaleRatio.value < props.maxRatio) {
     scaleRatio.value += 0.5
-    x.value = props.init.x
-    y.value = props.init.y
     startScale.value = true
   }
+
   emits('toggle-text', true)
 }
 
 const zoomOut = (e: MouseEvent) => {
   e.stopPropagation()
   e.preventDefault()
+
   if (scaleRatio.value > 1) {
     scaleRatio.value -= 0.5
+    x.value /= 2
+    y.value /= 2
   }
   if (scaleRatio.value <= 1) {
     x.value = 0
@@ -197,7 +205,7 @@ const boxStyle = computed(() => ({
   height: '100%',
   left: `${x.value}px`,
   top: `${y.value}px`,
-  transition: flag.value ? '0s' : '0.6s',
+  transition: flag.value ? '0s' : '0.75s',
 }))
 
 const isTocuhAction = computed(() => {
