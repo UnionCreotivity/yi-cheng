@@ -23,9 +23,15 @@
             <div class="safe-content-button" v-if="content.innerImg">
               <button
                 class="safe-content-inner-button"
-                @click.stop="handleInnerImg(content.innerImg)"
+                @click.stop="handleInnerImg(content.innerImg, 'inner-1')"
               >
                 結構比較
+              </button>
+              <button
+                class="safe-content-inner-button"
+                @click.stop="handleInnerImg(content.innerImgSec, 'inner-2')"
+              >
+                專利證書
               </button>
             </div>
           </div>
@@ -37,7 +43,7 @@
     </div>
     <FadeIn>
       <!-- 內頁 -->
-      <div class="safe-content-toggle-img" v-if="toggleImg">
+      <div class="safe-content-toggle-img" :class="toggleClass" v-if="toggleImg">
         <div class="safe-content-toggle-img-inner">
           <img :src="toggleImg" alt="" />
         </div>
@@ -60,12 +66,15 @@ const tag = ref('safe-1')
 
 const innerTag = ref(0)
 
+const toggleClass = ref('')
+
 const safeContent = ref<
   | {
       id: string
       name: string
       image: string
       innerImg?: string
+      innerImgSec?: string
       className: string
       content: string
     }[]
@@ -78,11 +87,16 @@ const toggleTag = (id: string) => {
   tag.value = id
 }
 
-const handleInnerImg = (img?: string) => {
+const handleInnerImg = (img?: string, className?: string) => {
   if (img) {
     toggleImg.value = img
   } else {
     toggleImg.value = ''
+  }
+  if (className) {
+    toggleClass.value = className
+  } else {
+    toggleClass.value = ''
   }
 }
 

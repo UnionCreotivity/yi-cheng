@@ -1,6 +1,11 @@
 <template>
   <PageFixed id="life">
     <div class="life-container">
+      <div class="nav-icon">
+        <router-link :to="{ name: 'home' }">
+          <img src="/src/assets/img/other/company-icon.svg" alt="" />
+        </router-link>
+      </div>
       <FadeIn>
         <div class="life-left" v-if="!toggle">
           <div class="life-left-para">
@@ -81,9 +86,6 @@ import '@/assets/scss/life/life.scss'
 // 清單選取
 const listTag = ref<string | null>(null)
 
-//紅點內容
-// const pointsData = ref<{ key: string; tag: string; name: string; className: string }[] | null>(null)
-
 //左邊文字
 const toggle = ref(false)
 
@@ -110,12 +112,6 @@ type FancyType = {
 //   }[]
 // } | null>(null)
 const fancyData = ref<FancyType | null>(null)
-
-// type TestT = {
-//   [K in string]: string | boolean
-// }
-
-// const test = ref<TestT>({ tag: 'test', other: 'test2', ex: true })
 
 const fancyTag = ref<string | null>(null)
 

@@ -68,7 +68,7 @@
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          gap: 2vw;
+          gap: 1vw;
           margin-top: 2vw;
           .safe-content-inner-button {
             font-family: var(--micro);
@@ -141,6 +141,12 @@
         height: 2.75vw;
         padding: 0.5vw;
       }
+    }
+  }
+  .inner-2 {
+    .safe-content-toggle-img-inner {
+      width: 65%;
+      height: auto;
     }
   }
 }

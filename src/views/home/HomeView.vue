@@ -64,18 +64,24 @@ const menuItems = [
   },
   {
     key: 'menu-3',
+    zhName: '生活光譜',
+    enName: 'LIFE',
+    link: 'life',
+  },
+  {
+    key: 'menu-4',
     zhName: '精工光譜',
     enName: 'METHOD',
     link: 'method',
   },
   {
-    key: 'menu-4',
+    key: 'menu-5',
     zhName: '藝築光譜',
     enName: 'BUILDING',
     link: 'floor',
   },
   {
-    key: 'menu-5',
+    key: 'menu-6',
     zhName: '智能光譜',
     enName: 'SMART',
     link: 'electric',
