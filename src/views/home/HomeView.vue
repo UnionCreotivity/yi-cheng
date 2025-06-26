@@ -1,13 +1,19 @@
 <template>
   <PageFixed title="home-view">
     <div class="home-video">
-      <video
-        src="@/assets/video/home/img2024112016013425.mp4"
-        autoplay
-        muted
-        loop
-        playsinline
-      ></video>
+      <FadeIn>
+        <video
+          class="home-main-video"
+          src="@/assets/video/home/img2024112016013425.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          @loadeddata="handlePlay"
+          v-show="isPlay"
+        ></video
+      ></FadeIn>
     </div>
     <div class="home-first" :class="isShow ? 'home-first-none' : ''" @click.stop="showClick">
       <div class="home-first-icon">
@@ -46,8 +52,11 @@ import gsap from 'gsap'
 import screenfull from 'screenfull'
 import PageFixed from '@/components/pageFixed/PageFixed.vue'
 import '@/assets/scss/home/home-view.scss'
+import FadeIn from '@/components/transition/FadeIn.vue'
 
 const isShow = ref(false)
+
+const isPlay = ref(false)
 
 const menuItems = [
   {
@@ -118,10 +127,15 @@ const initGsap = () => {
 }
 
 const showClick = () => {
+  if (!isPlay.value) return
   isShow.value = !isShow.value
   if (!screenfull.isFullscreen) {
     screenfull.toggle()
   }
   initGsap()
+}
+
+const handlePlay = () => {
+  isPlay.value = true
 }
 </script>
