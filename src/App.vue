@@ -9,6 +9,7 @@
             </div>
           </div>
           <h1>Loading</h1>
+          <p>{{ progress }}%</p>
         </div>
       </div>
     </FadeIn>
@@ -35,7 +36,7 @@ const waitForPreloadedImages = () => {
   let count = 0
   const checkComplete = () => {
     count++
-    progress.value = Number((count / preloadLinks.length).toFixed(2)) * 100
+    progress.value = Number(((count / preloadLinks.length) * 100).toFixed(0))
     if (progress.value >= 100) {
       is_Load.value = true
     }
@@ -123,6 +124,12 @@ onMounted(() => {
     letter-spacing: 6px;
     gap: 16px;
     > h1 {
+      opacity: 0.5;
+      letter-spacing: 2px;
+      font-size: 23px;
+      font-weight: 300;
+    }
+    > p {
       opacity: 0.5;
       letter-spacing: 2px;
       font-size: 23px;
