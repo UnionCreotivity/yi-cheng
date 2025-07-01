@@ -49,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-import { menuData, menuSubData, menuTags } from './menuData'
+import { menuData, menuSubData, menuTags, menuChildTags } from './menuData'
 import '@/assets/scss/menu/menu.scss'
 
 const emits = defineEmits(['show-menu-click'])
@@ -74,6 +74,7 @@ const showMenuClick = () => {
   emits('show-menu-click', val)
 }
 
+//有子選項時的menu移動幅度
 const menuInactiveStyle = computed(() => {
   return {
     transform: subItem.value ? 'translateX(-88.5%)' : 'translateX(-80.5%)',
@@ -108,7 +109,14 @@ onMounted(() => {
   } else {
     subItem.value = null
   }
-  subTag.value = route.name as string
+
+  //尋找子path的母path
+  const childtag = menuChildTags.find((item) => item.name === route.name)
+  if (childtag) {
+    subTag.value = childtag.tag
+  } else {
+    subTag.value = route.name as string
+  }
 })
 </script>
 

@@ -21,6 +21,7 @@
             ></FadeInItem>
           </div>
           <div class="water-proof-content-right">
+            <h1>{{ content.name }}</h1>
             <div
               class="water-proof-content-right-para"
               v-for="item in content?.contents"

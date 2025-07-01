@@ -25,16 +25,6 @@ export const navLinks = [
     ],
   },
   {
-    key: 'develop',
-    links: [
-      {
-        key: 'develop-1',
-        name: '八擴之光',
-        linkName: 'develop',
-      },
-    ],
-  },
-  {
     key: 'smart',
     links: [
       {

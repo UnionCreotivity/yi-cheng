@@ -4,12 +4,12 @@
       <div class="app-loading" v-show="!is_Load">
         <div class="app-loading-container">
           <div class="app-loading-circle">
+            <p>{{ progress }}%</p>
             <div class="spinner">
               <img src="/src/assets/img/other/loading-circle@2x.png" alt="" />
             </div>
           </div>
           <h1>Loading</h1>
-          <p>{{ progress }}%</p>
         </div>
       </div>
     </FadeIn>
@@ -129,12 +129,7 @@ onMounted(() => {
       font-size: 23px;
       font-weight: 300;
     }
-    > p {
-      opacity: 0.5;
-      letter-spacing: 2px;
-      font-size: 23px;
-      font-weight: 300;
-    }
+
     @media screen and (max-width: 1400px) {
       gap: 12px;
       > h1 {
@@ -148,9 +143,22 @@ onMounted(() => {
       }
     }
     .app-loading-circle {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      > p {
+        position: absolute;
+        top: 39%;
+        opacity: 0.5;
+        letter-spacing: 2px;
+        font-size: 20px;
+        font-weight: 300;
+        @media screen and (max-width: 1400px) {
+          top: 42%;
+          font-size: 13px;
+        }
+      }
       .spinner {
         width: 80px;
         height: 80px;

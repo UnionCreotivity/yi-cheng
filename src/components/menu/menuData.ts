@@ -192,3 +192,34 @@ export const menuTags = [
     path: 'smart',
   },
 ]
+
+export const menuChildTags = [
+  {
+    name: 'safe',
+    tag: 'method',
+  },
+  {
+    name: 'building',
+    tag: 'method',
+  },
+  {
+    name: 'water',
+    tag: 'method',
+  },
+  {
+    name: 'mrt',
+    tag: 'develop',
+  },
+  {
+    name: 'highway',
+    tag: 'develop',
+  },
+  {
+    name: 'major',
+    tag: 'develop',
+  },
+  {
+    name: 'rezoned',
+    tag: 'develop',
+  },
+]

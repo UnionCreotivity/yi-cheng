@@ -12,6 +12,7 @@
     .brand-idea-swiper-container {
       width: 100%;
       height: 100%;
+      z-index: unset;
       @include pad {
         height: 100%;
       }
@@ -282,6 +283,7 @@
       .brand-idea-prev,
       .brand-idea-next {
         width: 3vw;
+        z-index: 16;
         @include pad {
           width: 5vw;
           top: 48%;

@@ -122,13 +122,16 @@
       left: 44.5%;
       @include pad() {
         top: 50%;
-        left: 43.5%;
+        left: 42%;
       }
       .home-menu-ul {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3vw;
+        @include pad() {
+          gap: 2vw;
+        }
         .home-menu-li {
           position: relative;
           display: flex;
