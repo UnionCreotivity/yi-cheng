@@ -147,7 +147,7 @@ const brandClick = (val: string) => {
   } else if (moveValue.value < -swiperLimit.value) {
     moveValue.value = -swiperLimit.value
   }
-  slide.value.$el.swiper.setTransition(500)
+  slide.value.$el.swiper.setTransition(750)
   slide.value.$el.swiper.setTranslate(moveValue.value)
 }
 
