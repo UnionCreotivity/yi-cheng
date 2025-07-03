@@ -166,16 +166,16 @@ const handleClose = () => {
 .airtight-close {
   position: absolute;
   right: 2%;
-  top: 3%;
-  width: 2.5vw;
-  height: 2.5vw;
+  top: 3.5%;
+  width: 2vw;
+  height: 2vw;
   padding: 0.25vw;
   background-color: #d27c8d;
   z-index: 1;
   cursor: pointer;
   @media screen and (max-width: 1400px) {
-    width: 4vw;
-    height: 4vw;
+    width: 2.75vw;
+    height: 2.75vw;
     padding: 0.5vw;
     top: 12%;
   }

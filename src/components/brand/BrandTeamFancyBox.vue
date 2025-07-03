@@ -1,6 +1,8 @@
 <template>
   <section class="brand-team-inner" :class="props.fancyContent.tag" :style="z19">
+    <Nav color="black" tag="brand" />
     <BrandTeamFancyBg />
+    <!-- 左下人物 -->
     <div class="brand-team-inner-main" v-if="props.fancyContent.tag !== 'brand-2'">
       <div class="brand-team-inner-people">
         <div class="brand-team-inner-people-main">
@@ -28,17 +30,20 @@
         </div>
         <div class="brand-team-inner-people-line"></div>
       </div>
+      <!-- 公設設計 -->
       <div class="brand-team-inner-para">
         <div class="brand-team-inner-summary">
           <h3>{{ props.fancyContent.title }}</h3>
           <p>{{ props.fancyContent.intro }}</p>
           <div class="brand-team-inner-line"></div>
         </div>
+        <!-- 獲獎經歷 -->
         <div class="brand-team-inner-exper">
           <h3>{{ props.fancyContent.exper }}</h3>
           <p>{{ props.fancyContent.experdetail }}</p>
           <div class="brand-team-inner-line"></div>
         </div>
+        <!-- 代表作品欄位 -->
         <div class="brand-team-inner-carousel">
           <h3>代表作品</h3>
           <Swiper
@@ -71,6 +76,7 @@
         </div>
       </div>
     </div>
+    <!-- 特殊版面 -->
     <div class="brand-team-inner-brand-2" v-else>
       <div class="brand-team-inner-brand-2-left">
         <h3>宜誠建設總經理 賴明皇</h3>
@@ -88,7 +94,7 @@
       </div>
     </div>
     <div class="brand-team-close" @click="handleFancy">
-      <img src="/src/assets/img/other/close-trans.svg" alt="" />
+      <img src="@/assets/img/other/close-button.svg" alt="" />
     </div>
 
     <FadeIn>
@@ -110,6 +116,7 @@ import gsap from 'gsap'
 import { computed, ref } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
+import Nav from '@/components/nav/Nav.vue'
 import FadeIn from '../transition/FadeIn.vue'
 import BrandTeamFancyBg from './BrandTeamFancyBg.vue'
 import '@/assets/scss/brand/brand-team-inner.scss'

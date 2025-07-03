@@ -174,7 +174,7 @@
     }
     .mrt-fancybox-close {
       position: absolute;
-      top: 3%;
+      top: 3.2%;
       right: 2%;
       width: 2vw;
       height: 2vw;
@@ -183,6 +183,7 @@
       background-color: #d27c8d;
       cursor: pointer;
       @include pad {
+        top: 4.4%;
         width: 2.75vw;
         height: 2.75vw;
         padding: 0.5vw;
