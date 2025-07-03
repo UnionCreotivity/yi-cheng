@@ -10,6 +10,9 @@
   #nav {
     .nav-links {
       margin-right: 3%;
+      @include pad {
+        margin-right: 5%;
+      }
     }
   }
   .brand-team-inner-main {
@@ -254,6 +257,11 @@
       cursor: pointer;
       background-color: #d27c8d;
       z-index: 17;
+      @include pad {
+        right: 3%;
+        top: 4.5%;
+        width: 2.75vw;
+      }
     }
   }
   .brand-team-close {

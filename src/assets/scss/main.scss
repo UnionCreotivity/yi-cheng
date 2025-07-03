@@ -138,7 +138,7 @@ body {
       &:last-child {
         margin-right: 0;
         @include pad {
-          margin-right: 1vw;
+          // margin-right: 1vw;
         }
         &::after {
           content: unset;

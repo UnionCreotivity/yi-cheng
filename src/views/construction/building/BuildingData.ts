@@ -39,7 +39,7 @@ export const BuildingData = [
     name: '樓地板厚度',
     content:
       '樓地板隔音效果和厚度有直接關係，樓上跑動、甚至走路重一點，樓下往往聽得一清二楚。秉持建築安全的理念，樓地板都為18分厚度，對降低震動、隔絕噪音效果提升不少，讓居住品質更提升!',
-    video: new URL('@/assets/video/building/樓地板厚度NEW.mp4', import.meta.url).href,
+    video: new URL('@/assets/video/building/樓地板厚度.mp4', import.meta.url).href,
   },
   {
     id: 'building-8',
@@ -65,12 +65,12 @@ export const BuildingData = [
       },
     ],
     content:
-      '網路傳輸速度成了走入雲端系統中最重要的環節之一，\nFTTH則是將光纖連結至家中，\n達到網路傳輸量極大化。',
+      '網路傳輸速度成了走入雲端系統中最重要的環節之一，FTTH則是將光纖連結至家中，\n達到網路傳輸量極大化。',
   },
   {
     id: 'building-10',
     name: '地下室換氣',
-    video: new URL('@/assets/video/building/地下室換氣設備_1.mp4', import.meta.url).href,
+    video: new URL('@/assets/video/building/地下室換氣設備.mp4', import.meta.url).href,
     content:
       '車場設排氣機，自動設定開關控制風機運轉，誘導式排風機將停車場廢氣排出，進風管不斷補充新鮮空氣，維持停車場空氣品質。\n地下室WIFI，讓你的通訊無死角。',
   },

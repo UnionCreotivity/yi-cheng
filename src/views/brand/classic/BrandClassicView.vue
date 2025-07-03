@@ -80,6 +80,7 @@ import { ref } from 'vue'
 import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Swiper as SwiperType } from 'swiper'
+// import { useSwiper } from 'swiper/vue'
 import { Navigation, FreeMode } from 'swiper/modules'
 import Nav from '@/components/nav/Nav.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
@@ -91,6 +92,10 @@ import '@/assets/scss/brand/classic.scss'
 const fancyData = ref<null | { year: string; name: string; img: string }>(null)
 
 const slide = ref()
+
+// const nextClick = ref()
+
+// const prevClick = ref()
 
 const toProduct = (year?: string, id?: string) => {
   if (!year || !id) return (fancyData.value = null)
@@ -117,6 +122,25 @@ const onSwiper = (swiper: SwiperType) => {
     swiper.slideTo(0, 1000)
   }, 500)
 }
+
+// const testChange = (swiper: SwiperType) => {
+//   // console.log(swiper)
+//   // swiper.setTranslate(-2000)
+// }
+
+// const testTransition = (swiper: SwiperType) => {
+//   // swiper.setTranslate(-2000)
+// }
+
+// const testClick = (swiper: SwiperType, event: MouseEvent | TouchEvent | PointerEvent) => {
+//   // console.log(swiper)
+//   // console.log(event)
+// }
+
+// const brandClick = (e: any) => {
+//   // const testSwiper = useSwiper()
+//   // slide.value.setTranslate(-500)
+// }
 
 const gsapInit = (swiper: SwiperType) => {
   const tl = gsap.timeline({ delay: 0.6 })
