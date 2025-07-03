@@ -36,7 +36,7 @@
           </ul></div
       ></FadeIn>
       <div class="life-right">
-        <ScaleDrag :max-ratio="2" :init="{ x: xMove, y: 0 }" @toggle-text="toggleText">
+        <ScaleDrag :max-ratio="2" :init="{ x: xMove, y: yMove }" @toggle-text="toggleText">
           <div class="container">
             <div class="anchor-area">
               <div class="anchor-area-map">
@@ -90,6 +90,8 @@ const listTag = ref<string | null>(null)
 const toggle = ref(false)
 
 const xMove = ref(-200)
+
+const yMove = ref(-175)
 
 type FancyType = {
   //Record<key,type>
@@ -159,8 +161,10 @@ const gsapInit = () => {
 const handleResize = () => {
   if (window.innerWidth > 1400) {
     xMove.value = -200
+    yMove.value = -175
   } else {
     xMove.value = -125
+    yMove.value = -100
   }
 }
 
