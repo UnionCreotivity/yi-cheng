@@ -68,6 +68,9 @@
           max-width: 60px;
           width: 100%;
           top: 82.25%;
+          @media screen and (max-width: 1440px) {
+            width: 45px;
+          }
           &::after {
             content: unset;
           }
@@ -78,7 +81,7 @@
             right: 18vw;
           }
           @include laptop {
-            right: 15.5vw;
+            right: 18.5vw;
             width: 45px;
           }
         }

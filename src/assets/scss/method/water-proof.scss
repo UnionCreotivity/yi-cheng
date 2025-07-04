@@ -73,6 +73,9 @@
             color: black;
             z-index: 1;
             transition: all 0.75s;
+            @media screen and (max-width: 1440px) {
+              font-weight: 400;
+            }
           }
           .water-proof-content-right-para-block {
             position: absolute;
@@ -113,7 +116,7 @@
           .water-proof-content-next-button {
             width: 60px;
             cursor: pointer;
-            @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+            @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
               width: 45px;
             }
             @include pad {

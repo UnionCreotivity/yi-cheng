@@ -63,6 +63,9 @@
           font-weight: 500;
           letter-spacing: 4px;
           line-height: 2.5;
+          @media screen and (max-width: 1440px) {
+            font-weight: 400;
+          }
         }
         .safe-content-button {
           display: flex;

@@ -29,6 +29,9 @@
       top: 4%;
       width: 8.5vw;
       right: 6vw;
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+        top: 8%;
+      }
       @include pad {
         top: 3.5%;
         right: 8vw;
@@ -97,6 +100,9 @@
         margin-top: 5%;
         margin-right: 63%;
         z-index: 1;
+        @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+          margin-top: 12%;
+        }
         @include pad {
           margin-top: 4%;
           margin-right: 64%;
@@ -214,6 +220,9 @@
       background-color: #d27c8d;
       cursor: pointer;
       z-index: 16;
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+        top: 7.5%;
+      }
       @include pad {
         width: 2.75vw;
         height: 2.75vw;

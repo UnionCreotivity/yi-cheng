@@ -104,6 +104,9 @@ onMounted(() => {
   background-color: #d27c8d;
   z-index: 1;
   cursor: pointer;
+  @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+    top: 3%;
+  }
   @media screen and (max-width: 1400px) {
     width: 2.75vw;
     height: 2.75vw;

@@ -74,11 +74,15 @@ onMounted(() => {
     position: relative;
     width: 100%;
     height: 100%;
+
     @media screen and (max-width: 1400px) {
       height: 80%;
     }
     > img {
       height: 100%;
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+        object-fit: cover;
+      }
     }
     .guarantee-item-txt {
       position: absolute;
@@ -89,26 +93,46 @@ onMounted(() => {
       left: 20%;
       top: 18%;
       width: 15.75%;
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+        left: 18%;
+        top: 19%;
+      }
     }
     .guarantee-item-txt-2 {
       left: 17%;
       top: 32.5%;
       width: 12.75%;
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+        left: 16%;
+        top: 33.5%;
+      }
     }
     .guarantee-item-txt-3 {
       left: 17.5%;
       top: 48%;
       width: 10.15%;
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+        left: 16.5%;
+        top: 49%;
+      }
     }
     .guarantee-item-txt-4 {
       left: 14.75%;
       top: 63%;
       width: 16.5%;
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+        left: 12.75%;
+        top: 64%;
+      }
     }
     .guarantee-item-txt-5 {
       left: 19.25%;
       top: 79%;
       width: 11.4%;
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+        left: 18.25%;
+        top: 80%;
+      }
     }
   }
 }

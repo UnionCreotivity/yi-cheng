@@ -30,6 +30,9 @@
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
         width: 23.5%;
       }
+      @media screen and (max-width: 1440px) {
+        width: 23.5%;
+      }
       @include pad {
         width: 24%;
         margin-left: 5%;
@@ -148,7 +151,7 @@
             width: 100%;
             margin-block: 20px;
             background-color: #888988;
-            @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+            @media screen and (max-width: 1440px) {
               margin-block: 14px;
             }
             @include pad {

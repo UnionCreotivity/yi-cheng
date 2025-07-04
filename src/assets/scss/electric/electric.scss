@@ -106,6 +106,9 @@
           text-align: justify;
           line-height: 2;
           color: #2d2d2d;
+          @media screen and (max-width: 1440px) {
+            font-weight: 400;
+          }
           @include pad {
             font-size: 1.1vw;
           }
