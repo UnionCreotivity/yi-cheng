@@ -159,7 +159,7 @@ const gsapInit = () => {
 }
 
 const handleResize = () => {
-  if (window.innerWidth > 1400) {
+  if (window.innerWidth > 1440) {
     xMove.value = -200
     yMove.value = -175
   } else {

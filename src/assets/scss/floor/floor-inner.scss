@@ -68,6 +68,10 @@
         position: relative;
         width: auto;
         height: 78%;
+        @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+          width: auto;
+          height: 74%;
+        }
         @include pad {
           width: 85.5%;
           height: 60%;
