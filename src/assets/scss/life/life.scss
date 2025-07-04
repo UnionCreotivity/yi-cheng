@@ -27,7 +27,7 @@
       margin-left: 4%;
       padding-top: 0;
       z-index: 1;
-      @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+      @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
         width: 23.5%;
       }
       @include pad {
@@ -135,7 +135,7 @@
             .life-li-en-txt {
               transform: translateX(24px);
               transition: all 0.5s;
-              @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+              @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
                 transform: translateX(16px);
               }
               @include pad {
@@ -186,7 +186,7 @@
           width: auto;
           height: 77%;
           margin-right: 5.5%;
-          @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+          @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
             height: 67%;
           }
           @include pad {

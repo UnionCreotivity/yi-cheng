@@ -57,7 +57,7 @@ onMounted(() => {
 
 <style lang="scss">
 .wooden-floor-container {
-  @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+  @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
     .nav-icon {
       top: 6.25%;
     }
