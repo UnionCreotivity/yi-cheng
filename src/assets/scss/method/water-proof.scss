@@ -66,16 +66,13 @@
             position: relative;
             font-family: var(--micro);
             font-size: 1.25vw;
-            font-weight: 500;
+            font-weight: 400;
             letter-spacing: 4px;
             line-height: 2.25;
             padding-left: 1vw;
             color: black;
             z-index: 1;
             transition: all 0.75s;
-            @media screen and (max-width: 1440px) {
-              font-weight: 400;
-            }
           }
           .water-proof-content-right-para-block {
             position: absolute;
