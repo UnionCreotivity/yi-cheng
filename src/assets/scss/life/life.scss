@@ -113,6 +113,7 @@
               letter-spacing: 3px;
               margin-left: 28px;
               transition: all 0.5s;
+
               @include pad {
                 margin-left: 16px;
               }
@@ -134,6 +135,9 @@
             .life-li-en-txt {
               transform: translateX(24px);
               transition: all 0.5s;
+              @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+                transform: translateX(16px);
+              }
               @include pad {
                 transform: translateX(10px);
               }

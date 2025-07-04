@@ -13,6 +13,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+      justify-content: center;
+    }
     @include pad {
       justify-content: center;
     }
@@ -24,6 +27,9 @@
       width: 100%;
       gap: 2vw;
       margin-top: 6.5%;
+      @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+        margin-top: 0;
+      }
       @include pad {
         margin-top: 0%;
       }

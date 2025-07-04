@@ -66,6 +66,9 @@
       @media screen and (max-width: 1920px) {
         height: 26vw;
       }
+      @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+        height: 27vw;
+      }
       @media screen and (max-width: 1366px) {
         height: 27.25vw;
       }

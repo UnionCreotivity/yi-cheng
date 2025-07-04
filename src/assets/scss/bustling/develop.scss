@@ -26,6 +26,9 @@
     width: 100%;
     flex: 2.1 1;
     overflow: hidden;
+    @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+      flex: unset;
+    }
     @include pad {
       flex: 1.05 1;
     }

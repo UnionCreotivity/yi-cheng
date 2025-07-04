@@ -17,6 +17,9 @@
       .home-smart-next {
         width: 3vw;
         z-index: 16;
+        @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+          top: 54%;
+        }
         @include pad {
           width: 5vw;
           top: 48%;

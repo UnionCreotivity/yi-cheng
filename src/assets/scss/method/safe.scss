@@ -80,6 +80,10 @@
             cursor: pointer;
             color: white;
             background-color: #d27c8d;
+            @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+              font-size: 1.1vw;
+              padding: 0.5vw 1.25vw;
+            }
             @include pad {
               font-size: 1.1vw;
               padding: 0.5vw 1.25vw;
