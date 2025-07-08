@@ -54,7 +54,14 @@
                     @handle-tag="handelTagClick"
                     v-show="listTag === item?.key"
                 /></FadeInItem>
-                <Glow />
+                <div class="glow-square">
+                  <video
+                    src="/src/assets/video/life/img2024041709370816.mp4"
+                    muted
+                    loop
+                    autoplay
+                  ></video>
+                </div>
                 <img class="imgBoxMap" src="/src/assets/img/life/life-main-img@2x.webp" />
               </div>
             </div></div
@@ -81,7 +88,6 @@ import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
 import PageFixed from '@/components/pageFixed/PageFixed.vue'
 import RedPoint from '@/components/point/RedPoint.vue'
 import LifeFancyBox from '@/components/life/LifeFancyBox.vue'
-import Glow from '@/components/glow/Glow.vue'
 import FadeIn from '@/components/transition/FadeIn.vue'
 import FadeInItem from '@/components/transition/FadeInItem.vue'
 import { LifeListData, LifePoints, LifeSwiperData } from './LifeListData'

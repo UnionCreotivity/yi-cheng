@@ -246,6 +246,13 @@
               width: 100%;
               height: 100%;
             }
+            .glow-square {
+              position: absolute;
+              top: 56.5%;
+              left: 42%;
+              width: 10%;
+              mix-blend-mode: plus-lighter;
+            }
             .life-points {
               position: absolute;
               top: 0;
