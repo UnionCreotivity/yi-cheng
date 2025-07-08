@@ -33,12 +33,13 @@
               </div>
               <div class="life-li-line"></div>
             </li>
-            <li class="life-li" :class="listTag ? 'active' : 'inactive'">
-              <button @click="handleListClick('')">初始</button>
+            <li class="life-li life-li-icon" :class="listTag ? 'active' : 'inactive'">
+              <button @click="handleListClick('')">
+                <img src="/src/assets/img/other/return-icon.svg" alt="" />
+              </button>
             </li>
-          </ul>
-        </div></FadeIn
-      >
+          </ul></div
+      ></FadeIn>
       <div class="life-right">
         <ScaleDrag :max-ratio="2" :init="{ x: xMove, y: yMove }" @toggle-text="toggleText">
           <div class="container">
@@ -57,12 +58,13 @@
                     v-show="listTag === item?.key"
                 /></FadeInItem>
                 <div class="glow-square">
-                  <video
+                  <div class="light"></div>
+                  <!-- <video
                     src="/src/assets/video/life/img2024041709370816.mp4"
                     muted
                     loop
                     autoplay
-                  ></video>
+                  ></video> -->
                 </div>
                 <img class="imgBoxMap" src="/src/assets/img/life/life-main-img@2x.webp" />
               </div>

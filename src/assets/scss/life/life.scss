@@ -150,6 +150,7 @@
               }
             }
           }
+
           .li-active {
             .life-li-zh-txt,
             .life-li-en-txt {
@@ -179,16 +180,11 @@
             }
           }
           button {
-            font-size: 0.9vw;
             font-family: var(--serif);
-            border-radius: 2vw;
+            border-radius: 1vw;
             padding-block: 0.5vw;
-            padding-inline: 0.25vw;
+            padding-inline: 2.1vw;
             letter-spacing: 2px;
-            width: 30%;
-            // color: black;
-            // border: 1px solid black;
-            // background-color: transparent;
             color: white;
             border: none;
             background-image: linear-gradient(
@@ -203,6 +199,14 @@
             }
           }
         }
+        .life-li-icon {
+          > button {
+            width: 25%;
+            @include pad {
+              width: 23%;
+            }
+          }
+        }
       }
     }
     .life-right {
@@ -214,6 +218,9 @@
       flex-direction: column;
       width: 100%;
       height: 100%;
+      .box {
+        will-change: transform;
+      }
       .red-point {
         width: 6%;
         padding: 2%;
@@ -257,10 +264,42 @@
             }
             .glow-square {
               position: absolute;
-              top: 56.5%;
-              left: 42%;
-              width: 10%;
-              mix-blend-mode: plus-lighter;
+              top: 63.5%;
+              left: 43.5%;
+              width: 7%;
+              height: 8%;
+              background-color: transparent;
+              overflow: hidden;
+              .light {
+                mix-blend-mode: plus-lighter;
+                opacity: 0.4;
+                position: absolute;
+                top: -150%;
+                z-index: 1;
+                width: 100%;
+                height: 23vw;
+                background: linear-gradient(
+                  to right,
+                  rgba(255, 255, 255, 0) 0%,
+                  rgb(255, 255, 255) 50%,
+                  rgba(255, 255, 255, 0) 100%
+                );
+                transform: rotate(27deg) translateX(-300%);
+                animation-name: lightMv;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+              }
+              @keyframes lightMv {
+                0% {
+                  transform: rotate(27deg) translateX(-300%);
+                }
+                50% {
+                  transform: rotate(27deg) translateX(200%);
+                }
+                100% {
+                  transform: rotate(27deg) translateX(200%);
+                }
+              }
             }
             .life-points {
               position: absolute;
