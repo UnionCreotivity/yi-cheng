@@ -33,7 +33,11 @@
               </div>
               <div class="life-li-line"></div>
             </li>
-            <li class="life-li"><button @click="handleListClick('')">初始</button></li>
+            <FadeIn>
+              <li class="life-li" v-if="listTag">
+                <button @click="handleListClick('')">初始</button>
+              </li>
+            </FadeIn>
           </ul>
         </div></FadeIn
       >
