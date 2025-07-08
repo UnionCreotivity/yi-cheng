@@ -33,11 +33,9 @@
               </div>
               <div class="life-li-line"></div>
             </li>
-            <FadeIn>
-              <li class="life-li" v-if="listTag">
-                <button @click="handleListClick('')">初始</button>
-              </li>
-            </FadeIn>
+            <li class="life-li" :class="listTag ? 'active' : 'inactive'">
+              <button @click="handleListClick('')">初始</button>
+            </li>
           </ul>
         </div></FadeIn
       >
@@ -190,6 +188,7 @@ onMounted(() => {
   window.addEventListener('resize', () => {
     handleResize()
   })
+  console.log(listTag.value === '')
 })
 </script>
 
