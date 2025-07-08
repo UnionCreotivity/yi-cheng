@@ -86,6 +86,9 @@
       width: 67%;
       margin-left: -3%;
       z-index: 1;
+      @media screen and (aspect-ratio: 1920/940) {
+        width: 65%;
+      }
     }
     .brand-classic-fancybox-close {
       position: absolute;
