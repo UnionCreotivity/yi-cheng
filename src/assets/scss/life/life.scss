@@ -180,20 +180,12 @@
             }
           }
           button {
-            font-family: var(--serif);
-            border-radius: 1vw;
-            padding-block: 0.5vw;
-            padding-inline: 2.1vw;
-            letter-spacing: 2px;
-            color: white;
             border: none;
-            background-image: linear-gradient(
-              to right,
-              rgb(210, 124, 141) 0%,
-              rgb(185, 93, 117) 100%
-            );
             cursor: pointer;
             margin-block: 20px;
+            background-color: transparent;
+            padding-inline: 4%;
+
             @media screen and (max-width: 1440px) {
               margin-block: 14px;
             }
@@ -201,9 +193,9 @@
         }
         .life-li-icon {
           > button {
-            width: 25%;
+            width: 17%;
             @include pad {
-              width: 23%;
+              width: 19%;
             }
           }
         }
@@ -222,7 +214,7 @@
         will-change: transform;
       }
       .red-point {
-        width: 6%;
+        width: 5.6%;
         padding: 2%;
       }
       .glow {
@@ -264,10 +256,11 @@
             }
             .glow-square {
               position: absolute;
-              top: 63.5%;
-              left: 43.5%;
-              width: 7%;
-              height: 8%;
+              top: 63%;
+              top: 63.3%;
+              left: 43.6%;
+              width: 6.8%;
+              height: 8.4%;
               background-color: transparent;
               overflow: hidden;
               .light {
@@ -353,8 +346,8 @@
               left: 0%;
             }
             .life-point-10 {
-              top: 49%;
-              left: 30%;
+              top: 50%;
+              left: 30.25%;
             }
             .life-point-11 {
               display: none;
@@ -372,7 +365,7 @@
               left: 0%;
             }
             .life-point-14 {
-              top: 49%;
+              top: 50%;
               left: 32%;
             }
             .life-point-15 {
