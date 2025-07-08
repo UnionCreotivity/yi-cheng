@@ -184,8 +184,6 @@
             cursor: pointer;
             margin-block: 20px;
             background-color: transparent;
-            padding-inline: 4%;
-
             @media screen and (max-width: 1440px) {
               margin-block: 14px;
             }
@@ -193,9 +191,9 @@
         }
         .life-li-icon {
           > button {
-            width: 17%;
+            width: 14%;
             @include pad {
-              width: 19%;
+              width: 13%;
             }
           }
         }
