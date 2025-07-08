@@ -26,7 +26,11 @@
             </div>
           </div>
           <div class="loan-input-item">
-            <h4>總金額</h4>
+            <div class="loan-input-item-total-title" @click="calToggle">
+              <h4 :class="toggle ? 'active' : ''">總金額</h4>
+              <div class="title-line"></div>
+              <h4 :class="toggle ? '' : 'active'">貸款金額</h4>
+            </div>
             <div class="loan-input">
               <input
                 type="number"
@@ -81,7 +85,7 @@
               <button type="button" @click.stop="cleanClick">清除</button>
             </div>
             <div class="loan-click-cal">
-              <button type="button" @click.stop="submitClick">試算</button>
+              <button type="button" @click.stop="submitClick('normal')">試算</button>
             </div>
           </div>
         </div>
@@ -127,7 +131,7 @@
           <div class="loan-cal-item loan-cal-dot" @click.stop="keyboardClick('.')">
             <img src="../../../assets/img/loan/dot.svg" alt="" />
           </div>
-          <div class="loan-cal-item loan-cal-submit" @click.stop="submitClick">
+          <div class="loan-cal-item loan-cal-submit" @click.stop="submitClick('normal')">
             <img src="../../../assets/img/loan/submit.svg" alt="" />
           </div>
         </div>
@@ -157,6 +161,8 @@ const nowInputId = ref('')
 
 const tempRatio = ref('.')
 
+const toggle = ref(true)
+
 const targetMap: Record<string, 'year' | 'total' | 'ratio'> = {
   'cal-year': 'year',
   'cal-total': 'total',
@@ -174,12 +180,16 @@ const cleanClick = () => {
   loanStore.cleanAll()
 }
 
-const submitClick = () => {
-  loanStore.loanCalc(loanInputModel.value, 'normal')
+const submitClick = (val: string) => {
+  loanStore.loanCalc(loanInputModel.value, val, toggle.value)
 }
 
 const checkClick = (id: string) => {
   nowInputId.value = id
+}
+
+const calToggle = () => {
+  toggle.value = !toggle.value
 }
 
 //判斷鍵盤點擊項目，鍵盤輸入為text

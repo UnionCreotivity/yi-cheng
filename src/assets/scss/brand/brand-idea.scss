@@ -72,6 +72,9 @@
           justify-content: center;
           margin-top: 3vw;
           gap: 3vw;
+          @media screen and (aspect-ratio: 1920/940) {
+            margin-top: 1vw;
+          }
           @include pad {
             margin-top: 4%;
           }
@@ -84,6 +87,9 @@
             .brand-idea-second-icon {
               width: 15vw;
               margin-bottom: 1.5vw;
+              @media screen and (aspect-ratio: 1920/940) {
+                margin-bottom: 1vw;
+              }
             }
             h2 {
               font-family: var(--serif);
@@ -92,6 +98,9 @@
               letter-spacing: 8px;
               margin-bottom: 1vw;
               color: #231815;
+              @media screen and (aspect-ratio: 1920/940) {
+                margin-bottom: 0.5vw;
+              }
             }
             p {
               font-family: var(--micro);

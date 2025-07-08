@@ -22,8 +22,8 @@
             <li v-for="item in LifeListData" :key="item.key" class="life-li">
               <div
                 class="life-li-content"
-                @click="handleListClick(item.key)"
                 :class="item.key === listTag ? 'li-active' : ''"
+                @click="handleListClick(item.key)"
               >
                 <div class="life-square"></div>
                 <div class="life-li-txt-container">
@@ -33,8 +33,10 @@
               </div>
               <div class="life-li-line"></div>
             </li>
-          </ul></div
-      ></FadeIn>
+            <li class="life-li"><button @click="handleListClick('')">初始</button></li>
+          </ul>
+        </div></FadeIn
+      >
       <div class="life-right">
         <ScaleDrag :max-ratio="2" :init="{ x: xMove, y: yMove }" @toggle-text="toggleText">
           <div class="container">
@@ -48,7 +50,9 @@
                     :listKey="item?.key"
                     :activeTag="listTag"
                     :className="item?.className"
+                    :pointImg="pointImg"
                     @handle-tag="handelTagClick"
+                    v-show="listTag === item?.key"
                 /></FadeInItem>
                 <Glow />
                 <img class="imgBoxMap" src="/src/assets/img/life/life-main-img@2x.webp" />
@@ -92,6 +96,8 @@ const toggle = ref(false)
 const xMove = ref(-200)
 
 const yMove = ref(-175)
+
+const pointImg = ref(new URL('@/assets/img/other/spec-point.png', import.meta.url).href)
 
 type FancyType = {
   //Record<key,type>

@@ -80,6 +80,9 @@ onMounted(() => {
   }
   .flex-left {
     width: 50.25%;
+    @media screen and (aspect-ratio: 1920/940) {
+      width: 44.25%;
+    }
     .wooden-floor-left {
       width: 100%;
       height: 100%;
@@ -92,6 +95,9 @@ onMounted(() => {
   .flex-right {
     margin: auto;
     width: 42vw;
+    @media screen and (aspect-ratio: 1920/940) {
+      width: 36vw;
+    }
     .wooden-floor-icon {
       position: absolute;
       top: 3%;

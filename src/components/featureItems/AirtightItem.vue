@@ -136,6 +136,9 @@ const handleClose = () => {
       }
       .flex-left {
         width: 58.25%;
+        @media screen and (aspect-ratio: 1920/940) {
+          width: 51.25%;
+        }
         img {
           height: 100%;
           object-fit: cover;
@@ -145,6 +148,9 @@ const handleClose = () => {
         margin: auto;
         .airtight-para {
           width: 35.5vw;
+          @media screen and (aspect-ratio: 1920/940) {
+            width: 32.5vw;
+          }
         }
       }
     }
@@ -156,6 +162,9 @@ const handleClose = () => {
     }
     .flex-left {
       width: 58.25%;
+      @media screen and (aspect-ratio: 1920/940) {
+        width: 51.25%;
+      }
       img {
         height: 100%;
         object-fit: cover;
@@ -165,6 +174,11 @@ const handleClose = () => {
       width: 32.5vw;
       margin: auto;
       margin-bottom: 10%;
+      @media screen and (aspect-ratio: 1920/940) {
+        width: 28.5vw;
+        margin-bottom: 0;
+        margin: auto;
+      }
     }
   }
 }

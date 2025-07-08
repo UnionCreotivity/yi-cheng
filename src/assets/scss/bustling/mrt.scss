@@ -15,6 +15,9 @@
     }
     .mrt-view-left {
       width: 63%;
+      @media screen and (aspect-ratio: 1920/940) {
+        width: 57%;
+      }
       @include pad {
         width: 61%;
       }
@@ -93,6 +96,9 @@
       .mrt-fancybox-left {
         position: relative;
         width: 61%;
+        @media screen and (aspect-ratio: 1920/940) {
+          width: 57%;
+        }
         @include pad {
           width: 58%;
         }

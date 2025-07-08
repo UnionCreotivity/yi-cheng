@@ -24,6 +24,9 @@
     gap: 6vw;
     padding-bottom: 4.5%;
     padding-right: 2%;
+    @media screen and (aspect-ratio: 1920/940) {
+      padding-bottom: 1.5%;
+    }
     @include pad {
       align-items: center;
       padding-bottom: 0%;
@@ -127,6 +130,9 @@
         height: 1px;
         margin-block: 1.5vw;
         background-color: #a0a0a0;
+        @media screen and (aspect-ratio: 1920/940) {
+          margin-block: 1vw;
+        }
       }
       h3 {
         font-family: var(--serif);
@@ -135,6 +141,9 @@
         letter-spacing: 6px;
         margin-bottom: 2.5%;
         color: #231815;
+        @media screen and (aspect-ratio: 1920/940) {
+          margin-bottom: 1.5%;
+        }
         @include pad {
           letter-spacing: 4px;
         }
@@ -221,6 +230,10 @@
     .brand-team-inner-brand-2-right {
       width: 30.75%;
       margin-top: 7%;
+      @media screen and (aspect-ratio: 1920/940) {
+        width: 27.75%;
+        margin-top: 2%;
+      }
     }
   }
   .big-img-container {

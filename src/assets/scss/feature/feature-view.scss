@@ -30,6 +30,9 @@
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
         margin-top: 0;
       }
+      @media screen and (aspect-ratio: 1920/940) {
+        margin-top: 4.5%;
+      }
       @include pad {
         margin-top: 0%;
       }

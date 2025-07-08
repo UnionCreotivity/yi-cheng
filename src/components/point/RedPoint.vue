@@ -9,12 +9,13 @@
     @click="handleClick"
   >
     <div class="red-point-img">
-      <img src="/src/assets/img/construction/other/red-point.svg" alt="" />
+      <img :src="props.pointImg" class="red-point-img-props" v-if="props.pointImg" />
+      <div class="red-point-img-inner" v-else></div>
     </div>
-    <div className="radiation">
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
+    <div class="radiation" :class="props.pointImg ? 'circle-stop' : ''">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
     </div>
   </div>
 </template>
@@ -22,7 +23,7 @@
 <script setup lang="ts">
 import '@/assets/scss/point/red-point.scss'
 
-const props = defineProps(['name', 'tag', 'activeTag', 'listKey', 'className'])
+const props = defineProps(['name', 'tag', 'activeTag', 'listKey', 'className', 'pointImg'])
 
 const emits = defineEmits(['handle-tag'])
 

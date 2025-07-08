@@ -141,6 +141,9 @@ onMounted(() => {
         .water-filter-bottom {
           width: 85.75%;
           margin: auto;
+          @media screen and (aspect-ratio: 1920/940) {
+            width: 75.75%;
+          }
         }
       }
     }
@@ -171,8 +174,10 @@ onMounted(() => {
     width: 37vw;
     margin-left: 3%;
     margin-top: 6%;
-    @media screen and (max-width: 1400px) {
+    @media screen and (aspect-ratio: 1920/940) {
       // position: relative;
+      margin-left: 0;
+      margin-top: 0;
       margin: auto;
     }
     .bwt-item-icon {
@@ -187,6 +192,9 @@ onMounted(() => {
     }
     .bwt-item-para {
       width: 100%;
+      @media screen and (aspect-ratio: 1920/940) {
+        width: 83%;
+      }
     }
   }
 }

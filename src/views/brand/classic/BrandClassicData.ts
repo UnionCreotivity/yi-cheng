@@ -35,7 +35,7 @@ export const classicData = [
         id: 'content-1',
         txt: '宜誠豐光',
         itemTag: '2028-1',
-        img: new URL('@/assets/img/brand/classic/classic-temp@2x.webp', import.meta.url).href,
+        img: new URL('@/assets/img/brand/classic/宜誠豐光小.webp', import.meta.url).href,
         cursor: true,
       },
       {

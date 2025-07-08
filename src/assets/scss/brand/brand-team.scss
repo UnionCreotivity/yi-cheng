@@ -122,6 +122,10 @@
     left: 13.25%;
     bottom: 0;
     width: 29.25vw;
+    @media screen and (aspect-ratio: 1920/940) {
+      left: 19.25%;
+      width: 24.25vw;
+    }
     .line-1 {
       position: absolute;
       width: 68%;
@@ -146,6 +150,11 @@
     left: 26.25%;
     bottom: -19%;
     width: 30.75vw;
+    @media screen and (aspect-ratio: 1920/940) {
+      left: 30.25%;
+      bottom: -17%;
+      width: 24.75vw;
+    }
     @include pad {
       bottom: -11vw;
     }
@@ -174,6 +183,9 @@
     left: 47.25%;
     bottom: -26%;
     width: 30.75vw;
+    @media screen and (aspect-ratio: 1920/940) {
+      width: 25.75vw;
+    }
     @include pad {
       bottom: -14vw;
     }
@@ -206,6 +218,10 @@
     bottom: -22%;
     left: 66%;
     width: 27vw;
+    @media screen and (aspect-ratio: 1920/940) {
+      left: 63%;
+      width: 23vw;
+    }
     @include pad {
       bottom: -12vw;
     }

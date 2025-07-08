@@ -91,6 +91,10 @@ onMounted(() => {
       width: 86.5%;
       margin: auto;
       margin-top: 1.75%;
+      @media screen and (aspect-ratio: 1920/940) {
+        width: 66.5%;
+        margin-top: 1%;
+      }
     }
   }
 }

@@ -99,6 +99,9 @@ onMounted(() => {
         left: 6%;
         bottom: 17%;
         width: 13%;
+        @media screen and (aspect-ratio: 1920/940) {
+          bottom: 0%;
+        }
         @media screen and (max-width: 1400px) {
           left: 6%;
           bottom: 17%;
@@ -109,6 +112,10 @@ onMounted(() => {
         width: 51%;
         margin-bottom: 3%;
         margin-left: 6%;
+        @media screen and (aspect-ratio: 1920/940) {
+          width: 43%;
+          margin-bottom: 0%;
+        }
         @media screen and (max-width: 1400px) {
           width: 58%;
           margin-bottom: 3%;

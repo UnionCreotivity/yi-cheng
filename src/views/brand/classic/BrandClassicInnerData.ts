@@ -20,7 +20,7 @@ export const classicInnerData = [
       {
         tag: '2028-1',
         name: '宜誠豐光',
-        img: new URL('@/assets/img/brand/classic/temp-classic-inner-img@2x.webp', import.meta.url)
+        img: new URL('@/assets/img/brand/classic/classical-inner/宜誠豐光大.webp', import.meta.url)
           .href,
       },
       {

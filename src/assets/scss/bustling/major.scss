@@ -83,6 +83,9 @@
         flex-direction: column;
         width: 78%;
         margin-top: 3.5%;
+        @media screen and (aspect-ratio: 1920/940) {
+          margin-block: 2%;
+        }
         @include pad {
           margin-top: 7.5%;
         }
@@ -95,6 +98,10 @@
         justify-content: center;
         width: 91%;
         margin-top: 3vw;
+        @media screen and (aspect-ratio: 1920/940) {
+          margin-top: 0vw;
+          margin-block: 1%;
+        }
         @include pad {
           margin-top: 7.5%;
         }

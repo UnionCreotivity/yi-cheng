@@ -18,6 +18,9 @@
       @include pad {
         height: 40%;
       }
+      @media screen and (aspect-ratio: 1920/940) {
+        height: 35%;
+      }
       .brand-classic-main-img {
         width: 100%;
         img {
@@ -59,21 +62,29 @@
       margin: auto;
       height: 25.5vw;
       position: relative;
-      @include pad {
-        display: flex;
-        align-items: center;
-      }
+
       @media screen and (max-width: 1920px) {
         height: 26vw;
       }
+
       @media screen and (max-width: 1440px) {
         height: 27vw;
+      }
+      @include pad {
+        display: flex;
+        align-items: center;
       }
       @media screen and (max-width: 1366px) {
         height: 27.25vw;
       }
       @media screen and (max-width: 1200px) {
         height: 28.25vw;
+      }
+      @media screen and (aspect-ratio: 1920/940) {
+        height: 24.5vw;
+      }
+      @media screen and (aspect-ratio: 1660/900) {
+        height: 26.25vw;
       }
       .brand-classic-bottom-txt {
         position: absolute;
@@ -83,6 +94,9 @@
         top: -11%;
         margin: auto;
         z-index: 5;
+        @media screen and (aspect-ratio: 1920/940) {
+          top: -6%;
+        }
         @include pad {
           top: -16%;
         }
@@ -92,6 +106,9 @@
         width: 90%;
         height: 100%;
         margin-top: 2vw;
+        @media screen and (aspect-ratio: 1920/940) {
+          margin-top: 1.9vw;
+        }
         @include pad {
           height: 100%;
         }
@@ -172,6 +189,9 @@
                 font-size: 1vw;
                 letter-spacing: 1px;
               }
+              @media screen and (aspect-ratio: 1920/940) {
+                width: 7.25vw;
+              }
               @include pad {
                 width: 8.75vw;
               }
@@ -215,6 +235,9 @@
         .classic-2022 {
           margin-left: -24%;
           clip-path: inset(46% 0% 0% 0%);
+          @media screen and (aspect-ratio: 1920/940) {
+            margin-left: -18%;
+          }
         }
         .classic-2021 {
           margin-left: -5%;

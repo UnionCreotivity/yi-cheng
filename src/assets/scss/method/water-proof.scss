@@ -49,6 +49,9 @@
         height: 100%;
         padding-top: 3%;
         white-space: pre-line;
+        @media screen and (aspect-ratio: 1920/940) {
+          padding-top: 0;
+        }
         @include pad {
           padding-top: 7vw;
         }
@@ -73,6 +76,9 @@
             color: black;
             z-index: 1;
             transition: all 0.75s;
+            @media screen and (aspect-ratio: 1920/940) {
+              line-height: 2;
+            }
           }
           .water-proof-content-right-para-block {
             position: absolute;

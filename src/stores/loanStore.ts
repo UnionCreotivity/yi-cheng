@@ -36,7 +36,8 @@ export const useLoan = defineStore('loan', {
   actions: {
     //房屋 訂金10 簽約10%-10萬 結構 5% 交屋5%
     //店面 訂金10 簽約10%-10萬  結構15% 交屋5%
-    loanCalc(val: CalFormVal, loanType: string) {
+    loanCalc(val: CalFormVal, loanType: string, toggle: boolean) {
+      console.log(val)
       const targetMap: Record<string, { own: number; loan: number }> = {
         normal: { own: 0.2, loan: 0.8 },
         store: {
@@ -44,7 +45,6 @@ export const useLoan = defineStore('loan', {
           loan: 0.7,
         },
       }
-      console.log(targetMap[loanType].own)
       // const storePer={
       //   own:0.3,
       //   loan:0.7
@@ -61,7 +61,7 @@ export const useLoan = defineStore('loan', {
       let periodMoney = 0
       let avgMonthRatio = 0
       let totalMoney = 0
-      this.deposit = '10'
+      this.deposit = toggle ? '10' : ''
       //有寬限期
       if (val.allowance === 'three') {
         //-- 月數= (貸款年限*12)-(寬限年*12) --
@@ -84,26 +84,31 @@ export const useLoan = defineStore('loan', {
       //---------------- 拆款 ----------------
 
       //簽約金
-      this.sign = toMoneyStyle(Math.ceil(val.total * 0.1 - 10))
+      this.sign = toggle ? toMoneyStyle(Math.ceil(val.total * 0.1 - 10)) : ''
       //結構完成
       // this.construction = toMoneyStyle(Math.ceil(val.total * 0.03))
       //交屋款
-      this.delivery = toMoneyStyle(Math.ceil(val.total * 0.05))
+      this.delivery = toggle ? toMoneyStyle(Math.ceil(val.total * 0.05)) : ''
 
       //---------------- 拆款 END ----------------
       //自備款
-      this.ownMoney = toMoneyStyle(Math.ceil(val.total * targetMap[loanType].own))
+      this.ownMoney = toggle ? toMoneyStyle(Math.ceil(val.total * targetMap[loanType].own)) : ''
       //貸款
       this.loanMoney = toMoneyStyle(Math.floor(val.total * targetMap[loanType].loan))
 
       //使照申請 自備款減去拆款後的值當作使照申請
-      this.construction = toMoneyStyle(
-        Number(this.ownMoney) - Number(this.deposit) - Number(this.sign) - Number(this.delivery),
-      )
+      this.construction = toggle
+        ? toMoneyStyle(
+            Number(this.ownMoney) -
+              Number(this.deposit) -
+              Number(this.sign) -
+              Number(this.delivery),
+          )
+        : ''
       //本利攤還
-      this.monthlyCost = toMoneyStyle(
-        Math.floor(val.total * targetMap[loanType].loan * avgMonthRatio * 10000),
-      )
+      this.monthlyCost = toggle
+        ? toMoneyStyle(Math.floor(val.total * targetMap[loanType].loan * avgMonthRatio * 10000))
+        : toMoneyStyle(Math.floor(val.total * avgMonthRatio * 10000))
       //還息金額
       this.interestRepayment = toMoneyStyle(
         (totalMoney - val.total * targetMap[loanType].loan * 10000) / loanMonth,

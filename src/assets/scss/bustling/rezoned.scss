@@ -14,6 +14,9 @@
     }
     .rezoned-view-left {
       width: 51%;
+      @media screen and (aspect-ratio: 1920/940) {
+        width: 44%;
+      }
     }
     .rezoned-view-right {
       display: flex;
