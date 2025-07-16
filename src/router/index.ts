@@ -23,6 +23,8 @@ import WaterProofView from '@/views/construction/waterproof/WaterProofView.vue'
 import SafeView from '@/views/construction/safe/SafeView.vue'
 //建築精裝
 import FeatureView from '@/views/construction/feature/FeatureView.vue'
+//品質保證
+import GuaranteeItem from '@/components/featureItems/GuaranteeItem.vue'
 
 // <--- 繁華光譜 --->
 import BustlingView from '@/views/bustling/BustlingView.vue'
@@ -128,6 +130,11 @@ const router = createRouter({
           path: 'feature',
           name: 'feature',
           component: FeatureView,
+        },
+        {
+          path: 'guarantee',
+          name: 'guarantee',
+          component: GuaranteeItem,
         },
       ],
     },

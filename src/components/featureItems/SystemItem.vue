@@ -4,15 +4,15 @@
       <template #top>
         <div class="system-top">
           <div class="panasonic-icon">
-            <img src="/src/assets/img/construction/全熱交換器/panasonic-icon@2x.webp" alt="" />
+            <img src="/src/assets/img/construction/heater/panasonic-icon@2x.webp" alt="" />
           </div>
-          <img src="/src/assets/img/construction/全熱交換器/system-bg@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/heater/system-bg@2x.webp" alt="" />
           <MentionTxt text="情境示意圖" color="black" />
         </div>
       </template>
       <template #bottom>
         <div class="system-bottom">
-          <img src="/src/assets/img/construction/全熱交換器/system-para@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/heater/system-para@2x.webp" alt="" />
         </div>
       </template>
     </FlexCol>

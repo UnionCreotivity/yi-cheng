@@ -7,8 +7,7 @@ export const featureData = [
         class: 'txt-left',
         item: 'waterfilter',
         index: 1,
-        lumpTxt: new URL('@/assets/img/construction/list-icon/賀眾牌@2x.webp', import.meta.url)
-          .href,
+        lumpTxt: new URL('@/assets/img/construction/list-icon/UWD@2x.webp', import.meta.url).href,
         decoImg: new URL(
           '@/assets/img/construction/list/list-water-filter@2x.webp',
           import.meta.url,
@@ -27,7 +26,7 @@ export const featureData = [
         tag: 'left-3',
         class: 'txt-left',
         item: 'none',
-        lumpTxt: new URL('@/assets/img/construction/list-icon/EMS系統@2x.webp', import.meta.url)
+        lumpTxt: new URL('@/assets/img/construction/list-icon/EMS-sys@2x.webp', import.meta.url)
           .href,
         decoImg: new URL('@/assets/img/construction/list/list-ems@2x.webp', import.meta.url).href,
       },
@@ -43,8 +42,7 @@ export const featureData = [
         tag: 'left-5',
         class: 'txt-left',
         item: 'bath',
-        lumpTxt: new URL('@/assets/img/construction/list-icon/泡沫洗淨@2x.webp', import.meta.url)
-          .href,
+        lumpTxt: new URL('@/assets/img/construction/list-icon/foam@2x.webp', import.meta.url).href,
         decoImg: new URL('@/assets/img/construction/list/list-toilet@2x.webp', import.meta.url)
           .href,
       },
@@ -52,8 +50,7 @@ export const featureData = [
         tag: 'left-6',
         class: 'txt-top',
         item: 'system',
-        lumpTxt: new URL('@/assets/img/construction/list-icon/全熱交換器@2x.webp', import.meta.url)
-          .href,
+        lumpTxt: new URL('@/assets/img/construction/list-icon/ERV@2x.webp', import.meta.url).href,
         decoImg: new URL('@/assets/img/construction/list/list-panasonic@2x.webp', import.meta.url)
           .href,
       },
@@ -61,10 +58,8 @@ export const featureData = [
         tag: 'left-7',
         class: 'txt-left',
         item: 'bath',
-        lumpTxt: new URL(
-          '@/assets/img/construction/list-icon/四合一暖風機@2x.webp',
-          import.meta.url,
-        ).href,
+        lumpTxt: new URL('@/assets/img/construction/list-icon/heater@2x.webp', import.meta.url)
+          .href,
         decoImg: new URL('@/assets/img/construction/list/list-panasonic-2@2x.webp', import.meta.url)
           .href,
       },
@@ -72,8 +67,7 @@ export const featureData = [
         tag: 'left-8',
         class: 'txt-left',
         item: 'lock',
-        lumpTxt: new URL('@/assets/img/construction/list-icon/電子鎖@2x.webp', import.meta.url)
-          .href,
+        lumpTxt: new URL('@/assets/img/construction/list-icon/lock@2x.webp', import.meta.url).href,
         decoImg: new URL('@/assets/img/construction/list/list-philips@2x.webp', import.meta.url)
           .href,
       },

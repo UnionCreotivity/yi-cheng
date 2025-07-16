@@ -2,15 +2,15 @@
   <FancyContainer>
     <FlexCol class="elevator-item">
       <template #top>
-        <img src="/src/assets/img/construction/電梯/Elevator-top@2x.webp" alt="" />
+        <img src="/src/assets/img/construction/elevator/Elevator-top@2x.webp" alt="" />
         <MentionTxt text="情境示意圖" color="white" />
       </template>
       <template #bottom>
         <div class="elevator-item-left">
-          <img src="/src/assets/img/construction/電梯/Elevator-bottom@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/elevator/Elevator-bottom@2x.webp" alt="" />
         </div>
         <div class="elevator-item-right">
-          <img src="/src/assets/img/construction/電梯/Elevator-para@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/elevator/Elevator-para@2x.webp" alt="" />
         </div>
       </template>
     </FlexCol>

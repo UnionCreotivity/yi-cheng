@@ -69,9 +69,11 @@
               <img :src="item.decoImg" />
             </div>
           </li>
-          <li class="feature-view-content-li item-6 txt-right" @click="renderItem('guarantee')">
-            <div class="color-lump"></div>
-            <p>品質保固</p>
+          <li class="feature-view-content-li item-6 txt-right" @click="renderItem('six-plus-six')">
+            <div class="color-lump">
+              <div class="light" style="animation-delay: 1400ms"></div>
+              <img src="/src/assets/img/construction/list/six-plus-six@2x.webp" alt="" />
+            </div>
           </li>
         </ul>
         <div class="feature-view-content-txt">
@@ -121,11 +123,6 @@
         @render-item="renderItem"
         @handle-nav-color="handleNavColor"
       />
-      <GuaranteeItem
-        v-else-if="tag === 'guarantee'"
-        @render-item="renderItem"
-        @handle-nav-color="handleNavColor"
-      />
       <BWTItem
         v-else-if="tag === 'bwt'"
         @render-item="renderItem"
@@ -133,6 +130,11 @@
       />
       <LockItem
         v-else-if="tag === 'lock'"
+        @render-item="renderItem"
+        @handle-nav-color="handleNavColor"
+      />
+      <SixPlusSix
+        v-else-if="tag === 'six-plus-six'"
         @render-item="renderItem"
         @handle-nav-color="handleNavColor"
       />
@@ -153,7 +155,7 @@ import WaterFilter from '@/components/featureItems/WaterFilter.vue'
 import SystemItem from '@/components/featureItems/SystemItem.vue'
 import EntranceDoor from '@/components/featureItems/EntranceDoor.vue'
 import WoodenFloor from '@/components/featureItems/WoodenFloor.vue'
-import GuaranteeItem from '@/components/featureItems/GuaranteeItem.vue'
+import SixPlusSix from '@/components/featureItems/SixPlusSix.vue'
 import BWTItem from '@/components/featureItems/BWTItem.vue'
 import LockItem from '@/components/featureItems/LockItem.vue'
 import { featureData } from './featureData'

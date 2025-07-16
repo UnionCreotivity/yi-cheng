@@ -20,9 +20,6 @@
         </div>
       </div>
     </div>
-    <div class="guarantee-close" @click="handleClose">
-      <img src="@/assets/img/other/close-button.svg" alt="" />
-    </div>
   </FancyContainer>
 </template>
 
@@ -32,10 +29,6 @@ import gsap from 'gsap'
 import FancyContainer from '../UI/FancyContainer.vue'
 
 const emits = defineEmits(['render-item', 'handle-nav-color'])
-
-const handleClose = () => {
-  emits('render-item')
-}
 
 const gsapInit = () => {
   const tl = gsap.timeline({ delay: 0.5 })

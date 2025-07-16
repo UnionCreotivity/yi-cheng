@@ -4,19 +4,19 @@
       <template #top>
         <div class="entrance-door-top">
           <div class="metal-icon">
-            <img src="/src/assets/img/construction/玄關門/metal-icon@2x.webp" alt="" />
+            <img src="/src/assets/img/construction/entrance/metal-icon@2x.webp" alt="" />
           </div>
-          <img src="/src/assets/img/construction/玄關門/entrance-bg@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/entrance/entrance-bg@2x.webp" alt="" />
           <MentionTxt text="情境示意圖" color="white" />
         </div>
       </template>
       <template #bottom>
         <div class="entrance-door-bottom">
           <div class="entrance-door-first">
-            <img src="/src/assets/img/construction/玄關門/entrance-door@2x.webp" alt="" />
+            <img src="/src/assets/img/construction/entrance/entrance-door@2x.webp" alt="" />
           </div>
           <div class="entrance-door-para">
-            <img src="/src/assets/img/construction/玄關門/entrance-para@2x.webp" alt="" />
+            <img src="/src/assets/img/construction/entrance/entrance-para@2x.webp" alt="" />
           </div>
         </div>
       </template>

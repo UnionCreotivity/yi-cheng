@@ -39,6 +39,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ScaleDrag: typeof import('./src/components/scale-drag/ScaleDrag.vue')['default']
+    SixPlusSix: typeof import('./src/components/featureItems/SixPlusSix.vue')['default']
     SystemItem: typeof import('./src/components/featureItems/SystemItem.vue')['default']
     WaterFilter: typeof import('./src/components/featureItems/WaterFilter.vue')['default']
     WoodenFloor: typeof import('./src/components/featureItems/WoodenFloor.vue')['default']

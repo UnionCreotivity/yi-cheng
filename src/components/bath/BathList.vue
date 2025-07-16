@@ -10,11 +10,11 @@
         <div class="bath-list-left-bg">
           <FadeInItem>
             <img
-              src="/src/assets/img/construction/衛浴設備/new/主浴NEW.webp"
+              src="/src/assets/img/construction/bath/new/main-NEW.webp"
               alt=""
               v-show="main === true" />
             <img
-              src="/src/assets/img/construction/衛浴設備/new/次浴NEW.webp"
+              src="/src/assets/img/construction/bath/new/sub-NEW.webp"
               alt=""
               v-show="main !== true"
           /></FadeInItem>

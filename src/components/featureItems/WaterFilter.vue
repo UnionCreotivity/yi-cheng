@@ -34,15 +34,15 @@
           <template #top>
             <div class="water-filter-top">
               <div class="panasonic-icon">
-                <img src="/src/assets/img/construction/淨水器/賀眾牌-icon@2x.webp" alt="" />
+                <img src="/src/assets/img/construction/filter/UWD-icon@2x.webp" alt="" />
               </div>
-              <img src="/src/assets/img/construction/淨水器/filter-3-bg@2x.webp" alt="" />
+              <img src="/src/assets/img/construction/filter/filter-3-bg@2x.webp" alt="" />
               <MentionTxt text="情境示意圖" color="white" />
             </div>
           </template>
           <template #bottom>
             <div class="water-filter-bottom">
-              <img src="/src/assets/img/construction/淨水器/filter-3-para@2x.webp" alt="" />
+              <img src="/src/assets/img/construction/filter/filter-3-para@2x.webp" alt="" />
             </div>
           </template>
         </FlexCol>

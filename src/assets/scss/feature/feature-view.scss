@@ -339,13 +339,17 @@
             background-color: #00284d;
             width: 15vw;
             height: 8vw;
+            padding: 8%;
+            img {
+              transform: scale(1);
+              transition: all 0.3s;
+            }
           }
-          p {
-            position: absolute;
-            align-self: anchor-center;
-            color: white;
-            font-size: 0.9vw;
-            z-index: 1;
+          &:hover {
+            img {
+              transform: scale(1.1);
+              transition: all 0.3s;
+            }
           }
         }
       }

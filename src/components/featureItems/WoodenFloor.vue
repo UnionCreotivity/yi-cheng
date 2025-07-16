@@ -3,15 +3,15 @@
     <FlexRow class="wooden-floor">
       <template #left>
         <div class="wooden-floor-left">
-          <img src="/src/assets/img/construction/木地板/wooden-bg@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/floor/wooden-bg@2x.webp" alt="" />
         </div>
       </template>
       <template #right>
         <div class="wooden-floor-icon">
-          <img src="/src/assets/img/construction/木地板/wooden-icon@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/floor/wooden-icon@2x.webp" alt="" />
         </div>
         <div class="wooden-floor-para">
-          <img src="/src/assets/img/construction/木地板/wooden-para@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/floor/wooden-para@2x.webp" alt="" />
         </div>
       </template>
     </FlexRow>

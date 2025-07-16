@@ -4,19 +4,19 @@
       <template #top>
         <div class="lock-top">
           <div class="lock-icon">
-            <img src="/src/assets/img/construction/電子鎖/電子鎖2.svg" alt="" />
+            <img src="/src/assets/img/construction/lock/lock2.svg" alt="" />
           </div>
-          <img src="/src/assets/img/construction/電子鎖/電子鎖1@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/lock/lock1@2x.webp" alt="" />
           <MentionTxt text="情境示意圖" color="black" />
         </div>
       </template>
       <template #bottom>
         <div class="lock-bottom">
           <div class="lock-bottom-left">
-            <img src="/src/assets/img/construction/電子鎖/電子鎖3@2x.webp" alt="" />
+            <img src="/src/assets/img/construction/lock/lock3@2x.webp" alt="" />
           </div>
           <div class="lock-bottom-right">
-            <img src="/src/assets/img/construction/電子鎖/電子鎖4@2x.png" alt="" />
+            <img src="/src/assets/img/construction/lock/lock4@2x.png" alt="" />
           </div>
         </div>
       </template>

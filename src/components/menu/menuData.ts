@@ -139,6 +139,11 @@ export const menuSubData = [
         name: '建築精裝',
         link: 'feature',
       },
+      {
+        key: 'link-3',
+        name: '品質保證',
+        link: 'guarantee',
+      },
     ],
   },
   {

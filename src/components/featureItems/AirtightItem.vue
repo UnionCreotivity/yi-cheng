@@ -14,7 +14,7 @@
         <FlexRow>
           <template #left>
             <img
-              src="/src/assets/img/construction/氣密窗/airtight-swiper-bg-1-left@2x.webp"
+              src="/src/assets/img/construction/airtight/airtight-swiper-bg-1-left@2x.webp"
               alt=""
             />
             <MentionTxt text="情境示意圖" color="white" />
@@ -22,36 +22,20 @@
           <template #right>
             <div class="airtight-icon">
               <img
-                src="/src/assets/img/construction/氣密窗/airtight-swiper-bg-1-icon@2x.webp"
+                src="/src/assets/img/construction/airtight/airtight-swiper-bg-1-icon@2x.webp"
                 alt=""
               />
             </div>
             <div class="airtight-para">
               <img
-                src="/src/assets/img/construction/氣密窗/airtight-swiper-bg-1-right@2x.webp"
+                src="/src/assets/img/construction/airtight/airtight-swiper-bg-1-right@2x.webp"
                 alt=""
               />
             </div>
           </template>
         </FlexRow>
       </swiper-slide>
-      <swiper-slide class="airtight-swiper-slide-2">
-        <FlexRow>
-          <template #left>
-            <img
-              src="/src/assets/img/construction/氣密窗/airtight-swiper-bg-2-left@2x.webp"
-              alt=""
-            />
-            <MentionTxt text="情境示意圖" color="black" />
-          </template>
-          <template #right>
-            <img
-              src="/src/assets/img/construction/氣密窗/airtight-swiper-bg-2-right@2x.webp"
-              alt=""
-            />
-          </template>
-        </FlexRow>
-      </swiper-slide>
+
       <div class="swiper-button-prev airtight-filter-prev" @click.stop>
         <img src="@/assets/img/other/prev.svg" />
       </div>
