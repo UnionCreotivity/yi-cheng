@@ -68,17 +68,17 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/綠意公園/中大公園/公園-中大公園 (1).webp', import.meta.url)
+        img: new URL('@/assets/img/life/green-park/zhong-park/zhong-park(1).webp', import.meta.url)
           .href,
       },
       {
         key: 'img-2',
-        img: new URL('@/assets/img/life/綠意公園/中大公園/公園-中大公園 (13).webp', import.meta.url)
+        img: new URL('@/assets/img/life/green-park/zhong-park/zhong-park(13).webp', import.meta.url)
           .href,
       },
       {
         key: 'img-3',
-        img: new URL('@/assets/img/life/綠意公園/中大公園/公園-中大公園 (15).webp', import.meta.url)
+        img: new URL('@/assets/img/life/green-park/zhong-park/zhong-park(15).webp', import.meta.url)
           .href,
       },
     ],
@@ -90,18 +90,24 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/綠意公園/建德公園/公園-建德公園 (1).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/jian-de-park/jian-de-park(1).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-2',
-        img: new URL('@/assets/img/life/綠意公園/建德公園/公園-建德公園 (10).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/jian-de-park/jian-de-park(10).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-3',
-        img: new URL('@/assets/img/life/綠意公園/建德公園/公園-建德公園 (11).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/jian-de-park/jian-de-park(11).webp',
+          import.meta.url,
+        ).href,
       },
     ],
   },
@@ -112,18 +118,24 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/綠意公園/溪濱公園/公園-溪濱公園 (1).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/si-bin-park/si-bin-park(1).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-2',
-        img: new URL('@/assets/img/life/綠意公園/溪濱公園/公園-溪濱公園 (14).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/si-bin-park/si-bin-park(14).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-3',
-        img: new URL('@/assets/img/life/綠意公園/溪濱公園/公園-溪濱公園 (18).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/si-bin-park/si-bin-park(18).webp',
+          import.meta.url,
+        ).href,
       },
     ],
   },
@@ -134,18 +146,24 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/綠意公園/興豐公園/公園-興豐公園 (1).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/sing-fong-park/sing-fong-park(1).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-2',
-        img: new URL('@/assets/img/life/綠意公園/興豐公園/公園-興豐公園 (10).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/sing-fong-park/sing-fong-park(10).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-3',
-        img: new URL('@/assets/img/life/綠意公園/興豐公園/公園-興豐公園 (14).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/sing-fong-park/sing-fong-park(14).webp',
+          import.meta.url,
+        ).href,
       },
     ],
   },
@@ -156,13 +174,17 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/綠意公園/豐德公園/公園-豐德公園 (1).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/fong-de-park/fong-de-park(1).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-2',
-        img: new URL('@/assets/img/life/綠意公園/豐德公園/公園-豐德公園 (10).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/green-park/fong-de-park/fong-de-park(10).webp',
+          import.meta.url,
+        ).href,
       },
     ],
   },
@@ -173,20 +195,22 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/優質學區/八德國小/學區-八德國小 (1).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/cultural-park/bade-elementary-school/bade-elementary-school(1).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-2',
         img: new URL(
-          '@/assets/img/life/優質學區/八德國小/學區-八德國小附設幼稚園 (1).webp',
+          '@/assets/img/life/cultural-park/bade-elementary-school/bade-elementary-school-preschool(1).webp',
           import.meta.url,
         ).href,
       },
       {
         key: 'img-3',
         img: new URL(
-          '@/assets/img/life/優質學區/八德國小/學區-八德國小附設幼稚園 (5).webp',
+          '@/assets/img/life/cultural-park/bade-elementary-school/bade-elementary-school-preschool(5).webp',
           import.meta.url,
         ).href,
       },
@@ -199,18 +223,24 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/優質學區/八德國中/1學區-八德國中 (2).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/cultural-park/bade-junior-high-school/bade-junior-high-school(2).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-2',
-        img: new URL('@/assets/img/life/優質學區/八德國中/學區-八德國中 (6).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/cultural-park/bade-junior-high-school/bade-junior-high-school(6).webp',
+          import.meta.url,
+        ).href,
       },
       {
         key: 'img-3',
-        img: new URL('@/assets/img/life/優質學區/八德國中/學區-八德國中 (9).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/cultural-park/bade-junior-high-school/bade-junior-high-school(9).webp',
+          import.meta.url,
+        ).href,
       },
     ],
   },
@@ -221,10 +251,8 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL(
-          '@/assets/img/life/繁華商圈/八德公有零售市場/商圈-八德公有零售市場 (1).webp',
-          import.meta.url,
-        ).href,
+        img: new URL('@/assets/img/life/prosperous-district/market/market(1).webp', import.meta.url)
+          .href,
       },
     ],
   },
@@ -235,8 +263,10 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/繁華商圈/大潤發/商圈-大潤發 (1).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/prosperous-district/RT-MART/RT-MART(1).webp',
+          import.meta.url,
+        ).href,
       },
     ],
   },
@@ -247,8 +277,10 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/繁華商圈/星巴克/商圈-星巴克 (3).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/prosperous-district/starbucks/starbucks(3).webp',
+          import.meta.url,
+        ).href,
       },
     ],
   },
@@ -260,7 +292,7 @@ export const LifeSwiperData = [
       {
         key: 'img-1',
         img: new URL(
-          '@/assets/img/life/繁華商圈/置地生活廣場/商圈-置地生活廣場 (1).webp',
+          '@/assets/img/life/prosperous-district/life-plaza/life-plaza(1).webp',
           import.meta.url,
         ).href,
       },
@@ -274,7 +306,7 @@ export const LifeSwiperData = [
       {
         key: 'img-1',
         img: new URL(
-          '@/assets/img/life/繁華商圈/興仁花園夜市/機能-興仁花園夜市 (16).webp',
+          '@/assets/img/life/prosperous-district/singren-flower-night-market/singren-flower-night-market(16).webp',
           import.meta.url,
         ).href,
       },
@@ -288,14 +320,14 @@ export const LifeSwiperData = [
       {
         key: 'img-1',
         img: new URL(
-          '@/assets/img/life/繁華商圈/興豐路商圈/商圈-興豐路商圈日景 (2).webp',
+          '@/assets/img/life/prosperous-district/興豐路商圈/商圈-興豐路商圈日景 (2).webp',
           import.meta.url,
         ).href,
       },
       {
         key: 'img-2',
         img: new URL(
-          '@/assets/img/life/繁華商圈/興豐路商圈/商圈-興豐路商圈夜景 (3).webp',
+          '@/assets/img/life/prosperous-district/興豐路商圈/商圈-興豐路商圈夜景 (3).webp',
           import.meta.url,
         ).href,
       },
@@ -308,8 +340,10 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/繁華商圈/藏壽司/商圈-藏壽司 (1).webp', import.meta.url)
-          .href,
+        img: new URL(
+          '@/assets/img/life/prosperous-district/藏壽司/商圈-藏壽司 (1).webp',
+          import.meta.url,
+        ).href,
       },
     ],
   },
@@ -320,7 +354,8 @@ export const LifeSwiperData = [
     images: [
       {
         key: 'img-1',
-        img: new URL('@/assets/img/life/繁華商圈/寶雅/商圈-寶雅 (1).webp', import.meta.url).href,
+        img: new URL('@/assets/img/life/prosperous-district/poya/poya(1).webp', import.meta.url)
+          .href,
       },
     ],
   },

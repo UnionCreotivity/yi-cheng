@@ -93,7 +93,7 @@ const menuItems = [
     key: 'menu-6',
     zhName: '智能光譜',
     enName: 'SMART',
-    link: 'electric',
+    link: 'homesmart',
   },
 ]
 
