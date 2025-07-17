@@ -26,6 +26,7 @@
           class="brand-classic-swiper"
           @swiper="onSwiper"
           @set-translate="setTranslate"
+          @touch-start="tochStart"
           ref="slide"
         >
           <div class="brand-classic-swiper-nav-line"></div>
@@ -118,8 +119,8 @@ const onSwiper = (swiper: SwiperType) => {
   //初始動畫
   swiper.allowTouchMove = false
   //更改timing-function
-  slide.value.$el.querySelector('.swiper-wrapper').style['transition-timing-function'] =
-    ' cubic-bezier(.63,0,.3,1)'
+  // slide.value.$el.querySelector('.swiper-wrapper').style['transition-timing-function'] =
+  //   ' cubic-bezier(.63,0,.3,1)'
 
   //取得最大距離
   const swiperLength = swiper.snapGrid.length
@@ -133,6 +134,10 @@ const onSwiper = (swiper: SwiperType) => {
 
 const setTranslate = ({ translate }: { translate: number }) => {
   moveValue.value = translate
+}
+
+const tochStart = () => {
+  slide.value.$el.querySelector('.swiper-wrapper').style['transition-timing-function'] = 'ease-out'
 }
 
 //自製輪播按鈕
@@ -149,6 +154,8 @@ const brandClick = (val: string) => {
   }
   slide.value.$el.swiper.setTransition(750)
   slide.value.$el.swiper.setTranslate(moveValue.value)
+  slide.value.$el.querySelector('.swiper-wrapper').style['transition-timing-function'] =
+    'ease-in-out'
 }
 
 const gsapInit = (swiper: SwiperType) => {
@@ -188,4 +195,4 @@ const buttonNextComputed = computed(() => {
 })
 </script>
 
-<style scoped></style>
+<style></style>
