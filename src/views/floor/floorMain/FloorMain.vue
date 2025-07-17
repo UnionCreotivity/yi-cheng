@@ -20,7 +20,9 @@
       >
         <router-link
           :to="{ name: 'floorinner', query: { q: item.tag } }"
-          v-if="item.tag === '3F-14F'"
+          v-if="
+            item.tag === '3F-14F' || item.tag === 'B1' || item.tag === 'B2' || item.tag === 'B3'
+          "
         >
           <p>{{ item.name }}</p>
           <div class="block"></div>
