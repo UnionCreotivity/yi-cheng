@@ -164,6 +164,9 @@
         gap: 5vw;
         margin-top: 6%;
         margin-left: 9%;
+        @media screen and (max-width: 2560px) and (aspect-ratio: 1920/940) {
+          margin-top: 4%;
+        }
         .home-smart-bottom-txt {
           .home-smart-bottom-txt-top {
             h1 {

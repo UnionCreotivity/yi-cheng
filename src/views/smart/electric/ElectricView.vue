@@ -27,7 +27,7 @@
           <p>
             EMS能源管理系統，讓電動車充電更智慧、更穩定。具備即時監控與電力分配功能，安裝快速，管理簡單為社區打造安全、高效的智慧綠能環境。
           </p>
-          <button @click="handleShow">EMS比較表</button>
+          <button @click="handleShow(true)">EMS比較表</button>
         </div>
         <div class="electric-view-bottom-flow">
           <img src="/src/assets/img/electric/elect-flow@2x.webp" alt="" />
@@ -47,7 +47,7 @@
         <div class="electric-view-inner-para">
           <img src="/src/assets/img/electric/inner/electric-inner-para@2x.webp" alt="" />
         </div>
-        <div class="electric-view-inner-close" @click="handleShow">
+        <div class="electric-view-inner-close" @click="handleShow(false)">
           <img src="@/assets/img/other/close-button.svg" alt="" />
         </div>
       </FancyContainer>
@@ -65,8 +65,8 @@ import '@/assets/scss/electric/electric.scss'
 
 const is_Show = ref(false)
 
-const handleShow = () => {
-  is_Show.value = !is_Show.value
+const handleShow = (val: boolean) => {
+  is_Show.value = val
 }
 
 const gsapInit = () => {

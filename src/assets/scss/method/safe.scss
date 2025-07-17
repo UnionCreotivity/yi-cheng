@@ -125,6 +125,9 @@
       img {
         height: 100%;
         object-fit: cover;
+        @media screen and (max-width: 2560px) and (aspect-ratio: 1920/940) {
+          object-fit: contain;
+        }
       }
     }
     .safe-content-toggle-button {
