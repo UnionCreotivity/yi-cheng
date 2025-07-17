@@ -108,7 +108,7 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: white;
   background-color: rgb(242, 149, 168);
   z-index: 99999;
