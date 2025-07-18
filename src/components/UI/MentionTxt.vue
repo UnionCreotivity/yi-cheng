@@ -26,6 +26,7 @@ p {
   position: absolute;
   right: 1.5%;
   bottom: 2%;
+  font-size: 0.8vw;
   @media screen and (max-width: 1400px) {
     font-size: 0.75vw;
     right: 1%;

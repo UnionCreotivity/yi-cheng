@@ -8,6 +8,9 @@
   background-size: 100% 100%;
   position: relative;
   overflow: hidden;
+  @media (-webkit-device-pixel-ratio: 1.25) {
+    // background-color: red;
+  }
   .nav-icon {
     position: absolute;
     left: 2.25%;
@@ -48,6 +51,9 @@
     height: 100%;
     .floor-inner-left {
       position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       top: 40%;
       left: 10%;
       width: 7.85%;
@@ -59,9 +65,9 @@
     height: 100%;
     > p {
       position: absolute;
-      right: 7%;
-      bottom: 5%;
-      font-size: 20px;
+      left: 5%;
+      bottom: 7%;
+      font-size: 0.8vw;
       letter-spacing: 2px;
       color: black;
       @include pad {
@@ -79,7 +85,7 @@
       .anchor-area {
         position: relative;
         width: auto;
-        height: 90.5%;
+        height: 82.5%;
         @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
           width: auto;
           height: 82.5%;
@@ -151,8 +157,8 @@
       position: absolute;
       left: 0;
       top: 0;
-      width: 1.5vw;
-      height: 1.5vw;
+      width: 1.75vw;
+      height: 1.75vw;
       font-size: 16px;
       color: white;
       border-radius: 50%;
@@ -163,6 +169,14 @@
         width: 2vw;
         height: 2vw;
       }
+      @media screen and (max-width: 1440px) and (aspect-ratio: 1440/812) {
+        font-size: 14px;
+        width: 2vw;
+        height: 2vw;
+      }
+      @media screen and (aspect-ratio: 1462/914) {
+        font-size: 14px;
+      }
       @include pad {
         width: 2.5vw;
         height: 2.5vw;
@@ -172,6 +186,12 @@
     .point-B1 {
       left: 19.75%;
       top: 39.5%;
+      @include macLaptop {
+        left: 19.75%;
+        top: 39%;
+      }
+      @media screen and (max-width: 1440px) and (aspect-ratio: 1440/812) {
+      }
       @include pad {
         left: 19.75%;
         top: 39%;
@@ -180,6 +200,10 @@
     .point-B2 {
       left: 44.75%;
       top: 45%;
+      @include macLaptop {
+        left: 44.75%;
+        top: 44.5%;
+      }
       @include pad {
         left: 44.75%;
         top: 44.5%;
@@ -188,6 +212,10 @@
     .point-B3 {
       left: 44.5%;
       top: 13%;
+      @include macLaptop {
+        left: 44%;
+        top: 13%;
+      }
       @include pad {
         left: 44%;
         top: 13%;
@@ -196,6 +224,10 @@
     .point-B5 {
       left: 19.25%;
       top: 18.5%;
+      @include macLaptop {
+        left: 19.25%;
+        top: 17.5%;
+      }
       @include pad {
         left: 19.25%;
         top: 17.5%;
@@ -204,6 +236,10 @@
     .point-B6 {
       left: 19.75%;
       top: 28.5%;
+      @include macLaptop {
+        left: 19.75%;
+        top: 28%;
+      }
       @include pad {
         left: 19.75%;
         top: 28%;
@@ -212,6 +248,10 @@
     .point-A1 {
       left: 26%;
       top: 81.5%;
+      @include macLaptop {
+        left: 25.25%;
+        top: 81.5%;
+      }
       @include pad {
         left: 25.25%;
         top: 81.5%;
@@ -220,6 +260,10 @@
     .point-A2 {
       left: 40%;
       top: 83.75%;
+      @include macLaptop {
+        left: 39.5%;
+        top: 83.75%;
+      }
       @include pad {
         left: 39.5%;
         top: 83.75%;
@@ -228,6 +272,10 @@
     .point-A3 {
       left: 60%;
       top: 83.75%;
+      @include macLaptop {
+        left: 60%;
+        top: 83.75%;
+      }
       @include pad {
         left: 60%;
         top: 83.75%;
@@ -236,6 +284,10 @@
     .point-A5 {
       left: 74.75%;
       top: 83.75%;
+      @include macLaptop {
+        left: 74%;
+        top: 83.75%;
+      }
       @include pad {
         left: 74%;
         top: 83.75%;
@@ -244,6 +296,10 @@
     .point-A6 {
       left: 86.75%;
       top: 66.75%;
+      @include macLaptop {
+        left: 86%;
+        top: 66.75%;
+      }
       @include pad {
         left: 86%;
         top: 66.75%;
@@ -252,6 +308,10 @@
     .point-A7 {
       left: 66.5%;
       top: 66.75%;
+      @include macLaptop {
+        left: 66%;
+        top: 66.75%;
+      }
       @include pad {
         left: 66%;
         top: 66.75%;
@@ -260,6 +320,10 @@
     .point-A8 {
       left: 21.5%;
       top: 69.75%;
+      @include macLaptop {
+        left: 21.5%;
+        top: 69.25%;
+      }
       @include pad {
         left: 21.5%;
         top: 69.25%;

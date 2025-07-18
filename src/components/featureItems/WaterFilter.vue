@@ -84,6 +84,11 @@ onMounted(() => {
 
 <style lang="scss">
 .water-filter-fancy {
+  @media screen and (aspect-ratio: 1462/914) {
+    .nav-icon {
+      top: 6.25%;
+    }
+  }
   @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
     .nav-icon {
       top: 6.25%;

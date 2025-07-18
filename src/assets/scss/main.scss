@@ -15,6 +15,13 @@
     @content;
   }
 }
+
+@mixin macLaptop() {
+  @media all and (max-width: 1440px) and (aspect-ratio: 1440/812) {
+    @content;
+  }
+}
+
 @mixin pad() {
   @media all and (max-width: 1400px) {
     @content;

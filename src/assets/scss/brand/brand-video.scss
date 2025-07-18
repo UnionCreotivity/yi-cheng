@@ -71,6 +71,9 @@
           @media screen and (aspect-ratio: 1920/940) {
             top: 80.25%;
           }
+          @include laptop {
+            width: 45px;
+          }
           @media screen and (max-width: 1440px) {
             width: 45px;
           }
@@ -85,7 +88,6 @@
           }
           @include laptop {
             right: 18.5vw;
-            width: 45px;
           }
         }
         .brand-video-prev {

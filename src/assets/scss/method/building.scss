@@ -95,7 +95,13 @@
           .building-content-next-button {
             width: 60px;
             cursor: pointer;
+            @media screen and (aspect-ratio: 1462/914) {
+              width: 45px;
+            }
             @media screen and (max-width: 1440px) and (aspect-ratio: 16/10) {
+              width: 45px;
+            }
+            @media screen and (max-width: 1440px) and (aspect-ratio: 1440/812) {
               width: 45px;
             }
             @include pad {
