@@ -2,21 +2,21 @@
   <FancyContainer color="white" class="guarantee-fancy">
     <div class="guarantee-item">
       <div class="guarantee-item-bg">
-        <img src="/src/assets/img/construction/五大保固/guarantee-bg-new-01@2x.webp" alt="" />
+        <img src="/src/assets/img/construction/five-guarantee/guarantee-bg-new-02@2x.webp" alt="" />
         <div class="guarantee-item-txt guarantee-item-txt-1">
-          <img src="/src/assets/img/construction/五大保固/guarantee-txt-1@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/five-guarantee/guarantee-txt-4@2x.webp" alt="" />
         </div>
         <div class="guarantee-item-txt guarantee-item-txt-2">
-          <img src="/src/assets/img/construction/五大保固/guarantee-txt-2@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/five-guarantee/guarantee-txt-1@2x.webp" alt="" />
         </div>
         <div class="guarantee-item-txt guarantee-item-txt-3">
-          <img src="/src/assets/img/construction/五大保固/guarantee-txt-3@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/five-guarantee/guarantee-txt-2@2x.webp" alt="" />
         </div>
         <div class="guarantee-item-txt guarantee-item-txt-4">
-          <img src="/src/assets/img/construction/五大保固/guarantee-txt-4@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/five-guarantee/guarantee-txt-3@2x.webp" alt="" />
         </div>
         <div class="guarantee-item-txt guarantee-item-txt-5">
-          <img src="/src/assets/img/construction/五大保固/guarantee-txt-5@2x.webp" alt="" />
+          <img src="/src/assets/img/construction/five-guarantee/guarantee-txt-5@2x.webp" alt="" />
         </div>
       </div>
     </div>
@@ -83,39 +83,39 @@ onMounted(() => {
       top: 0;
     }
     .guarantee-item-txt-1 {
-      left: 15%;
-      top: 63%;
-      width: 15.75%;
+      left: 18.5%;
+      top: 18%;
+      width: 16.5%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 18%;
-        top: 63%;
+        left: 15%;
+        top: 18%;
       }
     }
     .guarantee-item-txt-2 {
       left: 17%;
       top: 32.5%;
-      width: 12.75%;
+      width: 15.75%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 16%;
+        left: 13%;
         top: 33.5%;
       }
     }
     .guarantee-item-txt-3 {
       left: 17.5%;
       top: 48%;
-      width: 10.15%;
+      width: 13%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 16.5%;
+        left: 13.5%;
         top: 49%;
       }
     }
     .guarantee-item-txt-4 {
-      left: 18.75%;
-      top: 18%;
-      width: 16.5%;
+      left: 18.5%;
+      top: 63%;
+      width: 10.15%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 12.75%;
-        top: 18%;
+        left: 14.75%;
+        top: 63%;
       }
     }
     .guarantee-item-txt-5 {
@@ -123,7 +123,7 @@ onMounted(() => {
       top: 79%;
       width: 11.4%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 18.25%;
+        left: 16.25%;
         top: 80%;
       }
     }
