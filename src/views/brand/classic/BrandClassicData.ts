@@ -7,7 +7,9 @@ export const classicData = [
         id: 'content-1',
         txt: '宜誠泱',
         itemTag: '2031-1',
-        img: new URL('@/assets/img/brand/classic/classic-temp@2x.webp', import.meta.url).href,
+        img: new URL('@/assets/img/brand/classic/classical-small/2031-big-1.webp', import.meta.url)
+          .href,
+        cursor: true,
       },
     ],
   },
@@ -62,7 +64,9 @@ export const classicData = [
         id: 'content-4',
         txt: '宜誠麗左岸',
         itemTag: '2028-4',
-        img: new URL('@/assets/img/brand/classic/classic-temp@2x.webp', import.meta.url).href,
+        img: new URL('@/assets/img/brand/classic/classical-small/2028-big-4.webp', import.meta.url)
+          .href,
+        cursor: true,
       },
     ],
   },
@@ -84,7 +88,9 @@ export const classicData = [
         id: 'content-2',
         txt: '宜誠漫旅',
         itemTag: '2027-2',
-        img: new URL('@/assets/img/brand/classic/classic-temp@2x.webp', import.meta.url).href,
+        img: new URL('@/assets/img/brand/classic/classical-small/2027-big-2.webp', import.meta.url)
+          .href,
+        cursor: true,
       },
       {
         id: 'content-3',

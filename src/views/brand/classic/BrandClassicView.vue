@@ -94,7 +94,7 @@ import { classicData } from './BrandClassicData'
 import { classicInnerData } from './BrandClassicInnerData'
 import '@/assets/scss/brand/classic.scss'
 
-const fancyData = ref<null | { year: string; name: string; img: string }>(null)
+const fancyData = ref<null | { year: string; name: string; img: string; mention?: boolean }>(null)
 
 const slide = ref()
 
@@ -111,6 +111,7 @@ const toProduct = (year?: string, id?: string) => {
       year: outer_data.year,
       name: inner_data.name,
       img: inner_data.img,
+      mention: inner_data.mention ? true : false,
     }
   }
 }

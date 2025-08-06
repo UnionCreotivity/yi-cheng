@@ -2,7 +2,7 @@
   <FancyContainer color="white" class="guarantee-fancy">
     <div class="guarantee-item">
       <div class="guarantee-item-bg">
-        <img src="/src/assets/img/construction/五大保固/guarantee-bg@2x.webp" alt="" />
+        <img src="/src/assets/img/construction/五大保固/guarantee-bg-new-01@2x.webp" alt="" />
         <div class="guarantee-item-txt guarantee-item-txt-1">
           <img src="/src/assets/img/construction/五大保固/guarantee-txt-1@2x.webp" alt="" />
         </div>
@@ -83,12 +83,12 @@ onMounted(() => {
       top: 0;
     }
     .guarantee-item-txt-1 {
-      left: 20%;
-      top: 18%;
+      left: 15%;
+      top: 63%;
       width: 15.75%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
         left: 18%;
-        top: 19%;
+        top: 63%;
       }
     }
     .guarantee-item-txt-2 {
@@ -110,12 +110,12 @@ onMounted(() => {
       }
     }
     .guarantee-item-txt-4 {
-      left: 14.75%;
-      top: 63%;
+      left: 18.75%;
+      top: 18%;
       width: 16.5%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
         left: 12.75%;
-        top: 64%;
+        top: 18%;
       }
     }
     .guarantee-item-txt-5 {

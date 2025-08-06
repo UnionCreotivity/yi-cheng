@@ -1,6 +1,19 @@
 export const classicInnerData = [
   {
     tag: 'classic-2031',
+    year: '2031',
+    contents: [
+      {
+        tag: '2031-1',
+        name: '宜誠泱',
+        img: new URL('@/assets/img/brand/classic/classical-inner/2031-big-1.webp', import.meta.url)
+          .href,
+        mention: true,
+      },
+    ],
+  },
+  {
+    tag: 'classic-2029',
     year: '2029',
     contents: [
       {
@@ -39,6 +52,13 @@ export const classicInnerData = [
           import.meta.url,
         ).href,
       },
+      {
+        tag: '2028-4',
+        name: '宜誠麗左岸',
+        img: new URL('@/assets/img/brand/classic/classical-inner/2028-big-4.webp', import.meta.url)
+          .href,
+        mention: true,
+      },
     ],
   },
   {
@@ -52,6 +72,13 @@ export const classicInnerData = [
           '@/assets/img/brand/classic/classical-inner/2027-big-1@2x.webp',
           import.meta.url,
         ).href,
+      },
+      {
+        tag: '2027-2',
+        name: '宜誠漫旅',
+        img: new URL('@/assets/img/brand/classic/classical-inner/2027-big-2.webp', import.meta.url)
+          .href,
+        mention: true,
       },
       {
         tag: '2027-3',

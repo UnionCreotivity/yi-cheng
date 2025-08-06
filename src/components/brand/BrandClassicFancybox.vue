@@ -27,7 +27,10 @@
           <span class="brand-classic-fancybox-para-line"></span>
         </div>
       </div>
-      <div class="brand-classic-fancybox-img"><img :src="props.fancyData?.img" alt="" /></div>
+      <div class="brand-classic-fancybox-img">
+        <img :src="props.fancyData?.img" alt="" />
+        <mention-txt text="3D外觀示意圖" color="white" v-if="props.fancyData?.mention" />
+      </div>
       <button class="brand-classic-fancybox-close" @click.stop="handelClose">
         <img src="@/assets/img/other/close-button.svg" alt="" />
       </button>
@@ -38,9 +41,18 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import gsap from 'gsap'
+import MentionTxt from '../UI/MentionTxt.vue'
 import '@/assets/scss/brand/classic-fancybox.scss'
 
-const props = defineProps({ fancyData: { type: Object, year: String, name: String, img: String } })
+interface FancyData {
+  year?: string
+  name?: string
+  img?: string
+  mention?: boolean
+}
+
+const props = defineProps<{ fancyData?: FancyData }>()
+console.log(props.fancyData?.mention)
 
 const emits = defineEmits(['to-product'])
 
