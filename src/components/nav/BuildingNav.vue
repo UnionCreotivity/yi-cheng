@@ -38,6 +38,7 @@ const iconStyle = computed(() => {
 })
 
 const handleClick = (id: string) => {
+  if (id === 'building-4') return
   emits('toggle-tag', id)
 }
 
