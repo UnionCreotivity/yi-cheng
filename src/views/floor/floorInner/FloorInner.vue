@@ -43,6 +43,9 @@
     <div class="floor-inner-close" @click="backMain">
       <img src="@/assets/img/other/close-button.svg" alt="" />
     </div>
+    <div class="floor-inner-compass">
+      <img src="/src/assets/img/floor/floor-inner/compass.svg" alt="" />
+    </div>
   </div>
 </template>
 
