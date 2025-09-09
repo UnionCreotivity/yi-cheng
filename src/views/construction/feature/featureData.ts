@@ -25,7 +25,7 @@ export const featureData = [
       {
         tag: 'left-3',
         class: 'txt-left',
-        item: 'none',
+        item: 'electric',
         lumpTxt: new URL('@/assets/img/construction/list-icon/EMS-sys@2x.webp', import.meta.url)
           .href,
         decoImg: new URL('@/assets/img/construction/list/list-ems@2x.webp', import.meta.url).href,

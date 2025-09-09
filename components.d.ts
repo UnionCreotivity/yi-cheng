@@ -16,6 +16,7 @@ declare module 'vue' {
     BuildingNav: typeof import('./src/components/nav/BuildingNav.vue')['default']
     BWTItem: typeof import('./src/components/featureItems/BWTItem.vue')['default']
     DevelopNav: typeof import('./src/components/nav/DevelopNav.vue')['default']
+    EleItem: typeof import('./src/components/featureItems/EleItem.vue')['default']
     ElevatorItem: typeof import('./src/components/featureItems/ElevatorItem.vue')['default']
     EntranceDoor: typeof import('./src/components/featureItems/EntranceDoor.vue')['default']
     FadeIn: typeof import('./src/components/transition/FadeIn.vue')['default']

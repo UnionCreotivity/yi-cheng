@@ -1,11 +1,15 @@
 @use '../config' as *;
 .electric-view {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: white;
   overflow: hidden;
   #nav {
+    height: 10%;
+    padding: 2vw 2vw 2vw 2.25vw;
     .nav-links {
       li {
         a {
@@ -28,6 +32,18 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    .electric-view-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+    }
+    .flex-top {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
     .electric-view-top {
       width: 100%;
       position: relative;

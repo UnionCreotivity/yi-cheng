@@ -79,7 +79,7 @@ export const BuildingData = [
     name: '垃圾冷藏',
     video: new URL('@/assets/video/building/垃圾冷藏.mp4', import.meta.url).href,
     content:
-      '社區規劃資源回收中心、一般垃圾冷藏庫及廚餘冷凍櫃，以冷藏4度C〜5度C保存，防止氣味產生，保持環環境整潔。垃圾車來時，物管管理公司統一處理。',
+      '社區規劃資源回收中心，位於地下一樓，一般垃圾冷藏庫及廚餘冷凍櫃，以冷藏4度C〜5度C保存，防止氣味產生，保持環環境整潔。垃圾車來時，物管管理公司統一處理。',
   },
   {
     id: 'building-12',

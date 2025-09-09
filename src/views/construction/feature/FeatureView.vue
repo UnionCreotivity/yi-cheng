@@ -19,7 +19,7 @@
             :key="item.tag"
             @click="renderItem(item.item, item.index)"
           >
-            <router-link
+            <!-- <router-link
               class="feature-view-content-li-container"
               :to="{ name: 'electric' }"
               v-if="item.tag === 'left-3'"
@@ -31,8 +31,8 @@
               <div class="item-img">
                 <img :src="item.decoImg" />
               </div>
-            </router-link>
-            <div class="feature-view-content-li-container" v-else>
+            </router-link> -->
+            <div class="feature-view-content-li-container">
               <div class="color-lump">
                 <div class="light" ref="lightItems"></div>
                 <img :src="item.lumpTxt" />
@@ -138,6 +138,11 @@
         @render-item="renderItem"
         @handle-nav-color="handleNavColor"
       />
+      <EleItem
+        v-else-if="tag === 'electric'"
+        @render-item="renderItem"
+        @handle-nav-color="handleNavColor"
+      />
     </FadeIn>
   </div>
 </template>
@@ -158,6 +163,7 @@ import WoodenFloor from '@/components/featureItems/WoodenFloor.vue'
 import SixPlusSix from '@/components/featureItems/SixPlusSix.vue'
 import BWTItem from '@/components/featureItems/BWTItem.vue'
 import LockItem from '@/components/featureItems/LockItem.vue'
+import EleItem from '@/components/featureItems/EleItem.vue'
 import { featureData } from './featureData'
 import '@/assets/scss/feature/feature-view.scss'
 
