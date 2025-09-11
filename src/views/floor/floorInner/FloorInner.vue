@@ -15,7 +15,7 @@
         <div class="floor-inner-left" v-show="!is_ToggleShow">
           <!-- <img :src="floorInnerItem?.txtImg" /> -->
           <div class="txt-1">{{ floorInnerItem?.tag }}</div>
-          <div class="txt-2">全區配置圖</div>
+          <div class="txt-2">家俱配置圖</div>
           <div class="txt-3">FLOOR PLAN</div>
         </div>
       </FadeIn>
