@@ -17,8 +17,12 @@
           <swiper-slide class="highway-swiper-slide">
             <img src="/src/assets/img/bustling/develop/highway/highway-img-1@2x.webp" alt="" />
           </swiper-slide>
-          <swiper-slide class="highway-swiper-slide">
-            <img src="/src/assets/img/bustling/develop/highway/highway-img-2@2x.webp" alt="" />
+          <swiper-slide class="highway-swiper-slide highway-swiper-slide-02">
+            <img src="/src/assets/img/bustling/develop/highway/highway-img-2-new@2x.webp" alt="" />
+            <div class="glow-square">
+              <div class="light"></div>
+            </div>
+            <HighwayCar />
           </swiper-slide>
           <div class="swiper-button-prev high-way-prev" @click.stop>
             <img src="@/assets/img/other/prev.svg" />
@@ -45,6 +49,7 @@ import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import DevelopNav from '@/components/nav/DevelopNav.vue'
+import HighwayCar from './HighwayCar.vue'
 import '@/assets/scss/bustling/highway.scss'
 
 const tag = ref('highway')

@@ -148,3 +148,54 @@ export const floorInnerData = [
     floorImg: new URL('@/assets/img/floor/floor-inner/img/B3-img@2x.webp', import.meta.url).href,
   },
 ]
+
+export const floorFancyData = [
+  {
+    tag: 'A1',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-A1@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'A2',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-A2@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'A3',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-A3@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'A5',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-A5@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'A6',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-A6@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'A7',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-A7@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'A8',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-A8@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'B1',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-B1@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'B2',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-B2@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'B3',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-B3@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'B5',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-B5@2x.webp', import.meta.url).href,
+  },
+  {
+    tag: 'B6',
+    img: new URL('@/assets/img/floor/floor-fancy/floor-fancy-B6@2x.webp', import.meta.url).href,
+  },
+]

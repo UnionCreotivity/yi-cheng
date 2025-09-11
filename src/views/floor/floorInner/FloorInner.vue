@@ -13,7 +13,10 @@
     <div class="floor-inner-cotainer" :class="`floor-${floorInnerItem?.tag}`">
       <FadeIn>
         <div class="floor-inner-left" v-show="!is_ToggleShow">
-          <img :src="floorInnerItem?.txtImg" />
+          <!-- <img :src="floorInnerItem?.txtImg" /> -->
+          <div class="txt-1">{{ floorInnerItem?.tag }}</div>
+          <div class="txt-2">全區配置圖</div>
+          <div class="txt-3">FLOOR PLAN</div>
         </div>
       </FadeIn>
       <div class="floor-inner-right">
@@ -28,7 +31,7 @@
                     v-for="item in floorInnerItem?.points"
                     :key="item.tag"
                     :class="item.class"
-                    @click.stop
+                    @click="tagClick(item.tag)"
                   >
                     {{ item.tag }}
                   </div>
@@ -46,6 +49,9 @@
     <div class="floor-inner-compass">
       <img src="/src/assets/img/floor/floor-inner/compass.svg" alt="" />
     </div>
+    <FadeIn>
+      <FloorFancyBox :fancyItem="fancyItem" @tag-click="tagClick" v-if="fancyItem !== null" />
+    </FadeIn>
   </div>
 </template>
 
@@ -54,7 +60,8 @@ import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import FadeIn from '@/components/transition/FadeIn.vue'
 import ScaleDrag from '@/components/scale-drag/ScaleDrag.vue'
-import { floorInnerData } from '../FloorData'
+import FloorFancyBox from '@/components/floor/FloorFancyBox.vue'
+import { floorInnerData, floorFancyData } from '../FloorData'
 import '@/assets/scss/floor/floor-inner.scss'
 
 const router = useRouter()
@@ -68,10 +75,29 @@ const floorInnerItem = ref<{
   points?: { tag: string; class: string }[]
 } | null>(null)
 
+const fancyItem = ref<{
+  tag: string
+  img: string
+} | null>(null)
+
 const is_ToggleShow = ref(false)
+
+const fancyTag = ref('')
 
 const toggleText = (val: boolean) => {
   is_ToggleShow.value = val
+}
+
+const tagClick = (val: string) => {
+  if (val) {
+    fancyTag.value = val
+    const findItem = floorFancyData.find((item) => item.tag === fancyTag.value)
+    if (findItem) {
+      fancyItem.value = findItem
+    }
+  } else {
+    fancyItem.value = null
+  }
 }
 
 const backMain = () => {

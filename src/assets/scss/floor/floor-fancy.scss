@@ -1,0 +1,147 @@
+@use '../config' as *;
+.floor-fancy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/assets/img/floor/floor-inner/floor-inner-bg@2x.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: white;
+  z-index: 10;
+  .floor-fancy-compass {
+    position: absolute;
+    width: 3vw;
+    right: 2%;
+    top: 11%;
+    @include pad {
+      width: 4vw;
+      right: 2%;
+      top: 12%;
+    }
+  }
+  .nav-icon {
+    position: absolute;
+    left: 2.25%;
+    top: 3.25%;
+    width: 9.45vw;
+    z-index: 1;
+    @include pad {
+      left: 2.25%;
+      top: 3.25%;
+    }
+  }
+  .floor-fancy-close {
+    position: absolute;
+    right: 2.5%;
+    top: 4%;
+    width: 2vw;
+    height: 2vw;
+    padding: 0.25vw;
+    background-color: #d27c8d;
+    z-index: 1;
+    cursor: pointer;
+    @include pad {
+      width: 2.75vw;
+      height: 2.75vw;
+      padding: 0.5vw;
+      top: 6%;
+    }
+  }
+  .floor-fancy-cotainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .floor-fancy-left {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      top: 39%;
+      left: 10%;
+      // width: 7.85%;
+      .txt-1 {
+        font-family: var(--serif);
+        font-size: 3.5vw;
+        line-height: 1.25;
+        letter-spacing: 0.1em;
+      }
+      .txt-2 {
+        font-weight: 600;
+        font-family: var(--serif);
+        font-size: 1.65vw;
+        letter-spacing: 0.1em;
+      }
+      .txt-3 {
+        font-family: var(--serif);
+        font-size: 1.2vw;
+        letter-spacing: 0.1em;
+      }
+    }
+    .floor-fancy-right {
+      width: 100%;
+      height: 100%;
+      > p {
+        position: absolute;
+        left: 5%;
+        bottom: 7%;
+        font-size: 0.8vw;
+        letter-spacing: 2px;
+        color: black;
+        @include pad {
+          font-size: 12px;
+        }
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .anchor-area {
+          position: relative;
+          width: auto;
+          height: 82.5%;
+          @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
+            width: auto;
+            height: 82.5%;
+          }
+          @include pad {
+            width: 52%;
+            height: auto;
+            // aspect-ratio: 1207/1337;
+          }
+          .anchor-area-map {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            .imgBoxMap {
+              width: 100%;
+              height: 100%;
+              margin-left: 17%;
+              @media screen and (max-width: 1920px) {
+                // margin-left: 5%;
+              }
+            }
+          }
+        }
+      }
+      .zoom {
+        bottom: 9%;
+        right: 1.75%;
+        left: unset;
+        gap: 0.25vw;
+        z-index: unset;
+        @include pad {
+          bottom: 10%;
+          right: 1.5%;
+        }
+      }
+    }
+  }
+}
