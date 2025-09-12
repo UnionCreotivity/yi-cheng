@@ -9,7 +9,7 @@
       <FadeIn>
         <div class="floor-fancy-left" v-show="!is_ToggleShow">
           <div class="txt-1">{{ props.fancyItem?.tag }}</div>
-          <div class="txt-2">全區配置圖</div>
+          <div class="txt-2">家俱配置圖</div>
           <div class="txt-3">FLOOR PLAN</div>
         </div>
       </FadeIn>

@@ -210,149 +210,147 @@
       }
     }
     .point-B1 {
-      left: 19.75%;
+      left: 19.5%;
       top: 39.5%;
       @include macLaptop {
-        left: 19.75%;
-        top: 39%;
-      }
-      @media screen and (max-width: 1440px) and (aspect-ratio: 1440/812) {
+        left: 18.75%;
+        top: 39.5%;
       }
       @include pad {
         left: 19.75%;
-        top: 39%;
+        top: 39.5%;
       }
     }
     .point-B2 {
-      left: 44.75%;
-      top: 45%;
+      left: 44.25%;
+      top: 45.5%;
       @include macLaptop {
-        left: 44.75%;
-        top: 44.5%;
+        left: 44.25%;
+        top: 45.5%;
       }
       @include pad {
-        left: 44.75%;
-        top: 44.5%;
+        left: 44.25%;
+        top: 45.5%;
       }
     }
     .point-B3 {
-      left: 44.5%;
+      left: 44%;
       top: 13%;
       @include macLaptop {
-        left: 44%;
-        top: 13%;
+        left: 43.75%;
+        top: 12.5%;
       }
       @include pad {
         left: 44%;
-        top: 13%;
+        top: 12.5%;
       }
     }
     .point-B5 {
       left: 19.25%;
-      top: 18.5%;
+      top: 18.25%;
       @include macLaptop {
-        left: 19.25%;
-        top: 17.5%;
+        left: 18.75%;
+        top: 18%;
       }
       @include pad {
         left: 19.25%;
-        top: 17.5%;
+        top: 18%;
       }
     }
     .point-B6 {
-      left: 19.75%;
+      left: 19%;
       top: 28.5%;
       @include macLaptop {
-        left: 19.75%;
-        top: 28%;
+        left: 19%;
+        top: 28.5%;
       }
       @include pad {
-        left: 19.75%;
-        top: 28%;
+        left: 19%;
+        top: 28.5%;
       }
     }
     .point-A1 {
       left: 26%;
-      top: 81.5%;
+      top: 83%;
       @include macLaptop {
         left: 25.25%;
-        top: 81.5%;
+        top: 83%;
       }
       @include pad {
         left: 25.25%;
-        top: 81.5%;
+        top: 83%;
       }
     }
     .point-A2 {
       left: 40%;
-      top: 83.75%;
+      top: 85.25%;
       @include macLaptop {
         left: 39.5%;
-        top: 83.75%;
+        top: 85.25%;
       }
       @include pad {
         left: 39.5%;
-        top: 83.75%;
+        top: 85.25%;
       }
     }
     .point-A3 {
-      left: 60%;
-      top: 83.75%;
+      left: 60.25%;
+      top: 85.25%;
       @include macLaptop {
         left: 60%;
-        top: 83.75%;
+        top: 85.25%;
       }
       @include pad {
         left: 60%;
-        top: 83.75%;
+        top: 85.25%;
       }
     }
     .point-A5 {
-      left: 74.75%;
-      top: 83.75%;
+      left: 74.5%;
+      top: 85%;
       @include macLaptop {
         left: 74%;
-        top: 83.75%;
+        top: 84.5%;
       }
       @include pad {
         left: 74%;
-        top: 83.75%;
+        top: 84.5%;
       }
     }
     .point-A6 {
       left: 86.75%;
-      top: 66.75%;
+      top: 67.75%;
       @include macLaptop {
         left: 86%;
-        top: 66.75%;
+        top: 67.75%;
       }
       @include pad {
         left: 86%;
-        top: 66.75%;
+        top: 67.75%;
       }
     }
     .point-A7 {
       left: 66.5%;
-      top: 66.75%;
+      top: 67.75%;
       @include macLaptop {
         left: 66%;
-        top: 66.75%;
+        top: 67.75%;
       }
       @include pad {
         left: 66%;
-        top: 66.75%;
+        top: 67.75%;
       }
     }
     .point-A8 {
       left: 21.5%;
-      top: 69.75%;
+      top: 70.75%;
       @include macLaptop {
         left: 21.5%;
-        top: 69.25%;
+        top: 70.75%;
       }
       @include pad {
         left: 21.5%;
-        top: 69.25%;
+        top: 70.75%;
       }
     }
   }

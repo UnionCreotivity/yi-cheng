@@ -135,17 +135,20 @@ export const floorInnerData = [
   {
     tag: 'B1',
     txtImg: new URL('@/assets/img/floor/floor-inner/txt/B1-txt@2x.webp', import.meta.url).href,
-    floorImg: new URL('@/assets/img/floor/floor-inner/img/B1-img@2x.webp', import.meta.url).href,
+    floorImg: new URL('@/assets/img/floor/floor-inner/img/B1-img-new@2x.webp', import.meta.url)
+      .href,
   },
   {
     tag: 'B2',
     txtImg: new URL('@/assets/img/floor/floor-inner/txt/B2-txt@2x.webp', import.meta.url).href,
-    floorImg: new URL('@/assets/img/floor/floor-inner/img/B2-img@2x.webp', import.meta.url).href,
+    floorImg: new URL('@/assets/img/floor/floor-inner/img/B2-img-new@2x.webp', import.meta.url)
+      .href,
   },
   {
     tag: 'B3',
     txtImg: new URL('@/assets/img/floor/floor-inner/txt/B3-txt@2x.webp', import.meta.url).href,
-    floorImg: new URL('@/assets/img/floor/floor-inner/img/B3-img@2x.webp', import.meta.url).href,
+    floorImg: new URL('@/assets/img/floor/floor-inner/img/B3-img-new@2x.webp', import.meta.url)
+      .href,
   },
 ]
 
