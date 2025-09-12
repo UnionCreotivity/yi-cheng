@@ -64,11 +64,15 @@
         width: 57.5%;
         height: 18%;
         z-index: 6;
+
         > path {
           stroke: transparent;
         }
         .car {
           transform: scale(0.1) rotate(270deg);
+        }
+        .test {
+          background-color: transparent;
         }
       }
     }

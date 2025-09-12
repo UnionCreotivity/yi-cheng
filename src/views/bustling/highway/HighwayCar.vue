@@ -12,17 +12,8 @@
       stroke="#231815"
       stroke-miterlimit="10"
     />
-    <g ref="train" id="_圖層_1-2" data-name="圖層 1">
+    <g ref="train" id="_圖層_1-2" data-name="圖層 1" class="test">
       <g class="car">
-        <g style="mix-blend-mode: multiply">
-          <rect
-            x="0.444336"
-            y="-0.00971985"
-            width="184.755"
-            height="294.301"
-            fill="url(#pattern0_502_49)"
-          />
-        </g>
         <mask
           id="mask0_502_49"
           style="mask-type: luminance"
@@ -264,19 +255,6 @@ onMounted(() => {
     duration: 5,
     ease: 'linear',
   })
-  // .to(train.value, {
-  //   motionPath: {
-  //     path: path.value,
-  //     align: path.value,
-  //     alignOrigin: [0.5, 0.5],
-  //     start: 0.9,
-  //     end: 1,
-  //   },
-  //   transformOrigin: '50% 50%',
-  //   duration: 0.5,
-  //   opacity: 0,
-  //   ease: 'linear',
-  // })
 })
 </script>
 
