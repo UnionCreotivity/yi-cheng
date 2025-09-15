@@ -22,14 +22,22 @@
                 >
                   <!-- 圖片與影片的判斷 -->
                   <img :src="item.image" alt="" v-if="item.image" />
-                  <video :src="item.video" controls muted loop autoplay v-else></video></div
+                  <video
+                    :src="item.video"
+                    controls
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                    v-else
+                  ></video></div
               ></FadeInItem>
             </div>
             <!-- 判斷是否為輪播 -->
             <div class="building-content-left-second" v-else>
               <!-- 圖片與影片的判斷 -->
               <img :src="content?.image" alt="" v-if="content?.image" />
-              <video :src="content?.video" controls muted loop autoplay v-else></video>
+              <video :src="content?.video" controls muted loop autoplay playsinline v-else></video>
             </div>
           </div>
           <div class="building-content-right">

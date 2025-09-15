@@ -14,7 +14,7 @@
       <FadeIn>
         <div class="floor-inner-left" v-show="!is_ToggleShow">
           <div class="txt-1">{{ floorInnerItem?.tag }}</div>
-          <div class="txt-2">全區配置圖</div>
+          <div class="txt-2"><span v-if="floorInnerItem?.tag === '3F-14F'">全區</span>配置圖</div>
           <div class="txt-3">FLOOR PLAN</div>
         </div>
       </FadeIn>

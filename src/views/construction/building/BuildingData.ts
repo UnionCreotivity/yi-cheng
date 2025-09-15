@@ -13,13 +13,13 @@ export const BuildingData = [
     content:
       '廚房排水較易因油脂硬化而堵塞，舊型排水管存水彎，角度低於90度，當層疏通之通管條較難通過，必須至樓下天花板開啟舊型存水彎才能疏通，新型排水管存水彎工法升級，角度較大，堵塞時可單層維修，不需至樓下樓層麻煩鄰居，容易當層清潔。\n 污水分流，減少排水造成逆流。\n 2F以下樓層獨立分流管線。',
   },
-  {
-    id: 'building-4',
-    name: '石膏牆',
-    content:
-      '本隔間磚牆採石膏材質，隔音性能優異，可阻隔52分貝聲音，營造安靜空間。結構輕巧堅固，便於快速安裝，適用於辦公室、住宅與商業空間。',
-    video: new URL('@/assets/video/building/石膏牆.mp4', import.meta.url).href,
-  },
+  // {
+  //   id: 'building-4',
+  //   name: '石膏牆',
+  //   content:
+  //     '本隔間磚牆採石膏材質，隔音性能優異，可阻隔52分貝聲音，營造安靜空間。結構輕巧堅固，便於快速安裝，適用於辦公室、住宅與商業空間。',
+  //   video: new URL('@/assets/video/building/石膏牆.mp4', import.meta.url).href,
+  // },
   {
     id: 'building-5',
     name: '車道感應雙系統',

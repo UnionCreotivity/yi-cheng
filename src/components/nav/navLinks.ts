@@ -58,10 +58,10 @@ export const constrLinks = [
         key: 'building-2',
         name: '排水系統',
       },
-      {
-        key: 'building-4',
-        name: '石膏牆',
-      },
+      // {
+      //   key: 'building-4',
+      //   name: '石膏牆',
+      // },
       {
         key: 'building-5',
         name: '車道感應雙系統',
@@ -70,10 +70,10 @@ export const constrLinks = [
         key: 'building-6',
         name: '智能免持卡系統',
       },
-      {
-        key: 'building-7',
-        name: '樓地板厚度',
-      },
+      // {
+      //   key: 'building-7',
+      //   name: '樓地板厚度',
+      // },
       {
         key: 'building-8',
         name: '單層排氣',
