@@ -259,8 +259,11 @@
       }
     }
     .point-B6 {
-      left: 19%;
-      top: 28.5%;
+      left: 19.25%;
+      top: 29.25%;
+      @media screen and (max-width: 1920px) and (aspect-ratio: 1920/940) {
+        top: 28.75%;
+      }
       @include macLaptop {
         left: 19%;
         top: 28.5%;
