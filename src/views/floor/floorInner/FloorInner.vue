@@ -5,11 +5,6 @@
         <img src="/src/assets/img/other/company-icon.svg" alt="" />
       </router-link>
     </div>
-    <!-- <FadeIn>
-      <div class="floor-inner-title" v-show="!is_ToggleShow">
-        <img src="/src/assets/img/floor/floor-inner/floor-3F-14F-title@2x.webp" alt="" />
-      </div>
-    </FadeIn> -->
     <div class="floor-inner-cotainer" :class="`floor-${floorInnerItem?.tag}`">
       <FadeIn>
         <div class="floor-inner-left" v-show="!is_ToggleShow">
@@ -67,6 +62,7 @@ const router = useRouter()
 
 const route = useRoute()
 
+//當前頁面內容
 const floorInnerItem = ref<{
   tag: string
   txtImg: string
@@ -74,13 +70,16 @@ const floorInnerItem = ref<{
   points?: { tag: string; class: string }[]
 } | null>(null)
 
+//fancybox內容(家配)
 const fancyItem = ref<{
   tag: string
   img: string
 } | null>(null)
 
+//放大隱藏的文字
 const is_ToggleShow = ref(false)
 
+//fancybox的tag
 const fancyTag = ref('')
 
 const toggleText = (val: boolean) => {
@@ -114,6 +113,7 @@ const findData = () => {
 }
 
 onMounted(() => {
+  //網頁初始化時透過query來找資料
   findData()
 })
 </script>
