@@ -20,10 +20,12 @@
             <MentionTxt text="情境示意圖" color="black" />
           </template>
           <template #right>
-            <img
-              src="/src/assets/img/construction/airtight/airtight-swiper-bg-2-right@2x.webp"
-              alt=""
-            />
+            <div class="low-e-box">
+              <img class="txt1" src="/src/assets/img/construction/airtight/low-e-txt1.svg" alt="">
+              <img class="img1" src="/src/assets/img/construction/airtight/low-e-img1@2x.webp" alt="">
+              <img class="txt2" src="/src/assets/img/construction/airtight/low-e-txt2.svg" alt="">
+              <img class="img2" src="/src/assets/img/construction/airtight/low-e-txt2_1@2x.webp" alt="">
+            </div>
           </template>
         </FlexRow>
       </swiper-slide>
@@ -127,13 +129,16 @@ const handleClose = () => {
       .flex-right {
         margin: auto;
         .airtight-para {
-          width: 35.5vw;
+          width: 35vw;
           @media screen and (aspect-ratio: 1920/940) {
             width: 32.5vw;
           }
         }
+
       }
     }
+
+    
   }
   .airtight-swiper-slide-2 {
     .flex-row {
@@ -153,12 +158,27 @@ const handleClose = () => {
     .flex-right {
       width: 32.5vw;
       margin: auto;
-      margin-bottom: 10%;
+      // margin-bottom: 10%;
       @media screen and (aspect-ratio: 1920/940) {
         width: 28.5vw;
         margin-bottom: 0;
         margin: auto;
       }
+
+      .low-e-box{
+          .txt1{
+            width: 86%;
+            margin: auto;
+            margin-bottom: 8%;
+          }
+          .img1{
+            margin-bottom: 7%;
+          }
+          .img2{
+            width: 55%;
+            margin-top: 6%;
+          }
+        }
     }
   }
 }

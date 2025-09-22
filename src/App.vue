@@ -55,9 +55,10 @@ waitForPreloadedImages()
 
 onMounted(() => {
   // alert(window.innerWidth)
+  const HOST='board.ucy.com.tw';
   axios
     .post(
-      'https://web-board.tw/sys/login_axios.php',
+      `https://${HOST}/sys/login_axios.php`,
       {
         type: 'admin',
       },
@@ -81,7 +82,7 @@ onMounted(() => {
         }
       } else {
         alert(response.data.msg)
-        window.location.href = 'https://web-board.tw'
+        window.location.href = `https://${HOST}`
       }
     })
     .catch(function (error) {

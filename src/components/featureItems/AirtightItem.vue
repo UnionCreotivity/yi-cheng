@@ -27,10 +27,16 @@
               />
             </div>
             <div class="airtight-para">
-              <img
+              <div>
+                <img class="txt1" src="/src/assets/img/construction/airtight/glass_txt1.svg" alt="">
+                <img class="txt2" src="/src/assets/img/construction/airtight/glass_txt2.svg" alt="">
+                <img class="img1" src="/src/assets/img/construction/airtight/glass_img1@2x.webp" alt="">
+                <img class="txt3" src="/src/assets/img/construction/airtight/glass_txt3.svg" alt="">
+              </div>
+              <!-- <img
                 src="/src/assets/img/construction/airtight/airtight-swiper-bg-1-right@2x.webp"
                 alt=""
-              />
+              /> -->
             </div>
           </template>
         </FlexRow>
@@ -63,7 +69,7 @@ const handleClose = () => {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 .airtight-item-container {
   @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
     .nav-icon {
@@ -131,9 +137,23 @@ const handleClose = () => {
       .flex-right {
         margin: auto;
         .airtight-para {
-          width: 35.5vw;
+          width: 35vw;
           @media screen and (aspect-ratio: 1920/940) {
             width: 32.5vw;
+          }
+
+          .txt1{
+            width: 40%;
+            margin: auto;
+          }
+          .img1{
+            margin-bottom: 4%;
+          }
+          .txt2{
+            margin: 5% 0 7% 0;
+          }
+          .txt3{
+            width: 92%;
           }
         }
       }
