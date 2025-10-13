@@ -64,7 +64,7 @@ onMounted(() => {
       },
       {
         headers: {
-          Authorization: `Bearer ${localStorage['token']}`,
+          XToken: `Bearer ${localStorage['token']}`,
           'Refresh-Token': localStorage['refresh_token'],
         },
         onUploadProgress: function () {

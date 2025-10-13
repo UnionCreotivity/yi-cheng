@@ -2,13 +2,13 @@
   <FancyContainer color="white" class="guarantee-fancy">
     <div class="guarantee-item">
       <div class="guarantee-item-bg">
-        <img src="/src/assets/img/construction/five-guarantee/guarantee-bg-new-02@2x.webp" alt="" />
+        <img src="/src/assets/img/construction/five-guarantee/guarantee-bg@2x.jpg" alt="" />
         <div class="guarantee-item-txt guarantee-item-txt-1">
           <img src="/src/assets/img/construction/five-guarantee/guarantee-txt-4@2x.webp" alt="" />
         </div>
-        <div class="guarantee-item-txt guarantee-item-txt-2">
+        <!-- <div class="guarantee-item-txt guarantee-item-txt-2">
           <img src="/src/assets/img/construction/five-guarantee/guarantee-txt-1@2x.webp" alt="" />
-        </div>
+        </div> -->
         <div class="guarantee-item-txt guarantee-item-txt-3">
           <img src="/src/assets/img/construction/five-guarantee/guarantee-txt-2@2x.webp" alt="" />
         </div>
@@ -83,12 +83,12 @@ onMounted(() => {
       top: 0;
     }
     .guarantee-item-txt-1 {
-      left: 18.5%;
-      top: 18%;
+      left: 17%;
+      top: 23%;
       width: 16.5%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 15%;
-        top: 18%;
+        left: 13.5%;
+        top: 23%;
       }
     }
     .guarantee-item-txt-2 {
@@ -102,29 +102,29 @@ onMounted(() => {
     }
     .guarantee-item-txt-3 {
       left: 17.5%;
-      top: 48%;
+      top: 39%;
       width: 13%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 13.5%;
-        top: 49%;
+        left: 13.8%;
+        top: 39%;
       }
     }
     .guarantee-item-txt-4 {
-      left: 18.5%;
-      top: 63%;
+      left: 20.2%;
+      top: 54%;
       width: 10.15%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 14.75%;
-        top: 63%;
+        left: 17%;
+        top: 54%;
       }
     }
     .guarantee-item-txt-5 {
-      left: 19.25%;
-      top: 79%;
+      left: 20.25%;
+      top: 69%;
       width: 11.4%;
       @media screen and (max-width: 2560px) and (aspect-ratio: 16/10) {
-        left: 16.25%;
-        top: 80%;
+        left: 16.9%;
+        top: 69%;
       }
     }
   }
