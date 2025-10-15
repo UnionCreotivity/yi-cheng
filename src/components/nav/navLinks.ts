@@ -76,7 +76,7 @@ export const constrLinks = [
       // },
       {
         key: 'building-8',
-        name: '單層排氣',
+        name: '當層單戶排氣',
       },
       {
         key: 'building-9',

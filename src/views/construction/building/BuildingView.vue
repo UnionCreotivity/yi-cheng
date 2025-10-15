@@ -42,8 +42,7 @@
           </div>
           <div class="building-content-right">
             <h1>{{ content?.name }}</h1>
-            <p>
-              {{ content?.content }}
+            <p v-html="content?.content">
             </p>
             <!-- 判斷是否為輪播，會出現相對應的按鈕 -->
             <div class="building-content-right-button" v-if="content?.items">
