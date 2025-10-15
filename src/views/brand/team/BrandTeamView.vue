@@ -12,6 +12,19 @@
       <div class="deco deco-4"><img src="/src/assets/img/brand/team/deco-4@2x.webp" alt="" /></div>
     </div>
     <div class="brand-team-people">
+      <div class="brand-team-people-0-container">
+        <div class="line-0">
+          <img src="/src/assets/img/brand/team/deco-line-0@2x.webp" alt="" />
+        </div>
+        <div class="brand-team-people-0" @click="handleFancy('brand-0')">
+          <div class="brand-team-people-img">
+            <img src="/src/assets/img/brand/team/people-0@2x.webp" alt="" />
+          </div>
+          <div class="brand-team-people-sign">
+            <img src="/src/assets/img/brand/team/sign-0@2x.webp" alt="" />
+          </div>
+        </div>
+      </div>
       <div class="brand-team-people-1-container">
         <div class="line-1">
           <img src="/src/assets/img/brand/team/deco-line-1@2x.webp" alt="" />

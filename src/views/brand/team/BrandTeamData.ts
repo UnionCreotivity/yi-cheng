@@ -1,5 +1,70 @@
 export const brandTeamData = [
   {
+    tag: 'brand-0',
+    sign: new URL('@/assets/img/brand/team/people-0/name-0@2x.webp', import.meta.url).href,
+    people: new URL('@/assets/img/brand/team/people-0/people-0_1@2x.webp', import.meta.url)
+      .href,
+    title: '燈光設計　張文貴',
+    intro:
+      '建築的夜色，是光影的藝術。設計師以光為筆，描繪建築的立體層次與材質表情，讓建築在夜幕中展現獨特的生命力。從外觀輪廓到立面細節，光線的運用不僅強調形與質，更在明暗之間注入情感與故事，使建築在城市中成為一道恆久的風景。',
+    exper: '經歷',
+    experdetail:
+      '• 日大技術照明 總經理',
+    items: [
+      {
+        key: 'item-1',
+        name: '宜誠玓瓅',
+        img: new URL('@/assets/img/brand/team/people-0/slide1@2x.webp', import.meta.url)
+          .href,
+        bigImg: new URL(
+          '@/assets/img/brand/team/people-0/slide1_1@2x.webp',
+          import.meta.url,
+        ).href,
+      },
+      {
+        key: 'item-2',
+        name: '中正紀念堂',
+        img: new URL('@/assets/img/brand/team/people-0/slide2@2x.webp', import.meta.url)
+          .href,
+        bigImg: new URL(
+          '@/assets/img/brand/team/people-0/slide2_1@2x.webp',
+          import.meta.url,
+        ).href,
+      },
+      {
+        key: 'item-3',
+        name: '金瓜石十三層遺址',
+        img: new URL('@/assets/img/brand/team/people-0/slide3@2x.webp', import.meta.url)
+          .href,
+        bigImg: new URL(
+          '@/assets/img/brand/team/people-0/slide3_1@2x.webp',
+          import.meta.url,
+        ).href,
+      },
+      {
+        key: 'item-4',
+        name: '瑞芳神農大帝',
+        img: new URL('@/assets/img/brand/team/people-0/slide4@2x.webp', import.meta.url)
+          .href,
+        bigImg: new URL(
+          '@/assets/img/brand/team/people-0/slide4_1@2x.webp',
+          import.meta.url,
+        ).href,
+      },
+      {
+        key: 'item-5',
+        name: '高雄佛陀紀念館',
+        img: new URL('@/assets/img/brand/team/people-0/slide5@2x.webp', import.meta.url)
+          .href,
+        bigImg: new URL(
+          '@/assets/img/brand/team/people-0/slide5_1@2x.webp',
+          import.meta.url,
+        ).href,
+      },
+      
+    ],
+  },
+  {
     tag: 'brand-1',
     sign: new URL('@/assets/img/brand/team/people-1/people-1-name-1@2x.webp', import.meta.url).href,
     people: new URL('@/assets/img/brand/team/people-1/people-1-avator-1@2x.webp', import.meta.url)

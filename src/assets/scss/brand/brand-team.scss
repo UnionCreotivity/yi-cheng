@@ -110,6 +110,7 @@
     width: 100%;
     height: 100%;
   }
+  .brand-team-people-0,
   .brand-team-people-1,
   .brand-team-people-2,
   .brand-team-people-3,
@@ -117,13 +118,45 @@
     position: absolute;
     cursor: pointer;
   }
+  .brand-team-people-0-container {
+    position: absolute;
+    left: 3%;
+    bottom: 0;
+    width: 25vw;
+    @media screen and (aspect-ratio: 1920/940) {
+      left: 3%;
+      bottom: -11%;
+      width: 25vw;
+    }
+    .line-0 {
+      position: absolute;
+      width: 69%;
+      left: 10%;
+      bottom: 68%;
+    }
+  }
+  .brand-team-people-0 {
+    position: relative;
+    z-index: 4;
+    .brand-team-people-img {
+      width: 100%;
+    }
+    .brand-team-people-sign {
+      position: absolute;
+      top: 41%;
+      left: 6%;
+      width: 28%;
+    }
+  }
+
   .brand-team-people-1-container {
     position: absolute;
-    left: 13.25%;
-    bottom: 0;
+    left: 17%;
+    bottom: -1%;
     width: 29.25vw;
     @media screen and (aspect-ratio: 1920/940) {
-      left: 19.25%;
+      left: 20%;
+      bottom: -1%;
       width: 24.25vw;
     }
     .line-1 {
@@ -141,17 +174,18 @@
     }
     .brand-team-people-sign {
       position: absolute;
-      top: 14%;
-      width: 28%;
+      top: 56%;
+      left: 13%;
+      width: 27%;
     }
   }
   .brand-team-people-2-container {
     position: absolute;
-    left: 26.25%;
-    bottom: -19%;
-    width: 30.75vw;
+    left: 32%;
+    bottom: -16%;
+    width: 29vw;
     @media screen and (aspect-ratio: 1920/940) {
-      left: 30.25%;
+      left: 33%;
       bottom: -17%;
       width: 24.75vw;
     }
@@ -180,9 +214,9 @@
   }
   .brand-team-people-3-container {
     position: absolute;
-    left: 47.25%;
+    left: 54%;
     bottom: -26%;
-    width: 30.75vw;
+    width: 30vw;
     @media screen and (aspect-ratio: 1920/940) {
       width: 25.75vw;
     }
@@ -215,11 +249,12 @@
   }
   .brand-team-people-4-container {
     position: absolute;
-    bottom: -22%;
-    left: 66%;
-    width: 27vw;
+    bottom: -18%;
+    left: 73%;
+    width: 26vw;
     @media screen and (aspect-ratio: 1920/940) {
-      left: 63%;
+      bottom: -18%;
+      left: 73%;
       width: 23vw;
     }
     @include pad {
