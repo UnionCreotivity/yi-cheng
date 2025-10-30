@@ -32,7 +32,7 @@ export const BuildingData = [
     name: '智能免持卡系統',
     image: new URL('@/assets/img/construction/building/elevator@2x.webp', import.meta.url).href,
     content:
-      '中距離感應式門禁系統\n1.全社區分層分棟管理。\n2.專屬門禁感應器，無須持卡，中距離感應即可通過社區所有門禁。\n3.住家玄關門還可使用指紋辨識。',
+      '中距離感應式門禁系統\n1.全社區分層分棟管理。\n2.電梯門禁管制，樓層按鍵免刷卡自動感應。\n3.住家玄關門還可使用指紋辨識。',
   },
   {
     id: 'building-7',

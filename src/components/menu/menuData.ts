@@ -81,7 +81,7 @@ export const menuData = [
       },
       {
         key: 'link-3',
-        name: '房貸試算',
+        name: '拆款試算',
       },
     ],
   },
@@ -159,12 +159,12 @@ export const menuSubData = [
       },
       {
         key: 'link-3',
-        name: '房貸試算',
+        name: '拆款試算',
         link: 'loan',
       },
       {
         key: 'link-4',
-        name: '店面房貸試算',
+        name: '店面拆款試算',
         link: 'storeloan',
       },
     ],

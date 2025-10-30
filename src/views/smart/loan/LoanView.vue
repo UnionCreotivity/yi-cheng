@@ -4,7 +4,7 @@
     <div class="loan-container">
       <div class="loan-container-bg"></div>
       <div class="loan-container-top">
-        <h1>房貸試算</h1>
+        <h1>拆款試算</h1>
         <div class="loan-title-en">
           <img src="../../../assets/img/loan/loan-title-en.svg" alt="" />
         </div>
